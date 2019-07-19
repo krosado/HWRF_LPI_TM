@@ -14,3 +14,5 @@ Replace:
 
 To configure and compile the code please follow the user guide: 
 https://dtcenter.org/HurrWRF/users/docs/users_guide/noaa_11345_DS1.pdf
+
+Input data for the idealized case is available at: 
