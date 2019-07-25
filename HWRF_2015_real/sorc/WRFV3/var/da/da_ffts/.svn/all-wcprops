@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/4946/branches/HWRF/var/da/da_ffts
+END
+fft551.inc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/da/da_ffts/fft551.inc
+END
+da_ffts.f90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/da/da_ffts/da_ffts.f90
+END
+fft661.inc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/da/da_ffts/fft661.inc
+END
+module_ffts.f90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_ffts/module_ffts.f90
+END
+da_solve_poissoneqn_fct_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_ffts/da_solve_poissoneqn_fct_adj.inc
+END
+da_solve_poissoneqn_fst_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_ffts/da_solve_poissoneqn_fst_adj.inc
+END
+qpassm.inc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/da/da_ffts/qpassm.inc
+END
+da_solve_poissoneqn_fct.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_ffts/da_solve_poissoneqn_fct.inc
+END
+da_solve_poissoneqn_fst.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_ffts/da_solve_poissoneqn_fst.inc
+END

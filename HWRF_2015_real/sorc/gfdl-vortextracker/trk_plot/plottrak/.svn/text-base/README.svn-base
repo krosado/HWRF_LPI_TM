@@ -1,0 +1,67 @@
+Setting up and running ATCF Plot
+
+1. The two executables, ndate.x in the directory ndate.cd/, and nhour
+in the directory nhour.fd/, are no longer needed.  They have been replaced
+by the Korn shell scripts, ndate.ksh and nhour.ksh located in the same
+directory as all other ATCF Plot scripts.   These scripts require use
+of the GNU version of the "date" Unix command.  If the default date command
+on your system is not GNU date, you may need to edit the following line in
+both ndate.ksh and nhour.ksh to point to the GNU version of date
+
+    3 GNUDATE=date
+
+If GNU date is not available on your system, you will need to build the ndate.x
+and nhour executables by following these instructions:
+	cd ndate.cd
+	make
+	cd ../nhour.fd
+	make
+Once built, the two executables are placed into the exec/ directory. Make certain
+there are there before proceeding.  You must then edit the following paths in 
+get_mods.sh, get_verif.sh, and step_dates.sh to use the ndate.x and nhour executables.
+  ndate=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/ndate.ksh
+  nhour=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/nhour.ksh
+
+2. You will need to rerun gribmap on the GrADS ctl file.  gribmap is a
+GrADS utility that maps what is in your ctl file ("plottrak.ctl") with
+the binary data that it finds inside your actual GRIB data file.  It
+creates a map (plottrak.ix) that points to the locations where the
+requested binary data starts for the different variables and levels.
+Create the map file by using the command:
+	gribmap -v -i plottrak.ctl
+You should see one line in the output that has "MATCH" in the string.
+Both the plottrack.ctl and the newly created plottrak.ix map file need
+to be in the same directory where you are running the script below.
+
+3. Edit the following paths in atcfplot.sh
+     84 export gradsv2=/.automounts/local_mmm/grads-1.9b4/bin/gradsc
+     85 export GADDIR=/.automounts/local_mmm/grads-1.9b4/data
+     86
+     87 export scrdir=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/
+     88 export plotdir=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/tracks
+Set the paths to the correct locations for your system.
+
+4. Edit the following paths in atcfplot.gs, replace ${USER} with users name
+     23 _rundir="/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/"
+     24 _netdir="/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/tracks/"
+Set the paths to the correct locations for your system.
+
+5. Edit the following paths in get_mods.sh
+     40 rundir=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/
+     41 netdir=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/tracks
+     42 ndate=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/exec/ndate.x
+     43 nhour=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/exec/nhour
+Set the paths to the correct locations for your system.
+
+6. Edit the following paths in get_verif.sh
+     37 rundir=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/
+     38 netdir=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/tracks
+     39 ndate=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/exec/ndate.x
+     40 nhour=/wrfclass/users/${USER}/HWRF/src/gfdl-vortextracker/trk_plot/plottrak/exec/nhour
+Set the paths to the correct locations for your system.
+
+7. Run the script
+	atcfplot.sh 2009 al
+This selects stroms from the year 2009 in the atlantic basin.
+
+From the drop down menu, select a strom, and then select a start date. 

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples
+END
+small_f90.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/small_f90.kpp
+END
+saprc_f90.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/saprc_f90.kpp
+END
+saprc_f77.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/saprc_f77.kpp
+END
+mimi.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/mimi.kpp
+END
+Makefile_caca
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/Makefile_caca
+END
+small_f77.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/small_f77.kpp
+END
+mimic.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/mimic.kpp
+END
+readme
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/readme
+END
+mimi90.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/mimi90.kpp
+END
+radau90.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/radau90.kpp
+END
+mimitlm.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/mimitlm.kpp
+END
+mimim.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/mimim.kpp
+END
+mimiadj.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/mimiadj.kpp
+END
+saprc_c.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/saprc_c.kpp
+END
+small_c.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/small_c.kpp
+END
+reference.data
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/reference.data
+END
+rosenbrock90.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/rosenbrock90.kpp
+END
+small_m.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/small_m.kpp
+END
+saprc_m.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/examples/saprc_m.kpp
+END

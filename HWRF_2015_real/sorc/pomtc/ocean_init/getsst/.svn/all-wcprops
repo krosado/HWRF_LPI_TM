@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/212/branches/HWRF/ocean_init/getsst
+END
+ordleg.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/94/branches/HWRF/ocean_init/getsst/ordleg.f
+END
+getsm.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/94/branches/HWRF/ocean_init/getsst/getsm.f
+END
+avnglatlon.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/94/branches/HWRF/ocean_init/getsst/avnglatlon.f
+END
+rdbges.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/94/branches/HWRF/ocean_init/getsst/rdbges.f
+END
+modules.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/94/branches/HWRF/ocean_init/getsst/modules.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/212/branches/HWRF/ocean_init/getsst/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/94/branches/HWRF/ocean_init/getsst/README
+END
+drive.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/94/branches/HWRF/ocean_init/getsst/drive.f
+END
+gaussg.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/94/branches/HWRF/ocean_init/getsst/gaussg.f
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/4946/branches/HWRF/var/da/da_satem
+END
+da_get_innov_vector_satem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_get_innov_vector_satem.inc
+END
+da_print_stats_satem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_print_stats_satem.inc
+END
+da_transform_xtoy_satem_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_transform_xtoy_satem_adj.inc
+END
+da_ao_stats_satem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_ao_stats_satem.inc
+END
+da_transform_xtoy_satem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_transform_xtoy_satem.inc
+END
+da_check_max_iv_satem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_check_max_iv_satem.inc
+END
+da_jo_and_grady_satem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_jo_and_grady_satem.inc
+END
+da_calculate_grady_satem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_calculate_grady_satem.inc
+END
+da_oi_stats_satem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_oi_stats_satem.inc
+END
+da_satem.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_satem.f90
+END
+da_residual_satem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_satem/da_residual_satem.inc
+END

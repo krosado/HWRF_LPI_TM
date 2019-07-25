@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/7673/branches/HWRF/chem/KPP/util/write_decomp
+END
+write_decomp.F
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/chem/KPP/util/write_decomp/write_decomp.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7673/branches/HWRF/chem/KPP/util/write_decomp/Makefile
+END
+write_decom.csh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/chem/KPP/util/write_decomp/write_decom.csh
+END
+integr_edit.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/util/write_decomp/integr_edit.c
+END

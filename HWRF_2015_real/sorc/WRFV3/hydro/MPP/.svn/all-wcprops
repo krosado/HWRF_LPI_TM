@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/8205/branches/HWRF/hydro/MPP
+END
+CPL_WRF.F
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/7191/branches/HWRF/hydro/MPP/CPL_WRF.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/6162/branches/HWRF/hydro/MPP/Makefile
+END
+mpp_land.F
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/8205/branches/HWRF/hydro/MPP/mpp_land.F
+END

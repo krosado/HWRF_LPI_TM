@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/314/branches/HWRF/ocean_diag/fortran
+END
+readsstuvhflux.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/fortran/readsstuvhflux.sh
+END
+readsstuvhflux.f90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/312/branches/HWRF/ocean_diag/fortran/readsstuvhflux.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/314/branches/HWRF/ocean_diag/fortran/Makefile
+END
+sst060km.dat.sample
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/312/branches/HWRF/ocean_diag/fortran/sst060km.dat.sample
+END

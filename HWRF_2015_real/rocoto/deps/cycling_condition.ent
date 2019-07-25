@@ -1,0 +1,21 @@
+<or>
+  <and>
+    <datadep age="30" minsize="10000"><cyclestr offset="-06:00:00">&COMhwrf;</cyclestr>/&sidlc;.wrfout_d01_<cyclestr offset="-03:00:00">@Y-@m-@d_@H:@M:@S</cyclestr></datadep>
+    <datadep age="30" minsize="10000"><cyclestr offset="-06:00:00">&COMhwrf;</cyclestr>/&sidlc;.wrfout_d01_<cyclestr offset="-00:00:00">@Y-@m-@d_@H:@M:@S</cyclestr></datadep>
+    <datadep age="30" minsize="10000"><cyclestr offset="-06:00:00">&COMhwrf;</cyclestr>/&sidlc;.wrfout_d01_<cyclestr offset="03:00:00">@Y-@m-@d_@H:@M:@S</cyclestr></datadep>
+
+    <datadep age="30" minsize="10000"><cyclestr offset="-06:00:00">&COMhwrf;</cyclestr>/&sidlc;.wrfout_d02_<cyclestr offset="-03:00:00">@Y-@m-@d_@H:@M:@S</cyclestr></datadep>
+    <datadep age="30" minsize="10000"><cyclestr offset="-06:00:00">&COMhwrf;</cyclestr>/&sidlc;.wrfout_d02_<cyclestr offset="-00:00:00">@Y-@m-@d_@H:@M:@S</cyclestr></datadep>
+    <datadep age="30" minsize="10000"><cyclestr offset="-06:00:00">&COMhwrf;</cyclestr>/&sidlc;.wrfout_d02_<cyclestr offset="03:00:00">@Y-@m-@d_@H:@M:@S</cyclestr></datadep>
+
+    <datadep age="30" minsize="10000"><cyclestr offset="-06:00:00">&COMhwrf;</cyclestr>/&sidlc;.wrfout_d03_<cyclestr offset="-03:00:00">@Y-@m-@d_@H:@M:@S</cyclestr></datadep>
+    <datadep age="30" minsize="10000"><cyclestr offset="-06:00:00">&COMhwrf;</cyclestr>/&sidlc;.wrfout_d03_<cyclestr offset="-00:00:00">@Y-@m-@d_@H:@M:@S</cyclestr></datadep>
+    <datadep age="30" minsize="10000"><cyclestr offset="-06:00:00">&COMhwrf;</cyclestr>/&sidlc;.wrfout_d03_<cyclestr offset="03:00:00">@Y-@m-@d_@H:@M:@S</cyclestr></datadep>
+
+    <datadep age="30" minsize="0"><cyclestr offset="-06:00:00">&COMhwrf;/&sidlc;.trak.hwrf.atcfunix.@Y@m@d@H.combine</cyclestr></datadep>
+  </and>
+
+  <not>
+    <cycleexistdep cycle_offset="-6:00:00"/>
+  </not>
+</or>

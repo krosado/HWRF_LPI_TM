@@ -1,0 +1,91 @@
+C-------------------------------------------------------------------
+      MODULE MODULE_FLIP
+      CONTAINS
+      SUBROUTINE FLIP(AE,KD,II,
+     & IM,JM,LM,KB,KBETA,IMJM,JMP1,IMM1,IMJMM1,KHL00,KHH00,KNE,
+     & KNW,KSW,KSE,KSL,KSLM1,LMM1,LMP1,IMT,JMT) !Zhang
+C
+C SUBPROGRAM: FLIP          REVERSE THE VERTICAL INDEXING OF ARRAY AE
+C   PRGMMR: T.BLACK         ORG: W/NMC22    DATE: ??-??-??
+C
+C ABSTRACT: REVERSES THE VERTICAL INDEXING OF ARRAY AE, WHICH IS REVERSE
+C           FROM VERICAL INDEXING IN THE ETA MODEL
+C
+C PROGRAM HISTORY LOG:
+C   ??-??-??  T.BLACK
+C
+C USAGE     CALL FLIP(AE,KD)
+C   INPUT ARGUMENT LIST:
+C     AE      -INPUT ARRAY
+C     KD      -NUMBER OF VERTICAL LEVELS
+C
+C   OUTPUT ARGUMENT LIST:
+C     AE      -FLIPPED OUTPUT ARRAY
+C
+C ATTRIBUTES:
+C   LANGUAGE: FORTRAN 77
+C   MACHINE:  CRAY
+C
+        INCLUDE "parmlbc"
+C
+      integer,parameter::real_32=selected_real_kind(6,30)
+      REAL(REAL_32), INTENT(INOUT) :: AE(II,KD)
+      REAL(REAL_32) :: TEMP(II)
+C************************************************************************
+      KDH=KD/2
+      DO 100 KN=1,KDH
+      K=KD+1-KN
+      DO 50 LB=1,II
+      TEMP(LB)=AE(LB,KN)
+      AE(LB,KN)=AE(LB,K)
+      AE(LB,K)=TEMP(LB)
+   50 CONTINUE
+  100 CONTINUE
+      RETURN
+      END SUBROUTINE FLIP
+C-------------------------------------------------------------------
+
+
+      SUBROUTINE FLIP_PTR(AE,KD,II,
+     & IM,JM,LM,KB,KBETA,IMJM,JMP1,IMM1,IMJMM1,KHL00,KHH00,KNE,
+     & KNW,KSW,KSE,KSL,KSLM1,LMM1,LMP1,IMT,JMT) !Zhang
+C
+C SUBPROGRAM: FLIP          REVERSE THE VERTICAL INDEXING OF ARRAY AE
+C   PRGMMR: T.BLACK         ORG: W/NMC22    DATE: ??-??-??
+C
+C ABSTRACT: REVERSES THE VERTICAL INDEXING OF ARRAY AE, WHICH IS REVERSE
+C           FROM VERICAL INDEXING IN THE ETA MODEL
+C
+C PROGRAM HISTORY LOG:
+C   ??-??-??  T.BLACK
+C
+C USAGE     CALL FLIP(AE,KD)
+C   INPUT ARGUMENT LIST:
+C     AE      -INPUT ARRAY
+C     KD      -NUMBER OF VERTICAL LEVELS
+C
+C   OUTPUT ARGUMENT LIST:
+C     AE      -FLIPPED OUTPUT ARRAY
+C
+C ATTRIBUTES:
+C   LANGUAGE: FORTRAN 77
+C   MACHINE:  CRAY
+C
+        INCLUDE "parmlbc"
+C
+      integer,parameter::real_32=selected_real_kind(6,30)
+      REAL(REAL_32), POINTER, INTENT(INOUT) :: AE(:,:)
+      REAL(REAL_32) :: TEMP(II)
+C************************************************************************
+      KDH=KD/2
+      DO 100 KN=1,KDH
+      K=KD+1-KN
+      DO 50 LB=1,II
+      TEMP(LB)=AE(LB,KN)
+      AE(LB,KN)=AE(LB,K)
+      AE(LB,K)=TEMP(LB)
+   50 CONTINUE
+  100 CONTINUE
+      RETURN
+      END SUBROUTINE FLIP_PTR
+      END MODULE MODULE_FLIP

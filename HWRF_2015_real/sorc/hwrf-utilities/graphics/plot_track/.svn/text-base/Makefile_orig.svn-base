@@ -1,0 +1,102 @@
+# Makefile for diagnostic file generation. 
+# 
+# Version 1.1, last modified 02/11/2011
+# This version (v1.0) is for HWRF reruns.
+#
+# make/make all   - compile all associated fortran programs
+# make clean      - removes all intermediate files (does not remove *.x)
+# make lstest.exe - makes only test program for diagnostic calculation
+
+# Fortran compiler/linker 
+FC	= ifort
+LIBS    = 
+FFLAGS	= -w
+OBJS1= atcf_to_stats.o
+OBJS2= hwrf_atcf_intensity.o
+OBJS3= hwrf_atcf_tracks.o
+OBJS4= statsin_domain.o
+OBJS5= statsin_domain_TI.o
+
+## (all)
+all: nameparse.x gridparse.x getcenter.x inddiag.x inddiagnull.x totaldiag.x \
+     atcf_to_stats.exe hwrf_atcf_intensity.exe  hwrf_atcf_tracks.exe         \
+     statsin_domain.exe  statsin_domain_TI.exe
+
+## (nameparse.x) 
+nameparse.x: nameparse.f
+	$(FC) $(FFLAGS) nameparse.f -o nameparse.x
+
+## (gridparse.x) 
+gridparse.x: gridparse.f
+	$(FC) $(FFLAGS) gridparse.f -o gridparse.x
+
+## (totaldiag.x)
+totaldiag.x: totaldiag.f diag_util.mod diag_util.o dataio.o upcase.o
+	$(FC) $(FFLAGS) totaldiag.f diag_util.o dataio.o upcase.o -o totaldiag.x
+
+## (inddiag.x)
+inddiag.x: inddiag.f diag_util.mod diag_util.o dataio.o upcase.o lsdiags.o gbland.o
+	$(FC) $(FFLAGS) inddiag.f diag_util.o dataio.o upcase.o lsdiags.o gbland.o -o inddiag.x
+
+## (inddiagnull.x)
+inddiagnull.x: inddiagnull.f diag_util.mod diag_util.o dataio.o upcase.o
+	$(FC) $(FFLAGS) inddiagnull.f diag_util.o dataio.o upcase.o -o inddiagnull.x
+
+## (getcenter.x)
+getcenter.x: getcenter.f diag_util.mod diag_util.o dataio.o upcase.o
+	$(FC) $(FFLAGS) getcenter.f diag_util.o dataio.o upcase.o -o getcenter.x
+
+atcf_to_stats.exe: $(OBJS1)
+	$(FC) -o $(@) $(OBJS1) $(LIBS)
+
+hwrf_atcf_intensity.exe: $(OBJS2)
+	$(FC) -o $(@) $(OBJS2) $(LIBS)
+
+hwrf_atcf_tracks.exe: $(OBJS3)
+	$(FC) -o $(@) $(OBJS3) $(LIBS)
+
+statsin_domain.exe: $(OBJS4)
+	$(FC) -o $(@) $(OBJS4) $(LIBS)
+
+statsin_domain_TI.exe: $(OBJS5)
+	$(FC) -o $(@) $(OBJS5) $(LIBS)
+
+atcf_to_stats.o: atcf_to_stats.f90
+	$(FC) $(FFLAGS) -c atcf_to_stats.f90
+
+hwrf_atcf_intensity.o: hwrf_atcf_intensity.f90
+	$(FC) $(FFLAGS) -c hwrf_atcf_intensity.f90
+
+hwrf_atcf_tracks.o: hwrf_atcf_tracks.f90
+	$(FC) $(FFLAGS) -c hwrf_atcf_tracks.f90
+
+statsin_domain.o: statsin_domain.f90
+	$(FC) $(FFLAGS) -c statsin_domain.f90
+
+statsin_domain_TI.o: statsin_domain_TI.f90
+	$(FC) $(FFLAGS) -c statsin_domain_TI.f90
+
+lsdiags.o: lsdiags.f diag_util.mod diag_util.o gbland.o
+	$(FC) $(FFLAGS) -c lsdiags.f diag_util.o gbland.o
+
+diag_util.mod: diag_util.f dataio.o
+	$(FC) $(FFLAGS) -c diag_util.f dataio.o
+
+diag_util.o: diag_util.f dataio.o
+	$(FC) $(FFLAGS) -c diag_util.f dataio.o
+
+dataio.o: dataformats.inc dataioparms.inc dataio.f
+	$(FC) $(FFLAGS) -c dataio.f
+
+gbland.o: gbland.f
+	$(FC) $(FFLAGS) -c gbland.f
+
+upcase.o: upcase.f
+	$(FC) $(FFLAGS) -c upcase.f
+
+## (lstest.exe)
+#lstest.exe: lstest.f lsdiags.f stndz.f gbland.f ctorh.f
+#	$(FC) $(FFLAGS) lstest.f lsdiags.f stndz.f gbland.f ctorh.f -o lstest.exe
+
+clean:
+	rm -rf *.o *~ *.mod *.x *.exe

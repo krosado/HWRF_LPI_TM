@@ -1,0 +1,46 @@
+# Enables the 2014 HWRF Ensemble, which uses the 2013 HWRF domain
+# sizes and vertical structure and disables GSI.
+
+[dir]
+WORKhwrf={CDSCRUB}/{RUNhwrf}/{ENS}/{vit[YMDH]}/{vit[stormid3]}
+
+[prelaunch]
+ensid_overrides=yes
+
+[config]
+run_gsi=no
+run_ocean=yes
+use_spectral=no
+run_ensemble_da=no  ; conflicts with forecast ensemble
+is_forecast_ensemble=yes
+
+[ensemble]
+ensize=20 ; number of ensemble members (should match GEFS)
+# NOTE: The scripts also need ENS in the [config] section, which is
+# the HWRF ensemble member, and will also be the GEFS ensemble member.
+# This is done automatically by rocoto/run_hwrf.py.
+
+# TCVITALS PERTURBATIONS
+vmax_pert=3 ; m/s maximum perturbation in tcvitals
+tcvitals_seed=auto ; automatically decide a seed from cycle and storm
+# tcvitals_seed=12345 ; alternative: specify an integer seed
+
+[ungrib]
+dataset = gefs
+subset_grib1 = 
+item = gep_2a
+item2 = gep_2b
+item_E00 = gec_2a
+item2_E00 = gec_2b
+tbl = {PARMhwrf}/hwrf_Vtable_gefs2012
+
+[wrf]
+metgrid_soil_levels=4
+
+[wrf_namelist]
+
+physics.pert_sas=.true.
+physics.pert_pbl=.true.
+physics.ens_pblamp=0.2
+physics.ens_sasamp=50.0
+physics.ens_random_seed={ENS}

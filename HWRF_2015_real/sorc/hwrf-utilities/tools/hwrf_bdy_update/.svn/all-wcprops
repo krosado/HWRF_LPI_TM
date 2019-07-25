@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/949/branches/HWRF/tools/hwrf_bdy_update
+END
+update_nmmb.F
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/736/branches/HWRF/tools/hwrf_bdy_update/update_nmmb.F
+END
+readgsifile.F
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/736/branches/HWRF/tools/hwrf_bdy_update/readgsifile.F
+END
+bdyupdate.F
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/736/branches/HWRF/tools/hwrf_bdy_update/bdyupdate.F
+END
+compute_start_and_end.F
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/736/branches/HWRF/tools/hwrf_bdy_update/compute_start_and_end.F
+END
+update_wrfnmm.F
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/736/branches/HWRF/tools/hwrf_bdy_update/update_wrfnmm.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/949/branches/HWRF/tools/hwrf_bdy_update/Makefile
+END

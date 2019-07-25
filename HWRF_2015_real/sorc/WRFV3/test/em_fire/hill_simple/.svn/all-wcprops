@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/7425/branches/HWRF/test/em_fire/hill_simple
+END
+namelist.fire
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/test/em_fire/hill_simple/namelist.fire
+END
+input_sounding
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/test/em_fire/hill_simple/input_sounding
+END
+namelist.input
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/7425/branches/HWRF/test/em_fire/hill_simple/namelist.input
+END

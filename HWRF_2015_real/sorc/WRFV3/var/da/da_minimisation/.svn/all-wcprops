@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/8366/branches/HWRF/var/da/da_minimisation
+END
+da_calculate_gradj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/8205/branches/HWRF/var/da/da_minimisation/da_calculate_gradj.inc
+END
+da_calculate_j.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8205/branches/HWRF/var/da/da_minimisation/da_calculate_j.inc
+END
+da_residual.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_minimisation/da_residual.inc
+END
+da_kmat_mul.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/6121/branches/HWRF/var/da/da_minimisation/da_kmat_mul.inc
+END
+da_transform_vtoy_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/5750/branches/HWRF/var/da/da_minimisation/da_transform_vtoy_adj.inc
+END
+da_get_innov_vector.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/8366/branches/HWRF/var/da/da_minimisation/da_get_innov_vector.inc
+END
+da_dot_cv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/8205/branches/HWRF/var/da/da_minimisation/da_dot_cv.inc
+END
+da_get_var_diagnostics.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/7673/branches/HWRF/var/da/da_minimisation/da_get_var_diagnostics.inc
+END
+da_minimise_lz.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8205/branches/HWRF/var/da/da_minimisation/da_minimise_lz.inc
+END
+da_jo_and_grady.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8205/branches/HWRF/var/da/da_minimisation/da_jo_and_grady.inc
+END
+da_write_diagnostics.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/7673/branches/HWRF/var/da/da_minimisation/da_write_diagnostics.inc
+END
+da_swap_xtraj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/5942/branches/HWRF/var/da/da_minimisation/da_swap_xtraj.inc
+END
+da_minimise_cg.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8205/branches/HWRF/var/da/da_minimisation/da_minimise_cg.inc
+END
+da_calculate_grady.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5431/branches/HWRF/var/da/da_minimisation/da_calculate_grady.inc
+END
+da_calculate_residual.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/7191/branches/HWRF/var/da/da_minimisation/da_calculate_residual.inc
+END
+da_minimisation.f90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8205/branches/HWRF/var/da/da_minimisation/da_minimisation.f90
+END
+da_dot.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_minimisation/da_dot.inc
+END
+da_sensitivity.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8205/branches/HWRF/var/da/da_minimisation/da_sensitivity.inc
+END
+da_transform_vtoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/5750/branches/HWRF/var/da/da_minimisation/da_transform_vtoy.inc
+END
+da_amat_mul.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/8205/branches/HWRF/var/da/da_minimisation/da_amat_mul.inc
+END
+da_read_basicstates.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/7673/branches/HWRF/var/da/da_minimisation/da_read_basicstates.inc
+END
+da_lanczos_io.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/6121/branches/HWRF/var/da/da_minimisation/da_lanczos_io.inc
+END
+da_adjoint_sensitivity.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_minimisation/da_adjoint_sensitivity.inc
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/8427/branches/HWRF/var/da/da_recursive_filter
+END
+da_calculate_rf_factors.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/4946/branches/HWRF/var/da/da_recursive_filter/da_calculate_rf_factors.inc
+END
+da_rf_cv3.f90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/8427/branches/HWRF/var/da/da_recursive_filter/da_rf_cv3.f90
+END
+da_apply_rf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_recursive_filter/da_apply_rf.inc
+END
+da_recursive_filter_1d_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/4946/branches/HWRF/var/da/da_recursive_filter/da_recursive_filter_1d_adj.inc
+END
+da_transform_through_rf_dual_res.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/7191/branches/HWRF/var/da/da_recursive_filter/da_transform_through_rf_dual_res.inc
+END
+da_transform_through_rf_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/4946/branches/HWRF/var/da/da_recursive_filter/da_transform_through_rf_adj.inc
+END
+da_mat_cv3.f90
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8427/branches/HWRF/var/da/da_recursive_filter/da_mat_cv3.f90
+END
+da_apply_rf_1v.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_recursive_filter/da_apply_rf_1v.inc
+END
+da_perform_2drf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_recursive_filter/da_perform_2drf.inc
+END
+da_apply_rf_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_recursive_filter/da_apply_rf_adj.inc
+END
+da_transform_through_rf_adj_dual_res.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/7191/branches/HWRF/var/da/da_recursive_filter/da_transform_through_rf_adj_dual_res.inc
+END
+da_recursive_filter_1d.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/4946/branches/HWRF/var/da/da_recursive_filter/da_recursive_filter_1d.inc
+END
+da_apply_rf_1v_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_recursive_filter/da_apply_rf_1v_adj.inc
+END
+da_rfz_cv3.f90
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8427/branches/HWRF/var/da/da_recursive_filter/da_rfz_cv3.f90
+END
+da_recursive_filter.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/7191/branches/HWRF/var/da/da_recursive_filter/da_recursive_filter.f90
+END
+da_transform_through_rf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/4946/branches/HWRF/var/da/da_recursive_filter/da_transform_through_rf.inc
+END

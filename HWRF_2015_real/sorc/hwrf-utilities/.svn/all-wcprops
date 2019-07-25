@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/!svn/ver/1163/branches/HWRF
+END
+pure-openmp.inc
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/1036/branches/HWRF/pure-openmp.inc
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/949/branches/HWRF/configure
+END
+clean
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/!svn/ver/274/branches/HWRF/clean
+END
+compile
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/!svn/ver/274/branches/HWRF/compile
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/1163/branches/HWRF/makefile
+END

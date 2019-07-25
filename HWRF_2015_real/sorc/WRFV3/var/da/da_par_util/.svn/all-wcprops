@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/8205/branches/HWRF/var/da/da_par_util
+END
+da_par_util.f90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/7191/branches/HWRF/var/da/da_par_util/da_par_util.f90
+END
+da_generic_boilerplate.m4
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_generic_boilerplate.m4
+END
+da_patch_to_global_3d.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_patch_to_global_3d.inc
+END
+da_y_facade_to_global.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_y_facade_to_global.inc
+END
+da_generic_typedefs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_generic_typedefs.inc
+END
+da_transpose_x2y.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_transpose_x2y.inc
+END
+da_transpose_y2x.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_transpose_y2x.inc
+END
+da_transpose_x2z.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_transpose_x2z.inc
+END
+da_transpose_z2x.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_transpose_z2x.inc
+END
+da_transpose_z2y.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_transpose_z2y.inc
+END
+da_transpose_y2z.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_transpose_y2z.inc
+END
+da_copy_dims.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_copy_dims.inc
+END
+da_cv_to_global.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/8205/branches/HWRF/var/da/da_par_util/da_cv_to_global.inc
+END
+da_proc_sum_real.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_proc_sum_real.inc
+END
+da_deallocate_global_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_deallocate_global_sonde_sfc.inc
+END
+da_copy_tile_dims.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_copy_tile_dims.inc
+END
+da_deallocate_global_synop.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_deallocate_global_synop.inc
+END
+da_patch_to_global_2d.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_patch_to_global_2d.inc
+END
+da_proc_maxmin_combine.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_proc_maxmin_combine.inc
+END
+da_proc_stats_combine.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/5750/branches/HWRF/var/da/da_par_util/da_proc_stats_combine.inc
+END
+da_system.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_system.inc
+END
+da_proc_sum_ints.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_proc_sum_ints.inc
+END
+da_cv_to_vv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/8205/branches/HWRF/var/da/da_par_util/da_cv_to_vv.inc
+END
+da_vv_to_cv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/8205/branches/HWRF/var/da/da_par_util/da_vv_to_cv.inc
+END
+da_par_util1.f90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_par_util1.f90
+END
+da_deallocate_global_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_deallocate_global_sound.inc
+END
+da_transpose_y2x_v2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_transpose_y2x_v2.inc
+END
+da_transpose_x2y_v2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_transpose_x2y_v2.inc
+END
+da_pack_count_obs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_pack_count_obs.inc
+END
+da_unpack_count_obs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_unpack_count_obs.inc
+END
+da_alloc_and_copy_be_arrays.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_alloc_and_copy_be_arrays.inc
+END
+da_wrf_dm_interface.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_wrf_dm_interface.inc
+END
+da_generic_methods.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_generic_methods.inc
+END
+da_patch_to_global_dual_res.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/7191/branches/HWRF/var/da/da_par_util/da_patch_to_global_dual_res.inc
+END
+da_proc_sum_int.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_par_util/da_proc_sum_int.inc
+END

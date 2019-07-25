@@ -1,0 +1,7 @@
+#! /bin/ksh
+
+cd /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215/rocoto/
+
+  ./run_hwrf.py -f \
+      -w hwrf-H215-07L-2010082518.xml -d hwrf-H215-07L-2010082518.db \
+        2010082518 07L HISTORY config.EXPT=H215

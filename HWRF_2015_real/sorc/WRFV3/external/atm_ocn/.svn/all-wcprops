@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/8205/branches/HWRF/external/atm_ocn
+END
+cmpcomm.F
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/8205/branches/HWRF/external/atm_ocn/cmpcomm.F
+END
+atm_comm.F
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/7753/branches/HWRF/external/atm_ocn/atm_comm.F
+END
+atm_tiles.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/external/atm_ocn/atm_tiles.F
+END
+module_PATCH_QUILT.F
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/atm_ocn/module_PATCH_QUILT.F
+END
+atm_comm_pom.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/5431/branches/HWRF/external/atm_ocn/atm_comm_pom.F
+END
+mpi_more.F
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/5591/branches/HWRF/external/atm_ocn/mpi_more.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/7673/branches/HWRF/external/atm_ocn/Makefile
+END

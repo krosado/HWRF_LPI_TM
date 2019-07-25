@@ -1,0 +1,179 @@
+ 
+/bin/rm: No match.
+make[1]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc'
+cd ocean_init && make -i -r
+make[2]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init'
+cd date2day ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/date2day'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  date2day.f -o ../../ocean_exec/gfdl_date2day.exe -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8 -lm
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/date2day'
+cd day2date ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/day2date'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  day2date.f -o ../../ocean_exec/gfdl_day2date.exe -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8  -lm
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/day2date'
+cd getsst ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/getsst'
+Makefile:23: warning: overriding commands for target `.f.o'
+../../configure.pom:70: warning: ignoring old commands for target `.f.o'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -openmp -c modules.f  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/src/sfcio
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -openmp -c drive.f  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/src/sfcio
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -openmp -c getsm.f  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/src/sfcio
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -openmp -c gaussg.f  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/src/sfcio
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -openmp -c ordleg.f  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/src/sfcio
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -openmp -c avnglatlon.f  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/src/sfcio
+avnglatlon.f(63): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+ 123  FORMAT(1X,10E10.4)
+-------------------^
+ifort -Wl,-noinhibit-exec -shared-intel -openmp -o ../../ocean_exec/gfdl_getsst.exe modules.o drive.o getsm.o gaussg.o ordleg.o avnglatlon.o -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lblas -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r4 -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lsp_i4r4 -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lsfcio_i4r4  -lm
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/getsst'
+cd sharp_mcs_rf_l2m_rmy5 ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/sharp_mcs_rf_l2m_rmy5'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  gfdl_sharp_mcs_rf_l2m_rmy5.f -o ../../ocean_exec/gfdl_sharp_mcs_rf_l2m_rmy5.exe -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8 -lm
+gfdl_sharp_mcs_rf_l2m_rmy5.f(128): remark #8290: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+3'.
+ 912  format(f2.0)
+--------------^
+gfdl_sharp_mcs_rf_l2m_rmy5.f(460): remark #7713: This statement function has not been used.   [F]
+      F(x1,y1,x,y)=sqrt((y1-y)**2+(x1-x)**2)
+------^
+gfdl_sharp_mcs_rf_l2m_rmy5.f(3345): remark #8290: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+3'.
+ 702   format(f3.1)
+---------------^
+gfdl_sharp_mcs_rf_l2m_rmy5.f(5026): remark #8290: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+3'.
+ 313   format(f3.1)
+---------------^
+gfdl_sharp_mcs_rf_l2m_rmy5.f(6910): remark #8290: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+3'.
+ 703   format('weight for warm core wwr=',f3.1)
+-------------------------------------------^
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/sharp_mcs_rf_l2m_rmy5'
+cd fbtr ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/fbtr'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -I/apps/netcdf/4.2.1.1-intel/include fbtrprep.f90 serftempr.f horinterp.f mixsstz.f sp.f -o ../../ocean_exec/pomprep_fbtr.xc -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8 -lm -L/apps/netcdf/4.2.1.1-intel/lib -lnetcdf -lnetcdff -I/apps/netcdf/4.2.1.1-intel/include
+serftempr.f(24): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+ 123  format(1x,10e10.4)
+-------------------^
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/fbtr'
+cd gdm3 ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/gdm3'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -I/apps/netcdf/4.2.1.1-intel/include gdm3prep.f90 serftempr.f horinterp.f mixsstz.f sp.f -o ../../ocean_exec/pomprep_gdm3.xc -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8 -lm -L/apps/netcdf/4.2.1.1-intel/lib -lnetcdf -lnetcdff -I/apps/netcdf/4.2.1.1-intel/include
+serftempr.f(24): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+ 123  format(1x,10e10.4)
+-------------------^
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/gdm3'
+cd idel ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/idel'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -I/apps/netcdf/4.2.1.1-intel/include idelprep.f90 serftempr.f horinterp.f mixsstz.f sp.f -o ../../ocean_exec/pomprep_idel.xc -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8 -lm -L/apps/netcdf/4.2.1.1-intel/lib -lnetcdf -lnetcdff -I/apps/netcdf/4.2.1.1-intel/include
+serftempr.f(24): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+ 123  format(1x,10e10.4)
+-------------------^
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/idel'
+cd ncda ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/ncda'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -I/apps/netcdf/4.2.1.1-intel/include ncdaprep.f90 serftempr.f horinterp.f mixsstz.f sp.f -o ../../ocean_exec/pomprep_ncda.xc -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8 -lm -L/apps/netcdf/4.2.1.1-intel/lib -lnetcdf -lnetcdff -I/apps/netcdf/4.2.1.1-intel/include
+serftempr.f(24): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+ 123  format(1x,10e10.4)
+-------------------^
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/ncda'
+cd hycu ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/hycu'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -I/apps/netcdf/4.2.1.1-intel/include hycuprep.f90 serftempr.f horinterp.f mixsstz.f sp.f -o ../../ocean_exec/pomprep_hycu.xc -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8 -lm -L/apps/netcdf/4.2.1.1-intel/lib -lnetcdf -lnetcdff -I/apps/netcdf/4.2.1.1-intel/include
+serftempr.f(24): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+ 123  format(1x,10e10.4)
+-------------------^
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/hycu'
+cd pom ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/pom'
+Makefile:44: warning: overriding commands for target `.f.o'
+../../configure.pom:70: warning: ignoring old commands for target `.f.o'
+Makefile:51: warning: overriding commands for target `.F.o'
+../../configure.pom:74: warning: ignoring old commands for target `.F.o'
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include parallel_mpi.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include io_pnetcdf.F
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include solver.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include bounds_forcing.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include advance.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include initialize.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include pom.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include hurricane_wind.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include smoothing.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include geovel.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include calcpwave.f
+
+mpif90 -f90=ifort -Wl,-noinhibit-exec -shared-intel -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include -o ../../ocean_exec/hwrf_ocean_init.exe parallel_mpi.o io_pnetcdf.o solver.o bounds_forcing.o advance.o initialize.o pom.o hurricane_wind.o smoothing.o geovel.o calcpwave.o -L/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/lib -lpnetcdf
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/pom'
+cd tran ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/tran'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  transatl06prep.f -o ../../ocean_exec/transatl06prep.xc -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8 -lm
+transatl06prep.f(86): remark #8290: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+3'.
+ 912  format(f2.0)
+--------------^
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init/tran'
+make[2]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_init'
+cd ocean_main && make -i -r
+make[2]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_main'
+cd pom ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_main/pom'
+Makefile:53: warning: overriding commands for target `.f.o'
+../../configure.pom:70: warning: ignoring old commands for target `.f.o'
+Makefile:60: warning: overriding commands for target `.F.o'
+../../configure.pom:74: warning: ignoring old commands for target `.F.o'
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include cmp.comm.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include pom.comm.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include mpi_more.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include parallel_mpi.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include io_pnetcdf.F
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include solver.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include bounds_forcing.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include advance.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include initialize.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include ocm_atm.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include drive_ocean.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include make_om_grid.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include mp_arr_pros_om.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include hurricane_wind.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include smoothing.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include make_om_msk.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include atm_ocm.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include geovel.f
+
+mpif90 -f90=ifort -c -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include calcpwave.f
+
+mpif90 -f90=ifort -Wl,-noinhibit-exec -shared-intel -O1 -fp-model precise  -I/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/include -o ../../ocean_exec/hwrf_ocean_fcst.exe cmp.comm.o pom.comm.o mpi_more.o parallel_mpi.o io_pnetcdf.o solver.o bounds_forcing.o advance.o initialize.o ocm_atm.o drive_ocean.o make_om_grid.o mp_arr_pros_om.o hurricane_wind.o smoothing.o make_om_msk.o atm_ocm.o geovel.o calcpwave.o -L/apps/pnetcdf/1.5.0-intel-mvapich2-1.8/lib -lpnetcdf
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_main/pom'
+make[2]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_main'
+cd ocean_diag && make -i -r
+make[2]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_diag'
+cd fortran ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_diag/fortran'
+ifort -O2 -fp-model precise -assume byterecl -convert big_endian  -I/apps/netcdf/4.2.1.1-intel/include readsstuvhflux.f90 -o ../../ocean_exec/readsstuvhflux.exe -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8 -lm -L/apps/netcdf/4.2.1.1-intel/lib -lnetcdf -lnetcdff -I/apps/netcdf/4.2.1.1-intel/include
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_diag/fortran'
+make[2]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc/ocean_diag'
+make[1]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/pomtc'

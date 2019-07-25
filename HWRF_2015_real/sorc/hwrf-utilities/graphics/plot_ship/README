@@ -1,0 +1,117 @@
+#######################################################################
+# README - Diagnostic file generation code
+#
+# Latest update: Version 2.1, 12/31/2012
+#
+# Contact: Kate Musgrave, Kate.Musgrave@colostate.edu
+#######################################################################
+Update Notes:
+
+Notes on update to Version 2.1 (12/31/2012)
+   -DELTAT added to NTIME line for consistency (totaldiag.f)
+
+   -added alternate field names to nest wgrib2 calls for consistency
+    with parent wgrib2 calls (create_diagfiles.sh)
+
+   -unit conversions for P, T, and SST moved out of lsdiags.f and 
+    writeparams() (diag_util.f), and into readgrid() (diag_util.f)
+      -lsdiags.f operation is now consistent with introductory comments
+       (receives pressure in hPa, temperature and SST in C)
+
+   -framework for including custom (optional) variables updated
+      -alterations to inddiag.f, inddiagnull.f, totaldiag.f, lsdiags.f,
+       and writeparams() (diag_util.f)
+
+   -custom parameter TGRD added (lsdiags.f, totaldiag.f, diag_util.f)
+
+   -framework for including comments updated to display averaging radii
+      -alterations to create_diagfiles.sh, lsdiags.f, totaldiag.f
+
+   -updated documentation
+
+Notes on update to Version 2.0 (08/07/2012)
+   -intermediate files containing model fields changed from ascii to
+    binary (create_diagfiles.sh, readparams() (diag_util.f))
+
+   -alternate model field names added to wgrib2 calls for use with
+    global model ensembles
+
+#######################################################################
+Description:
+
+The current version of the diagnostic code, version 2.1, is set up to 
+run off of the HWRF grib2 files.  The create_diagfiles.sh script drives
+the system, and is where you would need to concentrate your changes for
+accounting for any different file types.  At the beginning of the 
+script some directories are specified that you will need to alter 
+accordingly.
+
+There are three input files: input.list, input.params, and input.plvls.
+-The input.list file contains the absolute addresses of cases to run
+ (designated by the parent grid file at forecast time 0).
+-The input.plvls file tells the script which pressure levels to look 
+ for (and needs to have the same number of levels as specified in 
+ input.params).
+-The input.params file has seven lines: 
+   -the number of pressure levels, 
+   -the maximum time (in hrs), 
+   -the time interval (in hrs), 
+   -the nested flag (1 if nested grid needs to be read; 0 if only 
+    one grid), 
+   -the 4-char model name for printout into the diagnostic file, and 
+   -the runtype and version for writing out the diagnostic filename.
+
+The script runs a series of Fortran programs - nameparse.f and
+gridparse.f are dependent on the filename and type and can be altered
+or discarded as needed.  The parameter calculations take binary files
+as input (which are generated from the grib2 files in the script).  
+The diagnostic calculations are confined almost entirely to lsdiags.f.
+
+On tests we've performed with select HWRF cases, we found some cases
+where the nest is missing at one time or other during a run - I will
+comment that if you have cases like that the script as I have written it
+now will exit out when it expects a nest and one is not found, which
+means that long reruns will stop at that point, and have to be restarted
+from the next case on.
+
+Depending on what you will use it for, you may want just the diagnostic
+calculations contained in lsdiags.f, or the whole system.
+
+The most common issues with importing this version to different 
+modeling groups is that 1) it requires regular lat/lon grids on 
+pressure levels and 2) with different models involved different field 
+names and unit conversion became an issue.  If you run into any 
+problems along those lines email me and I can point you to the 
+appropriate places in the code.
+
+Questions, comments, suggestions are all appreciated.
+
+#######################################################################
+Included Files:
+
+-code (directory)
+   -create_diagfiles.sh
+   -dataformats.inc
+   -dataio.f
+   -dataioparms.inc
+   -diag_util.f
+   -gbland.f
+   -getcenter.f
+   -gridparse.f
+   -include (directory)
+      -aland.dat
+      -shland.dat
+      -wland.dat
+   -inddiag.f
+   -inddiagnull.f
+   -input.list
+   -input.params
+   -input.plvls
+   -lsdiags.f
+   -Makefile
+   -nameparse.f
+   -README
+   -totaldiag.f
+   -upcase.f
+
+#######################################################################

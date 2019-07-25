@@ -1,0 +1,609 @@
+###########################################################
+#ARCH	AIX  #dmpar 
+#
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+BYTE_ORDER     =  BIG_ENDIAN
+SFC            =  xlf_r 
+SF90           =  xlf90_r  -qfree
+SCC            =  xlc_r
+OMP_FFLAGS     =  -qsmp=omp
+DEBUG_FFLAGS   =  -g -qsigtrap -qfullpath -C -qflttrap=zerodivide:enable -qinitauto=FF911299
+FFLAGS         =  -O -qnosave -qarch=auto -q64 -DIBM4 # $(DEBUG_FFLAGS)
+FFLAGS_SHIPS   =  -O -qnosave -qarch=auto -q64
+FFLAGS_DOUBLE  =  -qintsize=4 -qrealsize=8
+FFLAGS_SINGLE  =  -qintsize=4 -qrealsize=4
+
+FFLAGS_TRACKER =  -O2 -qcheck -qextchk -qarch=auto -qflttrap=ov:zero:inv:enable $(FFLAGS_DOUBLE)
+
+CPP            =  /usr/lib/cpp 
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -Dibm_sp -I/usr/lpp/ppe.poe/include/thread -I$(WRF_DIR)/inc
+FPPFLAGS       =  $(CPPFLAGS)
+ARFLAGS        =  -ruv -X64
+
+DM_FC          =  mpxlf_r  
+DM_F90         =  mpxlf90_r  -qfree
+DM_CC          =  mpcc_r
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -I ./ -q64 -DFortranByte=char -DFortranInt=int -DFortranLlong='long long' -DIBM4 # -DVERBOSE
+DEBUG_CFLAGS   =  -C -qfullpath
+
+ESSLLIB        =  -lessl
+MASSLIB        =  -lmass
+WRF_DIR        =  CONFIGURE_WRF_PATH
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+  
+###########################################################
+#ARCH	Linux i486 i586 i686, PGI compiler w/LAPACK #dmpar  
+#
+LDFLAGS        =   -Wl,-noinhibit-exec 
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+
+BYTE_ORDER     =  LITTLE_ENDIAN
+SFC            =  pgf90
+SF90           =  pgf90 -Mfree -C 
+SCC            =  pgcc
+OMP_FFLAGS     = -mp
+DEBUG_FLAGS    =  -g -Ktrap=fp -C 
+FFLAGS         =  -O0 -DLANGUAGE_FORTRAN  -pc 32 -byteswapio -DsysLinux -DLINUX # $(DEBUG_FLAGS)
+FFLAGS_SHIPS   =  -O0  -pc 32
+FFLAGS_BUFR    =  -O0 -DLANGUAGE_FORTRAN  -pc 32 -DsysLinux -DLINUX # $(DEBUG_FLAGS)
+CFLAGS_BUFR    =  -O3 -DUNDERSCORE
+FFLAGS_DOUBLE  =  -i4 -r8
+FFLAGS_SINGLE  =  -i4 -r4
+FFLAGS_TRACKER =  -O0 -DLANGUAGE_FORTRAN  -pc 32 -byteswapio -DsysLinux -DLINUX $(FFLAGS_DOUBLE) # $(DEBUG_FLAGS)
+CPP            =  /lib/cpp 
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -DLINUX -I$(WRF_DIR)/inc
+FPPFLAGS       =  $(CPPFLAGS) -traditional-cpp
+
+ARFLAGS        =  -ruv
+
+DM_FC          =  mpif90 -f90=pgf90
+DM_F90         =  mpif90 -Mfree -f90=pgf90
+DM_CC          =  mpicc 
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -O0 -DLINUX -DUNDERSCORE -Dfunder -DFortranByte=char -DFortranInt=int -DFortranLlong='long long'
+DEBUG_CFLAGS   =  
+
+ESSLLIB        =  -llapack -lblas
+MASSLIB        = 
+WRF_DIR        =  CONFIGURE_WRF_PATH
+SED_FTN        =  $(WRF_DIR)/tools/standard.exe
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+
+###########################################################
+#ARCH	Linux x86_64, PGI compiler w/LAPACK # dmpar 
+#
+LDFLAGS        =  -Wl,-noinhibit-exec 
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+
+BYTE_ORDER     =  LITTLE_ENDIAN
+SFC            =  pgf90
+SF90           =  pgf90 -Mfree -C 
+SCC            =  pgcc
+OMP_FFLAGS     = -mp
+DEBUG_FLAGS    =  -g -Ktrap=fp -C 
+FFLAGS         =  -O0  -pc 64 -byteswapio -DLANGUAGE_FORTRAN -DsysLinux -DLINUX # $(DEBUG_FLAGS)
+FFLAGS_SHIPS   =  -O0  -pc 64
+FFLAGS_BUFR    =  -O0  -pc 64 -DLANGUAGE_FORTRAN -DsysLinux -DLINUX # $(DEBUG_FLAGS)
+CFLAGS_BUFR    =  -O3 -DUNDERSCORE
+FFLAGS_DOUBLE  =  -i4 -r8
+FFLAGS_SINGLE  =  -i4 -r4
+FFLAGS_TRACKER =  -O0  -pc 64 -byteswapio -DLANGUAGE_FORTRAN -DsysLinux -DLINUX $(FFLAGS_DOUBLE) # $(DEBUG_FLAGS)
+CPP            =  /lib/cpp 
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -DLINUX -I$(WRF_DIR)/inc
+FPPFLAGS       =  $(CPPFLAGS) -traditional-cpp
+ARFLAGS        =  -ruv
+
+DM_FC          =  mpif90 -f90=pgf90
+DM_F90         =  mpif90 -Mfree -f90=pgf90
+DM_CC          =  mpicc 
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -O0 -DLINUX -DUNDERSCORE -Dfunder -DFortranByte=char -DFortranInt=int -DFortranLlong='long long'
+DEBUG_CFLAGS   =  
+
+ESSLLIB        =  -llapack -lblas
+MASSLIB        = 
+WRF_DIR        =  CONFIGURE_WRF_PATH
+SED_FTN        =  $(WRF_DIR)/tools/standard.exe
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+
+###########################################################
+#ARCH	Linux x86_64, PGI compiler w/LAPACK, SGI MPT # dmpar 
+#
+LDFLAGS        =  -Wl,-noinhibit-exec
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+
+BYTE_ORDER     =  LITTLE_ENDIAN
+SFC            =  pgf90
+SF90           =  pgf90 -Mfree -C 
+SCC            =  pgcc
+OMP_FFLAGS     = -mp
+DEBUG_FLAGS    =  -g -Ktrap=fp -C 
+FFLAGS         =  -O0  -pc 64 -byteswapio -DLANGUAGE_FORTRAN \
+                  -DsysLinux -DLINUX # $(DEBUG_FLAGS)
+FFLAGS_SHIPS   =  -O0  -pc 64
+FFLAGS_BUFR    =  -O0  -pc 64 -DLANGUAGE_FORTRAN -DsysLinux -DLINUX \
+                  # $(DEBUG_FLAGS)
+CFLAGS_BUFR    =  -O3 -DUNDERSCORE
+FFLAGS_DOUBLE  =  -i4 -r8
+FFLAGS_SINGLE  =  -i4 -r4
+FFLAGS_TRACKER =  -O0  -pc 64 -byteswapio -DLANGUAGE_FORTRAN -DsysLinux \
+                  -DLINUX $(FFLAGS_DOUBLE) # $(DEBUG_FLAGS)
+CPP            =  /lib/cpp 
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -DLINUX -I$(WRF_DIR)/inc \
+                  -DMPI_ABORT_FOR_NONZERO_EXIT
+FPPFLAGS       =  $(CPPFLAGS) -traditional-cpp
+ARFLAGS        =  -ruv
+
+DM_FC          =  pgf90
+DM_F90         =  pgf90 -Mfree -C
+DM_CC          =  pgcc
+DM_LDFLAGS     =  $(LD_FLAGS) -L$(MPI_ROOT)/lib -lmpi
+DM_FFLAGS      =  $(FFLAGS) -I$(MPI_ROOT)/include
+DM_CFLAGS      =  $(CFLAGS) -I$(MPI_ROOT)/include
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -O0 -DLINUX -DUNDERSCORE -Dfunder -DFortranByte=char \
+                  -DFortranInt=int -DFortranLlong='long long'
+DEBUG_CFLAGS   =  
+
+ESSLLIB        =  -llapack -lblas
+MASSLIB        = 
+WRF_DIR        =  CONFIGURE_WRF_PATH
+SED_FTN        =  $(WRF_DIR)/tools/standard.exe
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+
+###########################################################
+#ARCH	Linux i486 i586 i686, Intel compiler w/MKL 	# dmpar 
+#
+LDFLAGS        =  -Wl,-noinhibit-exec -i_dynamic
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+
+BYTE_ORDER     =  LITTLE_ENDIAN
+SFC            =  ifort
+SF90           =  ifort -free
+SCC            =  icc -cc=icc
+OMP_FFLAGS     = -openmp
+DEBUG_FLAGS    =  -g -fpe0 -traceback 
+FFLAGS         =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise -assume byterecl # $(DEBUG_FLAGS)
+FFLAGS_SP      =  -heap-arrays
+FFLAGS_SHIPS   =  -O3 -msse2 -fp-model precise
+FFLAGS_BUFR    =  -O3 -msse2 -DLINUX -fp-model precise -assume byterecl
+CFLAGS_BUFR    =  -O3 -DUNDERSCORE
+FFLAGS_DOUBLE  =  -integer-size 32 -real-size 64
+FFLAGS_SINGLE  =  -integer-size 32 -real-size 32
+FFLAGS_TRACKER =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise -assume byterecl $(FFLAGS_DOUBLE) # $(DEBUG_FLAGS)
+CPP            =  /lib/cpp 
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -DLINUX -I$(WRF_DIR)/inc
+FPPFLAGS       =  $(CPPFLAGS) -traditional-cpp
+
+ARFLAGS        =  -ruv
+
+DM_FC          =  mpif90 -f90=ifort
+DM_F90         =  mpif90 -free -f90=ifort
+DM_CC          =  mpicc -cc=icc
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -O0 -DLINUX -DUNDERSCORE -Dfunder -DFortranByte=char -DFortranInt=int -DFortranLlong='long long' 
+DEBUG_CFLAGS   =
+
+ESSLLIB        =  -mkl=sequential 
+MASSLIB        = 
+WRF_DIR        =  CONFIGURE_WRF_PATH
+SED_FTN        =  $(WRF_DIR)/tools/standard.exe
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+
+###########################################################
+#ARCH	Linux i486 i586 i686, Intel compiler w/ LAPACK	# dmpar 
+#
+LDFLAGS        =  -Wl,-noinhibit-exec -i_dynamic
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+
+BYTE_ORDER     =  LITTLE_ENDIAN
+SFC            =  ifort
+SF90           =  ifort -free
+SCC            =  icc -cc=icc
+OMP_FFLAGS     = -openmp
+DEBUG_FLAGS    =  -g -fpe0 -traceback 
+FFLAGS         =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise -assume byterecl # $(DEBUG_FLAGS)
+FFLAGS_SHIPS   =  -O3 -msse2 -fp-model precise 
+FFLAGS_BUFR    =  -O3 -msse2 -DLINUX -fp-model precise -assume byterecl
+CFLAGS_BUFR    =  -O3 -DUNDERSCORE
+FFLAGS_SP      =  -heap-arrays
+FFLAGS_DOUBLE  =  -integer-size 32 -real-size 64
+FFLAGS_SINGLE  =  -integer-size 32 -real-size 32
+FFLAGS_TRACKER =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise -assume byterecl $(FFLAGS_DOUBLE) # $(DEBUG_FLAGS)
+CPP            =  /lib/cpp 
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -DLINUX -I$(WRF_DIR)/inc
+FPPFLAGS       =  $(CPPFLAGS) -traditional-cpp
+
+ARFLAGS        =  -ruv
+
+DM_FC          =  mpif90 -f90=ifort
+DM_F90         =  mpif90 -free -f90=ifort
+DM_CC          =  mpicc -cc=icc
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -O0 -DLINUX -DUNDERSCORE -Dfunder -DFortranByte=char -DFortranInt=int -DFortranLlong='long long' 
+DEBUG_CFLAGS   =
+
+ESSLLIB        =  -L$(LAPACK_PATH) -llapack -lblas
+MASSLIB        = 
+WRF_DIR        =  CONFIGURE_WRF_PATH
+SED_FTN        =  $(WRF_DIR)/tools/standard.exe
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+
+###########################################################
+#ARCH	Linux x86_64, Intel compiler w/MKL	# dmpar 
+#
+LDFLAGS        =  -Wl,-noinhibit-exec -i_dynamic
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+
+BYTE_ORDER     =  LITTLE_ENDIAN
+SFC            =  ifort
+SF90           =  ifort -free
+SCC            =  icc
+OMP_FFLAGS     = -openmp
+DEBUG_FLAGS    =  -g -fpe0 -traceback 
+FFLAGS         =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise -assume byterecl # $(DEBUG_FLAGS)
+FFLAGS_SP      =  -heap-arrays
+FFLAGS_SHIPS   =  -O3 -msse2 -fp-model precise
+FFLAGS_BUFR    =  -O3 -msse2 -DLINUX -fp-model precise -assume byterecl
+CFLAGS_BUFR    =  -O3 -DUNDERSCORE
+FFLAGS_DOUBLE  =  -integer-size 32 -real-size 64
+FFLAGS_SINGLE  =  -integer-size 32 -real-size 32
+FFLAGS_TRACKER =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise -assume byterecl $(FFLAGS_DOUBLE) # $(DEBUG_FLAGS)
+CPP            =  /lib/cpp 
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -DLINUX -I$(WRF_DIR)/inc
+FPPFLAGS       =  $(CPPFLAGS) -traditional-cpp
+ARFLAGS        =  -ruv
+
+DM_FC          =  mpif90 -f90=ifort
+DM_F90         =  mpif90 -free -f90=ifort
+DM_CC          =  mpicc -cc=icc
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -O0 -DLINUX -DUNDERSCORE -Dfunder -DFortranByte=char -DFortranInt=int -DFortranLlong='long long' 
+DEBUG_CFLAGS   =
+
+ESSLLIB        =  -mkl=sequential 
+MASSLIB        = 
+WRF_DIR        =  CONFIGURE_WRF_PATH
+SED_FTN        =  $(WRF_DIR)/tools/standard.exe
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+
+###########################################################
+#ARCH	Linux x86_64, Intel compiler w/MKL, SGI MPT	# dmpar 
+#
+LDFLAGS        =  -Wl,-noinhibit-exec -i_dynamic
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+
+BYTE_ORDER     =  LITTLE_ENDIAN
+SFC            =  ifort
+SF90           =  ifort -free
+SCC            =  icc
+OMP_FFLAGS     = -openmp
+DEBUG_FLAGS    =  -g -fpe0 -traceback 
+FFLAGS         =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise \
+                  -assume byterecl # $(DEBUG_FLAGS)
+FFLAGS_SP      =  -heap-arrays
+FFLAGS_SHIPS   =  -O3 -msse2 -fp-model precise
+FFLAGS_BUFR    =  -O3 -msse2 -DLINUX -fp-model precise -assume byterecl
+CFLAGS_BUFR    =  -O3 -DUNDERSCORE
+FFLAGS_DOUBLE  =  -integer-size 32 -real-size 64
+FFLAGS_SINGLE  =  -integer-size 32 -real-size 32
+FFLAGS_TRACKER =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise \
+                  -assume byterecl $(FFLAGS_DOUBLE) # $(DEBUG_FLAGS)
+CPP            =  /lib/cpp
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -DLINUX -I$(WRF_DIR)/inc \
+                  -DMPI_ABORT_FOR_NONZERO_EXIT
+FPPFLAGS       =  $(CPPFLAGS) -traditional-cpp
+ARFLAGS        =  -ruv
+
+DM_FC          =  ifort
+DM_F90         =  ifort -free
+DM_CC          =  icc
+DM_LDFLAGS     =  $(LD_FLAGS) -L$(MPI_ROOT)/lib -lmpi
+DM_FFLAGS      =  $(FFLAGS) -I$(MPI_ROOT)/include
+DM_CFLAGS      =  $(CFLAGS) -I$(MPI_ROOT)/include
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -O0 -DLINUX -DUNDERSCORE -Dfunder -DFortranByte=char \
+                  -DFortranInt=int -DFortranLlong='long long'
+DEBUG_CFLAGS   =
+
+ESSLLIB        =  -mkl=sequential 
+MASSLIB        = 
+WRF_DIR        =  CONFIGURE_WRF_PATH
+SED_FTN        =  $(WRF_DIR)/tools/standard.exe
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+
+###########################################################
+#ARCH	Linux x86_64, Intel compiler w/MKL, IBM POE	# dmpar 
+#
+LDFLAGS        =  -Wl,-noinhibit-exec -i_dynamic
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+
+BYTE_ORDER     =  LITTLE_ENDIAN
+SFC            =  ifort
+SF90           =  ifort -free
+SCC            =  icc
+OMP_FFLAGS     = -openmp
+DEBUG_FLAGS    =  -g -fpe0 -traceback 
+FFLAGS         =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise \
+                  -assume byterecl # $(DEBUG_FLAGS)
+FFLAGS_SP      =  -heap-arrays
+FFLAGS_SHIPS   =  -O3 -msse2 -fp-model precise
+FFLAGS_BUFR    =  -O3 -msse2 -DLINUX -fp-model precise -assume byterecl
+CFLAGS_BUFR    =  -O3 -DUNDERSCORE
+FFLAGS_DOUBLE  =  -integer-size 32 -real-size 64
+FFLAGS_SINGLE  =  -integer-size 32 -real-size 32
+FFLAGS_TRACKER =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise \
+                  -assume byterecl $(FFLAGS_DOUBLE) # $(DEBUG_FLAGS)
+CPP            =  /lib/cpp
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -DLINUX -I$(WRF_DIR)/inc
+FPPFLAGS       =  $(CPPFLAGS) -traditional-cpp
+ARFLAGS        =  -ruv
+
+DM_FC          =  mpfort
+DM_F90         =  mpfort -free
+DM_CC          =  mpcc
+DM_LDFLAGS     =  $(LD_FLAGS) -L$(MPI_ROOT)/lib
+DM_FFLAGS      =  $(FFLAGS) -I$(MPI_ROOT)/include
+DM_CFLAGS      =  $(CFLAGS) -I$(MPI_ROOT)/include
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -O0 -DLINUX -DUNDERSCORE -Dfunder -DFortranByte=char \
+                  -DFortranInt=int -DFortranLlong='long long'
+DEBUG_CFLAGS   =
+
+ESSLLIB        =  -mkl=sequential 
+MASSLIB        = 
+WRF_DIR        =  CONFIGURE_WRF_PATH
+SED_FTN        =  $(WRF_DIR)/tools/standard.exe
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+
+##################################################################
+#ARCH	Linux x86_64, Intel compiler w/LAPACK	# dmpar 
+#
+LDFLAGS        =  -Wl,-noinhibit-exec -i_dynamic
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+
+BYTE_ORDER     =  LITTLE_ENDIAN
+SFC            =  ifort
+SF90           =  ifort -free
+SCC            =  icc
+OMP_FFLAGS     = -openmp
+DEBUG_FLAGS    =  -g -fpe0 -traceback 
+FFLAGS         =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise -assume byterecl # $(DEBUG_FLAGS)
+FFLAGS_SP      =  -heap-arrays
+FFLAGS_SHIPS   =  -O3 -msse2 -fp-model precise
+FFLAGS_BUFR    =  -O3 -msse2 -DLINUX -fp-model precise -assume byterecl
+CFLAGS_BUFR    =  -O3 -DUNDERSCORE
+FFLAGS_DOUBLE  =  -integer-size 32 -real-size 64
+FFLAGS_SINGLE  =  -integer-size 32 -real-size 32
+FFLAGS_TRACKER =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise -assume byterecl $(FFLAGS_DOUBLE) # $(DEBUG_FLAGS)
+CPP            =  /lib/cpp 
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -DLINUX -I$(WRF_DIR)/inc
+FPPFLAGS       =  $(CPPFLAGS) -traditional-cpp
+ARFLAGS        =  -ruv
+
+DM_FC          =  mpif90 -f90=ifort
+DM_F90         =  mpif90 -free -f90=ifort
+DM_CC          =  mpicc -cc=icc
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -O0 -DLINUX -DUNDERSCORE -Dfunder -DFortranByte=char -DFortranInt=int -DFortranLlong='long long' 
+DEBUG_CFLAGS   =
+
+ESSLLIB        =  -L$(LAPACK_PATH) -llapack -lblas
+MASSLIB        = 
+WRF_DIR        =  CONFIGURE_WRF_PATH
+SED_FTN        =  $(WRF_DIR)/tools/standard.exe
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+
+##################################################################
+#ARCH	Linux x86_64, Intel compiler w/LAPACK, SGI MPT	# dmpar 
+#
+LDFLAGS        =  -Wl,-noinhibit-exec -i_dynamic
+
+WRF_GRIB2 = CONFIGURE_WRF_GRIB2
+WRF_PNETCDF = CONFIGURE_WRF_PNETCDF
+NETCDF_INCLUDE  = CONFIGURE_NETCDF_INCLUDE
+NETCDF_LDFLAGS  = CONFIGURE_NETCDF_LIBS
+
+BYTE_ORDER     =  LITTLE_ENDIAN
+SFC            =  ifort
+SF90           =  ifort -free
+SCC            =  icc
+OMP_FFLAGS     = -openmp
+DEBUG_FLAGS    =  -g -fpe0 -traceback
+FFLAGS         =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise \
+                  -assume byterecl # $(DEBUG_FLAGS)
+FFLAGS_SP      =  -heap-arrays
+FFLAGS_SHIPS   =  -O3 -msse2 -fp-model precise
+FFLAGS_BUFR    =  -O3 -msse2 -DLINUX -fp-model precise -assume byterecl
+CFLAGS_BUFR    =  -O3 -DUNDERSCORE
+FFLAGS_DOUBLE  =  -integer-size 32 -real-size 64
+FFLAGS_SINGLE  =  -integer-size 32 -real-size 32
+FFLAGS_TRACKER =  -O3 -msse2 -convert big_endian -DLINUX -fp-model precise \
+                  -assume byterecl $(FFLAGS_DOUBLE) # $(DEBUG_FLAGS)
+CPP            =  /lib/cpp 
+CPPFLAGS       =  -C -P -D$(BYTE_ORDER) -DWRF -DLINUX -I$(WRF_DIR)/inc \
+                  -DMPI_ABORT_FOR_NONZERO_EXIT
+FPPFLAGS       =  $(CPPFLAGS) -traditional-cpp
+ARFLAGS        =  -ruv
+
+DM_FC          =  ifort
+DM_F90         =  ifort
+DM_CC          =  icc
+DM_LDFLAGS     =  $(LD_FLAGS) -L$(MPI_ROOT)/lib -lmpi
+DM_FFLAGS      =  $(FFLAGS) -I$(MPI_ROOT)/include
+DM_CFLAGS      =  $(CFLAGS) -I$(MPI_ROOT)/include
+
+FC             =  CONFIGURE_FC
+F90            =  CONFIGURE_F90
+CC             =  CONFIGURE_CC
+
+CFLAGS         =  -O0 -DLINUX -DUNDERSCORE -Dfunder -DFortranByte=char \
+                  -DFortranInt=int -DFortranLlong='long long'
+DEBUG_CFLAGS   =
+
+ESSLLIB        =  -L$(LAPACK_PATH) -llapack -lblas
+MASSLIB        = 
+WRF_DIR        =  CONFIGURE_WRF_PATH
+SED_FTN        =  $(WRF_DIR)/tools/standard.exe
+LIB_EXTERNAL   =  -L$(WRF_DIR)/external/io_grib1 -lio_grib1 \
+                  -L$(WRF_DIR)/external/io_grib_share -lio_grib_share \
+                  -L$(WRF_DIR)/external/atm_ocn -latm_ocn \
+                  -L$(WRF_DIR)/external/io_int -lwrfio_int \
+                  -L$(WRF_DIR)/external/esmf_time_f90 -lesmf_time \
+                  -L$(WRF_DIR)/external/RSL_LITE -lrsl_lite \
+                  -L$(WRF_DIR)/external/io_netcdf -lwrfio_nf \
+                  CONFIGURE_GRIB2_LIB
+
+##################################################################
+#ARCH	NULL

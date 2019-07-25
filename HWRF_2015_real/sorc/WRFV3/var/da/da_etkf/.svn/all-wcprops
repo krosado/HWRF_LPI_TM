@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/4946/branches/HWRF/var/da/da_etkf
+END
+da_matmultiover.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_etkf/da_matmultiover.inc
+END
+da_matmulti.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_etkf/da_matmulti.inc
+END
+da_etkf.f90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/da/da_etkf/da_etkf.f90
+END
+da_innerprod.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_etkf/da_innerprod.inc
+END
+da_solve_etkf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_etkf/da_solve_etkf.inc
+END

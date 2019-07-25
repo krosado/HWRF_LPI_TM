@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/314/branches/HWRF/ocean_init/ncda
+END
+mixsstz.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/266/branches/HWRF/ocean_init/ncda/mixsstz.f
+END
+sp.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/266/branches/HWRF/ocean_init/ncda/sp.f
+END
+ncdaprep.f90
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/313/branches/HWRF/ocean_init/ncda/ncdaprep.f90
+END
+serftempr.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/266/branches/HWRF/ocean_init/ncda/serftempr.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/314/branches/HWRF/ocean_init/ncda/Makefile
+END
+horinterp.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/266/branches/HWRF/ocean_init/ncda/horinterp.f
+END

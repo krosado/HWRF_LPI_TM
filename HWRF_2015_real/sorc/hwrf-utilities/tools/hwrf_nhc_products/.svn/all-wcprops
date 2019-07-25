@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1145/branches/HWRF/tools/hwrf_nhc_products
+END
+products.f90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1145/branches/HWRF/tools/hwrf_nhc_products/products.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/1126/branches/HWRF/tools/hwrf_nhc_products/Makefile
+END

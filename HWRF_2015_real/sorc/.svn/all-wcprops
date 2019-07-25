@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/!svn/ver/3708/trunk/sorc
+END
+.externals
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/3495/trunk/sorc/.externals
+END
+executables.lst
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3494/trunk/sorc/executables.lst
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/3494/trunk/sorc/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/!svn/ver/3497/trunk/sorc/README
+END

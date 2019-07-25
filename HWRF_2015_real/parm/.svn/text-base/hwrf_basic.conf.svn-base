@@ -1,0 +1,135 @@
+# This is the first configuration file read in during the pre_master
+# job when creating the initial configuration.  It sets directory
+# paths to which the later conf files refer.  Any variables set in
+# later conf files will override variables set here.
+
+# This default file is used by NCEP EMC for retrospective runs.  It
+# assumes another file has set the CDSCRUB, CDSAVE, syndat and
+# CDNOSCRUB variables in the [dir] section.  This allows the system to
+# be easily picked up and moved to another cluster.  See jet.conf and
+# zeus.conf for examples.
+
+[config]
+# GFS version (default):
+GFSVER=PROD2014
+
+# Length of the forecast in hours:
+forecast_length=126
+
+scrub_com=yes   ; do we scrub the com directory?
+
+# cycling_interval -- number of hours between cycles.  Only 6.0 has
+# ever been tested.  Several things will break if you try to change
+# this without modifying the code and scripts.
+cycling_interval=6.0
+
+scrub=yes   ; delete temporary files
+#scrub=no    ; disable deletion of most (but not all) temporary files
+
+# Prefix to prepend to most output files in the COM directory:
+out_prefix={vit[stormnamelc]}{vit[stnum]:02d}{vit[basin1lc]}.{vit[YMDH]}
+
+# RUNhwrf is a component of some file paths below.  It serves no other
+# purpose.
+RUNhwrf={SUBEXPT}
+
+# Enable or disable parts of the workflow:
+run_gsi=yes          ; GSI and FGAT initialization
+run_ocean=yes        ; POM coupling
+run_relocation=yes   ; vortex relocation
+run_ensemble_da=yes  ; run the DA ensemble
+run_satpost=yes      ; make synthetic satellite products
+use_spectral=yes     ; spectral vs. GRIB input for init & bdy
+spectral_bdy=yes     ; spectral vs. GRIB for boundary if use_spectral=yes
+allow_fallbacks=no   ; if gsi fails, run off of GFS reloc vortex
+# Note that the GSI still needs spectral input from GDAS and the GFS
+# ENKF.  The use_spectral flag only controls what is used to prepare
+# the inputs to ungrib and metgrid.
+extra_trackers=yes   ; turn on 6km and 18km trackers (extra jobs)
+conditional_gsid03=no ; run gsi_d03, only when high-res inner-core data are available
+conditional_gsid02=no ; run gsi_d02, only when high-res inner-core data are available
+blend_innercore=yes  ; use first guess in inner core region (merge job)
+
+# Pull data from external sources to a staging area:
+input_catalog=hwrfdata
+
+# Do not email the NOAA Senior Duty Meteorologist (PLEASE)
+email_sdm=no  ; do not change unless you are NCEP Central Operations
+
+[rocotostr]
+# Variables to set as string values when parsing the
+# hwrf_workflow.xml.in.  This section is only used by the rocoto-based
+# workflow:
+FCST_RES=2KM
+CDSAVE={dir/CDSAVE}
+CDNOSCRUB={dir/CDNOSCRUB}
+CDSCRUB={dir/CDSCRUB}
+PARMhwrf={dir/PARMhwrf}
+USHhwrf={dir/USHhwrf}
+EXhwrf={dir/EXhwrf}
+EXPT={config/EXPT}
+SUBEXPT={config/SUBEXPT}
+
+[rocotobool]
+# Variables to set as boolean values when parsing the
+# hwrf_workflow.xml.in; they'll be changed to YES or NO.  This section
+# is only used by the rocoto-based workflow.
+RUN_GSI={run_gsi}
+CONDITIONAL_GSID03={conditional_gsid03}
+CONDITIONAL_GSID02={conditional_gsid02}
+RUN_OCEAN={run_ocean}
+RUN_RELOCATION={run_relocation}
+ALLOW_FALLBACKS={allow_fallbacks}
+SCRUB_COM={scrub_com}
+EXTRA_TRACKERS={extra_trackers}
+
+[prelaunch]
+ensid_overrides=no ; allow per-ensid overrides for forecast ensemble
+
+# Configure the prelaunch configuration overrides, run in ush/hwrf_expt.py:
+ungrib_overrides=yes   ; replace [ungrib] tbl with per-year tbl%Y values
+
+# Per-forecast-center configurations:
+rsmc_overrides=no      ; read parm/hwrf_JTWC.conf and parm/hwrf_NHC.conf
+rsmc_conf={PARMhwrf}/hwrf_{RSMC}.conf
+
+# Per-basin configurations: read no_basin_conf if basin_conf is missing:
+basin_overrides=yes    ; read parm/hwrf_(basin).conf
+basin_conf={PARMhwrf}/hwrf_{vit.pubbasin2}.conf
+no_basin_conf={PARMhwrf}/hwrf_other_basins.conf
+
+[sanity]
+# Configure the sanity checks
+fix_version=20150507 ; minimum fix file version
+check_input=yes      ; check for an input file in HISTORY mode
+input_item=gfs_sfcanl ; the input item to check for
+input_dataset=gfs     ; the dataset the item is in
+check_exec=yes       ; check for some executables
+check_fix=yes        ; check fix file version
+check_expt=yes       ; try to load hwrf_expt and run its sanity checks
+# NOTE: fix_version must still be set even when check_fix=no
+
+[dir]
+# Main scrub directory:
+WORKhwrf={CDSCRUB}/{RUNhwrf}/{vit[YMDH]}/{vit[stormid3]}
+
+# HWRF install location:
+HOMEhwrf={CDSAVE}/{EXPT}
+
+# COM directories are used for communicating between cycles and storms:
+#  com = current cycle's com directory
+#  oldcom = prior cycle's com directory
+# NOTE: oldcom should not refer to vit[]; instead, use oldvit[].
+com={CDSCRUB}/{RUNhwrf}/com/{vit[YMDH]}/{vit[stormid3]}
+oldcom={CDSCRUB}/{RUNhwrf}/com/{oldvit[YMDH]}/{oldvit[stormid3]}
+
+# NOSCRUB delivery locations:
+outatcf={CDNOSCRUB}/{SUBEXPT}
+outdiag={CDNOSCRUB}/diagtrak/{SUBEXPT}
+outstatus={CDNOSCRUB}/cycstatus/{SUBEXPT}
+outatcfcorrected={CDNOSCRUB}/atcf/{SUBEXPT}
+outships={CDNOSCRUB}/ships/{SUBEXPT}
+
+[archive]
+mkdir=yes     ; make the archive directory? yes or no
+# wrfout=hpss:/2year/NCEPDEV/emc-hwrf/Some.Jerk/{SUBEXPT}/wrfout/{out_prefix}.tar

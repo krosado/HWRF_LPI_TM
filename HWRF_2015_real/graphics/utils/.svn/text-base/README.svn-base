@@ -1,0 +1,50 @@
+*********Instructions for running the HWRF parallel graphics scripts suite**********
+
+1) Make sure the entire /PARA directory has been copied from /global/save/hurpara/wx20jo/PARA to 
+   a location of your choosing.
+
+2)In the following scripts, edit the "sorc", "data_dir", "work", and "archive_base" variables
+  to make sure they match the location where your data will be located and where your PARA
+  directory is located:
+        movie_combine.sh
+        nest_center.sh
+        vert_sect.sh
+        plot_swath.sh
+        plot_goes.sh
+        intensityplot.sh
+        trackplot.sh
+
+   The scripts are set up to automatically determine the "${user}" using the `whoami` command. 
+
+3)Check for any occurrences of "wx20jo" in the following scripts and edit them for your username or
+  directory location:
+        scp_to_rzdm.sh
+        hwrf_graphics.sh
+        trackplot.sh
+        intensityplot.sh
+
+4)Once the scripts have been edited for your directory structure, and there are no more occurrences of
+  "wx20jo" in the scripts in the PARA directory, make sure that a "CRONTAB_OUT" directory exists in your 
+  /stmp/$user directory. If one doesn't exist, create it. This is where the script .out and .err files
+  go when the main graphics script is run. These files can be used to diagnose a script problem. If a
+  CRONTAB_OUT directory does not exist, the graphics scripts will fail.
+
+5)Run the "hwrf_graphics.sh" script, which will run all the other graphics scripts, using the following
+  command:
+
+   sh hwrf_graphics.sh  STORM   stormid   YYYYMMDDHH   EXP_NAME
+
+  Example:
+  STORM = ADRIAN
+  stormid = 01e
+  YYYYMMDDHH = 2011061212
+  EXP_NAME = TDRP
+
+6)The hwrf_graphics.sh script runs the scp_to_rzdm.sh script, which automatically pushes the graphics
+  output to the parallel website. If this doesn't work due to access issues with RZDM (no account or
+  passwordless access isn't set up for you), notify Janna O'Connor at janna.oconnor@noaa.gov and 
+  provide her with the output location for the graphics you have created. She will push this data
+  to the appropriate website.
+
+7)Any other questions or issues can be sent to Janna O'Connor at janna.oconnor@noaa.gov
+ 

@@ -1,0 +1,91 @@
+#
+# Makefile for sorc
+#
+# $Id$
+#
+
+##############
+# Variables  #
+##############
+DESTDIR ?= $(CURDIR)/..
+VERBOSE ?= 3
+EXELIST ?= executables.lst
+
+##############
+# Packages   #
+##############
+PKGS = WRFV3              \
+       GSI                \
+       hwrf-utilities     \
+       gfdl-vortextracker \
+       ncep-coupler       \
+       pomtc              \
+       UPP                \
+       WPSV3
+
+
+##############
+# Rules      #
+##############
+
+.PHONY: all
+all: build compile
+
+build::
+	cd build &&                                               \
+	perl Makefile.PL PREFIX=$(DESTDIR) LIB=$(DESTDIR)/lib/perl5
+	$(MAKE) -C $@ install
+
+# compile all the components, writing the information to build.info
+compile:
+	$(DESTDIR)/bin/build_HWRF --no-retrieve=all               \
+				  --verbose=$(VERBOSE) $(OPTIONS)
+
+.PHONY: clean clean_PKGS
+clean: clean_PKGS clean_EMCGSI
+clean_PKGS:
+	-$(RM) build.info
+	for p in $(PKGS) ; do                                     \
+	    if [[ -d $p ]] ; then ;                               \
+		cd $$p &&                                         \
+		./clean &&                                        \
+		cd .. ;                                           \
+	done
+
+.PHONY: dist_clean dist_clean_PKGS
+dist_clean: dist_clean_PKGS clean_EMCGSI
+dist_clean_PKGS:
+	-$(RM) build.info
+	for p in $(PKGS) ; do                                     \
+		cd $$p &&                                         \
+		./clean -a &&                                     \
+		cd .. ;                                           \
+	done
+
+.PHONY: clean_EMCGSI
+clean_EMCGSI:
+	if [[ -d EMCGSI ]] ; then                                 \
+	    cd EMCGSI/src ;                                       \
+	    rm -f global_gsi ;                                    \
+	    find . -name '*.a' -o -name '*.o' -o -name '*.mod'    \
+	        -print0 | xargs -0 rm -f ;                        \
+	    if [[ -e Makefile.conf ]] ; then                      \
+	       make clean ;                                       \
+	    fi                                                    \
+	fi
+
+# install all the executables
+.PHONY: install
+install:
+	$(warning Installing HWRF)
+	$(QUITE) $(DESTDIR)/bin/install_HWRF --verbose=$(VERBOSE) \
+					     -p "hwrf_"           \
+					     -s ""                \
+	                                     --renamer=$(EXELIST) \
+					     . $(DESTDIR)/
+
+# uninstall only the executables
+.PHONY: uninstall
+uninstall:
+	-$(RM) -f $(DESTDIR)/exec/* $(DESTDIR)/nwport/exec/*
+

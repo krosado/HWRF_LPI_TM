@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results
+END
+amsua_metop-a.Surface.bin
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/amsua_metop-a.Surface.bin
+END
+ssmis_f16.Atmosphere.bin
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/ssmis_f16.Atmosphere.bin
+END
+amsua_metop-a.output
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/amsua_metop-a.output
+END
+v.seviri_m09.Surface.bin
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/v.seviri_m09.Surface.bin
+END
+v.seviri_m09.output
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/v.seviri_m09.output
+END
+mhs_n18.Atmosphere.bin
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/mhs_n18.Atmosphere.bin
+END
+amsre_aqua.Atmosphere.bin
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/amsre_aqua.Atmosphere.bin
+END
+hirs4_n18.Atmosphere.bin
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/hirs4_n18.Atmosphere.bin
+END
+amsua_metop-a.Atmosphere.bin
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/amsua_metop-a.Atmosphere.bin
+END
+v.seviri_m09.Atmosphere.bin
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/v.seviri_m09.Atmosphere.bin
+END
+ssmis_f16.Surface.bin
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/ssmis_f16.Surface.bin
+END
+ssmis_f16.output
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/ssmis_f16.output
+END
+mhs_n18.Surface.bin
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/mhs_n18.Surface.bin
+END
+mhs_n18.output
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/mhs_n18.output
+END
+amsre_aqua.Surface.bin
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/amsre_aqua.Surface.bin
+END
+hirs4_n18.Surface.bin
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/hirs4_n18.Surface.bin
+END
+amsre_aqua.output
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/amsre_aqua.output
+END
+hirs4_n18.output
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example1_Simple/results/hirs4_n18.output
+END

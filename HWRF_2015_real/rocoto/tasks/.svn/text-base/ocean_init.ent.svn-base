@@ -1,0 +1,33 @@
+<task name="ocean_init_E#ENS#" maxtries="&MAX_TRIES;">
+
+  <command>&PRE; &EXhwrf;/exhwrf_ocean_init.py</command>
+  <jobname>hwrf_ocean_init_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&PE;</queue>
+  <cores>9</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>9</value>
+  </envar>
+  <walltime>00:59:00</walltime>
+  <memory></memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_ocean_init.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_ocean_init.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+  &MPI_EXTRA;
+
+  <dependency>
+    <and>
+      <taskdep task="launch_E#ENS#"/>
+      <or>
+        <taskdep task="input_E#ENS#"/>
+        <strneq><left>&FETCH_INPUT;</left><right>YES</right></strneq>
+      </or>
+      <streq><left>&RUN_OCEAN;</left><right>YES</right></streq>
+    </and>
+  </dependency>
+
+</task>

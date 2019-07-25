@@ -1,0 +1,40 @@
+<!-- NOAA Zeus -->
+
+<!ENTITY SCHEDULER       "moabtorque">
+<!ENTITY ACCOUNT         "hwrfb">
+<!ENTITY SERIAL          "batch">
+<!ENTITY PE              "batch">
+<!ENTITY PAR_SHARED      "batch">
+<!ENTITY RESERVATION     "">
+<!ENTITY NODES_EXTRA     "">
+<!ENTITY CORES_EXTRA   "">
+<!ENTITY PURE_OPENMP     "<nodes>1:ppn=2:tpp=8</nodes>">
+<!ENTITY MPI_EXTRA       "">
+<!ENTITY SERVICE_QUEUE   "service">
+<!ENTITY SERVICE_EXTRA   "">
+<!ENTITY CORES_EXTRA     "">
+<!ENTITY NODES_EXTRA     "">
+
+<!ENTITY THREADS         "8">
+<!ENTITY REQUEST_THREADS "<envar><name>OMP_NUM_THREADS</name><value>&THREADS;</value></envar><envar><name>KMP_NUM_THREADS</name><value>&THREADS;</value></envar>">
+<!ENTITY CPL_FCST_2KM    "32:ppn=12+7:ppn=11+2:ppn=8">
+<!ENTITY ATM_FCST_2KM    "30:ppn=12+8:ppn=11+2:ppn=8">
+<!ENTITY CPL_TASKS_2KM   "477">
+<!ENTITY ATM_TASKS_2KM   "464">
+<!ENTITY CPL_FCST_3KM    "1:ppn=10+8:ppn=11+8:ppn=12+2:ppn=8">
+<!ENTITY ATM_FCST_3KM    "8:ppn=11+8:ppn=12+2:ppn=8">
+<!ENTITY CPL_TASKS_3KM   "210">
+<!ENTITY ATM_TASKS_3KM   "200">
+<!ENTITY GSI_D02_NODES   "10:ppn=6">
+<!ENTITY GSI_D03_NODES   "10:ppn=8">
+<!ENTITY GSI_D02_TASKS   "60">
+<!ENTITY GSI_D03_TASKS   "80">
+<!ENTITY INPUT_MEMORY    "2G">
+<!ENTITY TAPE_ARCHIVE_MEMORY    "1G">
+<!ENTITY FORECAST_WALLTIME "2:29:00">
+<!ENTITY ENSDAMEMB_WALLTIME "1:19:00">
+<!ENTITY POST_WALLTIME "2:59:00">
+<!ENTITY INIT_CORES "72">
+
+<!ENTITY GSI_D02_WALLTIME "02:49:00">
+<!ENTITY GSI_D03_WALLTIME "02:49:00">

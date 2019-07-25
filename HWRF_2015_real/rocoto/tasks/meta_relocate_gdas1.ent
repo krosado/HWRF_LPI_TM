@@ -1,0 +1,5 @@
+<metatask name="meta_relocate_gdas1_E#ENS#" mode="parallel">
+  <var name="INIT_MODEL">&INIT_MODEL;</var>
+  <var name="INIT_FHR">&INIT_FHR;</var>
+  &relocate_task;
+</metatask>

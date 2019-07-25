@@ -1,0 +1,497 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/7885/branches/HWRF/var/da/da_tools
+END
+da_smooth_anl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_smooth_anl.inc
+END
+da_llxy_ps_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_ps_new.inc
+END
+da_llxy_lc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_lc.inc
+END
+da_llxy_wrf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_wrf.inc
+END
+da_residual.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_residual.inc
+END
+da_set_lc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_set_lc.inc
+END
+da_llxy_latlon_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_latlon_new.inc
+END
+da_set_boundary_2d.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_set_boundary_2d.inc
+END
+da_set_boundary_xa.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_set_boundary_xa.inc
+END
+da_set_boundary_xb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_set_boundary_xb.inc
+END
+da_llxy_ps.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_ps.inc
+END
+da_xyll_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_xyll_default.inc
+END
+da_set_ps.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_set_ps.inc
+END
+da_add_noise_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_add_noise_new.inc
+END
+da_llxy_latlon.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/7885/branches/HWRF/var/da/da_tools/da_llxy_latlon.inc
+END
+da_llxy_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_new.inc
+END
+da_togrid_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_togrid_new.inc
+END
+da_mo_correction.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_mo_correction.inc
+END
+da_llxy_merc_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_merc_new.inc
+END
+da_1d_eigendecomposition.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_1d_eigendecomposition.inc
+END
+da_get_unit.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_get_unit.inc
+END
+da_get_time_slots.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_get_time_slots.inc
+END
+da_llxy_global_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_global_new.inc
+END
+da_llxy_rotated_latlon.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_rotated_latlon.inc
+END
+da_tools_serial.f90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_tools_serial.f90
+END
+gamma1.f90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/gamma1.f90
+END
+da_set_boundary_3d.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_set_boundary_3d.inc
+END
+da_advance_cymdh.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_advance_cymdh.inc
+END
+da_add_noise.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_add_noise.inc
+END
+da_tools.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_tools.f90
+END
+da_wrf_interfaces.f90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_wrf_interfaces.f90
+END
+da_llxy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy.inc
+END
+da_get_2d_sum.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_get_2d_sum.inc
+END
+da_togrid.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_togrid.inc
+END
+da_unifva.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_unifva.inc
+END
+da_map_set.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/7885/branches/HWRF/var/da/da_tools/da_map_set.inc
+END
+da_msl2geo1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_msl2geo1.inc
+END
+da_geo2msl1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_geo2msl1.inc
+END
+da_map_utils_defines.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/7191/branches/HWRF/var/da/da_tools/da_map_utils_defines.inc
+END
+da_gaus_noise.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_gaus_noise.inc
+END
+da_llxy_merc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_merc.inc
+END
+da_sfcprs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_sfcprs.inc
+END
+da_lc_cone.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_lc_cone.inc
+END
+da_eof_decomposition_test.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_eof_decomposition_test.inc
+END
+da_llxy_default_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_default_new.inc
+END
+da_eof_decomposition.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_eof_decomposition.inc
+END
+da_obs_sfc_correction.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/7885/branches/HWRF/var/da/da_tools/da_obs_sfc_correction.inc
+END
+da_xyll_lc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_xyll_lc.inc
+END
+da_get_print_lvl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/5750/branches/HWRF/var/da/da_tools/da_get_print_lvl.inc
+END
+da_llxy_global.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_global.inc
+END
+da_llxy_kma_global_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_kma_global_new.inc
+END
+da_intpsfc_tem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/7885/branches/HWRF/var/da/da_tools/da_intpsfc_tem.inc
+END
+da_free_unit.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_free_unit.inc
+END
+da_max_error_qc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_max_error_qc.inc
+END
+da_lubksb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_lubksb.inc
+END
+da_ludcmp.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_ludcmp.inc
+END
+da_set_randomcv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_set_randomcv.inc
+END
+da_rsl_interfaces.f90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_rsl_interfaces.f90
+END
+da_get_3d_sum.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_get_3d_sum.inc
+END
+da_array_print.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_array_print.inc
+END
+da_xyll_ps.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_xyll_ps.inc
+END
+da_llxy_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_default.inc
+END
+da_llxy_kma_global.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_kma_global.inc
+END
+da_find_fft_factors.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_find_fft_factors.inc
+END
+da_map_init.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_map_init.inc
+END
+da_xyll_latlon.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/7885/branches/HWRF/var/da/da_tools/da_xyll_latlon.inc
+END
+da_find_fft_trig_funcs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_find_fft_trig_funcs.inc
+END
+da_random_omb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_random_omb.inc
+END
+da_llxy_wrf_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_wrf_new.inc
+END
+da_advance_time.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_advance_time.inc
+END
+da_llxy_lc_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_llxy_lc_new.inc
+END
+da_residual_new.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_residual_new.inc
+END
+da_change_date.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_change_date.inc
+END
+da_convert_zk.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_convert_zk.inc
+END
+da_diff_seconds.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_diff_seconds.inc
+END
+da_xyll.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_xyll.inc
+END
+da_intpsfc_prs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_intpsfc_prs.inc
+END
+da_buddy_qc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_buddy_qc.inc
+END
+da_xyll_merc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_xyll_merc.inc
+END
+da_get_julian_time.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_get_julian_time.inc
+END
+da_set_merc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_set_merc.inc
+END
+da_openfile.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_tools/da_openfile.inc
+END

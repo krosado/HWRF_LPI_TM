@@ -1,0 +1,22 @@
+K 13
+svn:mergeinfo
+V 943
+/branches/H15T/arch/configure.defaults:1124-1146
+/branches/H15X/arch/configure.defaults:1106-1145
+/branches/H211-final/arch/configure.defaults:193-205
+/branches/H215/arch/configure.defaults:1146-1155
+/branches/HWRF-new-gfs/arch/configure.defaults:1101-1103
+/branches/HWRF_int_io/arch/configure.defaults:658-729
+/branches/HWRF_v3.5a/arch/configure.defaults:887-888,890,892,898-911,917-919
+/branches/HWRF_v3.6a/arch/configure.defaults:1070-1071,1073
+/branches/hwrf-baseline/arch/configure.defaults:407-413
+/branches/merge-H215/arch/configure.defaults:1156-1162
+/branches/port_zeus/arch/configure.defaults:426-433
+/branches/the-great-merge/arch/configure.defaults:451-467,469
+/tags/hwrf-20120302/arch/configure.defaults:414
+/tags/v3.3_rc1/arch/configure.defaults:260
+/tags/v3.3_rc2/arch/configure.defaults:261-262
+/tags/v3.3_rc3/arch/configure.defaults:263
+/tags/v3.3_rc4/arch/configure.defaults:266
+/trunk/arch/configure.defaults:274-313,315-397
+END

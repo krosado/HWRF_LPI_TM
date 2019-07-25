@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/185/branches/HWRF/hwrf_wm3c
+END
+cpl3.f
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/178/branches/HWRF/hwrf_wm3c/cpl3.f
+END
+interp.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/155/branches/HWRF/hwrf_wm3c/interp.f
+END
+cplmp.comm.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/183/branches/HWRF/hwrf_wm3c/cplmp.comm.f
+END
+wrf_stuff.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/185/branches/HWRF/hwrf_wm3c/wrf_stuff.f
+END
+mpi_more.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/40/branches/HWRF/hwrf_wm3c/mpi_more.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/155/branches/HWRF/hwrf_wm3c/Makefile
+END

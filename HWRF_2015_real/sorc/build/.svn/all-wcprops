@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/!svn/ver/3708/trunk/sorc/build
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/19/trunk/sorc/build/MANIFEST
+END
+META.yml
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/2/trunk/sorc/build/META.yml
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/2/trunk/sorc/build/Makefile.PL
+END
+Changes
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/2/trunk/sorc/build/Changes
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/3632/trunk/sorc/build/README
+END

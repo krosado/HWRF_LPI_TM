@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example3_Zeeman/results
+END
+ssmis_f16.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example3_Zeeman/results/ssmis_f16.RTSolution.bin
+END
+ssmis_f16.output
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example3_Zeeman/results/ssmis_f16.output
+END

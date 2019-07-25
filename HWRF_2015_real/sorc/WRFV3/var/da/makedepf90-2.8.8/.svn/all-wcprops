@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8
+END
+xmalloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/xmalloc.c
+END
+utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/utils.c
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/configure
+END
+macro.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/macro.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/Makefile.in
+END
+strcasecmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/strcasecmp.c
+END
+xmalloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/xmalloc.h
+END
+utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/utils.h
+END
+errormesg.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/errormesg.c
+END
+macro.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/macro.h
+END
+find_dep.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/find_dep.c
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/config.h
+END
+errormesg.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/errormesg.h
+END
+find_dep.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/find_dep.h
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/COPYING
+END
+Makefile.def
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/Makefile.def
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/NEWS
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/.depend
+END
+find_dep.y
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/find_dep.y
+END
+makedepf90.1
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/makedepf90.1
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/global.h
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/configure.in
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/list.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/README
+END
+finddep.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/finddep.h
+END
+lexer.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/lexer.c
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/config.h.in
+END
+modfile_name.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/modfile_name.c
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/list.h
+END
+setup_makedepf90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/setup_makedepf90
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/main.c
+END
+modfile_name.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/modfile_name.h
+END
+lexer.l
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/lexer.l
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/makedepf90-2.8.8/install-sh
+END

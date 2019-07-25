@@ -1,0 +1,677 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/563/branches/HWRF/src/lib/w3emc
+END
+w3ft17.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft17.f
+END
+mova2i.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/mova2i.f
+END
+start.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/start.f
+END
+orders.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/orders.f
+END
+getgbens.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/getgbens.f
+END
+w3ft38.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft38.f
+END
+w3fa01.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fa01.f
+END
+w3fb01.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb01.f
+END
+w3fa03.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fa03.f
+END
+makelibw3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/makelibw3.sh
+END
+iw3mat.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/iw3mat.f
+END
+w3fb03.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb03.f
+END
+w3fb05.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb05.f
+END
+w3fc05.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fc05.f
+END
+w3ft202.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft202.f
+END
+w3fb07.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb07.f
+END
+w3fa09.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fa09.f
+END
+w3fc07.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fc07.f
+END
+w3ft204.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft204.f
+END
+w3fb09.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb09.f
+END
+w3fi20.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi20.f
+END
+w3fi03.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi03.f
+END
+w3ft206.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft206.f
+END
+w3ft208.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft208.f
+END
+w3ft06v.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft06v.f
+END
+w3fi47.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi47.f
+END
+w3fm07.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fm07.f
+END
+w3fi66.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi66.f
+END
+w3fp05.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fp05.f
+END
+w3ft01.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft01.f
+END
+grib1.doc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/grib1.doc
+END
+w3fi85.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi85.f
+END
+w3ft03.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft03.f
+END
+w3fq07.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fq07.f
+END
+w3ft05.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft05.f
+END
+w3ft41.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft41.f
+END
+w3ft07.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft07.f
+END
+w3ft26.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft26.f
+END
+args_mod.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/args_mod.f
+END
+w3ft09.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft09.f
+END
+xdopen.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/xdopen.f
+END
+summary.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/summary.f
+END
+w3fb10.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb10.f
+END
+w3fa12.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fa12.f
+END
+w3ctzdat.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ctzdat.f
+END
+w3fb12.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb12.f
+END
+w3ai40.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ai40.f
+END
+w3ft211.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft211.f
+END
+w3ft213.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft213.f
+END
+w3ft05v.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft05v.f
+END
+w3fi52.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi52.f
+END
+w3fp10.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fp10.f
+END
+w3fi18.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi18.f
+END
+w3miscan.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3miscan.f
+END
+w3ft10.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft10.f
+END
+w3ft12.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft12.f
+END
+putgbens.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/putgbens.f
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/makefile
+END
+w3ft33.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft33.f
+END
+w3ft16.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft16.f
+END
+w3log.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3log.f
+END
+isrchne.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/isrchne.f
+END
+w3ft39.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft39.f
+END
+w3fb00.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb00.f
+END
+w3fb02.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb02.f
+END
+w3fc02.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fc02.f
+END
+w3fa04.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fa04.f
+END
+w3fb04.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb04.f
+END
+w3fa06.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fa06.f
+END
+w3ft201.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft201.f
+END
+w3fb06.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb06.f
+END
+w3fc06.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fc06.f
+END
+w3ft203.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft203.f
+END
+w3fb08.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb08.f
+END
+w3ft205.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft205.f
+END
+w3fi02.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi02.f
+END
+w3fc08.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fc08.f
+END
+w3ft207.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft207.f
+END
+w3ft209.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft209.f
+END
+w3fi61.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi61.f
+END
+w3fi65.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi65.f
+END
+w3fp04.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fp04.f
+END
+w3ft00.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft00.f
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/CHANGES
+END
+w3fi48.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi48.f
+END
+w3fm08.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fm08.f
+END
+w3ft02.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft02.f
+END
+w3fp06.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fp06.f
+END
+w3fi67.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi67.f
+END
+w3ft21.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft21.f
+END
+w3ft40.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft40.f
+END
+gblevents.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/gblevents.f
+END
+w3ft06.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft06.f
+END
+w3ft08.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft08.f
+END
+mersenne_twister.f
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/mersenne_twister.f
+END
+README.w3
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/README.w3
+END
+w3fa11.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fa11.f
+END
+makefile.dtc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/makefile.dtc
+END
+w3fb11.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fb11.f
+END
+w3fa13.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fa13.f
+END
+w3ft210.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft210.f
+END
+w3ai41.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ai41.f
+END
+w3ft212.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft212.f
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/README
+END
+w3ft214.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft214.f
+END
+w3fi32.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi32.f
+END
+w3fi70.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi70.f
+END
+w3ft43v.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft43v.f
+END
+w3fi19.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi19.f
+END
+w3ft11.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3ft11.f
+END
+w3fi78.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fi78.f
+END
+w3fa03v.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/w3emc/w3fa03v.f
+END

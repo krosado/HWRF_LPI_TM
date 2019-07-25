@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8205/branches/HWRF/external/io_grib1
+END
+io_grib1.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/8205/branches/HWRF/external/io_grib1/io_grib1.F
+END
+test_grib1_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/external/io_grib1/test_grib1_routines.F
+END
+grib1_routines.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/grib1_routines.h
+END
+README.io_grib1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/external/io_grib1/README.io_grib1
+END
+diffwrf
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6121/branches/HWRF/external/io_grib1/diffwrf
+END
+test.grb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/external/io_grib1/test.grb
+END
+test_grid_info.F90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/external/io_grib1/test_grid_info.F90
+END
+test_read_gribmap.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/test_read_gribmap.c
+END
+trim.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/external/io_grib1/trim.c
+END
+gribmap.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/external/io_grib1/gribmap.c
+END
+wrf_status_codes.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/external/io_grib1/wrf_status_codes.h
+END
+gribmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/external/io_grib1/gribmap.h
+END
+test_gribmap.F90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/test_gribmap.F90
+END
+grib1_routines.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/grib1_routines.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/5750/branches/HWRF/external/io_grib1/Makefile
+END
+test_write_grib.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/external/io_grib1/test_write_grib.c
+END
+test_io_grib1.F
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/external/io_grib1/test_io_grib1.F
+END

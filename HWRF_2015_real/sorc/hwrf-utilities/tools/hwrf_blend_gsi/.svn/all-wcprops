@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1163/branches/HWRF/tools/hwrf_blend_gsi
+END
+hwrf_blend_gsi.f90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/1163/branches/HWRF/tools/hwrf_blend_gsi/hwrf_blend_gsi.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/1061/branches/HWRF/tools/hwrf_blend_gsi/Makefile
+END

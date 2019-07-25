@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/7191/branches/HWRF/chem/KPP/mechanisms/cri_mosaic_8bin_aq
+END
+cri_mosaic_8bin_aq.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/6876/branches/HWRF/chem/KPP/mechanisms/cri_mosaic_8bin_aq/cri_mosaic_8bin_aq.kpp
+END
+cri_mosaic_8bin_aq.def
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/7191/branches/HWRF/chem/KPP/mechanisms/cri_mosaic_8bin_aq/cri_mosaic_8bin_aq.def
+END
+cri_mosaic_8bin_aq_wrfkpp.equiv
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/6876/branches/HWRF/chem/KPP/mechanisms/cri_mosaic_8bin_aq/cri_mosaic_8bin_aq_wrfkpp.equiv
+END
+cri_mosaic_8bin_aq.eqn
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/7191/branches/HWRF/chem/KPP/mechanisms/cri_mosaic_8bin_aq/cri_mosaic_8bin_aq.eqn
+END
+atoms_red
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/6876/branches/HWRF/chem/KPP/mechanisms/cri_mosaic_8bin_aq/atoms_red
+END
+cri_mosaic_8bin_aq.spc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/6876/branches/HWRF/chem/KPP/mechanisms/cri_mosaic_8bin_aq/cri_mosaic_8bin_aq.spc
+END

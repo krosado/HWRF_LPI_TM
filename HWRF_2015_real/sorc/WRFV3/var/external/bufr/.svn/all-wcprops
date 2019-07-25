@@ -1,0 +1,1463 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/7673/branches/HWRF/var/external/bufr
+END
+stndrd.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/stndrd.f
+END
+chrtrn.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/chrtrn.f
+END
+ipkm.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ipkm.f
+END
+ibfms.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ibfms.f
+END
+invmrg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/invmrg.f
+END
+ufbstp.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbstp.f
+END
+readmm.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/readmm.f
+END
+nevn.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nevn.f
+END
+preproc.sh.ok
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/6876/branches/HWRF/var/external/bufr/preproc.sh.ok
+END
+wrdxtb.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/wrdxtb.f
+END
+nwords.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nwords.f
+END
+parusr.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/parusr.f
+END
+tabent.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/tabent.f
+END
+getbmiss.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6876/branches/HWRF/var/external/bufr/getbmiss.f
+END
+restd.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/restd.c
+END
+ufbsp.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbsp.f
+END
+gets1loc.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/external/bufr/gets1loc.f
+END
+nxtwin.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nxtwin.f
+END
+cpdxmm.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/cpdxmm.f
+END
+invtag.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/invtag.f
+END
+bort2.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/bort2.f
+END
+getabdb.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/bufr/getabdb.f
+END
+ufbmms.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbmms.f
+END
+readlc.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/readlc.f
+END
+idxmsg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/idxmsg.f
+END
+pkftbv.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/pkftbv.f
+END
+lcmgdf.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/lcmgdf.f
+END
+wrdlen.for
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/7673/branches/HWRF/var/external/bufr/wrdlen.for
+END
+preproc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/7673/branches/HWRF/var/external/bufr/preproc.sh
+END
+iupbs3.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/iupbs3.f
+END
+cpbfdx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/cpbfdx.f
+END
+nemtbb.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/nemtbb.f
+END
+wrtree.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/wrtree.f
+END
+i4dy.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/var/external/bufr/i4dy.f
+END
+pkb.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6876/branches/HWRF/var/external/bufr/pkb.f
+END
+sntbde.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/sntbde.f
+END
+tabsub.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/tabsub.f
+END
+cobfl.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/external/bufr/cobfl.c
+END
+rsvfvm.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/rsvfvm.f
+END
+msgwrt.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/msgwrt.f
+END
+iupbs01.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/iupbs01.f
+END
+pkvs01.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/pkvs01.f
+END
+ufbevn.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbevn.f
+END
+rdtree.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rdtree.f
+END
+datebf.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/datebf.f
+END
+ufbin3.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbin3.f
+END
+bufrlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/bufrlib.h
+END
+cmsgini.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/cmsgini.f
+END
+stbfdx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/stbfdx.f
+END
+nemtbax.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nemtbax.f
+END
+dxdump.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/dxdump.f
+END
+ufbovr.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbovr.f
+END
+stntbi.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/stntbi.f
+END
+strcln.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/strcln.f
+END
+adn30.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/adn30.f
+END
+upftbv.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/upftbv.f
+END
+string.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/string.f
+END
+irev.for
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/7673/branches/HWRF/var/external/bufr/irev.for
+END
+ichkstr.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ichkstr.f
+END
+writcp.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/writcp.f
+END
+cadn30.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/cadn30.f
+END
+icopysb.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/bufr/icopysb.f
+END
+rdbfdx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rdbfdx.f
+END
+openbf.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/openbf.f
+END
+bfrini.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/bfrini.f
+END
+ufbget.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbget.f
+END
+nemock.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/nemock.f
+END
+blocks.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/blocks.f
+END
+idn30.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/idn30.f
+END
+rdmsgb.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rdmsgb.f
+END
+elemdx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/elemdx.f
+END
+strcpt.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/strcpt.f
+END
+rdmemm.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rdmemm.f
+END
+chekstab.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/external/bufr/chekstab.f
+END
+ufbcup.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbcup.f
+END
+wrdesc.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/wrdesc.c
+END
+errwrt.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/errwrt.f
+END
+ireadns.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/bufr/ireadns.f
+END
+cmpia.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/cmpia.c
+END
+ufbmex.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbmex.f
+END
+wtstat.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/wtstat.f
+END
+nmwrd.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nmwrd.f
+END
+makestab.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6876/branches/HWRF/var/external/bufr/makestab.f
+END
+upbb.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6876/branches/HWRF/var/external/bufr/upbb.f
+END
+getntbe.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/bufr/getntbe.f
+END
+igettdi.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/igettdi.f
+END
+jstchr.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/jstchr.f
+END
+bufrlib.prm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/6876/branches/HWRF/var/external/bufr/bufrlib.prm
+END
+ufbpos.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbpos.f
+END
+dxinit.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/dxinit.f
+END
+msgupd.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/msgupd.f
+END
+stdmsg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/stdmsg.f
+END
+mrginv.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/mrginv.f
+END
+writlc.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/writlc.f
+END
+stntbia.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/stntbia.f
+END
+rbytes.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/rbytes.c
+END
+readdx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/readdx.f
+END
+iupm.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6876/branches/HWRF/var/external/bufr/iupm.f
+END
+invwin.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/invwin.f
+END
+parstr.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/parstr.f
+END
+padmsg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/padmsg.f
+END
+rdmtbd.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/rdmtbd.f
+END
+sntbbe.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/sntbbe.f
+END
+dumpbf.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/dumpbf.f
+END
+maxout.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/maxout.f
+END
+pkc.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6876/branches/HWRF/var/external/bufr/pkc.f
+END
+README_BUFRLIB
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/6876/branches/HWRF/var/external/bufr/README_BUFRLIB
+END
+rtrcpt.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rtrcpt.f
+END
+ireadmm.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ireadmm.f
+END
+pkbs1.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/external/bufr/pkbs1.f
+END
+openmb.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/openmb.f
+END
+iok2cpy.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/iok2cpy.f
+END
+copybf.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/copybf.f
+END
+cnved4.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/cnved4.f
+END
+ufbrw.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbrw.f
+END
+crbmg.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/external/bufr/crbmg.c
+END
+dxmini.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/dxmini.f
+END
+ufbmns.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbmns.f
+END
+atrcpt.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/atrcpt.f
+END
+nummtb.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nummtb.c
+END
+readmg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/readmg.f
+END
+readsb.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/readsb.f
+END
+ishrdx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ishrdx.f
+END
+trybump.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/trybump.f
+END
+make.filelist
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/6876/branches/HWRF/var/external/bufr/make.filelist
+END
+mesgbf.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/mesgbf.f
+END
+ufbqcd.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/ufbqcd.f
+END
+ipks.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ipks.f
+END
+bort.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6876/branches/HWRF/var/external/bufr/bort.f
+END
+closbf.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/closbf.f
+END
+writsa.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/writsa.f
+END
+posapx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/posapx.f
+END
+drfini.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/drfini.f
+END
+ufbmem.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbmem.f
+END
+datelen.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/bufr/datelen.f
+END
+ufbtam.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbtam.f
+END
+ufbqcp.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/ufbqcp.f
+END
+jstnum.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/jstnum.f
+END
+reads3.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/reads3.f
+END
+isize.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/isize.f
+END
+icmpdx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/icmpdx.f
+END
+ufbseq.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbseq.f
+END
+cktaba.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/cktaba.f
+END
+upb.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6876/branches/HWRF/var/external/bufr/upb.f
+END
+cmpmsg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/cmpmsg.f
+END
+setbmiss.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6876/branches/HWRF/var/external/bufr/setbmiss.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/7673/branches/HWRF/var/external/bufr/Makefile
+END
+cwbmg.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/external/bufr/cwbmg.c
+END
+invcon.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/invcon.f
+END
+getwin.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/getwin.f
+END
+ufbrms.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbrms.f
+END
+lstjpb.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/lstjpb.f
+END
+iupb.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6876/branches/HWRF/var/external/bufr/iupb.f
+END
+capit.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/capit.f
+END
+ufdump.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufdump.f
+END
+getlens.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/getlens.f
+END
+parutg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/parutg.f
+END
+rdmsgw.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rdmsgw.f
+END
+cpyupd.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/cpyupd.f
+END
+ccbfl.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/external/bufr/ccbfl.c
+END
+newwin.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/newwin.f
+END
+igetntbl.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/external/bufr/igetntbl.f
+END
+nemtbd.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nemtbd.f
+END
+cread.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/cread.c
+END
+wrcmps.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/wrcmps.f
+END
+gettagpr.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6876/branches/HWRF/var/external/bufr/gettagpr.f
+END
+ufbrp.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbrp.f
+END
+uptdd.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/external/bufr/uptdd.f
+END
+bvers.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/bvers.f
+END
+writdx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/writdx.f
+END
+ufbcnt.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/ufbcnt.f
+END
+icvidx.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/icvidx.c
+END
+openmg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/openmg.f
+END
+ufbint.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbint.f
+END
+ufbcpy.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbcpy.f
+END
+rdcmps.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rdcmps.f
+END
+numtbd.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/numtbd.f
+END
+cpymem.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/cpymem.f
+END
+ufbinx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbinx.f
+END
+bort_exit.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/bufr/bort_exit.c
+END
+istdesc.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/istdesc.f
+END
+ifbget.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/ifbget.f
+END
+mesgbc.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/mesgbc.f
+END
+chrtrna.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/chrtrna.f
+END
+ufbtab.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbtab.f
+END
+icbfms.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/icbfms.f
+END
+nemtab.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nemtab.f
+END
+pktdd.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/pktdd.f
+END
+rcstpl.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rcstpl.f
+END
+iupvs01.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/iupvs01.f
+END
+drstpl.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/drstpl.f
+END
+rdusdx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rdusdx.f
+END
+valx.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6876/branches/HWRF/var/external/bufr/valx.f
+END
+writsb.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/writsb.f
+END
+nenubd.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nenubd.f
+END
+readmt.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/readmt.f
+END
+ufbdmp.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbdmp.f
+END
+rdmgsb.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rdmgsb.f
+END
+nvnwin.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nvnwin.f
+END
+numbck.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/numbck.f
+END
+minimg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/minimg.f
+END
+ufbrep.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ufbrep.f
+END
+status.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/status.f
+END
+mvb.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6876/branches/HWRF/var/external/bufr/mvb.f
+END
+msgini.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/msgini.f
+END
+numtab.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/numtab.f
+END
+igetdate.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/external/bufr/igetdate.f
+END
+upc.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6876/branches/HWRF/var/external/bufr/upc.f
+END
+rdmems.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rdmems.f
+END
+openbt.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/openbt.f
+END
+usrtpl.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/usrtpl.f
+END
+mtinfo.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/mtinfo.f
+END
+stseq.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/stseq.c
+END
+conwin.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/conwin.f
+END
+copymg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/copymg.f
+END
+upds3.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/upds3.f
+END
+copysb.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/copysb.f
+END
+inctab.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/inctab.f
+END
+digit.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6876/branches/HWRF/var/external/bufr/digit.f
+END
+lmsg.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/var/external/bufr/lmsg.f
+END
+getvalnb.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6876/branches/HWRF/var/external/bufr/getvalnb.f
+END
+pad.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6876/branches/HWRF/var/external/bufr/pad.f
+END
+igetntbi.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6876/branches/HWRF/var/external/bufr/igetntbi.f
+END
+nemtba.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/nemtba.f
+END
+setblock.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6876/branches/HWRF/var/external/bufr/setblock.f
+END
+ups.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ups.f
+END
+seqsdx.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/seqsdx.f
+END
+rjust.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/external/bufr/rjust.f
+END
+ireadmg.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/bufr/ireadmg.f
+END
+ireadsb.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/bufr/ireadsb.f
+END
+msgfull.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/var/external/bufr/msgfull.f
+END
+rdmtbb.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/bufr/rdmtbb.f
+END
+readns.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/readns.f
+END
+gettbh.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/gettbh.f
+END
+igetsc.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/igetsc.f
+END
+igetfxy.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/bufr/igetfxy.f
+END
+ifxy.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6876/branches/HWRF/var/external/bufr/ifxy.f
+END
+rewnbf.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/rewnbf.f
+END
+strsuc.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/strsuc.f
+END
+closmg.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/closmg.f
+END
+readerme.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6876/branches/HWRF/var/external/bufr/readerme.f
+END
+nmsub.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/external/bufr/nmsub.f
+END
+strnum.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/var/external/bufr/strnum.f
+END

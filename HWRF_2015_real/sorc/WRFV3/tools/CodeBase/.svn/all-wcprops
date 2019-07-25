@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/4946/branches/HWRF/tools/CodeBase
+END
+nocontf90.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/tools/CodeBase/nocontf90.c
+END
+subinfo_calls.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/tools/CodeBase/subinfo_calls.c
+END
+deftab.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/4946/branches/HWRF/tools/CodeBase/deftab.c
+END
+wrfvar.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/4946/branches/HWRF/tools/CodeBase/wrfvar.c
+END
+sym.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/4946/branches/HWRF/tools/CodeBase/sym.c
+END
+symtab_gen.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/tools/CodeBase/symtab_gen.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/4946/branches/HWRF/tools/CodeBase/Makefile
+END
+callgraph.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/tools/CodeBase/callgraph.c
+END
+sym.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/4946/branches/HWRF/tools/CodeBase/sym.h
+END
+util.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/4946/branches/HWRF/tools/CodeBase/util.c
+END

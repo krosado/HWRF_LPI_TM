@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools
+END
+nc_getvarinfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_getvarinfo.m
+END
+nc_dump.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_dump.m
+END
+nc_isdim.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_isdim.m
+END
+nc_cat.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_cat.m
+END
+nc_getall.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_getall.m
+END
+nc_diff.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_diff.m
+END
+nc_double.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_double.m
+END
+nc_archive_buffer.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_archive_buffer.m
+END
+nc_char.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_char.m
+END
+nc_uint.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_uint.m
+END
+nc_attput.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_attput.m
+END
+nc_nat.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_nat.m
+END
+nc_adddim.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_adddim.m
+END
+nc_isvar.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_isvar.m
+END
+nc_ubyte.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_ubyte.m
+END
+nc_varget.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_varget.m
+END
+nc_add_dimension.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_add_dimension.m
+END
+nc_short.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_short.m
+END
+nc_isunlimitedvar.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_isunlimitedvar.m
+END
+nc_datatype_string.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_datatype_string.m
+END
+nc_addvar.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_addvar.m
+END
+nc_getlast.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_getlast.m
+END
+nc_byte.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_byte.m
+END
+nc_int64.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_int64.m
+END
+nc_add_recs.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_add_recs.m
+END
+nc_float.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_float.m
+END
+nc_addrecs.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_addrecs.m
+END
+nc_cat_a.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_cat_a.m
+END
+nc_getbuffer.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_getbuffer.m
+END
+nc_vargetr.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_vargetr.m
+END
+nc_iscoordvar.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_iscoordvar.m
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/ChangeLog
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/Contents.m
+END
+nc_padheader.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_padheader.m
+END
+nc_addnewrecs.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_addnewrecs.m
+END
+nc_addhist.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_addhist.m
+END
+nc_varrename.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_varrename.m
+END
+nc_create_empty.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_create_empty.m
+END
+nc_varput.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_varput.m
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/README
+END
+test_snctools.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/test_snctools.m
+END
+nc_varsize.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_varsize.m
+END
+nc_ushort.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_ushort.m
+END
+nc_isatt.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_isatt.m
+END
+nc_getdiminfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_getdiminfo.m
+END
+snc2mat.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/snc2mat.m
+END
+nc_attget.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_attget.m
+END
+nc_uint64.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_uint64.m
+END
+nc_int.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_int.m
+END
+nc_info.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_info.m
+END
+nc_global.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/nc_global.m
+END

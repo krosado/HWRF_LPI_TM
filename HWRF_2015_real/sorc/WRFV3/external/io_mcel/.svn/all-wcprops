@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/7191/branches/HWRF/external/io_mcel
+END
+ext_mcel_open_for_read.F90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/external/io_mcel/ext_mcel_open_for_read.F90
+END
+timeconvert.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/external/io_mcel/timeconvert.c
+END
+io_mcel.F90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/external/io_mcel/io_mcel.F90
+END
+configure.wrf.example
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/external/io_mcel/configure.wrf.example
+END
+ext_mcel_write_field.F90
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/external/io_mcel/ext_mcel_write_field.F90
+END
+ext_mcel_read_field.F90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/external/io_mcel/ext_mcel_read_field.F90
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/7191/branches/HWRF/external/io_mcel/makefile
+END
+ext_mcel_open_for_write.F90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/external/io_mcel/ext_mcel_open_for_write.F90
+END

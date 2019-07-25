@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/!svn/ver/3585/trunk/scripts
+END
+exhwrf_forecast.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3544/trunk/scripts/exhwrf_forecast.py
+END
+exhwrf_ocean_init.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/3494/trunk/scripts/exhwrf_ocean_init.py
+END
+exhwrf_ensda_output.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/3494/trunk/scripts/exhwrf_ensda_output.py
+END
+exhwrf_launch.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3585/trunk/scripts/exhwrf_launch.py
+END
+exhwrf_gsi.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3494/trunk/scripts/exhwrf_gsi.py
+END
+exhwrf_para_archive.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/2771/trunk/scripts/exhwrf_para_archive.py
+END
+exhwrf_bufrprep.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3494/trunk/scripts/exhwrf_bufrprep.py
+END
+exhwrf_post.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3494/trunk/scripts/exhwrf_post.py
+END
+exhwrf_wrfout_archive.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3338/trunk/scripts/exhwrf_wrfout_archive.py
+END
+exhwrf_gsi_post.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3494/trunk/scripts/exhwrf_gsi_post.py
+END
+exhwrf_unpost.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3494/trunk/scripts/exhwrf_unpost.py
+END
+exhwrf_ensda.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3494/trunk/scripts/exhwrf_ensda.py
+END
+exhwrf_relocate.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3494/trunk/scripts/exhwrf_relocate.py
+END
+exhwrf_input.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3336/trunk/scripts/exhwrf_input.py
+END
+exhwrf_merge.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3494/trunk/scripts/exhwrf_merge.py
+END
+exhwrf_check_init.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/3494/trunk/scripts/exhwrf_check_init.py
+END
+exhwrf_ensda_pre.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3494/trunk/scripts/exhwrf_ensda_pre.py
+END
+exhwrf_output.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3582/trunk/scripts/exhwrf_output.py
+END
+exhwrf_init.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3494/trunk/scripts/exhwrf_init.py
+END
+exhwrf_products.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3494/trunk/scripts/exhwrf_products.py
+END

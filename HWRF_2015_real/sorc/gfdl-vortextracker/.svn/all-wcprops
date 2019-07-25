@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/!svn/ver/237/branches/HWRF
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/202/branches/HWRF/configure
+END
+clean
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/!svn/ver/63/branches/HWRF/clean
+END
+compile
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/63/branches/HWRF/compile
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/116/branches/HWRF/makefile
+END

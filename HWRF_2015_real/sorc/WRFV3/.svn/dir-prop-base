@@ -1,0 +1,33 @@
+K 10
+svn:ignore
+V 74
+configure.wrf.backup
+Makefile.tst
+netcdf_links
+makelink.csh
+configure.wrf
+
+K 13
+svn:mergeinfo
+V 708
+/branches/H15A:7932,7938-8014,8068,8102
+/branches/H15B:7799-7931
+/branches/HWRF_CC:5849-5941,6682-6691,6704-6735,7814-7831,8165-8204
+/branches/HWRF_gthompson:6521-6556
+/branches/JM-Working3:4536-4612
+/branches/PIO:7215-7853
+/branches/WRF4DVAR_DIV:6869-6870
+/branches/WRFDA_RADAR:6871-7812
+/branches/ens-sas:7647-7754
+/branches/hwrf-interp-mp:6078-6189
+/branches/hwrf-ncep-tracker:6261-6324
+/branches/hwrf-nesting-bugs:7698-7752
+/branches/hwrf-xlf-is-buggy:6424-6478
+/branches/merge-H215:8355-8426
+/branches/merge-H215-step2:8396-8400,8414-8425
+/branches/merge-motion:6327-6333
+/branches/pdyn-nest-motion:6141-6260
+/branches/the-great-merge:5757-5758
+/tags/trunk_20131220_03_mk:7046
+/trunk:4946-7045,7047-8365
+END

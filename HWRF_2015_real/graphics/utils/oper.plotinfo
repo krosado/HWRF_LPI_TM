@@ -1,0 +1,71 @@
+# This file sets colors, mark sizes and other such things for the
+# track and intensity plots.  Also, it specifies where the A and B
+# decks are for each model.  The DEFAULTS section specifies default
+# values for all models, and various non-model-specific values (such
+# as the plot title).  The other sections specify the plot attributes
+# for each model.  
+
+# IMPORTANT: the space before and after the equal signs ("=") below
+# are critical.  Without them, the grads code gets confused (it uses
+# subwrd(line,2) to find the equal sign).
+
+DEFAULTS
+deck = /tpc/noscrub/data/atcf-noaa/aid_nws 
+tracktitle = MC_MODEL (2011 Operational Model) TC Tracks
+maxwtitle =  MC_MODEL (2011 Operational) TC Intens. (Vmax, kts)
+minptitle =  MC_MODEL (2011 Operational) TC Intens. (Pmin, mb)
+mark = mark 4
+legmark = mark 4
+drawargs12hr = 0.12
+drawargs6hr = 0.08
+thick = 6
+legdrawargs = 0.10
+legstartx = 0.5
+
+HWRF
+desc = HWRF: 2011 Oper.
+color = 2
+mark = mark 2
+legmark = mark 2
+
+GFDL
+desc = GFDL: 2011 Oper. 
+color = 3
+mark = mark 3
+legmark = mark 3
+
+AVNO
+desc = AVNO: 2011 Oper.
+color = 4
+mark = mark 4
+legmark = mark 4
+
+NGPS
+desc = NGPS: NOGAPS Model
+color = 5
+mark = mark 5
+legmark = mark 5
+
+OFCL
+desc = OFCL: NHC Official 
+color = 6
+mark = mark 6
+legmark = mark 6
+
+UKM
+desc = UKM: UKMET Model
+color = 7
+mark = mark 7
+legmark = mark 7
+
+BEST
+deck = /tpc/noscrub/data/atcf-noaa/btk 
+color = 1
+mark = wxsym 40
+legmark = wxsym 40
+desc = Best Track
+drawargs12hr = 0.3 1 5
+drawargs6hr = 0.2 1 5
+legdrawargs = 0.3 1 5
+
+

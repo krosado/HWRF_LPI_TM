@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/7425/branches/HWRF/var/da/da_geoamv
+END
+da_geoamv.f90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/7425/branches/HWRF/var/da/da_geoamv/da_geoamv.f90
+END
+da_oi_stats_geoamv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/7425/branches/HWRF/var/da/da_geoamv/da_oi_stats_geoamv.inc
+END
+da_residual_geoamv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_geoamv/da_residual_geoamv.inc
+END
+da_get_innov_vector_geoamv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/7425/branches/HWRF/var/da/da_geoamv/da_get_innov_vector_geoamv.inc
+END
+da_print_stats_geoamv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_geoamv/da_print_stats_geoamv.inc
+END
+da_transform_xtoy_geoamv_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/7425/branches/HWRF/var/da/da_geoamv/da_transform_xtoy_geoamv_adj.inc
+END
+da_ao_stats_geoamv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/7425/branches/HWRF/var/da/da_geoamv/da_ao_stats_geoamv.inc
+END
+da_transform_xtoy_geoamv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/7425/branches/HWRF/var/da/da_geoamv/da_transform_xtoy_geoamv.inc
+END
+da_check_max_iv_geoamv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/7425/branches/HWRF/var/da/da_geoamv/da_check_max_iv_geoamv.inc
+END
+da_jo_and_grady_geoamv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_geoamv/da_jo_and_grady_geoamv.inc
+END
+da_calculate_grady_geoamv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_geoamv/da_calculate_grady_geoamv.inc
+END

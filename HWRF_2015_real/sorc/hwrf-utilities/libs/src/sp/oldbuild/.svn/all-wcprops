@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/oldbuild
+END
+makelibsp.sh_Linux
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/801/branches/HWRF/libs/src/sp/oldbuild/makelibsp.sh_Linux
+END
+makelibsp.sh_Linux_usrx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/801/branches/HWRF/libs/src/sp/oldbuild/makelibsp.sh_Linux_usrx
+END
+makelibsp.sh_Linux_debug
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/801/branches/HWRF/libs/src/sp/oldbuild/makelibsp.sh_Linux_debug
+END
+makelibsp.sh_IBM
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/801/branches/HWRF/libs/src/sp/oldbuild/makelibsp.sh_IBM
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/801/branches/HWRF/libs/src/sp/oldbuild/makefile
+END

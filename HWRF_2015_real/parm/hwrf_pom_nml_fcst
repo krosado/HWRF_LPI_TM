@@ -1,0 +1,120 @@
+&pom_nml
+  title = 'MPIPOM-TC: _runid_' !RMY: Case-dependent
+  netcdf_file = '_runid_' !RMY: Case-dependent
+  mode = 3 !RMY: 3(sbpom+pomtc)
+  nadv = 1 !RMY: 2(sbpom),1(only_option_in_pomtc?)
+  nitera = 1 !RMY: 1(ecoast),2(seamt+stide),N/A(pomtc?)
+  sw = 0.5 !RMY: 0.5(ecoast+stide),1.0(seamt),N/A(pomtc?)
+  npg = 1 !RMY: 1(sbpom+pomtc)
+  dte = 6 !RMY: Case-dependent
+  isplit = 45 !RMY: Case-dependent ! Change for HWRF Biju
+  time_start = '_yyyy2_-_mm2_-_dd2_ _hh2_:00:00 +00:00' !RMY: Case-dependent
+  nread_rst = 1 !RMY: 0(sbpom+pomtcph3),1(pomtcph4+pomtccpl)
+  read_rst_file = 'restart.phase2.nc' !RMY: Case-dependent
+  write_rst = 8.0 !RMY: 10.0(ecoast),9999.(seamt),4.0(stide),?(pomtc)
+  write_rst_file = 'restart' !RMY: 'restart'(sbpom),?(pomtc)
+  days =  5.25 !RMY: 10(ecoast),2.(seamt),4.0(stide),?(pomtc)
+  prtd1 = 1.0 !RMY: 1.0(ecoast),.5(seamt),0.0417(stide),?(pomtc)
+  prtd2 = 1.0 !RMY: 1.0(ecoast),9999.(seamt),0.0417(stide),1(pomtc)
+  swtch = 9999. !RMY: 9999.(sbpom),100000(pomtc)
+  nbct = 1 !RMY: 1(sbpom+pomtcph4+pomtccpl),3(pomtcph3)
+  ifplane = 0 !RMY: 0(sbpom+realpomtc),1(idealpomtc) !RMY: added ifplane
+  cnorth_e = 22.4 !RMY: Case-dependent for ifplane=1 !RMY: added cnorth_e
+  ismoth = 0 !RMY: 0(sbpom),1(pomtc) !RMY: added ismoth
+  smh = 3. !RMY: N/A(sbpom),3.(pomtc) !RMY: added smh
+  tnowindd = 9999. !RMY: N/A(sbpom),like_inowindh(pomtc) !RMY: added tnowindd
+  igeovel = 0 !RMY: N/A(sbpom),hard-wired-to-1(pomtc) !RMY: added igeovel
+  nl = 33 !RMY: hard-wired-as-nz(sbpom),hard-wired-to-33(pomtc) !RMY: added nl
+  ionedim = 0 !RMY: 0(sbpom+3dpomtc),1(1dpomtc-horz.diff.) !RMY: added ionedim
+/
+
+
+! title: run's title
+
+! netcdf_file: netCDF output file (rund ID)
+
+! mode: calculation mode
+! mode     description
+!  2       2-D calculation (bottom stress calculated in advave)
+!  3       3-D calculation (bottom stress calculated in profu,v)
+!  4       3-D calculation with t and s held fixed
+
+! nadv: advection scheme
+! nadv     advection scheme
+!  1       Centred scheme, as originally provide in POM
+!  2       Smolarkiewicz iterative upstream scheme, based on
+!          subroutines provided by Gianmaia Sannino and Vincenzo
+!          Artale
+
+! Constants for Smolarkiewicz iterative upstream scheme
+! nitera: number of iterations. This should be in the range 1 - 4. 1 is
+!         standard upstream differencing; 3 adds 50% CPU time to POM
+! sw: smoothing parameter. This should preferably be 1, but 0 < sw < 1
+!     gives smoother solutions with less overshoot when nitera > 1
+
+! npg: pressure gradient scheme
+! npg      pressure gradient scheme
+!  1       Second order scheme, as originally provide in POM
+!  2       Fourth order scheme using the McCalpin method (Berntsen and
+           Oey, Ocean Dynamics, 2010)
+
+! dte: external (2-D) time step (secs.) according to CFL
+
+! isplit: <Internal (3-D) time step>/<External (2-D) time step>
+!         (dti/dte; dimensionless)
+
+! time_start: date and time of start of initial run of model in format
+!             (i.e. UDUNITS convention)
+!             YYYY-MM-DD HH:MM:SS <+/->HH:MM
+!             where "<+/->HH:MM" is the time zone (positive eastwards
+!             from Coordinated Universal Time). NOTE that the
+!             climatological time axis (i.e. beginning of year zero,
+!             which does not exist in the real-world calendar) is used
+
+! Restart
+! nread_rst: index to indicate whether run to start from restart file
+!            (nread_rst=0: no restart input file; nread_rst=1: restart
+!            input file)
+! read_rst_file: restart input file name
+! write_rst: interval (days) to write a restart file
+! write_rst_file: restart output file name
+
+! days: run duration (days)
+
+! prtd1: initial print interval (days)
+
+! prtd2: final print interval (days)
+
+! swtch: time to switch from prtd1 to prtd2
+
+! nbct: surface temperature boundary condition (see initialize.f)
+
+! ifplane: f-plane option
+! ifplane  f-plane option
+!  0       Grid is not an f-plane, as originally provided in POM
+!  1       Grid is an f-plane, calculated at latitude cnorth_e
+
+! Constant for f-plane option
+! cnorth_e: latitude for Coriolis calculation when using an f-plane
+
+! ismoth: smoothing/desmoothing option
+! ismoth  smoothing/desmoothing option
+!  0      do not use 3D U V T S smoothing
+!  1      use 3D U V T S smoothing
+
+! Constant for smoothing/desmoothing option
+! smh: smoothing time step frequency. This has traditionally been 3.
+
+! tnowindd: no prescribed wind after tnowindd (days)
+
+! igeovel: initial geostrophic velocity option
+! igeovel  initial geostrophic velocity option
+!  0       No calculation of initial geostrophic velocity
+!  1       Calculate initial geostrophic velocity
+
+! nl: number of z-levels in initial condition file(s)
+
+! ionedim: 3D (full) vs. 1D (vertical-only) physics option
+! ionedim  3D (full) vs. 1D (vertical-only) physics option
+!  0       use full 3D physics
+!  1       use vertical-only 1D phsyics

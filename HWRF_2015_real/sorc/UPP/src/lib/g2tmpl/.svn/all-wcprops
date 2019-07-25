@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/563/branches/HWRF/src/lib/g2tmpl
+END
+gdtsec3.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/563/branches/HWRF/src/lib/g2tmpl/gdtsec3.f
+END
+grib2_all_tables_module.f
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/563/branches/HWRF/src/lib/g2tmpl/grib2_all_tables_module.f
+END
+params_grib2_tbl_new
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/563/branches/HWRF/src/lib/g2tmpl/params_grib2_tbl_new
+END
+gdtsec3.template
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/563/branches/HWRF/src/lib/g2tmpl/gdtsec3.template
+END
+process_4dot2.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/563/branches/HWRF/src/lib/g2tmpl/process_4dot2.c
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/g2tmpl/makefile
+END

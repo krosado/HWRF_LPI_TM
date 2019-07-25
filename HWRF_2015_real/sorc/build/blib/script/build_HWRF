@@ -1,0 +1,485 @@
+#!/usr/bin/env perl
+#
+# Copyright (C) 2011 Timothy Brown
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+# MA 02110-1301, USA.
+#
+# Script to build HWRF and all of it's dependencies.
+#
+# $Id: build_HWRF 156 2011-05-16 20:24:43Z timothy.p.brown@noaa.gov $
+
+use strict;
+use warnings;
+#use threads;
+
+use FindBin qw($Bin);
+use lib "$Bin/../lib/perl5";
+
+#use HWRF::Threads;
+
+use Getopt::Long qw(:config no_ignore_case);
+use Pod::Usage;
+use Data::Dumper;
+use Cwd          qw(abs_path cwd);
+use Verbose      qw(:all);
+
+use HWRF;
+use HWRF::Utils;
+use HWRF::TNE;
+use HWRF::WRF;
+use HWRF::WPS;
+use HWRF::WPP;
+use HWRF::UPP;
+use HWRF::GSI;
+use HWRF::EMCGSI;
+use HWRF::POMTC;
+use HWRF::Coupler;
+use HWRF::VortexTrk;
+
+our $VERBOSE   = 0;             # Running verbosity
+my $TOP        = undef;         # Toplevel directory to build everything in
+my $BUILD_INFO = undef;         # Build information filename
+my $COMPILER   = undef;         # Compiler to use
+my $WPP        = undef;         # WPP as the Post Processor
+my $TNE        = undef;         # TnE and make a sandbox
+
+my $errno = main();
+exit $errno;
+
+#################### Main ####################
+sub main {
+
+	# save a copy of the command line arguments
+	my $args = join(" ", @ARGV);
+
+	# process the command line options
+	my $ref = get_options();
+	my %opts = %{$ref};
+
+	# See if we have a build location
+	$TOP = $ARGV[0] ? abs_path($ARGV[0]) : abs_path(cwd());
+
+	# Make a sandbox to work in
+	my $hwrf = HWRF->new(verbose => $VERBOSE);
+	$hwrf->site(compiler => $COMPILER);
+	$hwrf->envs();
+        $hwrf->check_lib_versions();
+        $hwrf->check_env();
+
+	if ($TNE) {
+		VERB_1("Making sandbox");
+		$hwrf->sandbox(dir => $TOP);
+		chdir($TOP) or die "can not change into dir $TOP : $!";
+	}
+
+	# Write out our build information
+	if (!defined $BUILD_INFO) {
+		$BUILD_INFO = abs_path(cwd()) . "/build.info";
+	}
+	$hwrf->build_info(file => $BUILD_INFO, args => $args);
+
+	# Get and build all the sources (order is important)
+	# - HWRF TnE is the toplevel, build this first
+	# - WRF and GSI have to be built next (in that order!)
+	# - HWRF Utilis needs both WRF & GSI to be built first
+	# - Coupler, Ocean, Vortex tracker, WPS, WPP can be built concurrently
+	
+	## HWRF TnE ##
+	if ($TNE) {
+		build_pkg("HWRF::TNE", $opts{'TNE'});
+		# Change into the src directory and build everything else
+		chdir("src") or die "can not change into dir src : $!";
+	}
+
+	## WRF ##
+	build_pkg("HWRF::WRF", $opts{'WRF'});
+
+	## HWRF Utilities ##
+	build_pkg("HWRF::Utils", $opts{'Utils'});
+
+	## NCEP Coupler ##
+	build_pkg("HWRF::Coupler", $opts{'Coupler'});
+
+	## POMTC ##
+	build_pkg("HWRF::POMTC", $opts{'POMTC'});
+
+	## WPS ##
+	build_pkg("HWRF::WPS", $opts{'WPS'});
+
+	## GFDL Vortex Tracker ##
+	build_pkg("HWRF::VortexTrk", $opts{'VTracker'});
+
+	## WPP  or UPP ##
+	if ($WPP) {
+		build_pkg("HWRF::WPP", $opts{'WPP'});
+	} else {
+		build_pkg("HWRF::UPP", $opts{'UPP'});
+	}
+
+	## GSI ##
+        if ( -d 'EMCGSI' && -d 'GSI' ) {
+            die "ERROR: Both EMCGSI and GSI directories exist.  Please delete one.\n";
+        } elsif ( -d 'GSI' ) {
+            build_pkg("HWRF::GSI", $opts{'GSI'});
+        } elsif ( -d 'EMCGSI' ) {
+            build_pkg("HWRF::EMCGSI", $opts{'EMCGSI'});
+        } else {
+            warn "NO GSI nor EMCGSI directories.  Will not build GSI\n";
+        }
+
+	return 0;
+}
+
+#################### Get Options ####################
+sub get_options {
+
+	# Command line arguments for each package 
+	# (if we have Config::Ini we could dump/load these)
+	my %opts = (
+		TNE		=> {},
+		Utils		=> {},
+		Coupler		=> {},
+		POMTC		=> {},
+		VTracker	=> {},
+		WPS		=> {},
+		WPP		=> {},
+		WRF		=> {},
+		GSI		=> {},
+		UPP		=> {},
+	);
+	my ($help, $verbose, $compiler, $info, %no_retrieve,
+		%debug, %patches, %revs, %src, $src_dir, $wpp, $tne);
+
+
+	# process the command line arguments
+	my $err = GetOptions(
+		"help|?"       => \$help,         # user is requesting help
+		"man"          => sub {$help=2},  # user is requesting man page
+		"v+"           => \$verbose,      # verbosity level
+		"verbose=i"    => \$verbose,      # verbosity level
+		"compiler|c=s" => \$compiler,     # compiler to use
+		"debug|d=s"    => sub {           # build with debug symbols
+			shift;                    # we make a hash using
+			my $pkg = shift;          # the package name
+			$debug{$pkg} = 1 },
+		"info|i=s"     => \$info,         # info file
+		"no-retrieve=s"=> sub {           # DON'T retrieve source
+			shift;
+			my $pkg = shift;
+			$no_retrieve{$pkg} = 1; },
+		"patches|p=s"  => \%patches,      # patch files
+		"rev|r=s"      => \%revs,         # svn rev numbers
+		"src|s=s"      => \%src,          # source files
+		"src_dir|S=s"  => \$src_dir,      # source directory
+		"wpp"          => \$wpp,          # use WPP as post processor
+		"tne"          => \$tne,          # use TnE (& sandbox)
+	);
+
+	# See if we need to give any help
+	if ($help or ($err == 0)) {
+		pod2usage(-exitstatus => 0,
+			  -verbose    => $help);
+	}
+
+	# Set our global verbosity level, build filename and compiler
+	if (defined $verbose) {
+		$VERBOSE    = $verbose;
+	}
+	if (defined $info) {
+		$BUILD_INFO = $info;
+	}
+	if (defined $compiler) {
+		$COMPILER = $compiler;
+	}
+
+	# Since we now support UPP (as default), set a flag to indicate
+	# the use of WPP instead
+	if (defined $wpp) {
+		$WPP = 1;
+	}
+
+	# In trying to build the system within the new HWRF framework/repo
+	# TnE and the sandbox are optional
+	if (defined $tne) {
+		$TNE = 1;
+	}
+
+	# See if we have extra arguments that we don't know about
+	if ($#ARGV > 0) {
+		my @args = @ARGV;
+		shift(@args);
+		print STDERR "ignoring arguments: @args\n";
+	}
+
+	# See if we have a build location
+	$TOP = $ARGV[0] ? abs_path($ARGV[0]) : abs_path(cwd());
+
+	# Loop through all packages setting their options
+	foreach my $k (keys %opts) {
+		# Map the compiler
+		if (defined $compiler) {
+			$opts{$k}->{'compiler'}->{'vendor'} = $compiler;
+		}
+		# Map the verbosity
+		if (defined $verbose) {
+			$opts{$k}->{'verbose'} = $verbose;
+		}
+		# Map the retrieval
+		if (defined $no_retrieve{'all'} or defined $no_retrieve{$k}) {
+			$opts{$k}->{'src'}->{'retrieve'} = 0;
+		}
+		# Source directory
+		if (defined $src_dir) {
+			$opts{$k}->{'src'}->{'dir'} = abs_path($src_dir);
+		}
+		# Source filename
+		if (defined $src{$k}) {
+			$opts{$k}->{'src'}->{'file'} = $src{$k};
+			delete $src{$k};
+		}
+		# SVN revision number
+		if (defined $revs{$k}) {
+			$opts{$k}->{'svn'}->{'rev'} = $revs{$k};
+			delete $revs{$k};
+		}
+		# Build with debug symbols
+		if (defined $debug{'all'} or defined $debug{$k}) {
+			$opts{$k}->{'debug'} = 1;
+		}
+		# Info file
+		if (defined $info) {
+			$opts{$k}->{'info'} = $info;
+		}
+		# Patches filename
+		if (defined $patches{$k}) {
+			$opts{$k}->{'patches'} = $patches{$k};
+			delete $patches{$k};
+		}
+		# Toplevel install directory
+		$opts{$k}->{'toplevel'} = $TOP;
+	}
+
+	# If there is anything left in the src or rev hashes it
+	# must be an unknown package name.
+	$errno = 0;
+	my %unknown = (%revs, %src);
+	while (my ($k, $v) = each(%unknown)) {
+		print STDERR "unknown package acronym: $v\n";
+		$errno = 64;
+	}
+	if ($errno) {
+		pod2usage(-exitstatus => $errno,
+			  -verbose    => 2
+		);
+	}
+
+	return \%opts;
+
+}
+
+#################### Build A Package/Module ####################
+sub build_pkg {
+	my $pkg_name = shift;
+	my $ref      = shift;
+
+	VERB_1("Building $pkg_name");
+
+	my $pkg = ${pkg_name}->new(%{$ref});
+	$pkg->source();
+	my $vars = $pkg->envs();
+	$pkg->patch_config();
+	$pkg->configure();
+	$pkg->compile();
+	$pkg->check_execs();
+	$pkg->info(file => $BUILD_INFO);
+
+	VERB_1("Finished $pkg_name");
+	return $vars;
+
+}
+
+#################### END ####################
+END {
+	# If we are exiting with a non-zero value we should
+	# remove our $BUILD_INFO file. This is to indicate
+	# an incomplete build occurred.
+	if ($? != 0 and $BUILD_INFO) {
+		unlink($BUILD_INFO);
+	}
+}
+
+__END__
+
+=head1 NAME
+
+build_HWRF - Perl script to build HWRF and all of it's dependencies.
+
+=head1 SYNOPSIS
+
+B<build_HWRF> [-?] [-c compiler] [-d pkg] [-r pkg=#] [-p pkg=file] [--wpp]
+           [--no-retrieve pkg] [-S src] [-s pkg=file] [-v] [location]
+
+=head1 DESCRIPTION
+
+This script is to setup and build a HWRF test case. It will check out all
+the necessary packages and build them in the current working directory
+unless a B<location> is given.
+
+If the F<location> does not exist it will be created. If it does exist
+it will be renamed with the mtime prepended. As in, if the directory F<foo>
+exists and B<build_HWRF> is called with the argument B<foo>. The I<original>
+F<foo> will be renamed to F<foo.20100907100804> and the build will occur in a
+new F<foo> directory.
+
+The options are as follows:
+
+=over 4
+
+=item B<-?, --help>
+
+Print a brief help message and exits.
+
+=item B<-c, --compiler> I<compiler>
+
+Override the default site compiler and use the one specified.
+The default compilers for the following systems are:
+
+=over 8
+
+=item Jet      => Intel ifort
+
+=item Bluefire => IBM xlf
+
+=item Vapor    => IBM xlf
+
+=back
+
+=item B<-d, --debug> I<package>
+
+Compile the I<package> with debugging symbols and unoptimization flags.
+
+=item B<--no-retrieve> I<package>
+
+May be used to specify a package is already in it's source location and
+not to retrieve the file from a tar file or SVN checkout.
+
+=item B<-r, --rev> I<package=#>
+
+Specifies a SVN revision number for a I<package>. The deafult revision
+for all SVN source code is the HEAD of the repository. The known package
+names are:
+
+=over 8
+
+=item * WRF
+
+The WRF Atmospheric Model.
+
+=item * WPS
+
+The WRF Preprocessing System.
+
+=item * WPP
+
+The WRF Postprocessing System.
+
+=item * GSI
+
+The Gridpoint Statistical Interpolation.
+
+=item * Utils
+
+The HWRF Utilities (including vortex initialization).
+
+=item * TNE
+
+The HWRF Testing and Evaluation.
+
+=item * Coupler
+
+The NCEP Atmosphere and Ocean Coupler.
+
+=item * POMTC
+
+The Princeton Ocean Model for Tropical Cyclones.
+
+=item * VTracker
+
+The GFDL Vortex Tracker.
+
+=item * UPP
+
+The Unified Postprocessing System.
+
+=back
+
+=item B<-S> I<dir>
+
+Specifies the directory where source packages are located.
+
+=cut
+
+=item B<-p, --patches> I<package=filename.patch>
+
+Specifies a patch filename for a I<package>. If a filename is given
+and exists it will applied using B<patch> before the I<package> is
+configured and built.
+
+=cut
+
+=item B<-s, --src> I<package=filename.tar>
+
+Specifies a source filename for a I<package>. If a filename is given
+and exists it will used instead of a subversion repository. If the
+package filename is not an absolute path and the option B<-S> I<dir>
+is also given the package will be looked for in I<dir>. This is to
+eliminate repeatedly supplying a common source location.
+
+=cut
+
+=item B<--wpp>
+
+By default UPP is built and not WPP. The option B<--wpp> will override
+this, building WPP and not UPP.
+
+=item B<--man>
+
+Print the manual page.
+
+=item B<-v, --verbose>
+
+Verbose mode. Causes B<build_HWRF> to print debugging messages about its
+progress. Multiple B<-v> options increase the verbosity. The maximum is 3.
+
+=back
+
+=head1 EXAMPLES
+
+=head1 DIAGNOSTICS
+
+The build_HWRF script exits 0 on success, and >0 if an error occurs.
+
+=head1 SEE ALSO
+
+L<perl(1)>,
+
+=head1 AUTHORS
+
+Timothy Brown <Timothy.P.Brown@noaa.gov>
+
+=head1 BUGS
+
+=cut

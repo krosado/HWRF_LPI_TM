@@ -1,0 +1,6 @@
+<metatask name="meta_init_gdas1_E#ENS#" mode="parallel">
+  <var name="INIT_MODEL">&INIT_MODEL;</var>
+  <var name="INIT_FHR">&INIT_FHR;</var>
+  <var name="INIT_PARTS">&INIT_PARTS;</var>
+  &init_task;
+</metatask>

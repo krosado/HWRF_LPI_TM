@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src
+END
+test_baciof.f90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src/test_baciof.f90
+END
+test_baciof_le.f90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src/test_baciof_le.f90
+END
+test_wryte_mk
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src/test_wryte_mk
+END
+test_wryte.f90
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src/test_wryte.f90
+END
+test_bafrio_le_mk
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src/test_bafrio_le_mk
+END
+test_bafrio_mk
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src/test_bafrio_mk
+END
+test_baciof_le_mk
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src/test_baciof_le_mk
+END
+test_baciof_mk
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src/test_baciof_mk
+END
+test_bafrio.f90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src/test_bafrio.f90
+END
+test_bafrio_le.f90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/src/test_bafrio_le.f90
+END

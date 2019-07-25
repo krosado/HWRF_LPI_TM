@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1163/branches/HWRF/vortex_init/hwrf_split
+END
+sig_p_convt1.f
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/1163/branches/HWRF/vortex_init/hwrf_split/sig_p_convt1.f
+END
+J4SAVE.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/J4SAVE.f
+END
+create_rel_domain.f
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/1163/branches/HWRF/vortex_init/hwrf_split/create_rel_domain.f
+END
+landcmsk.f
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/landcmsk.f
+END
+XERRWV.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/XERRWV.f
+END
+WNLIT.f
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/WNLIT.f
+END
+XGETUA.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/XGETUA.f
+END
+WNLSM.f
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/WNLSM.f
+END
+XERCTL.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/XERCTL.f
+END
+WNNLS.f
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/WNNLS.f
+END
+fft99.f
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/fft99.f
+END
+I1MACH.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/I1MACH.f
+END
+rodist.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/rodist.f
+END
+srotm.f
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/srotm.f
+END
+wrf_split_new2.f
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/1163/branches/HWRF/vortex_init/hwrf_split/wrf_split_new2.f
+END
+amatrix.f
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/amatrix.f
+END
+BOUND.f
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/BOUND.f
+END
+XERSAV.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/XERSAV.f
+END
+modules.f
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/modules.f
+END
+SEPAR.f
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/SEPAR.f
+END
+FDUMP.f
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/FDUMP.f
+END
+srotmg.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/srotmg.f
+END
+XERROR.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/XERROR.f
+END
+XERPRT.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/XERPRT.f
+END
+XERABT.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/XERABT.f
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/readme.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/1043/branches/HWRF/vortex_init/hwrf_split/Makefile
+END
+H12.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_split/H12.f
+END

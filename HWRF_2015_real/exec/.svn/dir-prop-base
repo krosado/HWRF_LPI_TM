@@ -1,0 +1,31 @@
+K 13
+svn:mergeinfo
+V 1085
+/branches/2011_oper/exec:27-76
+/branches/3km/exec:3501-3543
+/branches/H15W/exec:3120-3180,3251-3255
+/branches/H15X/exec:2944,2955,3120-3168
+/branches/H15X-conditional-tdr/exec:3055-3256
+/branches/H215/exec:3247-3405,3407-3414
+/branches/HWRF-new-gfs/exec:2904,2924
+/branches/MPI_POMTC/exec:1170
+/branches/MPI_POMTC_20140930/exec:2715-3044
+/branches/bg-archive/exec:2844-2854
+/branches/for-2013-oper-tag/exec:1343-1391
+/branches/hwrf-2012-mtong/exec:716-1099
+/branches/hwrf-2013-pre-implementation/exec:1115,1122-1125,1134-1153,1206-1223
+/branches/hwrf-2013-rrtmg/exec:1262-1263
+/branches/hwrf-add-some-things/exec:1323-1331
+/branches/hwrf-baseline/exec:406-482
+/branches/hwrf-baseline-tagme/exec:483-488
+/branches/hwrf-for-taiwan/exec:1449-1461
+/branches/iplib-bugfix/exec:1309-1319
+/branches/jet-2013-final/exec:1507-1508
+/branches/merge-H215/exec:3404-3493
+/branches/port-wcoss-newjet/exec:944-965,967-968
+/branches/py-new-gsi/exec:2644
+/branches/pyHWRF/exec:2620,2622
+/branches/the-great-merge/exec:649-687
+/branches/wcoss-rocoto/exec:2796-2803,2805
+/tags/hwrf-20120302-1532/exec:489
+END

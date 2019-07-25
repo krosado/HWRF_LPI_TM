@@ -1,0 +1,5 @@
+<metatask name="meta_relocate_gfs_E#ENS#" mode="parallel">
+  <var name="INIT_MODEL">GFS</var>
+  <var name="INIT_FHR">0</var>
+  &relocate_task;
+</metatask>

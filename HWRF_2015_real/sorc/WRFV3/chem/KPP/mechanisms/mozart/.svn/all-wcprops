@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/7673/branches/HWRF/chem/KPP/mechanisms/mozart
+END
+mo_usrrxt.F90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/mechanisms/mozart/mo_usrrxt.F90
+END
+mozart.spc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/chem/KPP/mechanisms/mozart/mozart.spc
+END
+mozart.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/chem/KPP/mechanisms/mozart/mozart.kpp
+END
+mozart.def
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7425/branches/HWRF/chem/KPP/mechanisms/mozart/mozart.def
+END
+atoms_red
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/chem/KPP/mechanisms/mozart/atoms_red
+END
+mozart_wrfkpp.equiv
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/5431/branches/HWRF/chem/KPP/mechanisms/mozart/mozart_wrfkpp.equiv
+END
+mozart.eqn
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7673/branches/HWRF/chem/KPP/mechanisms/mozart/mozart.eqn
+END

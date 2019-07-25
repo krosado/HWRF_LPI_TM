@@ -1,0 +1,38 @@
+<task name="bdy_E#ENS#" maxtries="&MAX_TRIES_JET_WORKAROUND;">
+
+  <command>&PRE; &EXhwrf;/exhwrf_init.py</command>
+  <jobname>hwrf_bdy_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_GFS_0_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&PE;</queue>
+  <cores>24</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>24</value>
+  </envar>
+  <walltime>01:39:00</walltime>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_bdy.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_bdy.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+  &MPI_EXTRA;
+
+  <envar>
+    <name>INIT_MODEL</name>
+    <value>GFS</value>
+  </envar>
+  <envar>
+    <name>INIT_FHR</name>
+    <value>0</value>
+  </envar>
+  <envar>
+    <name>INIT_PARTS</name>
+    <value>BDY</value>
+  </envar>
+
+  <dependency>
+    <taskdep task="init_GFS_0_E#ENS#"/>
+  </dependency>
+
+</task>

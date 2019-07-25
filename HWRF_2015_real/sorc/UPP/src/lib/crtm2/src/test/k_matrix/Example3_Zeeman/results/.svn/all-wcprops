@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/results
+END
+ssmis_f16.Atmosphere.bin
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/results/ssmis_f16.Atmosphere.bin
+END
+ssmis_f16.Surface.bin
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/results/ssmis_f16.Surface.bin
+END
+ssmis_f16.output
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/results/ssmis_f16.output
+END

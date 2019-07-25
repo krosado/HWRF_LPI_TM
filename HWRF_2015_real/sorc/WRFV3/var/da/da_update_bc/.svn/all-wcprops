@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/5942/branches/HWRF/var/da/da_update_bc
+END
+da_get_att_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_get_att_cdf.inc
+END
+da_couple_uv_ad.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/5750/branches/HWRF/var/da/da_update_bc/da_couple_uv_ad.inc
+END
+da_get_dims_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_get_dims_cdf.inc
+END
+da_netcdf_interface.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_netcdf_interface.f90
+END
+da_update_bc.f90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/5942/branches/HWRF/var/da/da_update_bc/da_update_bc.f90
+END
+da_calc_mu_uv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_calc_mu_uv.inc
+END
+da_update_bc_ad.f90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/5750/branches/HWRF/var/da/da_update_bc/da_update_bc_ad.f90
+END
+da_calc_mu_uv_ad.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/5750/branches/HWRF/var/da/da_update_bc/da_calc_mu_uv_ad.inc
+END
+da_put_var_2d_real_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_put_var_2d_real_cdf.inc
+END
+da_put_var_3d_real_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_put_var_3d_real_cdf.inc
+END
+da_get_bdyfrq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_get_bdyfrq.inc
+END
+da_couple.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_couple.inc
+END
+da_get_gl_att_real_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_get_gl_att_real_cdf.inc
+END
+da_get_var_2d_real_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/5750/branches/HWRF/var/da/da_update_bc/da_get_var_2d_real_cdf.inc
+END
+da_couple_ad.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/5750/branches/HWRF/var/da/da_update_bc/da_couple_ad.inc
+END
+da_module_couple_uv.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_module_couple_uv.f90
+END
+da_put_var_2d_int_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_put_var_2d_int_cdf.inc
+END
+da_get_times_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_get_times_cdf.inc
+END
+da_get_var_3d_real_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_get_var_3d_real_cdf.inc
+END
+da_put_att_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_put_att_cdf.inc
+END
+da_get_gl_att_int_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_get_gl_att_int_cdf.inc
+END
+da_module_couple_uv_ad.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/5750/branches/HWRF/var/da/da_update_bc/da_module_couple_uv_ad.f90
+END
+da_couple_uv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_couple_uv.inc
+END
+da_get_bdytimestr_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_get_bdytimestr_cdf.inc
+END
+da_atotime.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_atotime.inc
+END
+da_get_var_2d_int_cdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_update_bc/da_get_var_2d_int_cdf.inc
+END

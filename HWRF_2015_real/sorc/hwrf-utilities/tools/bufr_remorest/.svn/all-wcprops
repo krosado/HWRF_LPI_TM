@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/1043/branches/HWRF/tools/bufr_remorest
+END
+noid.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/1043/branches/HWRF/tools/bufr_remorest/noid.sh
+END
+remorest.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/1043/branches/HWRF/tools/bufr_remorest/remorest.f
+END
+bufr_remorest.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1043/branches/HWRF/tools/bufr_remorest/bufr_remorest.sh
+END
+makefile.orig
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/1043/branches/HWRF/tools/bufr_remorest/makefile.orig
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/1043/branches/HWRF/tools/bufr_remorest/Makefile
+END

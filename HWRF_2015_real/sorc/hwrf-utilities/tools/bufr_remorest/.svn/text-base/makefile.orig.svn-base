@@ -1,0 +1,43 @@
+SHELL=	/bin/sh
+# makefile (bufr_remorest)
+#
+# modification history
+#  13 Mar 2013 SMelchior - initial port to WCOSS (linux) platforms
+#                cp'd fr IBM/AIX ver of 18 Dec 2008
+#                updated library specifications
+#                set optimization to default (-O2)
+#                parameterized cmpl debug options (-g, -traceback)
+#  15 Mar 2013 JWhiting - final port to WCOSS
+#                added developmental cmpl options (CHKOUT)
+#                updated doc block
+# ----
+LIBS=	-L/home/Jack.Woollen/lib -lw3nco_4 -lw3emc_4 -lbufr_4_64 -lsp_4
+
+DEBUG=  -g -traceback
+CHKOUT =        -ftrapuv  -check all  -fp-stack-check  -fstack-protector
+FFLAGS= -O2 ${DEBUG} -list $(DEBUG)
+
+LDFLAGS=	$(FFLAGS)
+
+SRCS=		remorest.f
+OBJS=		remorest.o
+
+FC=	ifort
+
+CMD=	bufr_remorest
+
+all:	$(CMD)
+
+$(CMD):	$(OBJS)
+	$(FC) $(LDFLAGS) -o $(@) $(OBJS) $(LIBS)
+
+install:
+	mv $(CMD) ../../exec/
+
+clean:
+	-rm -f $(OBJS)
+
+clobber:        clean
+	-rm -f $(CMD)
+
+#---end makefile (bufr_remorest)

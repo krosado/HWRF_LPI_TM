@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/468/branches/HWRF/tools/hwrf_htcfstats
+END
+etime.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/468/branches/HWRF/tools/hwrf_htcfstats/etime.c
+END
+stats.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/468/branches/HWRF/tools/hwrf_htcfstats/stats.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/468/branches/HWRF/tools/hwrf_htcfstats/Makefile
+END

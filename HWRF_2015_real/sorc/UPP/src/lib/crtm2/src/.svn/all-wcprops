@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/153/src/crtm/branches/sso_additions/src
+END
+make.macros
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/152/src/crtm/branches/sso_additions/src/make.macros
+END
+make.rules
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/152/src/crtm/branches/sso_additions/src/make.rules
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/152/src/crtm/branches/sso_additions/src/README
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/152/src/crtm/branches/sso_additions/src/makefile
+END

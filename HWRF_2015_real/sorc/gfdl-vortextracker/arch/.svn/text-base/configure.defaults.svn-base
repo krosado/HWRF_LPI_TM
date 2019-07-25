@@ -1,0 +1,241 @@
+###########################################################
+#ARCH	AIX  #serial
+#
+
+BYTE_ORDER     =   BIG_ENDIAN
+SFC            =   xlf_r 
+SF90           =   xlf90  -qfree
+SCC            =   xlc_r
+FFLAGS_SINGLE  =   -qintsize=4 -qrealsize=4
+FFLAGS_DOUBLE  =   -qintsize=4 -qrealsize=8
+FFLAGS         =   -g -O0 -qcheck -qextchk -qwarn64 -qarch=auto -qflttrap=ov:zero:inv:enable $(FFLAGS_DOUBLE)
+DEBUG_FLAGS    =   
+CPP            =   cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF -Dibm_sp -I/usr/lpp/ppe.poe/include/thread
+
+DM_FC          =   mpxlf_r  
+DM_F90         =   mpxlf90_r  -qfree
+DM_CC          =   mpcc
+
+CFLAGS         =   -O0 -g
+
+###########################################################
+#ARCH	Linux i486 i586 i686, PGI compiler #serial
+#
+LDFLAGS        =   -Wl,-noinhibit-exec 
+
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   pgf90
+SF90           =   pgf90 -Mfree -C 
+SCC            =   pgcc
+#FFLAGS=-O0 -DLANGUAGE_FORTRAN -DsysLinux -Kieee -pc 32 -byteswapio $(DEBUG_FLAGS)
+DEBUG_FLAGS    =   -g -Ktrap=fp -C
+FFLAGS_SINGLE  =   -i4 -r4
+FFLAGS_DOUBLE  =   -i4 -r8
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF 
+FFLAGS         =   -O1 -Kieee -pc 32 -DLANGUAGE_FORTRAN -DsysLinux $(FFLAGS_DOUBLE)
+
+DM_FC          =   mpif90 -f90=pgf90
+DM_F90         =   mpif90 -Mfree -f90=pgf90
+DM_CC          =   mpicc 
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =   -O
+
+###########################################################
+#ARCH	Linux x86_64, PGI compiler # serial
+#
+LDFLAGS        =   -Wl,-noinhibit-exec 
+
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   pgf90
+SF90           =   pgf90 -Mfree -C 
+SCC            =   pgcc
+#FFLAGS=-O0 -Kieee -pc 64 -byteswapio -DLANGUAGE_FORTRAN -DsysLinux $(DEBUG_FLAGS)
+DEBUG_FLAGS    =   -g -Ktrap=fp -C
+FFLAGS_SINGLE  =   -i4 -r4
+FFLAGS_DOUBLE  =   -i4 -r8
+FFLAGS         =   -O1 -Kieee -pc 64 -DLANGUAGE_FORTRAN -DsysLinux $(FFLAGS_DOUBLE)
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+
+DM_FC          =   mpif90 -f90=pgf90
+DM_F90         =   mpif90 -Mfree -f90=pgf90
+DM_CC          =   mpicc 
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =   -O
+
+
+###########################################################
+#ARCH	Linux i486 i586 i686, Intel compiler	#serial 
+#
+LDFLAGS        =   -Wl,-noinhibit-exec -i_dynamic 
+
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   ifort
+SF90           =   ifort -free
+SCC            =   icc
+DEBUG_FLAGS    =   -g -traceback
+FFLAGS_SINGLE  =   -i4 -r4
+FFLAGS_DOUBLE  =   -i4 -r8
+FFLAGS         =   -O1 -xW -fp-model precise   $(FFLAGS_DOUBLE)
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+
+DM_FC          =   mpif90
+DM_F90         =   mpif90 -free
+DM_CC          =   mpicc
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =   -O
+
+###########################################################
+#ARCH	Linux x86_64, Intel compiler	# serial
+#
+LDFLAGS        =   -Wl,-noinhibit-exec -i_dynamic
+
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   ifort
+SF90           =   ifort -free
+SCC            =   icc
+DEBUG_FLAGS    =   -g -traceback
+FFLAGS_SINGLE  =   -i4 -r4
+FFLAGS_DOUBLE  =   -i4 -r8
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+FFLAGS         =   -O1 -xW -fp-model precise   $(FFLAGS_DOUBLE)
+
+DM_FC          =   mpif90 -fc=$(SFC)
+DM_F90         =   mpif90 -fc=$(SFC) -free
+DM_CC          =   mpicc
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =   -O
+
+###########################################################
+#ARCH	Linux x86_64, Intel compiler super debug	# serial
+#
+LDFLAGS        =   -Wl,-noinhibit-exec -i_dynamic
+
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   ifort
+SF90           =   ifort -free
+SCC            =   icc
+DEBUG_FLAGS    =   -g -traceback
+FFLAGS_SINGLE  =   -i4 -r4
+FFLAGS_DOUBLE  =   -i4 -r8
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+FFLAGS         =   -O0 -check arg_temp_created,bounds,format,pointers -debug all -fp-model precise  -g -traceback $(FFLAGS_DOUBLE)
+
+DM_FC          =   mpif90
+DM_F90         =   mpif90 -free
+DM_CC          =   mpicc
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =   -O0 -debug all -g -traceback
+
+###########################################################
+#ARCH	Linux x86_64, PGI compiler, SGI MPT # serial
+#
+LDFLAGS        =   -Wl,-noinhibit-exec -L$(MPI_ROOT)/lib
+
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   pgf90
+SF90           =   pgf90 -Mfree -C 
+SCC            =   pgcc
+DEBUG_FLAGS    =   -g -Ktrap=fp -C
+FFLAGS_SINGLE  =   -i4 -r4
+FFLAGS_DOUBLE  =   -i4 -r8
+FFLAGS         =   -O1 -Kieee -pc 64 -DLANGUAGE_FORTRAN -DsysLinux \
+                   -I$(MPI_ROOT)/include $(FFLAGS_DOUBLE)
+CFLAGS         =   -I$(MPI_ROOT)/include
+CPP            =   /lib/cpp
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+
+DM_FC          =   pgf90 -lmpi
+DM_F90         =   pgf90 -Mfree -lmpi
+DM_CC          =   pgcc -lmpi
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =   -O
+
+
+###########################################################
+#ARCH	Linux x86_64, Intel compiler, SGI MPT	# serial
+#
+LDFLAGS        =   -Wl,-noinhibit-exec -i_dynamic -L$(MPI_ROOT)/lib
+
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   ifort
+SF90           =   ifort -free
+SCC            =   icc
+DEBUG_FLAGS    =   -g -traceback
+FFLAGS_SINGLE  =   -i4 -r4
+FFLAGS_DOUBLE  =   -i4 -r8
+CPP            =   /lib/cpp
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+FFLAGS         =   -O1 -xW -fp-model precise $(FFLAGS_DOUBLE) \
+                   -I$(MPI_ROOT)/include
+CFLAGS         =   -I$(MPI_ROOT)/include
+
+DM_FC          =   ifort -lmpi
+DM_F90         =   ifort -free -lmpi
+DM_CC          =   icc -lmpi
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =   -O
+
+###########################################################
+#ARCH	Linux x86_64, Intel compiler, IBM POE	# serial
+#
+LDFLAGS        =   -Wl,-noinhibit-exec -i_dynamic -L$(MPI_ROOT)/lib
+
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   ifort
+SF90           =   ifort -free
+SCC            =   icc
+DEBUG_FLAGS    =   -g -traceback
+FFLAGS_SINGLE  =   -i4 -r4
+FFLAGS_DOUBLE  =   -i4 -r8
+CPP            =   /lib/cpp
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+FFLAGS         =   -O1 -xW -fp-model precise $(FFLAGS_DOUBLE) \
+                   -I$(MPI_ROOT)/include
+CFLAGS         =   -I$(MPI_ROOT)/include
+
+DM_FC          =   mpfort
+DM_F90         =   mpfort -free
+DM_CC          =   mpcc
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =   -O
+
+##################################################################
+#ARCH	NULL

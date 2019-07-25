@@ -1,0 +1,24 @@
+K 13
+svn:mergeinfo
+V 574
+/branches/2011_oper:276-285
+/branches/H15T:1124-1146
+/branches/H15X:1106-1145
+/branches/H211-final:193-205
+/branches/H215:1146-1155
+/branches/HWRF-new-gfs:1101-1103
+/branches/HWRF_v3.5a:887-888,890,892,898-911,917-919
+/branches/HWRF_v3.6a:1070-1071,1073
+/branches/hwrf-baseline:407-413
+/branches/merge-H215:1156-1162
+/branches/stream1.5:288-310
+/branches/stream1.5commit:311-342
+/branches/the-great-merge:451-467,469
+/tags/hwrf-20120302:414
+/tags/v3.3_rc1:260
+/tags/v3.3_rc2:261-262
+/tags/v3.3_rc3:263
+/tags/v3.3_rc4:266
+/trunk:274-313,315-397
+/trunk/wrapper_scripts:517-518
+END

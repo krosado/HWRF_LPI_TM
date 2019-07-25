@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/7425/branches/HWRF/test/em_fire/two_fires
+END
+namelist.fire
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/test/em_fire/two_fires/namelist.fire
+END
+input_sounding
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/5953/branches/HWRF/test/em_fire/two_fires/input_sounding
+END
+namelist.input
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7425/branches/HWRF/test/em_fire/two_fires/namelist.input
+END

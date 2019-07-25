@@ -1,0 +1,41 @@
+<task name="tape_archive_E#ENS#" maxtries="&MAX_TRIES_TRANSFER;" throttle="1">
+  
+  <command>&PRE; &EXhwrf;/exhwrf_para_archive.py</command>
+  <jobname>hwrf_tape_archive_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&SERVICE_QUEUE;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <envar>
+    <name>ARCHIVE_STEP</name>
+    <value>TAPE</value>
+  </envar>
+  <walltime>01:29:00</walltime>
+  <memory>&TAPE_ARCHIVE_MEMORY;</memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_tape_archive.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_tape_archive.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &SERVICE_EXTRA;
+
+  <dependency>
+    <and>
+      <taskdep task="disk_archive_E#ENS#"/>
+      <or>
+        <taskdep task="ensda_output"/>
+        <strneq><left>&DA_ENSEMBLE;</left><right>YES</right></strneq>
+        <sh>grep 'RUN_ENSDA=NO' <cyclestr>&COMhwrf;/&STORMLABEL;.run_ensda</cyclestr></sh>
+      </or>
+      <or>
+        <taskdep task="gsi_post_E#ENS#"/>
+        <strneq><left>&RUN_GSI;</left><right>YES</right></strneq>
+        <sh>grep -v '=YES' <cyclestr>&COMhwrf;/&STORMLABEL;.gsi_status</cyclestr></sh>
+      </or>
+    </and>
+  </dependency>
+
+</task>

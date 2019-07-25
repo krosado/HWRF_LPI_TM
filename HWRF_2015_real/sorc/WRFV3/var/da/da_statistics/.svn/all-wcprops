@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/8205/branches/HWRF/var/da/da_statistics
+END
+da_correlation_coeff1d.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_statistics/da_correlation_coeff1d.inc
+END
+da_data_distribution.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_statistics/da_data_distribution.inc
+END
+da_correlation_coeff2d.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_statistics/da_correlation_coeff2d.inc
+END
+da_print_stats.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_statistics/da_print_stats.inc
+END
+da_print_qcstat.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/5026/branches/HWRF/var/da/da_statistics/da_print_qcstat.inc
+END
+da_stats_calculate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_statistics/da_stats_calculate.inc
+END
+da_statistics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_statistics/da_statistics.f90
+END
+da_analysis_stats.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8205/branches/HWRF/var/da/da_statistics/da_analysis_stats.inc
+END
+da_maxmin_in_field.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_statistics/da_maxmin_in_field.inc
+END

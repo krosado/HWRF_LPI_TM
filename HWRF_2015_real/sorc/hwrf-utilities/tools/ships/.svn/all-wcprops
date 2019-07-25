@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/751/branches/HWRF/tools/ships
+END
+inddiag.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/723/branches/HWRF/tools/ships/inddiag.f
+END
+diag_util.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/723/branches/HWRF/tools/ships/diag_util.f
+END
+dataio.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/379/branches/HWRF/tools/ships/dataio.f
+END
+stndz.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/379/branches/HWRF/tools/ships/stndz.f
+END
+totaldiag.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/723/branches/HWRF/tools/ships/totaldiag.f
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/723/branches/HWRF/tools/ships/README
+END
+input.plvls
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/751/branches/HWRF/tools/ships/input.plvls
+END
+nameparse.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/723/branches/HWRF/tools/ships/nameparse.f
+END
+runs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/379/branches/HWRF/tools/ships/runs.sh
+END
+ctorh.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/379/branches/HWRF/tools/ships/ctorh.f
+END
+upcase.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/379/branches/HWRF/tools/ships/upcase.f
+END
+getcenter.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/723/branches/HWRF/tools/ships/getcenter.f
+END
+gridparse.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/723/branches/HWRF/tools/ships/gridparse.f
+END
+lsdiags.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/723/branches/HWRF/tools/ships/lsdiags.f
+END
+gbland.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/379/branches/HWRF/tools/ships/gbland.f
+END
+dataioparms.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/379/branches/HWRF/tools/ships/dataioparms.inc
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/723/branches/HWRF/tools/ships/Makefile
+END
+dataformats.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/379/branches/HWRF/tools/ships/dataformats.inc
+END
+inddiagnull.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/723/branches/HWRF/tools/ships/inddiagnull.f
+END

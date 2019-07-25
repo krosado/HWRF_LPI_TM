@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/8366/branches/HWRF/test/em_real
+END
+namelist.input.ndown_2
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.ndown_2
+END
+namelist.input.ndown_3
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.ndown_3
+END
+namelist.input.jan00
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.jan00
+END
+namelist.input.chem
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.chem
+END
+wind-turbine-1.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/7191/branches/HWRF/test/em_real/wind-turbine-1.tbl
+END
+examples.namelist
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/8366/branches/HWRF/test/em_real/examples.namelist
+END
+run_1way.tar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/test/em_real/run_1way.tar
+END
+run_2way.tar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/test/em_real/run_2way.tar
+END
+windturbines.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/7191/branches/HWRF/test/em_real/windturbines.txt
+END
+run_restart.tar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/test/em_real/run_restart.tar
+END
+README.obs_fdda
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/test/em_real/README.obs_fdda
+END
+namelist.input.fire
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.fire
+END
+sample.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/5942/branches/HWRF/test/em_real/sample.txt
+END
+README.grid_fdda
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/test/em_real/README.grid_fdda
+END
+namelist.input.diags
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.diags
+END
+landFilenames
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/test/em_real/landFilenames
+END
+namelist.input.4km
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.4km
+END
+namelist.input.jun01
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.jun01
+END
+namelist.input.global
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.global
+END
+namelist.input
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input
+END
+namelist.input.volc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.volc
+END
+namelist.input.ndown_1
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7425/branches/HWRF/test/em_real/namelist.input.ndown_1
+END

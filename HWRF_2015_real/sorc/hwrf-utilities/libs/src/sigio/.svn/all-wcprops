@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/1075/branches/HWRF/libs/src/sigio
+END
+sigio_module.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/274/branches/HWRF/libs/src/sigio/sigio_module.f
+END
+sigio_r_module.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/274/branches/HWRF/libs/src/sigio/sigio_r_module.f
+END
+bafrio.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/274/branches/HWRF/libs/src/sigio/bafrio.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1075/branches/HWRF/libs/src/sigio/Makefile
+END

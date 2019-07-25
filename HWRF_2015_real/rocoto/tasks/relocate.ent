@@ -1,0 +1,44 @@
+<task name="relocate_#INIT_MODEL#_#INIT_FHR#_E#ENS#" maxtries="&MAX_TRIES;">
+  <command>&PRE; &EXhwrf;/exhwrf_relocate.py</command>
+  <jobname>hwrf_relocate_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&PE;</queue>
+  &PURE_OPENMP;
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>02:19:00</walltime>
+  <memory></memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_relocate_#INIT_MODEL#_#INIT_FHR#.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_relocate_#INIT_MODEL#_#INIT_FHR#.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &REQUEST_THREADS;
+
+  <envar>
+    <name>INIT_MODEL</name>
+    <value>#INIT_MODEL#</value>
+  </envar>
+  <envar>
+    <name>INIT_FHR</name>
+    <value>#INIT_FHR#</value>
+  </envar>
+
+  <dependency>
+    <and>
+      <taskdep task="init_#INIT_MODEL#_#INIT_FHR#_E#ENS#"/>
+      <taskdep task="init_GFS_0_E#ENS#"/>
+      &cycling_condition;
+      <streq><left>&RUN_RELOCATION;</left><right>YES</right></streq>
+      <or>
+        <and>
+          <streq><left>&RUN_GSI;</left><right>YES</right></streq>
+          <streq><left>#INIT_MODEL#</left><right>GDAS1</right></streq>
+        </and>
+        <streq><left>#INIT_MODEL#</left><right>GFS</right></streq>
+      </or>
+    </and>
+  </dependency>
+</task>

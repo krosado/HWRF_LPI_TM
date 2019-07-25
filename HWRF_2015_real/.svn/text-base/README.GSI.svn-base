@@ -1,0 +1,23 @@
+
+NOTE: TEMPORARY PROBLEM: The HWRF GSI changes are not in the trunk
+yet, so you need to use the HWRF branch of GSI in the EMC repository.
+
+That repository is here:
+
+   https://svnemc.ncep.noaa.gov/projects/gsi/branches/HWRF/
+
+Check it out like this:
+
+   cd sorc
+   svn co https://svnemc.ncep.noaa.gov/projects/gsi/branches/HWRF/ EMCGSI
+
+And follow the usual GSI build process.  
+
+If you don't care about the code, and just want the executables,
+you can find them here:
+
+    WCOSS: /hwrf/save/emc.hurpara/EMCGSI/hwrf_gsi
+    Zeus: /scratch1/portfolios/NCEPDEV/hwrf/save/hurpara/EMCGSI/hwrf_gsi
+    Jet: /mnt/pan2/projects/hwrfv3/hurrun/EMCGSI/hwrf_gsi
+
+Just link them to hwrf_gsi in the top-level exec directory.

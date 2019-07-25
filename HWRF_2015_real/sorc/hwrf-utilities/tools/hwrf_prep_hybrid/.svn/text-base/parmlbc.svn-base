@@ -1,0 +1,37 @@
+C  DCL /*                                                           */
+C  DCL /* ---------  interpolation GRID PARAMETERS  ----------------*/
+C  DCL /* ---------      HORIZONTAL            ---------------------*/
+C  DCL /*                                                           */
+C  DCL /* IMAX       IMAX IS THE NUMBER OF  basis   GRID POINTS     */
+C  DCL /*            IN THE EAST-WEST DIRECTION                     */
+C  DCL /* JMAX       JMAX IS THE NUMBER OF   basis  GRID POINTS     */
+C  DCL /*            IN THE NORTH-SOUTH DIRECTION                   */
+C  DCL /*
+C  DCL /*     MODIFIED BY YOUNG KWON FOR HWRF   09/2006             */
+C  DCL /*                                                           */
+
+! Old values used in 2010 HWRF and earlier:
+!zz       INTEGER, PARAMETER :: IMAX = 720
+!zz       INTEGER, PARAMETER :: JMAX = 361
+!zz       INTEGER, PARAMETER :: IMAX = 1440
+!zz       INTEGER, PARAMETER :: JMAX = 721
+          INTEGER :: IMAX, JMAX
+! Smoothing boundary widths that MUST be identical to those used in
+! real_nmm
+       INTEGER, PARAMETER :: real_nsmth = 12, real_nrow = 12
+
+Correct values for T574 grid (I think...):
+c       PARAMETER (IMAX = 1760 )
+c       PARAMETER (JMAX = 881 )
+
+C  DCL /*                                                           */
+C-----------------------------------------------------------------------
+C-----------------------parameters for HWRF model------------------------
+C-----------------------------------------------------------------------
+C    IM AND JM SHOULD BE SAME AS XDIM AND YDIM OF WRFSI.NL in 3DVAR, RESPECTIVELY
+      INTEGER :: IM,JM,LM,KB,KBETA,IMJM,JMP1,IMM1,IMJMM1,KHL00,KHH00,
+     &     KNE,KNW,KSW,KSE,KSL,KSLM1,LMM1,LMP1,IMT,JMT,narg
+C--------------HORIZONTAL GRID CONSTANTS - STANDARD RESOLUTION----------
+C     REAL, PARAMETER :: 
+C     & (TLM0D=-48.6,TPH0D=14.7, DLMD=0.18,DPHD=0.18)    !CLON AND CLAT WILL BE FROM HISTORY1
+C     & DLMD=0.09,DPHD=0.09    !CLON AND CLAT WILL BE FROM HISTORY1

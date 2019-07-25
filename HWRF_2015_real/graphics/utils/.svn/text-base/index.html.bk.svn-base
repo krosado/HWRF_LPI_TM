@@ -1,0 +1,778 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD>
+    <TITLE>2012 Operational HWRF Runs: HAIKUI12W 2012 </TITLE>
+    <!-- All colors, font sizes, etc. are set in the CSS files loaded
+         by these link tags: -->
+    <link rel="stylesheet" href="../../site.css"
+          type="text/css">
+    <link rel="stylesheet" href="../model.css"
+          type="text/css">
+
+  </HEAD>
+  <BODY class="sinv sinv_HWRF_12W2012">
+
+    <div class="who_are_we">
+    <table>
+      <tr>
+        <td rowspan="2">
+          <A id="EMC_IMG_LINK" HREF="http://www.emc.ncep.noaa.gov">
+            <IMG SRC="http://www.ncep.noaa.gov/nwscwi/nwsright.jpg">
+          </A>
+        </td>
+        <td>
+          <A id="EMC_LINK" HREF="http://www.emc.ncep.noaa.gov">
+            Environmental Modeling Center
+          </A>
+        </td>
+        <td rowspan="2">
+          <A id="NCEP_IMG_LINK" HREF="http://www.ncep.noaa.gov/">
+            <IMG SRC="http://www.emc.ncep.noaa.gov/gmb/STATS/gifs/ncep_80.gif">
+          </A>
+        </td>
+      </tr><tr>
+        <td>
+          <A id="NCEP_HFP_LINK" HREF="http://www.emc.ncep.noaa.gov/gc_wmb/vxt/index.html">
+            NCEP Hurricane Forecast Project
+          </A>
+        </td>
+      </tr>
+    </table>
+    </div>
+
+    <div class="storm_inventory">
+      <h2>HWRF Runs: HAIKUI12W 2012 </h2>
+
+      <P><A id="back_to_model" href="../../index.html">Back to HWRF Main Page</A></P>
+
+      <!--P id="model_perf_stat">
+        Model performance <A id="stat_link" HREF="stats/stats.html">STATISTICS</A>
+      </P-->
+
+      <table id="storm_inv_content">
+        <!-- The contents of this table were generated automatically by
+             the mc_process_storm_html function in the HWRF Graphics
+             Library. -->
+        <tr><th id="storm_inv_cycname_head" bgcolor = DDEFFF>
+          Experiment
+        </th><th colspan="1" id="storm_inv_deck_head">
+          Track/Intensity Forecast
+        </th><th colspan="2" id="storm_inv_text_head">
+          Text Forecast
+        </th><th id="storm_inv_strliso_head" colspan="3" bgcolor = DDEFFF>
+          850 hPa Streamlines, Isotachs &amp; swath
+        </th><th id="storm_inv_ctr_head" colspan="5">
+          Large scale diagnostics (outer domain) 
+        </th><th id=storm_inv_goes_head" colspan="4" bgcolor = DDEFFF>
+         Simulated GOES & Microwave Images
+        </th><th id=storm_inv_emcmod_head" colspan="3">
+         EMC Module Plots> 
+        </th><th id=storm_inv_diags_head" colspan="2" bgcolor = DDEFFF>
+         Add'l Diagnostics
+        </th></tr>
+
+
+<!-- HAIKUI12W 2012080318 -->
+<tr><th class="storm_inv_cycname" bgcolor = DDEFFF>HAIKUI12W.2012080318 </th>
+<td class="storm_inv_track" onMouseover="this.className='storm_inv_track hover'"onMouseout="this.className='storm_inv_track'"onclick="this.className='storm_inv_track';
+    window.location='HAIKUI12W.2012080318/HAIKUI12W.2012080318.fsct.png'">
+ <a href="HAIKUI12W.2012080318/HAIKUI12W.2012080318.fsct.png">Track/Intensity</A>
+</td>
+<td class="storm_inv_atcf" onMouseover="this.className='storm_inv_atcf hover'"onMouseout="this.className='storm_inv_atcf'"onclick="this.className='storm_inv_atcf';
+    window.location='HAIKUI12W.2012080318/haikui12w.2012080318.trak.hwrf.atcfunix'">
+ <a href="HAIKUI12W.2012080318/haikui12w.2012080318.trak.hwrf.atcfunix">ATCF</A>
+</td>
+<td class="storm_inv_diag" onMouseover="this.className='storm_inv_diag hover'"onMouseout="this.className='storm_inv_diag'"onclick="this.className='storm_inv_diag';
+    window.location='HAIKUI12W.2012080318/HAIKUI12W.2012080318.txt'">
+ <a href="HAIKUI12W.2012080318/HAIKUI12W.2012080318.txt">Diag. Text File</A>
+</td>
+<td class="storm_inv_combdom"onMouseover="this.className='storm_inv_combdom hover'"onMouseout="this.className='storm_inv_combdom'"onclick="this.className='storm_inv_combdom';
+    window.location='HAIKUI12W.2012080318/hwrf_c.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080318/hwrf_c.html">Combined Domain</A>
+</td>
+<td class="storm_inv_movgrid"onMouseover="this.className='storm_inv_movgrid hover'"onMouseout="this.className='storm_inv_movgrid'"onclick="this.className='storm_inv_movgrid';
+    window.location='HAIKUI12W.2012080318/hwrf_x.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080318/hwrf_x.html">Vertical section</A>
+</td>
+<td class="storm_inv_ctr" onMouseover="this.className='storm_inv_ctr hover'"onMouseout="this.className='storm_inv_ctr'"onclick="this.className='storm_inv_ctr';
+    window.location='HAIKUI12W.2012080318/swath.HAIKUI12W.2012080318.png'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080318/swath.HAIKUI12W.2012080318.png">Rain/wind swath</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='HAIKUI12W.2012080318/hwrf_dlm.html'">
+ <a href="HAIKUI12W.2012080318/hwrf_dlm.html">Deep layer mean</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='HAIKUI12W.2012080318/hwrf_shr.html'">
+ <a href="HAIKUI12W.2012080318/hwrf_shr.html">Wind shear</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='HAIKUI12W.2012080318/hwrf_mht.html'">
+ <a href="HAIKUI12W.2012080318/hwrf_mht.html">Mid-High trough</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='HAIKUI12W.2012080318/hwrf_hrv.html'">
+ <a href="HAIKUI12W.2012080318/hwrf_hrv.html">500mb Rel Vort</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='HAIKUI12W.2012080318/hwrf_slp.html'">
+ <a href="HAIKUI12W.2012080318/hwrf_slp.html">Sfc pressure</A>
+</td>
+<td class="storm_inv_goesir"onMouseover="this.className='storm_inv_goesir hover'"onMouseout="this.className='storm_inv_goesir'"onclick="this.className='storm_inv_goesir';
+    window.location='HAIKUI12W.2012080318/par_GOESIR.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080318/par_GOESIR.html">GOES IR</A>
+</td>
+<td class="storm_inv_goeswv"onMouseover="this.className='storm_inv_goeswv hover'"onMouseout="this.className='storm_inv_goeswv'"onclick="this.className='storm_inv_goeswv';
+    window.location='HAIKUI12W.2012080318/par_GOESWV.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080318/par_GOESWV.html">GOES WV</A>
+</td>
+<td class="storm_inv_m37"onMouseover="this.className='storm_inv_m37 hover'"onMouseout="this.className='storm_inv_m37'"onclick="this.className='storm_inv_m37';
+    window.location='HAIKUI12W.2012080318/micro_37.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080318/micro_37.html">37 GHz</A>
+</td>
+<td class="storm_inv_m89"onMouseover="this.className='storm_inv_m89 hover'"onMouseout="this.className='storm_inv_m89'"onclick="this.className='storm_inv_m89';
+    window.location='HAIKUI12W.2012080318/micro_89.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080318/micro_89.html">89 GHz</A>
+</td>
+<td class="storm_inv_vxsec"onMouseover="this.className='storm_inv_vxsec hover'"onMouseout="this.className='storm_inv_vxsec'"onclick="this.className='storm_inv_vxsec';
+    window.location='HAIKUI12W.2012080318/HAIKUI12W.2012080318.ns.png'">
+ <a href="HAIKUI12W.2012080318/HAIKUI12W.2012080318.ns.png">Vertical X-Sect.</A>
+</td>
+<td class="storm_inv_sfc"onMouseover="this.className='storm_inv_sfc hover'"onMouseout="this.className='storm_inv_sfc'"onclick="this.className='storm_inv_sfc';
+    window.location='HAIKUI12W.2012080318/HAIKUI12W.2012080318.sfc.png'">
+ <a href="HAIKUI12W.2012080318/HAIKUI12W.2012080318.sfc.png">Sfc Wind Field</A>
+</td>
+<td class="storm_inv_tprime"onMouseover="this.className='storm_inv_tprime hover'"onMouseout="this.className='storm_inv_tprime'"onclick="this.className='storm_inv_tprime';
+    window.location='HAIKUI12W.2012080318/HAIKUI12W.2012080318.tprime.png'">
+ <a href="HAIKUI12W.2012080318/HAIKUI12W.2012080318.tprime.png">Moisture X-Sect.</A>
+</td>
+<td class="storm_inv_wstruc"onMouseover="this.className='storm_inv_wstruc hover'"onMouseout="this.className='storm_inv_wstruc'"onclick="this.className='storm_inv_wstruc';
+    window.location='HAIKUI12W.2012080318/hwrf_diag1.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080318/hwrf_diag1.html">Wind Structure</A>
+</td>
+<td class="storm_inv_tstruc"onMouseover="this.className='storm_inv_tstruc hover'"onMouseout="this.className='storm_inv_tstruc'"onclick="this.className='storm_inv_tstruc';
+    window.location='HAIKUI12W.2012080318/hwrf_diag2.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080318/hwrf_diag2.html">Thermal Structure</A>
+</td>
+</tr>
+</tr>
+<!-- HAIKUI12W 2012080312 -->
+<tr><th class="storm_inv_cycname" bgcolor = DDEFFF>HAIKUI12W.2012080312 </th>
+<td class="storm_inv_track" onMouseover="this.className='storm_inv_track hover'"onMouseout="this.className='storm_inv_track'"onclick="this.className='storm_inv_track';
+    window.location='HAIKUI12W.2012080312/HAIKUI12W.2012080312.fsct.png'">
+ <a href="HAIKUI12W.2012080312/HAIKUI12W.2012080312.fsct.png">Track/Intensity</A>
+</td>
+<td class="storm_inv_atcf" onMouseover="this.className='storm_inv_atcf hover'"onMouseout="this.className='storm_inv_atcf'"onclick="this.className='storm_inv_atcf';
+    window.location='HAIKUI12W.2012080312/haikui12w.2012080312.trak.hwrf.atcfunix'">
+ <a href="HAIKUI12W.2012080312/haikui12w.2012080312.trak.hwrf.atcfunix">ATCF</A>
+</td>
+<td class="storm_inv_diag" onMouseover="this.className='storm_inv_diag hover'"onMouseout="this.className='storm_inv_diag'"onclick="this.className='storm_inv_diag';
+    window.location='HAIKUI12W.2012080312/HAIKUI12W.2012080312.txt'">
+ <a href="HAIKUI12W.2012080312/HAIKUI12W.2012080312.txt">Diag. Text File</A>
+</td>
+<td class="storm_inv_combdom"onMouseover="this.className='storm_inv_combdom hover'"onMouseout="this.className='storm_inv_combdom'"onclick="this.className='storm_inv_combdom';
+    window.location='HAIKUI12W.2012080312/hwrf_c.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080312/hwrf_c.html">Combined Domain</A>
+</td>
+<td class="storm_inv_movgrid"onMouseover="this.className='storm_inv_movgrid hover'"onMouseout="this.className='storm_inv_movgrid'"onclick="this.className='storm_inv_movgrid';
+    window.location='HAIKUI12W.2012080312/hwrf_x.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080312/hwrf_x.html">Vertical section</A>
+</td>
+<td class="storm_inv_ctr" onMouseover="this.className='storm_inv_ctr hover'"onMouseout="this.className='storm_inv_ctr'"onclick="this.className='storm_inv_ctr';
+    window.location='HAIKUI12W.2012080312/swath.HAIKUI12W.2012080312.png'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080312/swath.HAIKUI12W.2012080312.png">Rain/wind swath</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='HAIKUI12W.2012080312/hwrf_dlm.html'">
+ <a href="HAIKUI12W.2012080312/hwrf_dlm.html">Deep layer mean</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='HAIKUI12W.2012080312/hwrf_shr.html'">
+ <a href="HAIKUI12W.2012080312/hwrf_shr.html">Wind shear</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='HAIKUI12W.2012080312/hwrf_mht.html'">
+ <a href="HAIKUI12W.2012080312/hwrf_mht.html">Mid-High trough</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='HAIKUI12W.2012080312/hwrf_hrv.html'">
+ <a href="HAIKUI12W.2012080312/hwrf_hrv.html">500mb Rel Vort</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='HAIKUI12W.2012080312/hwrf_slp.html'">
+ <a href="HAIKUI12W.2012080312/hwrf_slp.html">Sfc pressure</A>
+</td>
+<td class="storm_inv_goesir"onMouseover="this.className='storm_inv_goesir hover'"onMouseout="this.className='storm_inv_goesir'"onclick="this.className='storm_inv_goesir';
+    window.location='HAIKUI12W.2012080312/par_GOESIR.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080312/par_GOESIR.html">GOES IR</A>
+</td>
+<td class="storm_inv_goeswv"onMouseover="this.className='storm_inv_goeswv hover'"onMouseout="this.className='storm_inv_goeswv'"onclick="this.className='storm_inv_goeswv';
+    window.location='HAIKUI12W.2012080312/par_GOESWV.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080312/par_GOESWV.html">GOES WV</A>
+</td>
+<td class="storm_inv_m37"onMouseover="this.className='storm_inv_m37 hover'"onMouseout="this.className='storm_inv_m37'"onclick="this.className='storm_inv_m37';
+    window.location='HAIKUI12W.2012080312/micro_37.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080312/micro_37.html">37 GHz</A>
+</td>
+<td class="storm_inv_m89"onMouseover="this.className='storm_inv_m89 hover'"onMouseout="this.className='storm_inv_m89'"onclick="this.className='storm_inv_m89';
+    window.location='HAIKUI12W.2012080312/micro_89.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080312/micro_89.html">89 GHz</A>
+</td>
+<td class="storm_inv_vxsec"onMouseover="this.className='storm_inv_vxsec hover'"onMouseout="this.className='storm_inv_vxsec'"onclick="this.className='storm_inv_vxsec';
+    window.location='HAIKUI12W.2012080312/HAIKUI12W.2012080312.ns.png'">
+ <a href="HAIKUI12W.2012080312/HAIKUI12W.2012080312.ns.png">Vertical X-Sect.</A>
+</td>
+<td class="storm_inv_sfc"onMouseover="this.className='storm_inv_sfc hover'"onMouseout="this.className='storm_inv_sfc'"onclick="this.className='storm_inv_sfc';
+    window.location='HAIKUI12W.2012080312/HAIKUI12W.2012080312.sfc.png'">
+ <a href="HAIKUI12W.2012080312/HAIKUI12W.2012080312.sfc.png">Sfc Wind Field</A>
+</td>
+<td class="storm_inv_tprime"onMouseover="this.className='storm_inv_tprime hover'"onMouseout="this.className='storm_inv_tprime'"onclick="this.className='storm_inv_tprime';
+    window.location='HAIKUI12W.2012080312/HAIKUI12W.2012080312.tprime.png'">
+ <a href="HAIKUI12W.2012080312/HAIKUI12W.2012080312.tprime.png">Moisture X-Sect.</A>
+</td>
+<td class="storm_inv_wstruc"onMouseover="this.className='storm_inv_wstruc hover'"onMouseout="this.className='storm_inv_wstruc'"onclick="this.className='storm_inv_wstruc';
+    window.location='HAIKUI12W.2012080312/hwrf_diag1.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080312/hwrf_diag1.html">Wind Structure</A>
+</td>
+<td class="storm_inv_tstruc"onMouseover="this.className='storm_inv_tstruc hover'"onMouseout="this.className='storm_inv_tstruc'"onclick="this.className='storm_inv_tstruc';
+    window.location='HAIKUI12W.2012080312/hwrf_diag2.html'" bgcolor = DDEFFF>
+ <a href="HAIKUI12W.2012080312/hwrf_diag2.html">Thermal Structure</A>
+</td>
+</tr>
+</tr>
+<!-- INVEST99W 2012080306 -->
+<tr><th class="storm_inv_cycname" bgcolor = DDEFFF>INVEST99W.2012080306 </th>
+<td class="storm_inv_track" onMouseover="this.className='storm_inv_track hover'"onMouseout="this.className='storm_inv_track'"onclick="this.className='storm_inv_track';
+    window.location='INVEST99W.2012080306/INVEST99W.2012080306.fsct.png'">
+ <a href="INVEST99W.2012080306/INVEST99W.2012080306.fsct.png">Track/Intensity</A>
+</td>
+<td class="storm_inv_atcf" onMouseover="this.className='storm_inv_atcf hover'"onMouseout="this.className='storm_inv_atcf'"onclick="this.className='storm_inv_atcf';
+    window.location='INVEST99W.2012080306/invest99w.2012080306.trak.hwrf.atcfunix'">
+ <a href="INVEST99W.2012080306/invest99w.2012080306.trak.hwrf.atcfunix">ATCF</A>
+</td>
+<td class="storm_inv_diag" onMouseover="this.className='storm_inv_diag hover'"onMouseout="this.className='storm_inv_diag'"onclick="this.className='storm_inv_diag';
+    window.location='INVEST99W.2012080306/INVEST99W.2012080306.txt'">
+ <a href="INVEST99W.2012080306/INVEST99W.2012080306.txt">Diag. Text File</A>
+</td>
+<td class="storm_inv_combdom"onMouseover="this.className='storm_inv_combdom hover'"onMouseout="this.className='storm_inv_combdom'"onclick="this.className='storm_inv_combdom';
+    window.location='INVEST99W.2012080306/hwrf_c.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080306/hwrf_c.html">Combined Domain</A>
+</td>
+<td class="storm_inv_movgrid"onMouseover="this.className='storm_inv_movgrid hover'"onMouseout="this.className='storm_inv_movgrid'"onclick="this.className='storm_inv_movgrid';
+    window.location='INVEST99W.2012080306/hwrf_x.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080306/hwrf_x.html">Vertical section</A>
+</td>
+<td class="storm_inv_ctr" onMouseover="this.className='storm_inv_ctr hover'"onMouseout="this.className='storm_inv_ctr'"onclick="this.className='storm_inv_ctr';
+    window.location='INVEST99W.2012080306/swath.INVEST99W.2012080306.png'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080306/swath.INVEST99W.2012080306.png">Rain/wind swath</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080306/hwrf_dlm.html'">
+ <a href="INVEST99W.2012080306/hwrf_dlm.html">Deep layer mean</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080306/hwrf_shr.html'">
+ <a href="INVEST99W.2012080306/hwrf_shr.html">Wind shear</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080306/hwrf_mht.html'">
+ <a href="INVEST99W.2012080306/hwrf_mht.html">Mid-High trough</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080306/hwrf_hrv.html'">
+ <a href="INVEST99W.2012080306/hwrf_hrv.html">500mb Rel Vort</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080306/hwrf_slp.html'">
+ <a href="INVEST99W.2012080306/hwrf_slp.html">Sfc pressure</A>
+</td>
+<td class="storm_inv_goesir"onMouseover="this.className='storm_inv_goesir hover'"onMouseout="this.className='storm_inv_goesir'"onclick="this.className='storm_inv_goesir';
+    window.location='INVEST99W.2012080306/par_GOESIR.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080306/par_GOESIR.html">GOES IR</A>
+</td>
+<td class="storm_inv_goeswv"onMouseover="this.className='storm_inv_goeswv hover'"onMouseout="this.className='storm_inv_goeswv'"onclick="this.className='storm_inv_goeswv';
+    window.location='INVEST99W.2012080306/par_GOESWV.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080306/par_GOESWV.html">GOES WV</A>
+</td>
+<td class="storm_inv_m37"onMouseover="this.className='storm_inv_m37 hover'"onMouseout="this.className='storm_inv_m37'"onclick="this.className='storm_inv_m37';
+    window.location='INVEST99W.2012080306/micro_37.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080306/micro_37.html">37 GHz</A>
+</td>
+<td class="storm_inv_m89"onMouseover="this.className='storm_inv_m89 hover'"onMouseout="this.className='storm_inv_m89'"onclick="this.className='storm_inv_m89';
+    window.location='INVEST99W.2012080306/micro_89.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080306/micro_89.html">89 GHz</A>
+</td>
+<td class="storm_inv_vxsec"onMouseover="this.className='storm_inv_vxsec hover'"onMouseout="this.className='storm_inv_vxsec'"onclick="this.className='storm_inv_vxsec';
+    window.location='INVEST99W.2012080306/INVEST99W.2012080306.ns.png'">
+ <a href="INVEST99W.2012080306/INVEST99W.2012080306.ns.png">Vertical X-Sect.</A>
+</td>
+<td class="storm_inv_sfc"onMouseover="this.className='storm_inv_sfc hover'"onMouseout="this.className='storm_inv_sfc'"onclick="this.className='storm_inv_sfc';
+    window.location='INVEST99W.2012080306/INVEST99W.2012080306.sfc.png'">
+ <a href="INVEST99W.2012080306/INVEST99W.2012080306.sfc.png">Sfc Wind Field</A>
+</td>
+<td class="storm_inv_tprime"onMouseover="this.className='storm_inv_tprime hover'"onMouseout="this.className='storm_inv_tprime'"onclick="this.className='storm_inv_tprime';
+    window.location='INVEST99W.2012080306/INVEST99W.2012080306.tprime.png'">
+ <a href="INVEST99W.2012080306/INVEST99W.2012080306.tprime.png">Moisture X-Sect.</A>
+</td>
+<td class="storm_inv_wstruc"onMouseover="this.className='storm_inv_wstruc hover'"onMouseout="this.className='storm_inv_wstruc'"onclick="this.className='storm_inv_wstruc';
+    window.location='INVEST99W.2012080306/hwrf_diag1.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080306/hwrf_diag1.html">Wind Structure</A>
+</td>
+<td class="storm_inv_tstruc"onMouseover="this.className='storm_inv_tstruc hover'"onMouseout="this.className='storm_inv_tstruc'"onclick="this.className='storm_inv_tstruc';
+    window.location='INVEST99W.2012080306/hwrf_diag2.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080306/hwrf_diag2.html">Thermal Structure</A>
+</td>
+</tr>
+</tr>
+<!-- INVEST99W 2012080300 -->
+<tr><th class="storm_inv_cycname" bgcolor = DDEFFF>INVEST99W.2012080300 </th>
+<td class="storm_inv_track" onMouseover="this.className='storm_inv_track hover'"onMouseout="this.className='storm_inv_track'"onclick="this.className='storm_inv_track';
+    window.location='INVEST99W.2012080300/INVEST99W.2012080300.fsct.png'">
+ <a href="INVEST99W.2012080300/INVEST99W.2012080300.fsct.png">Track/Intensity</A>
+</td>
+<td class="storm_inv_atcf" onMouseover="this.className='storm_inv_atcf hover'"onMouseout="this.className='storm_inv_atcf'"onclick="this.className='storm_inv_atcf';
+    window.location='INVEST99W.2012080300/invest99w.2012080300.trak.hwrf.atcfunix'">
+ <a href="INVEST99W.2012080300/invest99w.2012080300.trak.hwrf.atcfunix">ATCF</A>
+</td>
+<td class="storm_inv_diag" onMouseover="this.className='storm_inv_diag hover'"onMouseout="this.className='storm_inv_diag'"onclick="this.className='storm_inv_diag';
+    window.location='INVEST99W.2012080300/INVEST99W.2012080300.txt'">
+ <a href="INVEST99W.2012080300/INVEST99W.2012080300.txt">Diag. Text File</A>
+</td>
+<td class="storm_inv_combdom"onMouseover="this.className='storm_inv_combdom hover'"onMouseout="this.className='storm_inv_combdom'"onclick="this.className='storm_inv_combdom';
+    window.location='INVEST99W.2012080300/hwrf_c.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080300/hwrf_c.html">Combined Domain</A>
+</td>
+<td class="storm_inv_movgrid"onMouseover="this.className='storm_inv_movgrid hover'"onMouseout="this.className='storm_inv_movgrid'"onclick="this.className='storm_inv_movgrid';
+    window.location='INVEST99W.2012080300/hwrf_x.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080300/hwrf_x.html">Vertical section</A>
+</td>
+<td class="storm_inv_ctr" onMouseover="this.className='storm_inv_ctr hover'"onMouseout="this.className='storm_inv_ctr'"onclick="this.className='storm_inv_ctr';
+    window.location='INVEST99W.2012080300/swath.INVEST99W.2012080300.png'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080300/swath.INVEST99W.2012080300.png">Rain/wind swath</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080300/hwrf_dlm.html'">
+ <a href="INVEST99W.2012080300/hwrf_dlm.html">Deep layer mean</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080300/hwrf_shr.html'">
+ <a href="INVEST99W.2012080300/hwrf_shr.html">Wind shear</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080300/hwrf_mht.html'">
+ <a href="INVEST99W.2012080300/hwrf_mht.html">Mid-High trough</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080300/hwrf_hrv.html'">
+ <a href="INVEST99W.2012080300/hwrf_hrv.html">500mb Rel Vort</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080300/hwrf_slp.html'">
+ <a href="INVEST99W.2012080300/hwrf_slp.html">Sfc pressure</A>
+</td>
+<td class="storm_inv_goesir"onMouseover="this.className='storm_inv_goesir hover'"onMouseout="this.className='storm_inv_goesir'"onclick="this.className='storm_inv_goesir';
+    window.location='INVEST99W.2012080300/par_GOESIR.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080300/par_GOESIR.html">GOES IR</A>
+</td>
+<td class="storm_inv_goeswv"onMouseover="this.className='storm_inv_goeswv hover'"onMouseout="this.className='storm_inv_goeswv'"onclick="this.className='storm_inv_goeswv';
+    window.location='INVEST99W.2012080300/par_GOESWV.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080300/par_GOESWV.html">GOES WV</A>
+</td>
+<td class="storm_inv_m37"onMouseover="this.className='storm_inv_m37 hover'"onMouseout="this.className='storm_inv_m37'"onclick="this.className='storm_inv_m37';
+    window.location='INVEST99W.2012080300/micro_37.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080300/micro_37.html">37 GHz</A>
+</td>
+<td class="storm_inv_m89"onMouseover="this.className='storm_inv_m89 hover'"onMouseout="this.className='storm_inv_m89'"onclick="this.className='storm_inv_m89';
+    window.location='INVEST99W.2012080300/micro_89.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080300/micro_89.html">89 GHz</A>
+</td>
+<td class="storm_inv_vxsec"onMouseover="this.className='storm_inv_vxsec hover'"onMouseout="this.className='storm_inv_vxsec'"onclick="this.className='storm_inv_vxsec';
+    window.location='INVEST99W.2012080300/INVEST99W.2012080300.ns.png'">
+ <a href="INVEST99W.2012080300/INVEST99W.2012080300.ns.png">Vertical X-Sect.</A>
+</td>
+<td class="storm_inv_sfc"onMouseover="this.className='storm_inv_sfc hover'"onMouseout="this.className='storm_inv_sfc'"onclick="this.className='storm_inv_sfc';
+    window.location='INVEST99W.2012080300/INVEST99W.2012080300.sfc.png'">
+ <a href="INVEST99W.2012080300/INVEST99W.2012080300.sfc.png">Sfc Wind Field</A>
+</td>
+<td class="storm_inv_tprime"onMouseover="this.className='storm_inv_tprime hover'"onMouseout="this.className='storm_inv_tprime'"onclick="this.className='storm_inv_tprime';
+    window.location='INVEST99W.2012080300/INVEST99W.2012080300.tprime.png'">
+ <a href="INVEST99W.2012080300/INVEST99W.2012080300.tprime.png">Moisture X-Sect.</A>
+</td>
+<td class="storm_inv_wstruc"onMouseover="this.className='storm_inv_wstruc hover'"onMouseout="this.className='storm_inv_wstruc'"onclick="this.className='storm_inv_wstruc';
+    window.location='INVEST99W.2012080300/hwrf_diag1.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080300/hwrf_diag1.html">Wind Structure</A>
+</td>
+<td class="storm_inv_tstruc"onMouseover="this.className='storm_inv_tstruc hover'"onMouseout="this.className='storm_inv_tstruc'"onclick="this.className='storm_inv_tstruc';
+    window.location='INVEST99W.2012080300/hwrf_diag2.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080300/hwrf_diag2.html">Thermal Structure</A>
+</td>
+</tr>
+</tr>
+<!-- INVEST99W 2012080218 -->
+<tr><th class="storm_inv_cycname" bgcolor = DDEFFF>INVEST99W.2012080218 </th>
+<td class="storm_inv_track" onMouseover="this.className='storm_inv_track hover'"onMouseout="this.className='storm_inv_track'"onclick="this.className='storm_inv_track';
+    window.location='INVEST99W.2012080218/INVEST99W.2012080218.fsct.png'">
+ <a href="INVEST99W.2012080218/INVEST99W.2012080218.fsct.png">Track/Intensity</A>
+</td>
+<td class="storm_inv_atcf" onMouseover="this.className='storm_inv_atcf hover'"onMouseout="this.className='storm_inv_atcf'"onclick="this.className='storm_inv_atcf';
+    window.location='INVEST99W.2012080218/invest99w.2012080218.trak.hwrf.atcfunix'">
+ <a href="INVEST99W.2012080218/invest99w.2012080218.trak.hwrf.atcfunix">ATCF</A>
+</td>
+<td class="storm_inv_diag" onMouseover="this.className='storm_inv_diag hover'"onMouseout="this.className='storm_inv_diag'"onclick="this.className='storm_inv_diag';
+    window.location='INVEST99W.2012080218/INVEST99W.2012080218.txt'">
+ <a href="INVEST99W.2012080218/INVEST99W.2012080218.txt">Diag. Text File</A>
+</td>
+<td class="storm_inv_combdom"onMouseover="this.className='storm_inv_combdom hover'"onMouseout="this.className='storm_inv_combdom'"onclick="this.className='storm_inv_combdom';
+    window.location='INVEST99W.2012080218/hwrf_c.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080218/hwrf_c.html">Combined Domain</A>
+</td>
+<td class="storm_inv_movgrid"onMouseover="this.className='storm_inv_movgrid hover'"onMouseout="this.className='storm_inv_movgrid'"onclick="this.className='storm_inv_movgrid';
+    window.location='INVEST99W.2012080218/hwrf_x.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080218/hwrf_x.html">Vertical section</A>
+</td>
+<td class="storm_inv_ctr" onMouseover="this.className='storm_inv_ctr hover'"onMouseout="this.className='storm_inv_ctr'"onclick="this.className='storm_inv_ctr';
+    window.location='INVEST99W.2012080218/swath.INVEST99W.2012080218.png'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080218/swath.INVEST99W.2012080218.png">Rain/wind swath</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080218/hwrf_dlm.html'">
+ <a href="INVEST99W.2012080218/hwrf_dlm.html">Deep layer mean</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080218/hwrf_shr.html'">
+ <a href="INVEST99W.2012080218/hwrf_shr.html">Wind shear</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080218/hwrf_mht.html'">
+ <a href="INVEST99W.2012080218/hwrf_mht.html">Mid-High trough</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080218/hwrf_hrv.html'">
+ <a href="INVEST99W.2012080218/hwrf_hrv.html">500mb Rel Vort</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080218/hwrf_slp.html'">
+ <a href="INVEST99W.2012080218/hwrf_slp.html">Sfc pressure</A>
+</td>
+<td class="storm_inv_goesir"onMouseover="this.className='storm_inv_goesir hover'"onMouseout="this.className='storm_inv_goesir'"onclick="this.className='storm_inv_goesir';
+    window.location='INVEST99W.2012080218/par_GOESIR.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080218/par_GOESIR.html">GOES IR</A>
+</td>
+<td class="storm_inv_goeswv"onMouseover="this.className='storm_inv_goeswv hover'"onMouseout="this.className='storm_inv_goeswv'"onclick="this.className='storm_inv_goeswv';
+    window.location='INVEST99W.2012080218/par_GOESWV.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080218/par_GOESWV.html">GOES WV</A>
+</td>
+<td class="storm_inv_m37"onMouseover="this.className='storm_inv_m37 hover'"onMouseout="this.className='storm_inv_m37'"onclick="this.className='storm_inv_m37';
+    window.location='INVEST99W.2012080218/micro_37.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080218/micro_37.html">37 GHz</A>
+</td>
+<td class="storm_inv_m89"onMouseover="this.className='storm_inv_m89 hover'"onMouseout="this.className='storm_inv_m89'"onclick="this.className='storm_inv_m89';
+    window.location='INVEST99W.2012080218/micro_89.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080218/micro_89.html">89 GHz</A>
+</td>
+<td class="storm_inv_vxsec"onMouseover="this.className='storm_inv_vxsec hover'"onMouseout="this.className='storm_inv_vxsec'"onclick="this.className='storm_inv_vxsec';
+    window.location='INVEST99W.2012080218/INVEST99W.2012080218.ns.png'">
+ <a href="INVEST99W.2012080218/INVEST99W.2012080218.ns.png">Vertical X-Sect.</A>
+</td>
+<td class="storm_inv_sfc"onMouseover="this.className='storm_inv_sfc hover'"onMouseout="this.className='storm_inv_sfc'"onclick="this.className='storm_inv_sfc';
+    window.location='INVEST99W.2012080218/INVEST99W.2012080218.sfc.png'">
+ <a href="INVEST99W.2012080218/INVEST99W.2012080218.sfc.png">Sfc Wind Field</A>
+</td>
+<td class="storm_inv_tprime"onMouseover="this.className='storm_inv_tprime hover'"onMouseout="this.className='storm_inv_tprime'"onclick="this.className='storm_inv_tprime';
+    window.location='INVEST99W.2012080218/INVEST99W.2012080218.tprime.png'">
+ <a href="INVEST99W.2012080218/INVEST99W.2012080218.tprime.png">Moisture X-Sect.</A>
+</td>
+<td class="storm_inv_wstruc"onMouseover="this.className='storm_inv_wstruc hover'"onMouseout="this.className='storm_inv_wstruc'"onclick="this.className='storm_inv_wstruc';
+    window.location='INVEST99W.2012080218/hwrf_diag1.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080218/hwrf_diag1.html">Wind Structure</A>
+</td>
+<td class="storm_inv_tstruc"onMouseover="this.className='storm_inv_tstruc hover'"onMouseout="this.className='storm_inv_tstruc'"onclick="this.className='storm_inv_tstruc';
+    window.location='INVEST99W.2012080218/hwrf_diag2.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080218/hwrf_diag2.html">Thermal Structure</A>
+</td>
+</tr>
+</tr>
+<!-- INVEST99W 2012080212 -->
+<tr><th class="storm_inv_cycname" bgcolor = DDEFFF>INVEST99W.2012080212 </th>
+<td class="storm_inv_track" onMouseover="this.className='storm_inv_track hover'"onMouseout="this.className='storm_inv_track'"onclick="this.className='storm_inv_track';
+    window.location='INVEST99W.2012080212/INVEST99W.2012080212.fsct.png'">
+ <a href="INVEST99W.2012080212/INVEST99W.2012080212.fsct.png">Track/Intensity</A>
+</td>
+<td class="storm_inv_atcf" onMouseover="this.className='storm_inv_atcf hover'"onMouseout="this.className='storm_inv_atcf'"onclick="this.className='storm_inv_atcf';
+    window.location='INVEST99W.2012080212/invest99w.2012080212.trak.hwrf.atcfunix'">
+ <a href="INVEST99W.2012080212/invest99w.2012080212.trak.hwrf.atcfunix">ATCF</A>
+</td>
+<td class="storm_inv_diag" onMouseover="this.className='storm_inv_diag hover'"onMouseout="this.className='storm_inv_diag'"onclick="this.className='storm_inv_diag';
+    window.location='INVEST99W.2012080212/INVEST99W.2012080212.txt'">
+ <a href="INVEST99W.2012080212/INVEST99W.2012080212.txt">Diag. Text File</A>
+</td>
+<td class="storm_inv_combdom"onMouseover="this.className='storm_inv_combdom hover'"onMouseout="this.className='storm_inv_combdom'"onclick="this.className='storm_inv_combdom';
+    window.location='INVEST99W.2012080212/hwrf_c.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080212/hwrf_c.html">Combined Domain</A>
+</td>
+<td class="storm_inv_movgrid"onMouseover="this.className='storm_inv_movgrid hover'"onMouseout="this.className='storm_inv_movgrid'"onclick="this.className='storm_inv_movgrid';
+    window.location='INVEST99W.2012080212/hwrf_x.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080212/hwrf_x.html">Vertical section</A>
+</td>
+<td class="storm_inv_ctr" onMouseover="this.className='storm_inv_ctr hover'"onMouseout="this.className='storm_inv_ctr'"onclick="this.className='storm_inv_ctr';
+    window.location='INVEST99W.2012080212/swath.INVEST99W.2012080212.png'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080212/swath.INVEST99W.2012080212.png">Rain/wind swath</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080212/hwrf_dlm.html'">
+ <a href="INVEST99W.2012080212/hwrf_dlm.html">Deep layer mean</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080212/hwrf_shr.html'">
+ <a href="INVEST99W.2012080212/hwrf_shr.html">Wind shear</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080212/hwrf_mht.html'">
+ <a href="INVEST99W.2012080212/hwrf_mht.html">Mid-High trough</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080212/hwrf_hrv.html'">
+ <a href="INVEST99W.2012080212/hwrf_hrv.html">500mb Rel Vort</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080212/hwrf_slp.html'">
+ <a href="INVEST99W.2012080212/hwrf_slp.html">Sfc pressure</A>
+</td>
+<td class="storm_inv_goesir"onMouseover="this.className='storm_inv_goesir hover'"onMouseout="this.className='storm_inv_goesir'"onclick="this.className='storm_inv_goesir';
+    window.location='INVEST99W.2012080212/par_GOESIR.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080212/par_GOESIR.html">GOES IR</A>
+</td>
+<td class="storm_inv_goeswv"onMouseover="this.className='storm_inv_goeswv hover'"onMouseout="this.className='storm_inv_goeswv'"onclick="this.className='storm_inv_goeswv';
+    window.location='INVEST99W.2012080212/par_GOESWV.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080212/par_GOESWV.html">GOES WV</A>
+</td>
+<td class="storm_inv_m37"onMouseover="this.className='storm_inv_m37 hover'"onMouseout="this.className='storm_inv_m37'"onclick="this.className='storm_inv_m37';
+    window.location='INVEST99W.2012080212/micro_37.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080212/micro_37.html">37 GHz</A>
+</td>
+<td class="storm_inv_m89"onMouseover="this.className='storm_inv_m89 hover'"onMouseout="this.className='storm_inv_m89'"onclick="this.className='storm_inv_m89';
+    window.location='INVEST99W.2012080212/micro_89.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080212/micro_89.html">89 GHz</A>
+</td>
+<td class="storm_inv_vxsec"onMouseover="this.className='storm_inv_vxsec hover'"onMouseout="this.className='storm_inv_vxsec'"onclick="this.className='storm_inv_vxsec';
+    window.location='INVEST99W.2012080212/INVEST99W.2012080212.ns.png'">
+ <a href="INVEST99W.2012080212/INVEST99W.2012080212.ns.png">Vertical X-Sect.</A>
+</td>
+<td class="storm_inv_sfc"onMouseover="this.className='storm_inv_sfc hover'"onMouseout="this.className='storm_inv_sfc'"onclick="this.className='storm_inv_sfc';
+    window.location='INVEST99W.2012080212/INVEST99W.2012080212.sfc.png'">
+ <a href="INVEST99W.2012080212/INVEST99W.2012080212.sfc.png">Sfc Wind Field</A>
+</td>
+<td class="storm_inv_tprime"onMouseover="this.className='storm_inv_tprime hover'"onMouseout="this.className='storm_inv_tprime'"onclick="this.className='storm_inv_tprime';
+    window.location='INVEST99W.2012080212/INVEST99W.2012080212.tprime.png'">
+ <a href="INVEST99W.2012080212/INVEST99W.2012080212.tprime.png">Moisture X-Sect.</A>
+</td>
+<td class="storm_inv_wstruc"onMouseover="this.className='storm_inv_wstruc hover'"onMouseout="this.className='storm_inv_wstruc'"onclick="this.className='storm_inv_wstruc';
+    window.location='INVEST99W.2012080212/hwrf_diag1.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080212/hwrf_diag1.html">Wind Structure</A>
+</td>
+<td class="storm_inv_tstruc"onMouseover="this.className='storm_inv_tstruc hover'"onMouseout="this.className='storm_inv_tstruc'"onclick="this.className='storm_inv_tstruc';
+    window.location='INVEST99W.2012080212/hwrf_diag2.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080212/hwrf_diag2.html">Thermal Structure</A>
+</td>
+</tr>
+</tr>
+<!-- INVEST99W 2012080206 -->
+<tr><th class="storm_inv_cycname" bgcolor = DDEFFF>INVEST99W.2012080206 </th>
+<td class="storm_inv_track" onMouseover="this.className='storm_inv_track hover'"onMouseout="this.className='storm_inv_track'"onclick="this.className='storm_inv_track';
+    window.location='INVEST99W.2012080206/INVEST99W.2012080206.fsct.png'">
+ <a href="INVEST99W.2012080206/INVEST99W.2012080206.fsct.png">Track/Intensity</A>
+</td>
+<td class="storm_inv_atcf" onMouseover="this.className='storm_inv_atcf hover'"onMouseout="this.className='storm_inv_atcf'"onclick="this.className='storm_inv_atcf';
+    window.location='INVEST99W.2012080206/invest99w.2012080206.trak.hwrf.atcfunix'">
+ <a href="INVEST99W.2012080206/invest99w.2012080206.trak.hwrf.atcfunix">ATCF</A>
+</td>
+<td class="storm_inv_diag" onMouseover="this.className='storm_inv_diag hover'"onMouseout="this.className='storm_inv_diag'"onclick="this.className='storm_inv_diag';
+    window.location='INVEST99W.2012080206/INVEST99W.2012080206.txt'">
+ <a href="INVEST99W.2012080206/INVEST99W.2012080206.txt">Diag. Text File</A>
+</td>
+<td class="storm_inv_combdom"onMouseover="this.className='storm_inv_combdom hover'"onMouseout="this.className='storm_inv_combdom'"onclick="this.className='storm_inv_combdom';
+    window.location='INVEST99W.2012080206/hwrf_c.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080206/hwrf_c.html">Combined Domain</A>
+</td>
+<td class="storm_inv_movgrid"onMouseover="this.className='storm_inv_movgrid hover'"onMouseout="this.className='storm_inv_movgrid'"onclick="this.className='storm_inv_movgrid';
+    window.location='INVEST99W.2012080206/hwrf_x.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080206/hwrf_x.html">Vertical section</A>
+</td>
+<td class="storm_inv_ctr" onMouseover="this.className='storm_inv_ctr hover'"onMouseout="this.className='storm_inv_ctr'"onclick="this.className='storm_inv_ctr';
+    window.location='INVEST99W.2012080206/swath.INVEST99W.2012080206.png'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080206/swath.INVEST99W.2012080206.png">Rain/wind swath</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080206/hwrf_dlm.html'">
+ <a href="INVEST99W.2012080206/hwrf_dlm.html">Deep layer mean</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080206/hwrf_shr.html'">
+ <a href="INVEST99W.2012080206/hwrf_shr.html">Wind shear</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080206/hwrf_mht.html'">
+ <a href="INVEST99W.2012080206/hwrf_mht.html">Mid-High trough</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080206/hwrf_hrv.html'">
+ <a href="INVEST99W.2012080206/hwrf_hrv.html">500mb Rel Vort</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080206/hwrf_slp.html'">
+ <a href="INVEST99W.2012080206/hwrf_slp.html">Sfc pressure</A>
+</td>
+<td class="storm_inv_goesir"onMouseover="this.className='storm_inv_goesir hover'"onMouseout="this.className='storm_inv_goesir'"onclick="this.className='storm_inv_goesir';
+    window.location='INVEST99W.2012080206/par_GOESIR.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080206/par_GOESIR.html">GOES IR</A>
+</td>
+<td class="storm_inv_goeswv"onMouseover="this.className='storm_inv_goeswv hover'"onMouseout="this.className='storm_inv_goeswv'"onclick="this.className='storm_inv_goeswv';
+    window.location='INVEST99W.2012080206/par_GOESWV.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080206/par_GOESWV.html">GOES WV</A>
+</td>
+<td class="storm_inv_m37"onMouseover="this.className='storm_inv_m37 hover'"onMouseout="this.className='storm_inv_m37'"onclick="this.className='storm_inv_m37';
+    window.location='INVEST99W.2012080206/micro_37.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080206/micro_37.html">37 GHz</A>
+</td>
+<td class="storm_inv_m89"onMouseover="this.className='storm_inv_m89 hover'"onMouseout="this.className='storm_inv_m89'"onclick="this.className='storm_inv_m89';
+    window.location='INVEST99W.2012080206/micro_89.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080206/micro_89.html">89 GHz</A>
+</td>
+<td class="storm_inv_vxsec"onMouseover="this.className='storm_inv_vxsec hover'"onMouseout="this.className='storm_inv_vxsec'"onclick="this.className='storm_inv_vxsec';
+    window.location='INVEST99W.2012080206/INVEST99W.2012080206.ns.png'">
+ <a href="INVEST99W.2012080206/INVEST99W.2012080206.ns.png">Vertical X-Sect.</A>
+</td>
+<td class="storm_inv_sfc"onMouseover="this.className='storm_inv_sfc hover'"onMouseout="this.className='storm_inv_sfc'"onclick="this.className='storm_inv_sfc';
+    window.location='INVEST99W.2012080206/INVEST99W.2012080206.sfc.png'">
+ <a href="INVEST99W.2012080206/INVEST99W.2012080206.sfc.png">Sfc Wind Field</A>
+</td>
+<td class="storm_inv_tprime"onMouseover="this.className='storm_inv_tprime hover'"onMouseout="this.className='storm_inv_tprime'"onclick="this.className='storm_inv_tprime';
+    window.location='INVEST99W.2012080206/INVEST99W.2012080206.tprime.png'">
+ <a href="INVEST99W.2012080206/INVEST99W.2012080206.tprime.png">Moisture X-Sect.</A>
+</td>
+<td class="storm_inv_wstruc"onMouseover="this.className='storm_inv_wstruc hover'"onMouseout="this.className='storm_inv_wstruc'"onclick="this.className='storm_inv_wstruc';
+    window.location='INVEST99W.2012080206/hwrf_diag1.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080206/hwrf_diag1.html">Wind Structure</A>
+</td>
+<td class="storm_inv_tstruc"onMouseover="this.className='storm_inv_tstruc hover'"onMouseout="this.className='storm_inv_tstruc'"onclick="this.className='storm_inv_tstruc';
+    window.location='INVEST99W.2012080206/hwrf_diag2.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080206/hwrf_diag2.html">Thermal Structure</A>
+</td>
+</tr>
+</tr>
+<!-- INVEST99W 2012080200 -->
+<tr><th class="storm_inv_cycname" bgcolor = DDEFFF>INVEST99W.2012080200 </th>
+<td class="storm_inv_track" onMouseover="this.className='storm_inv_track hover'"onMouseout="this.className='storm_inv_track'"onclick="this.className='storm_inv_track';
+    window.location='INVEST99W.2012080200/INVEST99W.2012080200.fsct.png'">
+ <a href="INVEST99W.2012080200/INVEST99W.2012080200.fsct.png">Track/Intensity</A>
+</td>
+<td class="storm_inv_atcf" onMouseover="this.className='storm_inv_atcf hover'"onMouseout="this.className='storm_inv_atcf'"onclick="this.className='storm_inv_atcf';
+    window.location='INVEST99W.2012080200/invest99w.2012080200.trak.hwrf.atcfunix'">
+ <a href="INVEST99W.2012080200/invest99w.2012080200.trak.hwrf.atcfunix">ATCF</A>
+</td>
+<td class="storm_inv_diag" onMouseover="this.className='storm_inv_diag hover'"onMouseout="this.className='storm_inv_diag'"onclick="this.className='storm_inv_diag';
+    window.location='INVEST99W.2012080200/INVEST99W.2012080200.txt'">
+ <a href="INVEST99W.2012080200/INVEST99W.2012080200.txt">Diag. Text File</A>
+</td>
+<td class="storm_inv_combdom"onMouseover="this.className='storm_inv_combdom hover'"onMouseout="this.className='storm_inv_combdom'"onclick="this.className='storm_inv_combdom';
+    window.location='INVEST99W.2012080200/hwrf_c.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080200/hwrf_c.html">Combined Domain</A>
+</td>
+<td class="storm_inv_movgrid"onMouseover="this.className='storm_inv_movgrid hover'"onMouseout="this.className='storm_inv_movgrid'"onclick="this.className='storm_inv_movgrid';
+    window.location='INVEST99W.2012080200/hwrf_x.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080200/hwrf_x.html">Vertical section</A>
+</td>
+<td class="storm_inv_ctr" onMouseover="this.className='storm_inv_ctr hover'"onMouseout="this.className='storm_inv_ctr'"onclick="this.className='storm_inv_ctr';
+    window.location='INVEST99W.2012080200/swath.INVEST99W.2012080200.png'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080200/swath.INVEST99W.2012080200.png">Rain/wind swath</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080200/hwrf_dlm.html'">
+ <a href="INVEST99W.2012080200/hwrf_dlm.html">Deep layer mean</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080200/hwrf_shr.html'">
+ <a href="INVEST99W.2012080200/hwrf_shr.html">Wind shear</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080200/hwrf_mht.html'">
+ <a href="INVEST99W.2012080200/hwrf_mht.html">Mid-High trough</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080200/hwrf_hrv.html'">
+ <a href="INVEST99W.2012080200/hwrf_hrv.html">500mb Rel Vort</A>
+</td>
+<td class="storm_inv_ns" onMouseover="this.className='storm_inv_ns hover'"onMouseout="this.className='storm_inv_ns'"onclick="this.className='storm_inv_ns';
+    window.location='INVEST99W.2012080200/hwrf_slp.html'">
+ <a href="INVEST99W.2012080200/hwrf_slp.html">Sfc pressure</A>
+</td>
+<td class="storm_inv_goesir"onMouseover="this.className='storm_inv_goesir hover'"onMouseout="this.className='storm_inv_goesir'"onclick="this.className='storm_inv_goesir';
+    window.location='INVEST99W.2012080200/par_GOESIR.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080200/par_GOESIR.html">GOES IR</A>
+</td>
+<td class="storm_inv_goeswv"onMouseover="this.className='storm_inv_goeswv hover'"onMouseout="this.className='storm_inv_goeswv'"onclick="this.className='storm_inv_goeswv';
+    window.location='INVEST99W.2012080200/par_GOESWV.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080200/par_GOESWV.html">GOES WV</A>
+</td>
+<td class="storm_inv_m37"onMouseover="this.className='storm_inv_m37 hover'"onMouseout="this.className='storm_inv_m37'"onclick="this.className='storm_inv_m37';
+    window.location='INVEST99W.2012080200/micro_37.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080200/micro_37.html">37 GHz</A>
+</td>
+<td class="storm_inv_m89"onMouseover="this.className='storm_inv_m89 hover'"onMouseout="this.className='storm_inv_m89'"onclick="this.className='storm_inv_m89';
+    window.location='INVEST99W.2012080200/micro_89.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080200/micro_89.html">89 GHz</A>
+</td>
+<td class="storm_inv_vxsec"onMouseover="this.className='storm_inv_vxsec hover'"onMouseout="this.className='storm_inv_vxsec'"onclick="this.className='storm_inv_vxsec';
+    window.location='INVEST99W.2012080200/INVEST99W.2012080200.ns.png'">
+ <a href="INVEST99W.2012080200/INVEST99W.2012080200.ns.png">Vertical X-Sect.</A>
+</td>
+<td class="storm_inv_sfc"onMouseover="this.className='storm_inv_sfc hover'"onMouseout="this.className='storm_inv_sfc'"onclick="this.className='storm_inv_sfc';
+    window.location='INVEST99W.2012080200/INVEST99W.2012080200.sfc.png'">
+ <a href="INVEST99W.2012080200/INVEST99W.2012080200.sfc.png">Sfc Wind Field</A>
+</td>
+<td class="storm_inv_tprime"onMouseover="this.className='storm_inv_tprime hover'"onMouseout="this.className='storm_inv_tprime'"onclick="this.className='storm_inv_tprime';
+    window.location='INVEST99W.2012080200/INVEST99W.2012080200.tprime.png'">
+ <a href="INVEST99W.2012080200/INVEST99W.2012080200.tprime.png">Moisture X-Sect.</A>
+</td>
+<td class="storm_inv_wstruc"onMouseover="this.className='storm_inv_wstruc hover'"onMouseout="this.className='storm_inv_wstruc'"onclick="this.className='storm_inv_wstruc';
+    window.location='INVEST99W.2012080200/hwrf_diag1.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080200/hwrf_diag1.html">Wind Structure</A>
+</td>
+<td class="storm_inv_tstruc"onMouseover="this.className='storm_inv_tstruc hover'"onMouseout="this.className='storm_inv_tstruc'"onclick="this.className='storm_inv_tstruc';
+    window.location='INVEST99W.2012080200/hwrf_diag2.html'" bgcolor = DDEFFF>
+ <a href="INVEST99W.2012080200/hwrf_diag2.html">Thermal Structure</A>
+</td>
+</tr>
+</tr>
+
+<!--TH COLSPAN=13>No More Runs for INVEST99W</TH></TR-->
+
+      </table>
+
+    </div>
+
+    <div class="webmasters">
+      <table><tr><td>
+<script language="JavaScript">
+document.write(Date()+"<br>");
+</script>
+      <p id="maintainers">Page Maintained By
+        <a href="mailto:vijay.tallapragada@noaa.gov">Vijay Tallapragada,</a>
+        <a href="mailto:samuel.trahan@noaa.gov">Samuel Trahan,</a>
+        and
+        <a href="mailto:Chanh.Kieu@noaa.gov">Chanh Kieu</a>
+      </p>
+
+      <p id="webmaster_email">
+        Send mail to
+        <a href="mailto:vijay.tallapragada@noaa.gov">vijay.tallapragada@noaa.gov</a>
+        with questions or comments about this web site.
+      </p>
+
+      <p id="webpage_copyright">&copy; NCEP Hurricane Forecast Project, all rights reserved. </p>
+      </td></tr></table>
+    </div>
+
+
+  </BODY>
+</HTML>

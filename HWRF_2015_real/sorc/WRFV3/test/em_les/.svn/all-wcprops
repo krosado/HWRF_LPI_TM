@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/8366/branches/HWRF/test/em_les
+END
+README.les
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/8205/branches/HWRF/test/em_les/README.les
+END
+input_sounding_shalconv
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/8205/branches/HWRF/test/em_les/input_sounding_shalconv
+END
+input_sounding
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/test/em_les/input_sounding
+END
+input_sounding_free
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/test/em_les/input_sounding_free
+END
+input_sounding_meanwind
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/test/em_les/input_sounding_meanwind
+END
+namelist.input_shalconv
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/8366/branches/HWRF/test/em_les/namelist.input_shalconv
+END
+namelist.input
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/8366/branches/HWRF/test/em_les/namelist.input
+END

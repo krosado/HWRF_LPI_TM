@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/1075/branches/HWRF/libs/src/sfcio
+END
+sfcio_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/274/branches/HWRF/libs/src/sfcio/sfcio_module.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1075/branches/HWRF/libs/src/sfcio/Makefile
+END

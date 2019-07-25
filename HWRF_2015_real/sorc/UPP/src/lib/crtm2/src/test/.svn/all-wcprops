@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test
+END
+run_test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/run_test.sh
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/makefile
+END

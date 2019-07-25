@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/5750/branches/HWRF/var/obsproc/MAP_plot/Dir_map
+END
+module_date.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/5750/branches/HWRF/var/obsproc/MAP_plot/Dir_map/module_date.f90
+END
+foned.F
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/foned.F
+END
+DA_Setup_Obs_Structures.inc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/DA_Setup_Obs_Structures.inc
+END
+fbint.F
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/fbint.F
+END
+Map.Ftemp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Map.Ftemp
+END
+Map.F.new
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Map.F.new
+END
+ttdrhq.F
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/ttdrhq.F
+END
+hiresmap.F
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/hiresmap.F
+END
+inside_window.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/inside_window.f90
+END
+anal.F
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/anal.F
+END
+ffdduv.F
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/ffdduv.F
+END
+wndbarb.F
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/wndbarb.F
+END
+DA_Read_Obs_Info.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/DA_Read_Obs_Info.inc
+END
+oned.F
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/oned.F
+END
+prs2sig.F
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/prs2sig.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Makefile
+END
+rd_wr_mm5.F
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/rd_wr_mm5.F
+END
+bint.F
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/bint.F
+END
+mdlobs0.F
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/mdlobs0.F
+END
+setup.F
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/setup.F
+END
+plots.F
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/plots.F
+END
+module_obs.F90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/module_obs.F90
+END
+mdlobs1.F
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/mdlobs1.F
+END
+plot_skewt.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/plot_skewt.f90
+END
+DA_Read_Obs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/DA_Read_Obs.inc
+END
+DA_Define_Structures.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/DA_Define_Structures.f90
+END
+Map.F
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Map.F
+END
+plhwd.F
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/plhwd.F
+END
+plotslab.F
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/plotslab.F
+END
+plhmp.F
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/plhmp.F
+END
+plstn1.F
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/plstn1.F
+END
+plstn2.F
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/plstn2.F
+END
+p1p2.F
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/p1p2.F
+END
+llxy.F
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/llxy.F
+END
+DA_Constants.f90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/DA_Constants.f90
+END

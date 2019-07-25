@@ -1,0 +1,103 @@
+# ---------------------------------------------------------------------------------------------------
+# Package---------Source *.exe Name----------------------------------Installation Location-----------
+# ---------------------------------------------------------------------------------------------------
+
+hwrf-utilities    exec/grbindex.exe                                  nwport/util/exec/grbindex
+hwrf-utilities    exec/mdate.exe                                     nwport/util/exec/mdate
+hwrf-utilities    exec/ndate.exe                                     nwport/util/exec/ndate
+hwrf-utilities    exec/nhour.exe                                     nwport/util/exec/nhour
+hwrf-utilities    exec/wgrib.exe                                     nwport/util/exec/wgrib
+
+hwrf-utilities    exec/hwrf_binary_grads.exe                         exec/hwrf_binary_grads
+hwrf-utilities    exec/hwrf_netcdf_grads.exe                         exec/hwrf_netcdf_grads
+hwrf-utilities    exec/hwrf_combinetrack.exe                         exec/hwrf_combinetrack
+hwrf-utilities    exec/hwrf_afos.exe                                 exec/hwrf_afos
+hwrf-utilities    exec/hwrf_anl_4x_step2.exe                         exec/hwrf_anl_4x_step2
+hwrf-utilities    exec/hwrf_anl_bogus_10m.exe                        exec/hwrf_anl_bogus_10m
+hwrf-utilities    exec/hwrf_anl_cs_10m.exe                           exec/hwrf_anl_cs_10m
+hwrf-utilities    exec/hwrf_atcf_to_stats.exe                        exec/hwrf_atcf_to_stats
+hwrf-utilities    exec/hwrf_aux_rw.exe                               exec/hwrf_aux_rw
+hwrf-utilities    exec/hwrf_bin_io.exe                               exec/hwrf_bin_io
+hwrf-utilities    exec/hwrf_create_trak_fnl.exe                      exec/hwrf_create_trak_fnl
+hwrf-utilities    exec/hwrf_create_trak_guess.exe                    exec/hwrf_create_trak_guess
+hwrf-utilities    exec/hwrf_rem_prepbufr_typ_in_circle.exe           exec/hwrf_rem_prepbufr_typ_in_circle
+hwrf-utilities    exec/hwrf_change_prepbufr_qm_in_circle.exe         exec/hwrf_change_prepbufr_qm_in_circle
+hwrf-utilities    exec/hwrf_change_prepbufr_qm_typ.exe               exec/hwrf_change_prepbufr_qm_typ
+hwrf-utilities    exec/hwrf_readtdrstmid.exe                         exec/hwrf_readtdrstmid
+hwrf-utilities    exec/hwrf_readtdrtime.exe                          exec/hwrf_readtdrtime
+hwrf-utilities    exec/hwrf_readtdrtrigger.exe                       exec/hwrf_readtdrtrigger
+hwrf-utilities    exec/hwrf_readtdrtrack.exe                         exec/hwrf_readtdrtrack
+hwrf-utilities    exec/hwrf_gridgenfine.exe                          exec/hwrf_gridgenfine
+hwrf-utilities    exec/hwrf_inter_2to1.exe                           exec/hwrf_inter_2to1
+hwrf-utilities    exec/hwrf_inter_2to2.exe                           exec/hwrf_inter_2to2
+hwrf-utilities    exec/hwrf_inter_2to6.exe                           exec/hwrf_inter_2to6
+hwrf-utilities    exec/hwrf_inter_4to2.exe                           exec/hwrf_inter_4to2
+hwrf-utilities    exec/hwrf_inter_4to6.exe                           exec/hwrf_inter_4to6
+hwrf-utilities    exec/hwrf_merge_nest_4x_step12_3n.exe              exec/hwrf_merge_nest_4x_step12_3n
+hwrf-utilities    exec/hwrf_pert_ct1.exe                             exec/hwrf_pert_ct1
+hwrf-utilities    exec/hwrf_prep.exe                                 exec/hwrf_prep
+hwrf-utilities    exec/hwrf_bdy_update.exe                           exec/hwrf_bdy_update
+hwrf-utilities    exec/hwrf_read_indi_write_all.exe                  exec/hwrf_read_indi_write_all
+hwrf-utilities    exec/hwrf_split1.exe                               exec/hwrf_split1
+hwrf-utilities    exec/hwrf_supvit.exe                               exec/hwrf_supvit
+hwrf-utilities    exec/hwrf_swath.exe                                exec/hwrf_swath
+hwrf-utilities    exec/hwrf_swcorner_dynamic.exe                     exec/hwrf_swcorner_dynamic
+hwrf-utilities    exec/diffwrf_3dvar.exe                             exec/hwrf_diffwrf_3dvar
+hwrf-utilities    exec/hwrf_htcfstats.exe                            exec/hwrf_htcfstats
+hwrf-utilities    exec/hwrf_bdy_update.exe                           exec/hwrf_bdy_update
+hwrf-utilities    exec/hwrf_nhc_products.exe                         exec/hwrf_nhc_products
+hwrf-utilities    exec/hwrf_blend_gsi.exe                            exec/hwrf_blend_gsi
+hwrf-utilities    exec/hwrf_metgrid_levels.exe                       exec/hwrf_metgrid_levels
+hwrf-utilities    exec/hwrf_wrfout_newtime.exe                       exec/hwrf_wrfout_newtime
+hwrf-utilities    exec/mpiserial.exe                                 nwport/util/exec/mpiserial
+
+
+WRFV3             main/real_nmm.exe                                  exec/hwrf_real_nmm
+WRFV3             main/wrf.exe                                       exec/hwrf_wrf
+WPSV3             geogrid.exe                                        exec/hwrf_geogrid
+WPSV3             metgrid.exe                                        exec/hwrf_metgrid
+WPSV3             ungrib.exe                                         exec/hwrf_ungrib
+ncep-coupler      cpl_exec/hwrf_wm3c.exe                             exec/hwrf_wm3c
+UPP               bin/unipost.exe                                    exec/hwrf_post
+# - UPP               bin/copygb.exe                                     nwport/util/exec/copygb
+UPP               bin/copygb.exe                                     exec/hwrf_egrid2latlon
+UPP               bin/cnvgrib.exe                                    nwport/util/exec/cnvgrib
+   
+# MPIPOM-TC diagnostic ocean initialization
+pomtc             ocean_exec/pomprep_fbtr.xc                         exec/hwrf_ocean_pomprep_fb
+pomtc             ocean_exec/pomprep_idel.xc                         exec/hwrf_ocean_pomprep_id
+pomtc             ocean_exec/pomprep_gdm3.xc                         exec/hwrf_ocean_pomprep_g3
+pomtc             ocean_exec/pomprep_ncda.xc                         exec/hwrf_ocean_pomprep_na
+pomtc             ocean_exec/pomprep_hycu.xc                         exec/hwrf_ocean_pomprep_hy
+pomtc             ocean_exec/transatl06prep.xc                       exec/hwrf_ocean_transatl06prep
+pomtc             ocean_exec/gfdl_date2day.exe                       exec/hwrf_date2day
+pomtc             ocean_exec/gfdl_day2date.exe                       exec/hwrf_day2date
+pomtc             ocean_exec/gfdl_getsst.exe                         exec/hwrf_getsst
+pomtc             ocean_exec/gfdl_sharp_mcs_rf_l2m_rmy5.exe          exec/hwrf_sharp_mcs_rf_l2m_rmy5
+
+# MPIPOM-TC prognostic ocean initialization and coupled forecast
+pomtc             ocean_exec/hwrf_ocean_init.exe                     exec/hwrf_ocean_init
+pomtc             ocean_exec/hwrf_ocean_fcst.exe                     exec/hwrf_ocean_fcst
+
+# MPIPOM-TC diagnostic post processing
+pomtc             ocean_exec/readsstuvhflux.exe                      exec/readsstuvhflux
+
+# New 2012 tracker:
+gfdl-vortextracker  trk_exec/hwrf_gettrk.exe                         exec/hwrf_unified_tracker
+gfdl-vortextracker  trk_exec/hwrf_vint.exe                           exec/hwrf_vint
+gfdl-vortextracker  trk_exec/hwrf_tave.exe                           exec/hwrf_tave
+
+# Old, pre-2012 tracker:
+hwrf-utilities      exec/hwrf_old_gettrk.exe                         exec/hwrf_gettrk
+
+# WPP: not present, but we'll put post.exe here so build scripts check
+# for it if someone enables WPP for some reason:
+WPP               exec/wrfpost.exe                                   exec/hwrf_wpp
+WPP               exec/copygb.exe                                    nwport/util/exec/wpp_copygb
+
+# Also not in EMC HWRF system, but present here for the same reason as WPP:
+nhcvx             exec/verify_model.exe                              exec/hwrf_verify_model
+
+# GSI, installed last since its repository is problematic:
+GSI               run/gsi.exe                                        exec/hwrf_gsi
+EMCGSI            src/global_gsi                                     exec/hwrf_gsi

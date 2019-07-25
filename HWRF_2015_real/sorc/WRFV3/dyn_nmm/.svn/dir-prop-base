@@ -1,0 +1,25 @@
+K 13
+svn:mergeinfo
+V 935
+/branches/H15A/dyn_nmm:7932,7938-8014,8068,8102
+/branches/H15B/dyn_nmm:7799-7931
+/branches/HWRF_CC/dyn_nmm:5849-5941,6682-6691,6704-6735,7814-7831,8165-8204
+/branches/HWRF_gthompson/dyn_nmm:6521-6556
+/branches/JM-Working3/dyn_nmm:4536-4612
+/branches/PIO/dyn_nmm:7215-7853
+/branches/Thiago.Quirino/HWRF_IDEAL_FIX_BY_GOPAL/dyn_nmm:8452-8455
+/branches/WRF4DVAR_DIV/dyn_nmm:6869-6870
+/branches/WRFDA_RADAR/dyn_nmm:6871-7812
+/branches/ens-sas/dyn_nmm:7647-7754
+/branches/hwrf-interp-mp/dyn_nmm:6078-6189
+/branches/hwrf-ncep-tracker/dyn_nmm:6261-6324
+/branches/hwrf-nesting-bugs/dyn_nmm:7698-7752
+/branches/hwrf-xlf-is-buggy/dyn_nmm:6424-6478
+/branches/merge-H215/dyn_nmm:8355-8426
+/branches/merge-H215-step2/dyn_nmm:8396-8400,8414-8425
+/branches/merge-motion/dyn_nmm:6327-6333
+/branches/pdyn-nest-motion/dyn_nmm:6141-6260
+/branches/the-great-merge/dyn_nmm:5757-5758
+/tags/trunk_20131220_03_mk/dyn_nmm:7046
+/trunk/dyn_nmm:4946-7045,7047-8365
+END

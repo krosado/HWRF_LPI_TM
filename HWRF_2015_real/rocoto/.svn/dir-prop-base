@@ -1,0 +1,34 @@
+K 13
+svn:mergeinfo
+V 1253
+/branches/2011_oper/rocoto:27-76
+/branches/3km/rocoto:3501-3543
+/branches/H14A/rocoto:1888-1925
+/branches/H15W/rocoto:3120-3246,3251-3255
+/branches/H15X/rocoto:2933-3168
+/branches/H15X-conditional-tdr/rocoto:3055-3256
+/branches/H215/rocoto:3247-3405,3407-3414
+/branches/HWRF-new-gfs/rocoto:2904,2924
+/branches/HWRF_v3.6a/rocoto:2495-2563
+/branches/MPI_POMTC/rocoto:1170
+/branches/MPI_POMTC_20140930/rocoto:2715-3044
+/branches/URI-mpipomtc/rocoto:2014
+/branches/bg-archive/rocoto:2844-2854
+/branches/for-2013-oper-tag/rocoto:1343-1391
+/branches/hwrf-2012-mtong/rocoto:716-1099
+/branches/hwrf-2013-pre-implementation/rocoto:1115,1122-1125,1134-1153,1206-1223
+/branches/hwrf-2013-rrtmg/rocoto:1262-1263
+/branches/hwrf-add-some-things/rocoto:1323-1331
+/branches/hwrf-for-taiwan/rocoto:1449-1461
+/branches/hwrf-tc-diag-2/rocoto:2005,2052-2053
+/branches/iplib-bugfix/rocoto:1309-1319
+/branches/jet-2013-final/rocoto:1507-1508
+/branches/ksH214/rocoto:2113-2154,2159,2161
+/branches/merge-H215/rocoto:3404-3493
+/branches/port-wcoss-newjet/rocoto:944-965,967-968
+/branches/py-new-gsi/rocoto:2644
+/branches/py1km/rocoto:2321,2324-2327
+/branches/pyHWRF/rocoto:1795-1821,2620,2622
+/branches/the-great-merge/rocoto:649-687
+/branches/wcoss-rocoto/rocoto:2796-2803,2805
+END

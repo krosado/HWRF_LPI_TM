@@ -1,0 +1,361 @@
+Table of Contents
+-----------------
+
+  1. Introduction
+  2. Source Directory
+  3. Building
+  4. Installation
+  5. Development
+   5.1 HWRF Branch
+   5.2 Component Branches
+    5.2.1 Makefile
+    5.2.2 SVN
+  6. SVN Quick Reference
+   6.1 SVN Commands
+   6.1.1 checkout
+    6.1.2 commit
+    6.1.3 update
+    6.1.4 merge
+    6.1.5 add
+    6.1.6 revert
+    6.1.7 status
+    6.1.8 info
+   6.2 SVN Code Lifecycle
+    6.2.1 Branch creation
+    6.2.2 Commit changes
+    6.2.3 Keeping up to date
+    6.2.4 Merge trunk changes into the branch
+    6.2.5 Merge branches into the trunk
+    6.2.6 Branch deletion
+  7. Common Errors
+   7.1 Not using GNU Make
+
+
+1. Introduction
+---------------
+
+This is Hurricane WRF (HWRF).
+
+Homepage:       http://www.dtcenter.org/HurrWRF/users/
+SVN Repository: https://svn-dtc-hwrf.cgd.ucar.edu/
+
+Within this README file, lines that are indented and have a "%" as a
+prefix are examples of commands that can be run from a shell prompt.
+You should be able to directly copy these and execute them.
+
+2. Source Directory
+-------------------
+
+This directory contains all the components needed to build and run HWRF
+from source.
+
+These components are currently:
+  - HWRF Utilities
+  - WRF
+  - WPS
+  - UPP
+  - GSI
+  - POMTC
+  - NCEP Coupler
+  - GFDL Vortex Tracker
+
+A great proportion of these are linked to external SVN repositories. This
+is through the use of svn:external properties.
+http://svnbook.red-bean.com/en/1.5/svn.advanced.externals.html
+
+The external properties are set on each component directory to facilitate
+the ability to pivot each component independently. There is a .externals
+file that contains the default listings. This file has been applied to
+this directory with the command `svn propset svn:externals -F .externals .`.
+
+There are rules within the Makefile to pivot the external repositories.
+
+3. Building
+-----------
+
+Building a complete HWRF system requires building all the sub components.
+The build order is important as various components link against static
+libraries built by WRF.
+
+The current build order of the components is:
+  - WRF
+  - GSI
+  - HWRF Utilities
+  - NCEP Coupler
+  - POMTC
+  - GFDL Vortex Tracker
+  - WPS
+  - UPP
+
+To build all HWRF components with the default site compilers:
+	% make
+
+This will build and install the build system. The source is located under
+the "build" sub directory and when installed will place
+ - executables => ../bin
+ - libraries   => ../lib
+ - man pages   => ../man
+
+Please note you will need to use GNU make, if it is not available on
+your system it can be obtained from: http://www.gnu.org/software/make/
+
+By default the build process is silent. If you would like to know what
+is happening the you should set the variable VERBOSE to a value greater
+than 0 when calling make.
+	% make VERBOSE=2
+
+When compiling all components write their standard output and error to
+files in their source directory.
+	STDOUT => compile.log
+	STDERR => compile.err
+
+For example the standard output of WRF will be in "WRFV3/compile.log".
+
+There are rules in the Makefile to provide finer grain control over this
+build process, such as:
+	% make build            # To build the build system
+	% make compile          # To compile all the components
+
+Please read the Makefile for all the available targets.
+
+
+4. Installation
+---------------
+
+To install all the HWRF components previously built into the toplevel
+"exec" directory:
+
+        % module use /path/to/modulefiles/$machine
+        % module load HWRF/build
+	% make install
+
+where the "modulefiles" directory is at ../modulefiles relative to
+this file.  However, you must provide an absolute path to the
+modulefiles when running "module use".  It should be noted that this
+follows the NCEP naming convention, whereby all executables have a
+"hwrf_" prefix and have dropped the ".exe" suffix.
+
+If you prefer, you can manually set up the environment instead of
+letting the HWRF/build module do it for you.  However, the
+ush/hwrf_pre_job.sh.inc must match your build preferences when running
+the jobs.
+
+
+5. Development
+--------------
+
+All development should be done in branches. It should be noted that all
+components reside in external SVN repositories. This means the creation
+of a development branch may require multiple steps.
+
+5.1 HWRF branch
+
+Creating a branch of the toplevel HWRF repository. This can be done
+totally through SVN without needing to touch the local filesystem. The
+following command will create a branch called "my_copy", a more descriptive
+and suitable name should be used:
+
+	% svn copy https://svn-dtc-hwrf.cgd.ucar.edu/trunk \
+		   https://svn-dtc-hwrf.cgd.ucar.edu/branches/my_copy
+
+Then to use this branch:
+
+	% svn co https://svn-dtc-hwrf.cgd.ucar.edu/branches/my_copy
+	% cd my_copy
+
+5.2 Component branches
+
+Creating a component branch can be done in two ways. The following ways
+use POMT-TC as an example.  Note that the environment 
+
+5.2.1 Makefile
+
+The first is by using the provided makefile and the rules written within it:
+	% cd sorc
+	% make PKG=pomtc BRANCH=my_copy branch
+
+5.2.2 SVN
+
+The second is by hand using svn commands.
+
+Creating a component branch:
+
+	% svn copy https://svn-dtc-pomtc.cgd.ucar.edu/trunk/ \
+		   https://svn-dtc-pomtc.cgd.ucar.edu/branches/my_copy
+
+Switch to using the new component branch:
+
+	% cd pomtc
+	% svn switch https://svn-dtc-pomtc.cgd.ucar.edu/branches/my_copy
+	% cd ..
+
+Edit the .externals files using your favourite $EDITOR. Then apply this
+new setting:
+
+	% svn propset svn:externals -F .externals .
+
+
+6. SVN Quick Reference
+----------------------
+
+This section is not meant to replace the excellent documentation provided
+by the SVN book:
+	http://svnbook.red-bean.com/
+or the brief help the svn command provides:
+	% svn help
+
+6.1 SVN Commands
+
+The following is a small cheat sheet for using Subversion. Commands are
+listed in the sub section titles and if there is a shorter acronym or alias
+it will be listed too.
+
+6.1.1. check out (aka "co")
+
+To check out the current HEAD of the repository:
+	% svn checkout https://svn-dtc-hwrf.cgd.ucar.edu/trunk HWRF
+
+This will place the latest version of the HWRF repository in the directory
+called "HWRF" within your current working directory. Since the repository
+contains external references, these will also be checked out. To disable
+this and not retrieve these use the option "--ignore-externals":
+	% svn --ignore-externals co https://svn-dtc-hwrf.cgd.ucar.edu/trunk HWRF
+
+6.1.2. commit (aka "ci")
+
+When a working copy of a file (or directory) are ready to be committed to
+the repository: 
+	% svn commit .
+
+This will prompt you for a log message using your $EDITOR. This message
+should contain all the necessary details describing the changes made.
+
+6.1.3 update (aka "up")
+
+To bring the working copy up to date (in sync) with the repository:
+	% svn update HWRF
+
+That is, to add all the changes that have occurend within the repository
+(in the current branch or trunk which the working copy is from) into
+the current working copy.
+
+6.1.4 merge
+
+To merge changes between repository branches and/or trunk revisions:
+	% svn merge https://svn-dtc-hwrf.cgd.ucar.edu/trunk
+
+6.1.5 add
+
+To add a new file to the repository:
+	% svn add foo.c
+
+6.1.6 revert
+
+To undo any uncommitted changes in a file:
+	% svn revert foo.c
+
+6.1.7 status
+
+To obtain the status about the current directory (or file).
+	% svn status .
+
+This will list what files have been modified, added, deleted, etc.
+
+6.1.8 info
+
+To obtain information about the current directory (or file).
+	% svn info .
+
+6.2 SVN code life cycle
+
+Development should be conducted in branches, leaving the trunk as the
+stable code base.
+
+The following is a simple guide to a new feature (called foo) code
+life cycle.
+
+6.2.1 Branch creation
+
+One should create a branch for each development feature by copying the
+trunk into an appropriately named new branch:
+	% svn copy https://svn-dtc-hwrf.cgd.ucar.edu/trunk \
+		   https://svn-dtc-hwrf.cgd.ucar.edu/branches/foo
+
+6.2.2 Commit changes
+
+Code should be committed as often as possible. When working within the
+working copy of the branch on local disk:
+	% svn ci .
+
+6.2.3 Keeping up to date
+
+If the branch is worked on by multiple people or in multiple places. It
+should be kept up to date, once again as often as possible.
+	% svn update .
+
+6.2.4 Merge trunk changes into the branch
+
+When a change has occured in the trunk that is needed within the branch,
+merge the trunk with the branch:
+	% svn merge https://svn-dtc-hwrf.cgd.ucar.edu/trunk
+	% # build, test, ...
+	% svn ci .
+
+6.2.5 Merge branches into the trunk
+
+When all the development for the branch are done and it is stable. Merge
+the feature into the trunk. This is done by obtaining a new trunk:
+	% svn co https://svn-dtc-hwrf.cgd.ucar.edu/trunk
+	% cd trunk
+	% svn merge --reintegrate \
+	            https://svn-dtc-hwrf.cgd.ucar.edu/branches/foo
+	% # build, test, verify, ...
+	% sv ci .
+
+6.2.6 Branch deletion
+
+When all development work in a branch has finished and after the changes
+have been merged and accepted into the trunk. The branch should not be
+used for further development work and should be deleted:
+	% svn delete https://svn-dtc-hwrf.cgd.ucar.edu/branches/foo
+
+
+7. Common Errors
+----------------
+
+7.0. Before "make", the PNETCDF environment variable needs to be defined:
+
+jet:
+setenv PNETCDF /mnt/pan2/projects/hur-uri/bthomas/parallel-netcdf-1.2.0/local
+zeus:
+module use /contrib/modulefiles/nceplibs_ext
+module av pnetcdf
+module load pnetcdf/1.2.0-intel-mpt
+wcoss:
+module load PNetCDF
+
+7.1. Not using GNU Make.
+
+When typing `make` you get the following output:
+
+  "Makefile", line 14: make: Dependency line needs colon or double colon
+  operator
+  make: Fatal errors encountered -- cannot continue.
+
+You are most probably not using GNU Make. Please check which make version
+you are running with. GNU Make should return it's version number and
+copywrite notice when invoked with the "-v" option `make -v`:
+
+  GNU Make 3.81
+  Copyright (C) 2006  Free Software Foundation, Inc.
+  This is free software; see the source for copying conditions.
+  There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+  PARTICULAR PURPOSE.
+  
+  This program built for powerpc-ibm-aix5.3.0.0
+
+Non GNU Makes often do not understand the "-v" option:
+
+  /bin/make: illegal option -- v
+  usage: make [-einqrst] [-k|-S] [-d[A|adg[1|2]mstv]] [-D variable]
+  [-f makefile ] [-j [jobs]] [variable=value ...] [target ...]

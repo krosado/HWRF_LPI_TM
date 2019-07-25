@@ -1,0 +1,53 @@
+#!/bin/sh
+######################################################################
+#                       init_GFS wrapper script                          
+######################################################################
+######################################################################
+#   NOTES: START_TIME must include minutes.                          #
+#                                                                    #
+#   Author: DTC July 2014					     #
+######################################################################
+
+######################################################################
+#   Definitions
+######################################################################
+#---------------------------------------------------------------------
+#   Global definitions of environment variables
+#---------------------------------------------------------------------
+
+. ./global_vars.sh
+
+# Source the start file and holdvars
+. "$startfile"
+. "$holdvars"
+
+if [ -z "$PYTHONPATH" ] ; then
+	export PYTHONPATH=${USHhwrf}
+else
+	export PYTHONPATH=${PYTHONPATH}:${USHhwrf}
+fi
+
+export TOTAL_TASKS=48
+cd $WORKhwrf
+
+
+######################################################################
+#   Main
+######################################################################
+
+
+# Run the python init script for the GFS
+export INIT_MODEL=GFS
+export INIT_FHR=0
+export INIT_PARTS=ALL
+$USHhwrf/rocoto_pre_job.sh $EXhwrf/exhwrf_init.py
+
+
+
+
+
+######################################################################
+# Suggested resources based on NOAA's Jet
+# walltime = 04:39:00
+# procs=48
+######################################################################

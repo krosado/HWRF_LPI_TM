@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/8205/branches/HWRF/external/io_pio
+END
+wrf_io.F90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/8205/branches/HWRF/external/io_pio/wrf_io.F90
+END
+module_wrfsi_static.F90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/8205/branches/HWRF/external/io_pio/module_wrfsi_static.F90
+END
+field_routines.F90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/8205/branches/HWRF/external/io_pio/field_routines.F90
+END
+wrf_data_pio.F90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/8205/branches/HWRF/external/io_pio/wrf_data_pio.F90
+END
+pio_routines.F90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/8205/branches/HWRF/external/io_pio/pio_routines.F90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/8205/branches/HWRF/external/io_pio/Makefile
+END
+read_bdy_routines.F90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/8205/branches/HWRF/external/io_pio/read_bdy_routines.F90
+END

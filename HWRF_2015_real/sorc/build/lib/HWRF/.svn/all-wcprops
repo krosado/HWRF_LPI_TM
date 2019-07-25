@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/3708/trunk/sorc/build/lib/HWRF
+END
+UPP.pm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/UPP.pm
+END
+WPP.pm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3634/trunk/sorc/build/lib/HWRF/WPP.pm
+END
+EMCGSI.pm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/3708/trunk/sorc/build/lib/HWRF/EMCGSI.pm
+END
+VortexTrk.pm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/VortexTrk.pm
+END
+Coupler.pm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/Coupler.pm
+END
+WPS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/WPS.pm
+END
+Workflow.pm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/Workflow.pm
+END
+GSI.pm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/GSI.pm
+END
+POMTC.pm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/POMTC.pm
+END
+NHCVX.pm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/NHCVX.pm
+END
+TNE.pm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/TNE.pm
+END
+Renamer.pm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/469/trunk/sorc/build/lib/HWRF/Renamer.pm
+END
+Threads.pm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/Threads.pm
+END
+WRF.pm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/WRF.pm
+END
+Utils.pm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/Utils.pm
+END
+Component.pm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3632/trunk/sorc/build/lib/HWRF/Component.pm
+END

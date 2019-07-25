@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/563/branches/HWRF/src/lib/wrfmpi_stubs
+END
+mpif.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/72/branches/HWRF/src/lib/wrfmpi_stubs/mpif.h
+END
+mpi_fortran.f
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/563/branches/HWRF/src/lib/wrfmpi_stubs/mpi_fortran.f
+END
+mpi_c.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/563/branches/HWRF/src/lib/wrfmpi_stubs/mpi_c.c
+END
+mpi.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/72/branches/HWRF/src/lib/wrfmpi_stubs/mpi.h
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/72/branches/HWRF/src/lib/wrfmpi_stubs/makefile
+END

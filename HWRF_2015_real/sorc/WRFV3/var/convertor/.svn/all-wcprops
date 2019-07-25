@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/7191/branches/HWRF/var/convertor
+END
+KMA_landmask_428_215
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/convertor/KMA_landmask_428_215
+END
+convertor.tar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/convertor/convertor.tar
+END
+namelist.kma2netcdf
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/convertor/namelist.kma2netcdf
+END
+convert_nmm.F
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/convertor/convert_nmm.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/4946/branches/HWRF/var/convertor/Makefile
+END
+ens_obs_var.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/convertor/ens_obs_var.f90
+END

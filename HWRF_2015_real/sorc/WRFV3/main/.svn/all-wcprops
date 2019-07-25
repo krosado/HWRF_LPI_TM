@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/!svn/ver/8366/branches/HWRF/main
+END
+wrf.F
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/4946/branches/HWRF/main/wrf.F
+END
+ideal_em.F
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/8366/branches/HWRF/main/ideal_em.F
+END
+convert_em.F
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/7673/branches/HWRF/main/convert_em.F
+END
+wrf_SST_ESMF.F
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/5137/branches/HWRF/main/wrf_SST_ESMF.F
+END
+depend.common
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/8366/branches/HWRF/main/depend.common
+END
+nup_em.F
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/7673/branches/HWRF/main/nup_em.F
+END
+real_em.F
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/8366/branches/HWRF/main/real_em.F
+END
+ideal_nmm.F
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/8205/branches/HWRF/main/ideal_nmm.F
+END
+module_wrf_top.F
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/8366/branches/HWRF/main/module_wrf_top.F
+END
+ndown_em.F
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/7673/branches/HWRF/main/ndown_em.F
+END
+tc_em.F
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/5750/branches/HWRF/main/tc_em.F
+END
+wrf_ESMFMod.F
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/5137/branches/HWRF/main/wrf_ESMFMod.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/8205/branches/HWRF/main/Makefile
+END
+real_nmm.F
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/8205/branches/HWRF/main/real_nmm.F
+END

@@ -1,0 +1,11 @@
+<!-- All supported sites -->
+
+<!ENTITY % sjet             SYSTEM      "svjet.ent">
+<!ENTITY % vjet             SYSTEM      "svjet.ent">
+<!ENTITY % tjet             SYSTEM      "tujet.ent">
+<!ENTITY % ujet             SYSTEM      "tujet.ent">
+<!ENTITY % njet             SYSTEM      "njet.ent">
+<!ENTITY % zeus             SYSTEM      "zeus.ent">
+<!ENTITY % theia            SYSTEM      "theia.ent">
+<!ENTITY % yellowstone      SYSTEM      "yellowstone.ent">
+<!ENTITY % wcoss            SYSTEM      "wcoss2.ent">

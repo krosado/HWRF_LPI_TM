@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/8205/branches/HWRF/external/io_grib1/WGRIB
+END
+ibm2flt.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ibm2flt.c
+END
+cptectable_254.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/cptectable_254.c
+END
+wrtieee.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/wrtieee.c
+END
+BDSunpk.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/BDSunpk.c
+END
+nceptab_129.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/nceptab_129.c
+END
+ec_ext.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ec_ext.c
+END
+dwdtable_002.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/dwdtable_002.c
+END
+dwdtable_201.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/dwdtable_201.c
+END
+dwdtable_202.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/dwdtable_202.c
+END
+missing.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/missing.c
+END
+nceptable_opn.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/nceptable_opn.c
+END
+dwdtable_203.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/dwdtable_203.c
+END
+bds.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/bds.h
+END
+wgrib_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/wgrib_main.c
+END
+nceptable_reanal.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/nceptable_reanal.c
+END
+gds_grid.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/gds_grid.c
+END
+gds.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/gds.h
+END
+ectable_130.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ectable_130.c
+END
+ectable_131.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ectable_131.c
+END
+PDS_date.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/PDS_date.c
+END
+ectable_150.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ectable_150.c
+END
+ectable_151.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ectable_151.c
+END
+ombtable.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ombtable.c
+END
+ectable_170.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ectable_170.c
+END
+Changes
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/Changes
+END
+levels.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/levels.c
+END
+gribtable.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/gribtable.c
+END
+seekgrib.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/seekgrib.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/Makefile
+END
+nceptab_130.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/nceptab_130.c
+END
+flt2ieee.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/flt2ieee.c
+END
+nceptab_131.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/nceptab_131.c
+END
+cnames.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/cnames.c
+END
+intpower.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/intpower.c
+END
+cnames.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/cnames.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/README
+END
+readgrib.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/readgrib.c
+END
+pds4.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/pds4.h
+END
+src2all
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/src2all
+END
+ectable_140.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ectable_140.c
+END
+ectable_160.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ectable_160.c
+END
+bms.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/bms.h
+END
+ectable_180.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ectable_180.c
+END
+PDStimes.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/PDStimes.c
+END
+grib.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/grib.h
+END
+ectable_128.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ectable_128.c
+END
+ectable_129.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ectable_129.c
+END
+ensemble.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_grib1/WGRIB/ensemble.c
+END

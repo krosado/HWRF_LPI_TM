@@ -1,0 +1,81 @@
+<!-- This file contains TWO jobs: the coupled forecast and the
+uncoupled forecast.  They are designed so that every workflow should
+run exactly ONE of them -->
+
+<task name="coupled_forecast_E#ENS#" maxtries="&MAX_TRIES_BIG_JOBS;">
+  
+  <command>&PRE; &EXhwrf;/exhwrf_forecast.py</command>
+  <jobname>hwrf_cpl_forecast_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&PE;</queue>
+  <nodes>&CPL_FCST;</nodes>
+  <walltime>&FORECAST_WALLTIME;</walltime>
+  <memory></memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_cpl_forecast.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_cpl_forecast.err</cyclestr></stderr>
+
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>&CPL_TASKS;</value>
+  </envar>
+  <envar>
+    <name>I_MPI_EXTRA_FILESYSTEM</name>
+    <value>1</value>
+  </envar>
+  <envar>
+    <name>I_MPI_EXTRA_FILESYSTEM_LIST</name>
+    <value>panfs</value>
+  </envar>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &NODES_EXTRA;
+  &MPI_EXTRA;
+  &FORECAST_MORE;
+
+  <dependency>
+    <and>
+      <taskdep task="check_init_E#ENS#"/>
+      <streq><left>&RUN_OCEAN;</left><right>YES</right></streq>
+      <sh>grep 'RUN_COUPLED=YES' <cyclestr>&COMhwrf;/&STORMLABEL;.ocean_status</cyclestr></sh>
+    </and>
+  </dependency>
+
+</task>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<task name="uncoupled_forecast_E#ENS#" maxtries="&MAX_TRIES;">
+  
+  <command>&PRE; &EXhwrf;/exhwrf_forecast.py</command>
+  <jobname>hwrf_atm_forecast_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&PE;</queue>
+  <nodes>&ATM_FCST;</nodes>
+  <walltime>&FORECAST_WALLTIME;</walltime>
+  <memory></memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_atm_forecast.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_atm_forecast.err</cyclestr></stderr>
+
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>&ATM_TASKS;</value>
+  </envar>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &NODES_EXTRA;
+  &MPI_EXTRA;
+  &FORECAST_MORE;
+
+  <dependency>
+    <and>
+      <taskdep task="check_init_E#ENS#"/>
+      <or>
+        <strneq><left>&RUN_OCEAN;</left><right>YES</right></strneq>
+        <sh>grep -v 'RUN_COUPLED=YES' <cyclestr>&COMhwrf;/&STORMLABEL;.ocean_status</cyclestr></sh>
+      </or>
+    </and>
+  </dependency>
+
+</task>

@@ -1,0 +1,6 @@
+<metatask name="meta_init_gfs_E#ENS#" mode="parallel">
+  <var name="INIT_MODEL">GFS</var>
+  <var name="INIT_FHR">0</var>
+  <var name="INIT_PARTS">3DVAR</var>
+  &init_task;
+</metatask>

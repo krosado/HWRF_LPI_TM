@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/examples
+END
+nc_cf_grid_write_lat_lon_curvilinear_tutorial.m
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/examples/nc_cf_grid_write_lat_lon_curvilinear_tutorial.m
+END
+thredds_info.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/examples/thredds_info.m
+END
+thredds_dump.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/snctools/examples/thredds_dump.m
+END

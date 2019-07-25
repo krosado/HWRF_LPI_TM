@@ -1,0 +1,353 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/1163/branches/HWRF/libs/src/sp
+END
+sptrun.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptrun.f
+END
+sptranf0.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1104/branches/HWRF/libs/src/sp/sptranf0.f
+END
+sptranf1.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptranf1.f
+END
+sptrunmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptrunmv.f
+END
+spgradq.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/spgradq.f
+END
+spfft1.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/spfft1.f
+END
+sptranfv.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptranfv.f
+END
+sptrunsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptrunsv.f
+END
+sppad.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/801/branches/HWRF/libs/src/sp/sppad.f
+END
+spanaly.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/spanaly.f
+END
+sptgptv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgptv.f
+END
+spsynth.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/spsynth.f
+END
+spgradx.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/spgradx.f
+END
+sptgptsd.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgptsd.f
+END
+sptezd.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptezd.f
+END
+spgrady.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/spgrady.f
+END
+spwget.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/spwget.f
+END
+sptgpm.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgpm.f
+END
+sptrand.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptrand.f
+END
+sptranf.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptranf.f
+END
+spdz2uv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/spdz2uv.f
+END
+sptgpmd.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgpmd.f
+END
+sptgps.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgps.f
+END
+sptgpt.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgpt.f
+END
+sptezm.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptezm.f
+END
+lapack_gen.F
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/801/branches/HWRF/libs/src/sp/lapack_gen.F
+END
+sptgpsd.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgpsd.f
+END
+sptezmd.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptezmd.f
+END
+spfftpt.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/spfftpt.f
+END
+ncpus.F
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/801/branches/HWRF/libs/src/sp/ncpus.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1163/branches/HWRF/libs/src/sp/Makefile
+END
+sptezv.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptezv.f
+END
+spvar.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/801/branches/HWRF/libs/src/sp/spvar.f
+END
+sptranv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptranv.f
+END
+bll2ps.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/bll2ps.f
+END
+sptrund.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptrund.f
+END
+splaplac.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/801/branches/HWRF/libs/src/sp/splaplac.f
+END
+sptgpmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgpmv.f
+END
+splegend.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/801/branches/HWRF/libs/src/sp/splegend.f
+END
+sptrung.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptrung.f
+END
+sptez.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptez.f
+END
+sptgpsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgpsv.f
+END
+sptran.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptran.f
+END
+sptrunl.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptrunl.f
+END
+sptezmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptezmv.f
+END
+sptrunm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptrunm.f
+END
+sptgptvd.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgptvd.f
+END
+spuv2dz.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/spuv2dz.f
+END
+fftpack.F
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/fftpack.F
+END
+sptruns.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptruns.f
+END
+sptrunv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptrunv.f
+END
+spfft.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/801/branches/HWRF/libs/src/sp/spfft.f
+END
+splat.F
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/801/branches/HWRF/libs/src/sp/splat.F
+END
+sptgptd.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptgptd.f
+END
+spffte.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/801/branches/HWRF/libs/src/sp/spffte.f
+END
+sptrungv.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/801/branches/HWRF/libs/src/sp/sptrungv.f
+END
+splib.doc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/801/branches/HWRF/libs/src/sp/splib.doc
+END
+speps.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/801/branches/HWRF/libs/src/sp/speps.f
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/!svn/ver/895/branches/HWRF/util
+END
+vertical_grid_70_20m_80km.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/602/branches/HWRF/util/vertical_grid_70_20m_80km.txt
+END
+plotfmt.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/832/branches/HWRF/util/plotfmt.ncl
+END
+plotfmt_nc.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/832/branches/HWRF/util/plotfmt_nc.ncl
+END
+plotgrids_old.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/832/branches/HWRF/util/plotgrids_old.ncl
+END
+plotgrids.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/861/branches/HWRF/util/plotgrids.ncl
+END
+gfs_old.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/895/branches/HWRF/util/gfs_old.ncl
+END
+gfs.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/895/branches/HWRF/util/gfs.ncl
+END
+plotgrids_new.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/861/branches/HWRF/util/plotgrids_new.ncl
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/602/branches/HWRF/util/Makefile
+END
+vertical_grid_38_20m_G3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/602/branches/HWRF/util/vertical_grid_38_20m_G3.txt
+END
+vertical_grid_50_20m_63km.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/602/branches/HWRF/util/vertical_grid_50_20m_63km.txt
+END

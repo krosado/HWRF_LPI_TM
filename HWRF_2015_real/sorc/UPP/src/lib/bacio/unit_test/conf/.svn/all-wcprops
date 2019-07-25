@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/conf
+END
+conf_unittest
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/conf/conf_unittest
+END
+conf_current
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/conf/conf_current
+END
+conf_zeus
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/conf/conf_zeus
+END
+conf_ccs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/563/branches/HWRF/src/lib/bacio/unit_test/conf/conf_ccs
+END

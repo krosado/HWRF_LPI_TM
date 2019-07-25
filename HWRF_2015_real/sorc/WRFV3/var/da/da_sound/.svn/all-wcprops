@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/7885/branches/HWRF/var/da/da_sound
+END
+da_jo_and_grady_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/7885/branches/HWRF/var/da/da_sound/da_jo_and_grady_sonde_sfc.inc
+END
+da_check_max_iv_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_check_max_iv_sonde_sfc.inc
+END
+da_calculate_grady_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/da/da_sound/da_calculate_grady_sonde_sfc.inc
+END
+da_transform_xtoy_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_transform_xtoy_sound.inc
+END
+da_oi_stats_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_oi_stats_sonde_sfc.inc
+END
+da_obs_diagnostics.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_sound/da_obs_diagnostics.inc
+END
+da_jo_sonde_sfc_uvtq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_sound/da_jo_sonde_sfc_uvtq.inc
+END
+da_check_buddy_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_check_buddy_sound.inc
+END
+da_sound.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_sound.f90
+END
+da_residual_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_sound/da_residual_sound.inc
+END
+da_transform_xtoy_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_transform_xtoy_sonde_sfc.inc
+END
+da_get_innov_vector_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_get_innov_vector_sound.inc
+END
+da_print_stats_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_sound/da_print_stats_sound.inc
+END
+da_transform_xtoy_sound_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_transform_xtoy_sound_adj.inc
+END
+da_ao_stats_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_ao_stats_sound.inc
+END
+da_jo_and_grady_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/7885/branches/HWRF/var/da/da_sound/da_jo_and_grady_sound.inc
+END
+da_check_max_iv_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_check_max_iv_sound.inc
+END
+da_calculate_grady_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_sound/da_calculate_grady_sound.inc
+END
+da_residual_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_sound/da_residual_sonde_sfc.inc
+END
+da_get_innov_vector_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_get_innov_vector_sonde_sfc.inc
+END
+da_oi_stats_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_oi_stats_sound.inc
+END
+da_print_stats_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_sound/da_print_stats_sonde_sfc.inc
+END
+da_jo_sound_uvtq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_sound/da_jo_sound_uvtq.inc
+END
+da_transform_xtoy_sonde_sfc_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_transform_xtoy_sonde_sfc_adj.inc
+END
+da_ao_stats_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/7425/branches/HWRF/var/da/da_sound/da_ao_stats_sonde_sfc.inc
+END

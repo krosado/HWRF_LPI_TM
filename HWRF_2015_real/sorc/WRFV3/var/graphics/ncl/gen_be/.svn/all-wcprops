@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/5026/branches/HWRF/var/graphics/ncl/gen_be
+END
+gen_be_global_evecs.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_global_evecs.ncl
+END
+gen_be_corr_ps.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_corr_ps.ncl
+END
+gen_be_corr_yz.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_corr_yz.ncl
+END
+gen_be_global_evals.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_global_evals.ncl
+END
+gsi_be_plots.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/5026/branches/HWRF/var/graphics/ncl/gen_be/gsi_be_plots.ncl
+END
+gen_be_stage0_xa.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_stage0_xa.ncl
+END
+gen_be_global_evals2.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_global_evals2.ncl
+END
+gen_be_lengthscales.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_lengthscales.ncl
+END
+gen_mbe_contrib.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_mbe_contrib.ncl
+END
+gen_be_corr_z.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_corr_z.ncl
+END
+gen_be_lengthscales2.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_lengthscales2.ncl
+END
+gen_be_stage0_xa4.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_stage0_xa4.ncl
+END
+gen_be_corr_z2.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/graphics/ncl/gen_be/gen_be_corr_z2.ncl
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/7673/branches/HWRF/chem/KPP/mechanisms/mozcart
+END
+mozcart_wrfkpp.equiv
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/5431/branches/HWRF/chem/KPP/mechanisms/mozcart/mozcart_wrfkpp.equiv
+END
+mozcart.eqn
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/7673/branches/HWRF/chem/KPP/mechanisms/mozcart/mozcart.eqn
+END
+mozcart.spc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/chem/KPP/mechanisms/mozcart/mozcart.spc
+END
+mozcart.kpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/chem/KPP/mechanisms/mozcart/mozcart.kpp
+END
+mozcart.def
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/7425/branches/HWRF/chem/KPP/mechanisms/mozcart/mozcart.def
+END
+atoms_red
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/chem/KPP/mechanisms/mozcart/atoms_red
+END

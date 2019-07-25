@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/8205/branches/HWRF/var/da/da_gpsref
+END
+da_ao_stats_gpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_gpsref/da_ao_stats_gpsref.inc
+END
+da_transform_xtoy_gpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_gpsref/da_transform_xtoy_gpsref.inc
+END
+da_check_max_iv_gpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/5750/branches/HWRF/var/da/da_gpsref/da_check_max_iv_gpsref.inc
+END
+da_jo_and_grady_gpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_gpsref/da_jo_and_grady_gpsref.inc
+END
+da_calculate_grady_gpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_gpsref/da_calculate_grady_gpsref.inc
+END
+da_gpsref.f90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/5750/branches/HWRF/var/da/da_gpsref/da_gpsref.f90
+END
+da_oi_stats_gpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_gpsref/da_oi_stats_gpsref.inc
+END
+da_residual_gpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_gpsref/da_residual_gpsref.inc
+END
+da_get_innov_vector_gpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/8205/branches/HWRF/var/da/da_gpsref/da_get_innov_vector_gpsref.inc
+END
+da_print_stats_gpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_gpsref/da_print_stats_gpsref.inc
+END
+da_transform_xtoy_gpsref_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_gpsref/da_transform_xtoy_gpsref_adj.inc
+END

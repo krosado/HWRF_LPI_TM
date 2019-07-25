@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/!svn/ver/8427/branches/HWRF/var
+END
+README.basics
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8427/branches/HWRF/var/README.basics
+END
+README.radiance
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/8427/branches/HWRF/var/README.radiance
+END
+README.namelist
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/8366/branches/HWRF/var/README.namelist
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/7191/branches/HWRF/var/Makefile
+END

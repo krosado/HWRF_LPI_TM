@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/4946/branches/HWRF/var/external/blas
+END
+da_blas.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/blas/da_blas.f90
+END
+xerbla.inc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/external/blas/xerbla.inc
+END
+dsyr2k.inc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/external/blas/dsyr2k.inc
+END
+dswap.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/dswap.inc
+END
+dcopy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/dcopy.inc
+END
+dger.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/blas/dger.inc
+END
+dnrm2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/dnrm2.inc
+END
+dtrmm.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/dtrmm.inc
+END
+daxpy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/daxpy.inc
+END
+dscal.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/dscal.inc
+END
+dgemm.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/dgemm.inc
+END
+ddot.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/external/blas/ddot.inc
+END
+dtrmv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/dtrmv.inc
+END
+lsame.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/lsame.inc
+END
+dsymv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/dsymv.inc
+END
+dgemv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/dgemv.inc
+END
+dsyr2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/blas/dsyr2.inc
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/7673/branches/HWRF/var/external/crtm_2.1.3
+END
+make.macros
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7191/branches/HWRF/var/external/crtm_2.1.3/make.macros
+END
+make.rules
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/7191/branches/HWRF/var/external/crtm_2.1.3/make.rules
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/7191/branches/HWRF/var/external/crtm_2.1.3/README
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/7191/branches/HWRF/var/external/crtm_2.1.3/makefile
+END

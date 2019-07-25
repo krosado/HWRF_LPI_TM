@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/7425/branches/HWRF/test/em_quarter_ss
+END
+namelist.input_2to1
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/7425/branches/HWRF/test/em_quarter_ss/namelist.input_2to1
+END
+namelist.input_3to1
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/7425/branches/HWRF/test/em_quarter_ss/namelist.input_3to1
+END
+namelist.input_4to1
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/7425/branches/HWRF/test/em_quarter_ss/namelist.input_4to1
+END
+namelist.input_5to1
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/7425/branches/HWRF/test/em_quarter_ss/namelist.input_5to1
+END
+README.quarter_ss
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/test/em_quarter_ss/README.quarter_ss
+END
+input_sounding
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7425/branches/HWRF/test/em_quarter_ss/input_sounding
+END
+input_sounding_preWRFV3.6
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/7425/branches/HWRF/test/em_quarter_ss/input_sounding_preWRFV3.6
+END
+run_me_first.csh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/test/em_quarter_ss/run_me_first.csh
+END
+namelist.input
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7425/branches/HWRF/test/em_quarter_ss/namelist.input
+END

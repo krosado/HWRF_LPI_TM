@@ -1,0 +1,95 @@
+10
+
+dir
+318
+https://svn-dtc-pomtc.cgd.ucar.edu/branches/HWRF/ocean_init
+https://svn-dtc-pomtc.cgd.ucar.edu
+
+
+
+2015-01-06T14:45:27.481909Z
+314
+samuel.trahan@noaa.gov
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+2ebaf69b-b448-4a33-a6b7-68f22a25247b
+
+tran
+dir
+
+ncda
+dir
+
+hycu
+dir
+
+getsst
+dir
+
+gdm3
+dir
+
+pom
+dir
+
+sharp_mcs_rf_l2m_rmy5
+dir
+
+date2day
+dir
+
+day2date
+dir
+
+fbtr
+dir
+
+idel
+dir
+
+Makefile
+file
+
+
+
+
+2015-06-08T15:31:21.000000Z
+5917c452479abd7e1ec0c8c08a5dfdda
+2014-12-18T03:40:09.385367Z
+313
+james.t.frimel@noaa.gov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+286
+

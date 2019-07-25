@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/8205/branches/HWRF/var/gen_be
+END
+gen_be_cov3d2d_contrib.f90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_cov3d2d_contrib.f90
+END
+gen_be_cov2d3d_contrib.f90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_cov2d3d_contrib.f90
+END
+gen_be_stage0_gsi.f90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_stage0_gsi.f90
+END
+gen_be_ensmean.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_ensmean.f90
+END
+aero_mod.f90
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/4946/branches/HWRF/var/gen_be/aero_mod.f90
+END
+gen_be_stage1_gsi.f90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_stage1_gsi.f90
+END
+gen_be_stage2_gsi.f90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/5247/branches/HWRF/var/gen_be/gen_be_stage2_gsi.f90
+END
+gen_spectra.f90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_spectra.f90
+END
+gen_be_read_regcoeffs.f90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_read_regcoeffs.f90
+END
+gen_mbe_stage2.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_mbe_stage2.f90
+END
+gen_be_stage4_regional.f90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_stage4_regional.f90
+END
+gen_be_hist.f90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_hist.f90
+END
+gen_be_cov2d.f90
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_cov2d.f90
+END
+gen_be_vertloc.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_vertloc.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/6162/branches/HWRF/var/gen_be/Makefile
+END
+gen_be_stage1_1dvar.f90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_stage1_1dvar.f90
+END
+gen_be_stage2_1dvar.f90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_stage2_1dvar.f90
+END
+gen_be_diags_read.f90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/7191/branches/HWRF/var/gen_be/gen_be_diags_read.f90
+END
+gen_be_stage1.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_stage1.f90
+END
+gen_be_ep1.f90
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_ep1.f90
+END
+gen_be_cov3d3d_contrib.f90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_cov3d3d_contrib.f90
+END
+gen_be_stage2.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_stage2.f90
+END
+gen_be_ep2.f90
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_ep2.f90
+END
+gen_be_stage2a.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/8205/branches/HWRF/var/gen_be/gen_be_stage2a.f90
+END
+gen_be_stage3.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_stage3.f90
+END
+gen_be_diags.f90
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_diags.f90
+END
+gen_be_etkf.f90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/7191/branches/HWRF/var/gen_be/gen_be_etkf.f90
+END
+gen_be_addmean.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/6162/branches/HWRF/var/gen_be/gen_be_addmean.f90
+END
+gen_be_stage0_wrf.f90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/8205/branches/HWRF/var/gen_be/gen_be_stage0_wrf.f90
+END
+gen_be_cov3d3d_bin3d_contrib.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_cov3d3d_bin3d_contrib.f90
+END
+gen_be_stage4_global.f90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_stage4_global.f90
+END
+gen_be_ensrf.f90
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_ensrf.f90
+END
+gen_be_cov3d.f90
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/gen_be/gen_be_cov3d.f90
+END

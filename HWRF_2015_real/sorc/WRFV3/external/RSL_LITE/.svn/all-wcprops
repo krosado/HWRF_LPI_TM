@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8427/branches/HWRF/external/RSL_LITE
+END
+f_pack.F90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6162/branches/HWRF/external/RSL_LITE/f_pack.F90
+END
+cycle.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/external/RSL_LITE/cycle.c
+END
+buf_for_proc.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/external/RSL_LITE/buf_for_proc.c
+END
+gen_comms.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/8427/branches/HWRF/external/RSL_LITE/gen_comms.c
+END
+module_dm.F
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/8427/branches/HWRF/external/RSL_LITE/module_dm.F
+END
+swap.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/external/RSL_LITE/swap.c
+END
+rsl_bcast.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/8427/branches/HWRF/external/RSL_LITE/rsl_bcast.c
+END
+c_code.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/7191/branches/HWRF/external/RSL_LITE/c_code.c
+END
+f_xpose.F90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/external/RSL_LITE/f_xpose.F90
+END
+task_for_point.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/6162/branches/HWRF/external/RSL_LITE/task_for_point.c
+END
+tfp_tester.F
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/external/RSL_LITE/tfp_tester.F
+END
+rsl_lite.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/8205/branches/HWRF/external/RSL_LITE/rsl_lite.h
+END
+period.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/external/RSL_LITE/period.c
+END
+rsl_malloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/8205/branches/HWRF/external/RSL_LITE/rsl_malloc.c
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6162/branches/HWRF/external/RSL_LITE/makefile
+END

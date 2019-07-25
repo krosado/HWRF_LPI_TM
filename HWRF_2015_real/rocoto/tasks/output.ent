@@ -1,0 +1,29 @@
+<task name="output_E#ENS#" maxtries="&MAX_TRIES;">
+  
+  <command>&PRE; &EXhwrf;/exhwrf_output.py</command>
+  <jobname>hwrf_output_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&SERIAL;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>00:20:00</walltime>
+  <memory>&OUTPUT_MEMORY;</memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_output.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_output.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+  &SERIAL_EXTRA;
+
+  <dependency>
+    &post_complete;
+  </dependency>
+
+  <rewind>
+    <sh>rm -f '<cyclestr>&COMhwrf;/&STORMLABEL;.done</cyclestr>'</sh>
+  </rewind>
+</task>

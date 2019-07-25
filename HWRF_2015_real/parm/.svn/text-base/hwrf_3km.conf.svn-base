@@ -1,0 +1,139 @@
+# Replace the override files to ensure timestep is not changed:
+[prelaunch]
+basin_conf={PARMhwrf}/hwrf_3km_{vit.pubbasin2}.conf
+no_basin_conf={PARMhwrf}/hwrf_3km_other_basins.conf
+rsmc_conf={PARMhwrf}/hwrf_3km_{RSMC}.conf
+
+hwrf_3km_conf=yes
+last_of_43lev_3km=3km
+
+# Change the processor counts.  Force 200 WRF processors on all
+# platforms.  This ensures we do not go past the 7x7 minimum tile size
+# requirement.  The defaults for all platforms violate that
+# requirement in the forecast job when run at 3km.  These values are
+# from the 2013-2014 operational HWRF:
+[runwrf]
+nio_groups=4
+nio_tasks_per_group=4
+nproc_x=8
+nproc_y=23
+wrf_ranks=200
+wm3c_ranks=1
+
+[rocotostr]
+FCST_RES=3KM    ; ensure that the *_3KM XML entities are used
+
+# Override namelist settings for 45 second timestep and 3km:
+[namelist_inner]
+physics.nrads = 216
+physics.nradl = 216
+physics.movemin = 12
+physics.ntornado=12
+domains.coral_y=12
+domains.coral_x=6
+
+[namelist_outer]
+physics.nrads = 72
+physics.nradl = 72
+physics.nphs = 6
+physics.ncnvc = 6
+physics.movemin = 6
+physics.ntornado=3
+domains.coral_y=14
+domains.coral_x=7
+
+[moad_namelist]
+physics.nrads = 24
+physics.nradl = 24
+physics.nphs = 2
+physics.ncnvc = 2
+physics.movemin = 3
+
+# Override domain sizes, timestep (45s) and resolutions for 3km:
+[wrf]
+dt = 45
+
+[moad]
+nx = 216
+ny = 432
+dx = 0.18
+dy = 0.18
+start = moad
+
+[storm1outer]
+nx = 106
+ny = 204
+start = auto
+
+[storm1inner]
+nx = 198
+ny = 354
+start = centered
+
+[storm1ghost]
+nx = 327
+ny = 652
+start = centered
+
+[storm1ghost_parent]
+nx = 217
+ny = 436
+start = auto
+
+[storm1ghost_big]
+nx = 397
+ny = 748
+start = centered
+
+[storm1ghost_parent_big]
+nx = 211
+ny = 410
+start = auto
+
+[ensdadom]
+ny = 526
+nx = 262
+
+# Override post-processing settings:
+[gsi_products]
+# Settings for GRIB1 grid 255 for each grid:
+d3_grid=0.03,0.03,12.,12.,136,450,450
+d2_grid=0.10,0.10,30.,30.,136,300,300
+
+[forecast_products]
+# Settings for GRIB1 grid 255 for each grid:
+d23_grid=0.03,0.03,12.,15.,136,501,401
+d123low_grid=0.25,0.25,90.,110.,136,441,361
+d123high_grid=0.1,0.1,90.,110.,136,1101,901
+d2_grid=0.1,0.1,12.,14.,136,141,121
+d3_grid=0.03,0.03,7.5,9.0,136,301,251
+d2t_grid=0.10,0.10,30.,30.,128,301,301
+# d1t grid does not need to be overridden
+
+# Tracker grid expand settings:
+trk_expand=2.5,2.5,4.0,4.0,667,667,128,0.03,0.03
+
+# Output filenames:
+hwrfprs_m%intercom={out_prefix}.hwrfprs.d23.0p03.f{fahr:03d}.grb
+hwrfprs_n%intercom={out_prefix}.hwrfprs.d3.0p03.f{fahr:03d}.grb
+hwrfprs_i%intercom={out_prefix}.hwrfprs.d2.0p10.f{fahr:03d}.grb
+hwrfprs_p%intercom={out_prefix}.hwrfprs.d1.0p25.f{fahr:03d}.grb
+hwrfprs_c%intercom={out_prefix}.hwrfprs.d123.0p10.f{fahr:03d}.grb
+
+hwrfsat_m%intercom={out_prefix}.hwrfsat.d23.0p03.f{fahr:03d}.grb
+hwrfsat_n%intercom={out_prefix}.hwrfsat.d3.0p03.f{fahr:03d}.grb
+hwrfsat_i%intercom={out_prefix}.hwrfsat.d2.0p10.f{fahr:03d}.grb
+hwrfsat_p%intercom={out_prefix}.hwrfsat.d1.0p25.f{fahr:03d}.grb
+hwrfsat_c%intercom={out_prefix}.hwrfsat.d12.0p10.f{fahr:03d}.grb
+
+hwrf2prs_m%com={out_prefix}.hwrfprs.d23.0p03.f{fahr:03d}.grb2
+hwrf2prs_n%com={out_prefix}.hwrfprs.d3.0p03.f{fahr:03d}.grb2
+hwrf2prs_i%com={out_prefix}.hwrfprs.d2.0p10.f{fahr:03d}.grb2
+hwrf2prs_p%com={out_prefix}.hwrfprs.d1.0p25.f{fahr:03d}.grb2
+hwrf2prs_c%com={out_prefix}.hwrfprs.d123.0p10.f{fahr:03d}.grb2
+
+hwrf2sat_m%com={out_prefix}.hwrfsat.d23.0p03.f{fahr:03d}.grb2
+hwrf2sat_n%com={out_prefix}.hwrfsat.d3.0p03.f{fahr:03d}.grb2
+hwrf2sat_i%com={out_prefix}.hwrfsat.d2.0p10.f{fahr:03d}.grb2
+hwrf2sat_p%com={out_prefix}.hwrfsat.d1.0p25.f{fahr:03d}.grb2
+hwrf2sat_c%com={out_prefix}.hwrfsat.d12.0p10.f{fahr:03d}.grb2

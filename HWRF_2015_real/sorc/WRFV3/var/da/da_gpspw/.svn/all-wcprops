@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/7425/branches/HWRF/var/da/da_gpspw
+END
+da_calculate_grady_gpspw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_calculate_grady_gpspw.inc
+END
+da_get_innov_vector_gpsztd.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/7425/branches/HWRF/var/da/da_gpspw/da_get_innov_vector_gpsztd.inc
+END
+da_gpspw.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/7425/branches/HWRF/var/da/da_gpspw/da_gpspw.f90
+END
+da_oi_stats_gpspw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_oi_stats_gpspw.inc
+END
+da_transform_xtoy_gpsztd_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_transform_xtoy_gpsztd_adj.inc
+END
+da_residual_gpspw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_residual_gpspw.inc
+END
+da_transform_xtoy_gpsztd.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_transform_xtoy_gpsztd.inc
+END
+da_get_innov_vector_gpspw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/7425/branches/HWRF/var/da/da_gpspw/da_get_innov_vector_gpspw.inc
+END
+da_print_stats_gpspw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_print_stats_gpspw.inc
+END
+da_transform_xtoy_gpspw_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_transform_xtoy_gpspw_adj.inc
+END
+da_ao_stats_gpspw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_ao_stats_gpspw.inc
+END
+da_transform_xtoy_gpspw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_transform_xtoy_gpspw.inc
+END
+da_check_max_iv_gpspw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_check_max_iv_gpspw.inc
+END
+da_jo_and_grady_gpspw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_gpspw/da_jo_and_grady_gpspw.inc
+END

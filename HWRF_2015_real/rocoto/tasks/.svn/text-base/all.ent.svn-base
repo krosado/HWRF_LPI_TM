@@ -1,0 +1,36 @@
+<!-- List of all known HWRF tasks -->
+
+<!ENTITY launch_task             SYSTEM   "launch.ent">
+<!ENTITY init_task               SYSTEM   "init.ent">
+<!ENTITY input_task              SYSTEM   "input.ent">
+<!ENTITY bdy_task                SYSTEM   "bdy.ent">
+<!ENTITY relocate_task           SYSTEM   "relocate.ent">
+<!ENTITY ocean_init_task         SYSTEM   "ocean_init.ent">
+<!ENTITY gsi_d02_task            SYSTEM   "gsi_d02.ent">
+<!ENTITY gsi_d03_task            SYSTEM   "gsi_d03.ent">
+<!ENTITY merge_task              SYSTEM   "merge.ent">
+<!ENTITY forecast_task           SYSTEM   "forecast.ent">
+<!ENTITY unpost_task             SYSTEM   "unpost.ent">
+<!ENTITY post_task               SYSTEM   "post.ent">
+<!ENTITY post_helper_task        SYSTEM   "post_helper.ent">
+<!ENTITY graphics_task           SYSTEM   "graphics.ent">
+<!ENTITY products_task           SYSTEM   "products.ent">
+<!ENTITY output_task             SYSTEM   "output.ent">
+<!ENTITY wrfout_archive_task     SYSTEM   "wrfout_archive.ent">
+<!ENTITY disk_archive_task       SYSTEM   "disk_archive.ent">
+<!ENTITY tape_archive_task       SYSTEM   "tape_archive.ent">
+<!ENTITY check_init_task         SYSTEM   "check_init.ent">
+<!ENTITY scrub_work_task         SYSTEM   "scrub_work.ent">
+<!ENTITY scrub_com_task          SYSTEM   "scrub_com.ent">
+<!ENTITY ensdamemb_task          SYSTEM   "ensdamemb.ent">
+<!ENTITY ensda_output_task       SYSTEM   "ensda_output.ent">
+<!ENTITY ensda_pre_task          SYSTEM   "ensda_pre.ent">
+<!ENTITY gsi_post_task           SYSTEM   "gsi_post.ent">
+
+<!ENTITY init_gfs_metatask       SYSTEM   "meta_init_gfs.ent">
+<!ENTITY init_gdas1_metatask     SYSTEM   "meta_init_gdas1.ent">
+<!ENTITY relocate_gfs_metatask   SYSTEM   "meta_relocate_gfs.ent">
+<!ENTITY relocate_gdas1_metatask SYSTEM   "meta_relocate_gdas1.ent">
+<!ENTITY bufrprep_task           SYSTEM   "bufrprep.ent">
+<!ENTITY gsi_metatask            SYSTEM   "meta_gsi.ent">
+<!ENTITY extra_trackers_metatask SYSTEM   "meta_extra_trackers.ent">

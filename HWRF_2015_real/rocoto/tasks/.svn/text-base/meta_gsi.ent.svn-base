@@ -1,0 +1,5 @@
+<metatask name="meta_gsi_E#ENS#" mode="parallel">
+  <var name="GSI_DOMAIN">d02 d03</var>
+  &gsi_d02_task;
+  &gsi_d03_task;
+</metatask>

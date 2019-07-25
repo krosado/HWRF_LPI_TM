@@ -1,0 +1,371 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/8427/branches/HWRF/tools
+END
+gen_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/7425/branches/HWRF/tools/gen_config.c
+END
+set_dim_strs.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/6166/branches/HWRF/tools/set_dim_strs.c
+END
+build_codebase
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/4946/branches/HWRF/tools/build_codebase
+END
+test4_0_ESMFSST.lsf.csh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/5137/branches/HWRF/tools/test4_0_ESMFSST.lsf.csh
+END
+gen_allocs.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/6166/branches/HWRF/tools/gen_allocs.c
+END
+mpi2_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/4946/branches/HWRF/tools/mpi2_test.c
+END
+reg_parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8427/branches/HWRF/tools/reg_parse.c
+END
+registry.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/7673/branches/HWRF/tools/registry.c
+END
+callgraph.page1
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/4946/branches/HWRF/tools/callgraph.page1
+END
+regtest.csh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/4947/branches/HWRF/tools/regtest.csh
+END
+sym.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/4946/branches/HWRF/tools/sym.c
+END
+callgraph.page2
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/4946/branches/HWRF/tools/callgraph.page2
+END
+regtest_nmmnest.csh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/5026/branches/HWRF/tools/regtest_nmmnest.csh
+END
+source_for_pgi_windows.csh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/tools/source_for_pgi_windows.csh
+END
+debug_macro_toolchest
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/tools/debug_macro_toolchest
+END
+gen_comms_warning
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/4946/branches/HWRF/tools/gen_comms_warning
+END
+registry.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/7673/branches/HWRF/tools/registry.h
+END
+sym.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/4946/branches/HWRF/tools/sym.h
+END
+four2eight.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/tools/four2eight.c
+END
+gen_wrf_io.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/8205/branches/HWRF/tools/gen_wrf_io.c
+END
+danger
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/4946/branches/HWRF/tools/danger
+END
+type.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/4946/branches/HWRF/tools/type.c
+END
+regtest_esmf.csh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/5750/branches/HWRF/tools/regtest_esmf.csh
+END
+nc4_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/6325/branches/HWRF/tools/nc4_test.c
+END
+link_codebase_to_wrfbrowser
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/tools/link_codebase_to_wrfbrowser
+END
+daughter.gif
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/tools/daughter.gif
+END
+gen_scalar_derefs.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/tools/gen_scalar_derefs.c
+END
+symtab_gen.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/tools/symtab_gen.c
+END
+my_strtok.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/4946/branches/HWRF/tools/my_strtok.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/6166/branches/HWRF/tools/Makefile
+END
+fseek_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/tools/fseek_test.c
+END
+mpi2_thread_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/tools/mpi2_thread_test.c
+END
+fortran_2003_iso_c_test.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/7191/branches/HWRF/tools/fortran_2003_iso_c_test.F
+END
+regtest_hwrf.csh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/5026/branches/HWRF/tools/regtest_hwrf.csh
+END
+all_reg.csh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/4946/branches/HWRF/tools/all_reg.csh
+END
+standard.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/6166/branches/HWRF/tools/standard.c
+END
+index.page
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/4946/branches/HWRF/tools/index.page
+END
+gen_comms.stub
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/4946/branches/HWRF/tools/gen_comms.stub
+END
+gen_streams.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/6166/branches/HWRF/tools/gen_streams.c
+END
+fortran_2003_ieee_test.F
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/8205/branches/HWRF/tools/fortran_2003_ieee_test.F
+END
+data.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/4946/branches/HWRF/tools/data.c
+END
+source_for_pgi_windows.bash
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/tools/source_for_pgi_windows.bash
+END
+gen_defs.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/4946/branches/HWRF/tools/gen_defs.c
+END
+nest_test.tar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/4946/branches/HWRF/tools/nest_test.tar
+END
+data.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/8427/branches/HWRF/tools/data.h
+END
+test_compile.csh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/4946/branches/HWRF/tools/test_compile.csh
+END
+fortran_2003_flush_test.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/8205/branches/HWRF/tools/fortran_2003_flush_test.F
+END
+collapsd.gif
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/tools/collapsd.gif
+END
+subinfo
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/4946/branches/HWRF/tools/subinfo
+END
+gen_args.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/4946/branches/HWRF/tools/gen_args.c
+END
+gen_model_data_ord.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/tools/gen_model_data_ord.c
+END
+exploded.gif
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/tools/exploded.gif
+END
+fortran_2003_fflush_test.F
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/7673/branches/HWRF/tools/fortran_2003_fflush_test.F
+END
+gen_mod_state_descr.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/tools/gen_mod_state_descr.c
+END
+build_test.csh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/4946/branches/HWRF/tools/build_test.csh
+END
+gen_interp.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/7673/branches/HWRF/tools/gen_interp.c
+END
+misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/7753/branches/HWRF/tools/misc.c
+END
+protos.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/7753/branches/HWRF/tools/protos.h
+END
+testomatic
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/4946/branches/HWRF/tools/testomatic
+END
+gen_scalar_indices.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/tools/gen_scalar_indices.c
+END
+safe
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/4946/branches/HWRF/tools/safe
+END

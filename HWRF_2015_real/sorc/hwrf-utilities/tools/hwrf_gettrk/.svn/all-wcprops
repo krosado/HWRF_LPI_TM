@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/289/branches/HWRF/tools/hwrf_gettrk
+END
+gettrk_main.fpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/289/branches/HWRF/tools/hwrf_gettrk/gettrk_main.fpp
+END
+gettrk_modules.f
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/289/branches/HWRF/tools/hwrf_gettrk/gettrk_modules.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/289/branches/HWRF/tools/hwrf_gettrk/Makefile
+END

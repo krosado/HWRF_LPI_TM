@@ -1,0 +1,51 @@
+#!/bin/sh
+######################################################################
+#                       init_GDAS wrapper script                          
+######################################################################
+######################################################################
+#                                                                    #
+#   Author: DTC July 2014					     #
+######################################################################
+
+######################################################################
+#   Definitions
+######################################################################
+#---------------------------------------------------------------------
+#   Global definitions of environment variables
+#---------------------------------------------------------------------
+. ./global_vars.sh
+
+# Source the start file and holdvars
+. "$startfile"
+. "$holdvars"
+
+if [ -z "$PYTHONPATH" ] ; then
+	export PYTHONPATH=${USHhwrf}
+else
+	export PYTHONPATH=${PYTHONPATH}:${USHhwrf}
+fi
+export TOTAL_TASKS=48
+cd $WORKhwrf
+
+
+######################################################################
+#   Main
+######################################################################
+
+
+# Run the python init script for fgat times 
+export INIT_MODEL=gdas1
+export INIT_PARTS=3dvar
+
+for fhr in 3 6 9 ; do
+    export INIT_FHR=$fhr
+    $USHhwrf/rocoto_pre_job.sh $EXhwrf/exhwrf_init.py
+done
+
+
+
+######################################################################
+# Suggested resources based on NOAA's Jet
+# walltime = 4:39:00
+# procs=48
+######################################################################

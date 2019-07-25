@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/5750/branches/HWRF/var/da/da_verif_obs
+END
+da_verif_obs.f90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/5750/branches/HWRF/var/da/da_verif_obs/da_verif_obs.f90
+END
+da_verif_obs_control.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/5750/branches/HWRF/var/da/da_verif_obs/da_verif_obs_control.f90
+END
+da_verif_obs_init.f90
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_verif_obs/da_verif_obs_init.f90
+END
+da_verif_tools.f90
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/5431/branches/HWRF/var/da/da_verif_obs/da_verif_tools.f90
+END

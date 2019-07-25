@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/8205/branches/HWRF/var/da/da_4dvar
+END
+da_ad_model.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/8205/branches/HWRF/var/da/da_4dvar/da_ad_model.inc
+END
+da_4dvar.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/8205/branches/HWRF/var/da/da_4dvar/da_4dvar.f90
+END
+da_4dvar_io.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/8205/branches/HWRF/var/da/da_4dvar/da_4dvar_io.inc
+END
+da_nl_model.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/5750/branches/HWRF/var/da/da_4dvar/da_nl_model.inc
+END
+da_tl_model.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/8205/branches/HWRF/var/da/da_4dvar/da_tl_model.inc
+END
+da_4dvar_lbc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/5750/branches/HWRF/var/da/da_4dvar/da_4dvar_lbc.inc
+END
+da_finalize_model.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_4dvar/da_finalize_model.inc
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/!svn/ver/3584/trunk/ecf/prep
+END
+jhwrf_init_gfs_f00.ecf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/3584/trunk/ecf/prep/jhwrf_init_gfs_f00.ecf
+END
+jhwrf_init_gdas_f06.usr
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3584/trunk/ecf/prep/jhwrf_init_gdas_f06.usr
+END
+jhwrf_ocean_init.ecf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/3584/trunk/ecf/prep/jhwrf_ocean_init.ecf
+END
+jhwrf_init_gdas_f03.ecf
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3584/trunk/ecf/prep/jhwrf_init_gdas_f03.ecf
+END
+jhwrf_launch.ecf
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3584/trunk/ecf/prep/jhwrf_launch.ecf
+END
+jhwrf_init_gdas_f06.ecf
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3584/trunk/ecf/prep/jhwrf_init_gdas_f06.ecf
+END
+jhwrf_init_gdas_f09.ecf
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3584/trunk/ecf/prep/jhwrf_init_gdas_f09.ecf
+END
+jhwrf_init_bdy.ecf
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3584/trunk/ecf/prep/jhwrf_init_bdy.ecf
+END

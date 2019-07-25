@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/8205/branches/HWRF/test/em_convrad
+END
+input_sounding
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/8205/branches/HWRF/test/em_convrad/input_sounding
+END
+README.convrad
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/8205/branches/HWRF/test/em_convrad/README.convrad
+END
+run_me_first.csh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/8205/branches/HWRF/test/em_convrad/run_me_first.csh
+END
+namelist.input
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/8205/branches/HWRF/test/em_convrad/namelist.input
+END

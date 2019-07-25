@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/!svn/ver/3802/trunk/rocoto
+END
+run_hwrf.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/3544/trunk/rocoto/run_hwrf.py
+END
+hwrf_workflow.xml.in
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3714/trunk/rocoto/hwrf_workflow.xml.in
+END
+env_vars.ent
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/3494/trunk/rocoto/env_vars.ent
+END
+runhwrf_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3600/trunk/rocoto/runhwrf_wrapper
+END

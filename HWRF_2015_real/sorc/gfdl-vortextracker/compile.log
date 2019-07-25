@@ -1,0 +1,65 @@
+ 
+**** Compiling Vortex Tracker ****
+ 
+/bin/rm: No match.
+make[1]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/gfdl-vortextracker'
+cd trk_src ; make
+make[2]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/gfdl-vortextracker/trk_src'
+cd hwrf_gettrk ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/gfdl-vortextracker/trk_src/hwrf_gettrk'
+/bin/rm -f gettrk_modules.o gettrk_modules.mod
+ifort -O1 -xW -fp-model precise   -i4 -r8 -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/hwrfutil -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sigio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/bacio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sfcio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -c gettrk_modules.f 
+ifort: command line remark #10279: option '-xW' is deprecated and will be removed in a future release. See '-help deprecated'
+gettrk_modules.f(2): warning #6379: The structure contains one or more misaligned fields.   [TCVCARD]
+        type tcvcard         ! Define a new type for a TC Vitals card
+-------------^
+gettrk_modules.f(33): warning #6379: The structure contains one or more misaligned fields.   [GENCARD]
+        type gencard     ! Define a new type for a genesis vitals card
+-------------^
+gettrk_modules.f(65): warning #6380: The structure length is not a multiple of its largest element; could create misalignments for arrays of this type.   [DATECARD]
+        type datecard  ! Define a new type for the input namelist parms
+-------------^
+gettrk_modules.f(84): warning #6379: The structure contains one or more misaligned fields.   [TRACKSTUFF]
+        type trackstuff  ! Define a new type for various tracker parms
+-------------^
+gettrk_modules.f(110): warning #6380: The structure length is not a multiple of its largest element; could create misalignments for arrays of this type.   [CINT_STUFF]
+        type cint_stuff  ! Define a new type for contour interval info
+-------------^
+/bin/rm -f module_waitfor.o module_waitfor.mod
+ifort -O1 -xW -fp-model precise   -i4 -r8 -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/hwrfutil -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sigio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/bacio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sfcio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -c module_waitfor.f 
+ifort: command line remark #10279: option '-xW' is deprecated and will be removed in a future release. See '-help deprecated'
+/bin/rm -f cwaitfor.o
+icc -O -c cwaitfor.c	
+ifort -O1 -xW -fp-model precise   -i4 -r8 -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/hwrfutil -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sigio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/bacio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sfcio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -Wl,-noinhibit-exec -i_dynamic gettrk_modules.o module_waitfor.o cwaitfor.o  gettrk_main.f -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8  -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lbacio -L/usr/lib64 -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lg2 -lz -lpng -lbacio -lw3_i4r8 -ljasper -o ../../trk_exec/hwrf_gettrk.exe
+ifort: command line remark #10279: option '-xW' is deprecated and will be removed in a future release. See '-help deprecated'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libg2.a(gbytesc.o): In function `gbyte_':
+gbytesc.f:(.text+0x0): multiple definition of `gbyte_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libw3_i4r8.a(gbytes.o):gbytes.f:(.text+0x0): first defined here
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libg2.a(gbytesc.o): In function `gbytes_':
+gbytesc.f:(.text+0x1c0): multiple definition of `gbytes_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libw3_i4r8.a(gbytes.o):gbytes.f:(.text+0x120): first defined here
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/gfdl-vortextracker/trk_src/hwrf_gettrk'
+cd hwrf_vint ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/gfdl-vortextracker/trk_src/hwrf_vint'
+ifort -O1 -xW -fp-model precise   -i4 -r8 -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/hwrfutil -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sigio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/bacio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sfcio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -Wl,-noinhibit-exec -i_dynamic vint.f -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8  -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lbacio -L/usr/lib64 -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lg2 -lz -lpng -lbacio -lw3_i4r8 -ljasper -o ../../trk_exec/hwrf_vint.exe
+ifort: command line remark #10279: option '-xW' is deprecated and will be removed in a future release. See '-help deprecated'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libg2.a(gbytesc.o): In function `gbyte_':
+gbytesc.f:(.text+0x0): multiple definition of `gbyte_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libw3_i4r8.a(gbytes.o):gbytes.f:(.text+0x0): first defined here
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libg2.a(gbytesc.o): In function `gbytes_':
+gbytesc.f:(.text+0x1c0): multiple definition of `gbytes_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libw3_i4r8.a(gbytes.o):gbytes.f:(.text+0x120): first defined here
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/gfdl-vortextracker/trk_src/hwrf_vint'
+cd hwrf_tave ; make
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/gfdl-vortextracker/trk_src/hwrf_tave'
+ifort -O1 -xW -fp-model precise   -i4 -r8 -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/hwrfutil -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sigio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/bacio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sfcio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -Wl,-noinhibit-exec -i_dynamic tave.f -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lw3_i4r8  -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lbacio -L/usr/lib64 -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lg2 -lz -lpng -lbacio -lw3_i4r8 -ljasper -o ../../trk_exec/hwrf_tave.exe
+ifort: command line remark #10279: option '-xW' is deprecated and will be removed in a future release. See '-help deprecated'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libg2.a(gbytesc.o): In function `gbyte_':
+gbytesc.f:(.text+0x0): multiple definition of `gbyte_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libw3_i4r8.a(gbytes.o):gbytes.f:(.text+0x0): first defined here
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libg2.a(gbytesc.o): In function `gbytes_':
+gbytesc.f:(.text+0x1c0): multiple definition of `gbytes_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/libw3_i4r8.a(gbytes.o):gbytes.f:(.text+0x120): first defined here
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/gfdl-vortextracker/trk_src/hwrf_tave'
+make[2]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/gfdl-vortextracker/trk_src'
+make[1]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/gfdl-vortextracker'

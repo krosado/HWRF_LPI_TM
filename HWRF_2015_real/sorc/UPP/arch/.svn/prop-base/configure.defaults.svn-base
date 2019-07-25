@@ -1,0 +1,25 @@
+K 13
+svn:mergeinfo
+V 1164
+/H215/arch/configure.defaults:618
+/branches/2011_oper/arch/configure.defaults:92-102
+/branches/H215/arch/configure.defaults:619-639
+/branches/HWRF+mtsat/arch/configure.defaults:430-436
+/branches/HWRF_20130215_tb_2013_DTC/arch/configure.defaults:345-440
+/branches/HWRF_v3.4a/arch/configure.defaults:260-279
+/branches/UPPdev/arch/configure.defaults:87-118
+/branches/huiya_update2/arch/configure.defaults:3-25
+/branches/hwrf-baseline/arch/configure.defaults:193-197
+/branches/hwrf-baseline-tagme/arch/configure.defaults:198-201
+/branches/iplib-bugfix/arch/configure.defaults:383-408
+/branches/microwave-53deg-non-nadir/arch/configure.defaults:168-185,188-192
+/branches/port_zeus/arch/configure.defaults:205-209
+/branches/sso/arch/configure.defaults:587-613
+/branches/sso_and_hwrf-needs/arch/configure.defaults:614-617
+/branches/tbrown/arch/configure.defaults:93-98
+/branches/the-great-merge/arch/configure.defaults:224-225
+/tags/HWRF_20130209-0609_sgt_2013HWRFtests/arch/configure.defaults:338-344
+/tags/hwrf-20120302/arch/configure.defaults:202
+/tags/hwrf-baseline-fewerbugs-20120216-2300/arch/configure.defaults:186-187
+/trunk/arch/configure.defaults:72-167,506-586
+END

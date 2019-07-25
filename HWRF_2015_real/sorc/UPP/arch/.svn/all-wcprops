@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/!svn/ver/677/branches/HWRF/arch
+END
+Config.pl
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/563/branches/HWRF/arch/Config.pl
+END
+configure.defaults.pgi
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/563/branches/HWRF/arch/configure.defaults.pgi
+END
+version
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/72/branches/HWRF/arch/version
+END
+postamble
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/652/branches/HWRF/arch/postamble
+END
+configure.defaults
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/677/branches/HWRF/arch/configure.defaults
+END
+preamble
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/563/branches/HWRF/arch/preamble
+END

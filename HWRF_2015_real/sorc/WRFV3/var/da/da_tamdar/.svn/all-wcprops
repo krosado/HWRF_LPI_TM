@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/7885/branches/HWRF/var/da/da_tamdar
+END
+da_jo_and_grady_tamdar_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/7885/branches/HWRF/var/da/da_tamdar/da_jo_and_grady_tamdar_sfc.inc
+END
+da_check_max_iv_tamdar_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_check_max_iv_tamdar_sfc.inc
+END
+da_transform_xtoy_tamdar_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_transform_xtoy_tamdar_adj.inc
+END
+da_ao_stats_tamdar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_ao_stats_tamdar.inc
+END
+da_calculate_grady_tamdar_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/7191/branches/HWRF/var/da/da_tamdar/da_calculate_grady_tamdar_sfc.inc
+END
+da_check_max_iv_tamdar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_check_max_iv_tamdar.inc
+END
+da_jo_and_grady_tamdar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/7885/branches/HWRF/var/da/da_tamdar/da_jo_and_grady_tamdar.inc
+END
+da_oi_stats_tamdar_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_oi_stats_tamdar_sfc.inc
+END
+da_jo_tamdar_sfc_uvtq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/7191/branches/HWRF/var/da/da_tamdar/da_jo_tamdar_sfc_uvtq.inc
+END
+da_calculate_grady_tamdar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_tamdar/da_calculate_grady_tamdar.inc
+END
+da_oi_stats_tamdar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_oi_stats_tamdar.inc
+END
+da_jo_tamdar_uvtq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_tamdar/da_jo_tamdar_uvtq.inc
+END
+da_transform_xtoy_tamdar_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_transform_xtoy_tamdar_sfc.inc
+END
+da_transform_xtoy_tamdar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_transform_xtoy_tamdar.inc
+END
+da_residual_tamdar_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/7191/branches/HWRF/var/da/da_tamdar/da_residual_tamdar_sfc.inc
+END
+da_tamdar.f90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_tamdar.f90
+END
+da_get_innov_vector_tamdar_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_get_innov_vector_tamdar_sfc.inc
+END
+da_print_stats_tamdar_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_tamdar/da_print_stats_tamdar_sfc.inc
+END
+da_transform_xtoy_tamdar_sfc_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_transform_xtoy_tamdar_sfc_adj.inc
+END
+da_residual_tamdar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_tamdar/da_residual_tamdar.inc
+END
+da_ao_stats_tamdar_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_ao_stats_tamdar_sfc.inc
+END
+da_print_stats_tamdar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_tamdar/da_print_stats_tamdar.inc
+END
+da_get_innov_vector_tamdar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/7425/branches/HWRF/var/da/da_tamdar/da_get_innov_vector_tamdar.inc
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results
+END
+amsua_metop-a.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/amsua_metop-a.RTSolution.bin
+END
+ssmis_f16.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/ssmis_f16.RTSolution.bin
+END
+v.seviri_m09.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/v.seviri_m09.RTSolution.bin
+END
+iasi616_metop-a.output
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/iasi616_metop-a.output
+END
+mhs_n18.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/mhs_n18.RTSolution.bin
+END
+amsre_aqua.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/amsre_aqua.RTSolution.bin
+END
+amsua_metop-a.output
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/amsua_metop-a.output
+END
+hirs4_n18.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/hirs4_n18.RTSolution.bin
+END
+ssmis_f16.output
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/ssmis_f16.output
+END
+v.seviri_m09.output
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/v.seviri_m09.output
+END
+iasi616_metop-a.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/iasi616_metop-a.RTSolution.bin
+END
+mhs_n18.output
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/mhs_n18.output
+END
+amsre_aqua.output
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/amsre_aqua.output
+END
+hirs4_n18.output
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/results/hirs4_n18.output
+END

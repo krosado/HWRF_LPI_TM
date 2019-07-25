@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/1163/branches/HWRF/tools/hwrf_prepbufr
+END
+change_prepbufr_qm_in_circle.f
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/1163/branches/HWRF/tools/hwrf_prepbufr/change_prepbufr_qm_in_circle.f
+END
+change_prepbufr_qm_typ.f
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/1163/branches/HWRF/tools/hwrf_prepbufr/change_prepbufr_qm_typ.f
+END
+rem_specified_TYP_in_circle_prepbufr.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/1163/branches/HWRF/tools/hwrf_prepbufr/rem_specified_TYP_in_circle_prepbufr.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/1163/branches/HWRF/tools/hwrf_prepbufr/Makefile
+END

@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src
+END
+mexopts.R2008a.bat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R2008a.bat
+END
+mexopts.R2006a.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R2006a.sh
+END
+r2008a.mk
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/r2008a.mk
+END
+mexopts.R2007a.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R2007a.sh
+END
+mexopts.R2006b.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R2006b.sh
+END
+mexopts.R2007b.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R2007b.sh
+END
+mexopts.R2008a.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R2008a.sh
+END
+win32_make_mexnc.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/win32_make_mexnc.m
+END
+mexopts.R2009a.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R2009a.sh
+END
+mexopts.R2008b.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R2008b.sh
+END
+mexopts.R2009b.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R2009b.sh
+END
+mexopts.R2008a.win64.bat
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R2008a.win64.bat
+END
+win64_make_mexnc.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/win64_make_mexnc.m
+END
+mexgateway.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexgateway.c
+END
+mexopts.R14sp1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R14sp1.bat
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/README
+END
+mexnc.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexnc.h
+END
+mexopts.R14sp3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R14sp3.sh
+END
+netcdf2.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/netcdf2.c
+END
+netcdf3.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/netcdf3.c
+END
+netcdf4.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/netcdf4.c
+END
+mexopts.R13.bat
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R13.bat
+END
+common.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/common.c
+END
+netcdf2.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/netcdf2.h
+END
+netcdf3.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/netcdf3.h
+END
+mexopts.R13.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/mexopts.R13.sh
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/makefile
+END
+netcdf4.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/mexcdf/mexnc/src/netcdf4.h
+END

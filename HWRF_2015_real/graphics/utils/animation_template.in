@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD>
+    <TITLE>MC_MODEL Forecast STORMNAME STORMID YYYYMMDDHH ANIMATION_SUBTITLE Animation</TITLE>
+
+    <!-- All colors, font sizes, etc. are set in the CSS files loaded
+         by these link tags: -->
+    <link rel="stylesheet" href="../../../site.css"
+          type="text/css">
+    <link rel="stylesheet" href="../../model.css"
+          type="text/css">
+
+    <!-- Load the animation.js file, which contains the implementation
+         of the animation: -->
+    <script type="text/javascript" src="../../animation.js"></script>
+
+    <!-- Now, call the anim_init function, which will initialize the global
+         variables used by the animation code: -->
+    <SCRIPT language="javascript"> 
+      anim_init("IMAGE_PREFIX", // image name before the frame number
+        "png", // image extension (gif, png, etc.)
+        FIRST_IMAGE, // first frame number
+        LAST_IMAGE, // last frame number
+        1024, // image width in pixels
+        768); // image height in pixels
+    </SCRIPT>
+  </HEAD>
+
+  <!-- The onLoad="launch()" function will cause the javascript launch()
+       function to be called after the browser has processed this entire
+       HTML file.  That function starts the animation and must be called
+       after anim_init() and anim_insert_html() (hence the use of onLoad). -->
+  <BODY onLoad="anim_launch()">
+    <H1>MC_MODEL Forecast STORMNAME STORMID YYYYMMDDHH ANIMATION_SUBTITLE Animation</H1>
+
+    <script language="javascript">
+      // The below call to anim_insert_html will insert a table here
+      // that contains the animation and its control elements.
+      anim_insert_html("anim_table");
+    </script>
+
+    <div class="webmasters">
+      <table><tr><td>
+      <script language="JavaScript">document.write(Date()+"<br>");</script>
+      <p id="maintainers">Page Maintained By
+        <a href="mailto:vijay.tallapragada@noaa.gov">Vijay Tallapragada</a>
+        and
+        <a href="mailto:Chanh.Kieu@noaa.gov">Chanh.Kieu</a>
+      </p>
+
+      <p id="webmaster_email">
+        Send mail to
+        <a href="mailto:vijay.tallapragada@noaa.gov">vijay.tallapragada@noaa.gov</a>
+        with questions or comments about this web site.
+      </p>
+
+      <p id="webpage_copyright">&copy; NCEP Hurricane Forecast Project, all rights reserved. </p>
+      </td></tr></table>
+    </div>
+
+
+  </body>
+</html>

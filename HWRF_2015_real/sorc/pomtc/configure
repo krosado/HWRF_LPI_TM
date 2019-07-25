@@ -1,0 +1,205 @@
+#!/bin/sh
+
+arg1=$1
+
+CORE_DIR=`pwd`
+echo "$CORE_DIR"
+export CORE_DIR
+
+#=================================================================
+# Look for support libraries, Parallel NetCDF (PNETCDF), W3 (LIBW3),
+#sp (LIBSP), and sfcio (LIBSFCIO)
+
+if  test -z "$PNETCDF"  ; then
+    bedone=""
+    echo '** WARNING: path to Parallel NetCDF library $PNETCDF not set.'
+    echo '** would you like to try to fix? [y]'
+    path=""
+    while [ -z "$bedone" ] ; do 
+      read resp
+      if [ "$resp" = "y" -o -z "$resp" ]  ; then
+        if [ -z "$path" ] ; then
+          echo 'Enter full path to Parallel NetCDF library on your system'
+          read resp
+          if [ ! -d "$resp" ] ; then
+            echo "invalid path: $resp. Try again? [y]" ; continue
+          fi
+          path=$resp
+        fi
+
+        if [ -n "$path" ] ; then
+          PNETCDF=$path
+          export PNETCDF
+          bedone="yes"
+        fi
+      else
+        bedone="yes"
+      fi
+    done
+fi
+
+if  test -z "$NETCDF"  ; then
+    bedone=""
+    echo '** WARNING: path to NetCDF library $NETCDF not set.'
+    echo '** would you like to try to fix? [y]'
+    path=""
+    while [ -z "$bedone" ] ; do 
+      read resp
+      if [ "$resp" = "y" -o -z "$resp" ]  ; then
+        if [ -z "$path" ] ; then
+          echo 'Enter full path to NetCDF library on your system'
+          read resp
+          if [ ! -d "$resp" ] ; then
+            echo "invalid path: $resp. Try again? [y]" ; continue
+          fi
+          path=$resp
+        fi
+
+        if [ -n "$path" ] ; then
+          NETCDF=$path
+          export NETCDF
+          bedone="yes"
+        fi
+      else
+        bedone="yes"
+      fi
+    done
+fi
+
+if  test -z "$LIB_W3_PATH"  ; then
+    bedone=""
+    echo '** WARNING: path to W3 library $LIB_W3_PATH not set.'
+    echo '** would you like to try to fix? [y]'
+    path=""
+    while [ -z "$bedone" ] ; do 
+      read resp
+      if [ "$resp" = "y" -o -z "$resp" ]  ; then
+        if [ -z "$path" ] ; then
+          echo 'Enter full path to W3 library on your system'
+          read resp
+          if [ ! -d "$resp" ] ; then
+            echo "invalid path: $resp. Try again? [y]" ; continue
+          fi
+          path=$resp
+        fi
+
+        if [ -n "$path" ] ; then
+          LIB_W3_PATH=$path
+          export LIB_W3_PATH
+          bedone="yes"
+        fi
+      else
+        bedone="yes"
+      fi
+    done
+fi
+
+if  test -z "$LIB_SP_PATH"  ; then
+    bedone=""
+    echo '** WARNING: path to SP library $LIB_SP_PATH not set.'
+    echo '** would you like to try to fix? [y]'
+    path=""
+    while [ -z "$bedone" ] ; do 
+      read resp
+      if [ "$resp" = "y" -o -z "$resp" ]  ; then
+        if [ -z "$path" ] ; then
+          echo 'Enter full path to SP library on your system '
+          read resp
+          if [ ! -d "$resp" ] ; then
+            echo "invalid path: $resp. Try again? [y]" ; continue
+          fi
+          path=$resp
+        fi
+
+        if [ -n "$path" ] ; then
+          LIB_SP_PATH=$path
+          export LIB_SP_PATH
+          bedone="yes"
+        fi
+      else
+        bedone="yes"
+      fi
+    done
+fi
+
+if  test -z "$LIB_SFCIO_PATH"  ; then
+    bedone=""
+    echo '** WARNING: path to SFCIO library $LIB_SFCIO_PATH not set.'
+    echo '** would you like to try to fix? [y]'
+    path=""
+    while [ -z "$bedone" ] ; do 
+      read resp
+      if [ "$resp" = "y" -o -z "$resp" ]  ; then
+        if [ -z "$path" ] ; then
+          echo 'Enter full path to SFCIO on your system '
+          read resp
+          if [ ! -d "$resp" ] ; then
+            echo "invalid path: $resp. Try again? [y]" ; continue
+          fi
+          path=$resp
+        fi
+
+        if [ -n "$path" ] ; then
+          LIB_SFCIO_PATH=$path
+          export LIB_SFCIO_PATH
+          bedone="yes"
+        fi
+      else
+        bedone="yes"
+      fi
+    done
+fi
+
+
+# if the uname command exists, give it a shot and see if
+# we can narrow the choices; otherwise, spam 'em
+os="ARCH"
+mach="ARCH"
+type uname > /dev/null
+if [ $? -eq 0 ] ; then
+    os=`uname`
+    if [ "$os" = "AIX" -o "$os" = "IRIX" -o "$os" = "IRIX64" -o "$os" = "SunOS" -o "$os" = "HP-UX"  -o "$os" = "Darwin" ] ; then
+      mach="ARCH"
+    else
+      if [ "$os" = "OSF1" -o "$os" = "Linux" -o "$os" = "UNICOS/mp" -o "$os" = "UNIX_System_V" ] ; then
+        mach=`uname -m`
+      else
+        os="ARCH"
+        mach="ARCH"
+      fi
+    fi
+fi
+
+# we need a blas path if not on IBM AIX.
+if [ "$os" != "AIX" ] ; then
+   if  test -z "$LIB_BLAS_PATH"  ; then
+       bedone=""
+       echo '** WARNING: path to BLAS library $LIB_BLAS_PATH not set.'
+       echo '** would you like to try to fix? [y]'
+       path=""
+       while [ -z "$bedone" ] ; do 
+          read resp
+          if [ "$resp" = "y" -o -z "$resp" ]  ; then
+             if [ -z "$path" ] ; then
+                echo 'Enter full path to BLAS on your system '
+                read resp
+                if [ ! -d "$resp" ] ; then
+                  echo "invalid path: $resp. Try again? [y]" ; continue
+                fi
+                path=$resp
+             fi
+
+             if [ -n "$path" ] ; then
+                LIB_BLAS_PATH=$path
+                export LIB_BLAS_PATH
+                bedone="yes"
+             fi
+          else
+            bedone="yes"
+          fi
+       done
+   fi
+fi
+
+# so proceed with configuration
+perl arch/Config.pl  -corepath=$CORE_DIR -libw3=$LIB_W3_PATH -libsp=$LIB_SP_PATH -libsfcio=$LIB_SFCIO_PATH -libblas=$LIB_BLAS_PATH -os=$os -mach=$mach -netcdf=$NETCDF -pnetcdf=$PNETCDF

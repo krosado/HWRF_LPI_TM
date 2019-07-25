@@ -1,0 +1,34 @@
+<task name="wrfout_archive_E#ENS#" maxtries="&MAX_TRIES_TRANSFER;" throttle="1">
+  
+  <command>&PRE; &EXhwrf;/exhwrf_wrfout_archive.py</command>
+  <jobname>hwrf_tape_archive_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&SERVICE_QUEUE;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>01:29:00</walltime>
+  <memory>&TAPE_ARCHIVE_MEMORY;</memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_wrfout_archive.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_wrfout_archive.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &SERVICE_EXTRA;
+
+  <dependency>
+    <and>
+      <streq><left>&ARCHIVE_WRFOUT;</left><right>YES</right></streq>
+      <taskdep task="output_E#ENS#"/>
+      <not>
+        <taskdep task="scrub_work_E#ENS#"/>
+      </not>
+      <not>
+        <taskdep task="scrub_com_E#ENS#"/>
+      </not>
+    </and>
+  </dependency>
+
+</task>

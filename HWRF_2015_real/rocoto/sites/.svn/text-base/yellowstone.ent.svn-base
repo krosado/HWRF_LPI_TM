@@ -1,0 +1,32 @@
+<!-- NCAR Yellowstone-->
+
+<!ENTITY SCHEDULER       "lsf">
+<!ENTITY ACCOUNT         "P48500053">
+<!ENTITY SERIAL          "share">
+<!ENTITY PE              "economy">
+<!ENTITY PAR_SHARED      "economy">
+<!ENTITY RESERVATION     "">
+<!ENTITY SCHEDULER_EXTRA "">
+<!ENTITY CORES_EXTRA     "">
+<!ENTITY NODES_EXTRA     "">
+<!ENTITY PURE_OPENMP     "<nodes>1:ppn=2:tpp=8</nodes>">
+<!ENTITY MPI_EXTRA       "">
+<!ENTTIY SERVICE_QUEUE   "share">
+<!ENTITY SERVICE_EXTRA   "">
+
+<!ENTITY THREADS         "12">
+<!ENTITY REQUEST_THREADS "<envar><name>OMP_NUM_THREADS</name><value>&THREADS;</value></envar><envar><name>KMP_NUM_THREADS</name><value>&THREADS;</value></envar>">
+<!ENTITY CPL_FCST_2KM    "1:ppn=13+28:ppn=16+2:ppn=8">
+<!ENTITY ATM_FCST_2KM    "28:ppn=16+2:ppn=8">
+<!ENTITY CPL_TASKS_2KM   "477">
+<!ENTITY ATM_TASKS_2KM   "464">
+<!ENTITY CPL_FCST_3KM    "1:ppn=11+11:ppn=16+1:ppn=7+4:ppn=4">
+<!ENTITY ATM_FCST_3KM    "1:ppn=1+11:ppn=16+1:ppn=7+4:ppn=4">
+<!ENTITY CPL_TASKS_3KM   "210">
+<!ENTITY ATM_TASKS_3KM   "200">
+
+<!ENTITY FORECAST_WALLTIME "4:59:00">
+<!ENTITY POST_WALLTIME "5:59:00">
+<!ENTITY GSI_D02_WALLTIME "02:49:00">
+<!ENTITY GSI_D03_WALLTIME "02:49:00">
+<!ENTITY INPUT_WALLTIME  "2:00:00">

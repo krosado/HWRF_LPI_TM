@@ -1,0 +1,6 @@
+K 13
+svn:externals
+V 80
+crtm2 https://svn-dtc-external-lib.cgd.ucar.edu/src/crtm/branches/sso_additions
+
+END

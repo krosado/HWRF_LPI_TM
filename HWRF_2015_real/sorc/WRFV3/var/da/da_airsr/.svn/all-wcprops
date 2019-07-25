@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr
+END
+da_calculate_grady_airsr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_calculate_grady_airsr.inc
+END
+da_airsr.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_airsr.f90
+END
+da_oi_stats_airsr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_oi_stats_airsr.inc
+END
+da_residual_airsr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_residual_airsr.inc
+END
+da_get_innov_vector_airsr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_get_innov_vector_airsr.inc
+END
+da_print_stats_airsr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_print_stats_airsr.inc
+END
+da_jo_airsr_tq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_jo_airsr_tq.inc
+END
+da_transform_xtoy_airsr_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_transform_xtoy_airsr_adj.inc
+END
+da_ao_stats_airsr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_ao_stats_airsr.inc
+END
+da_transform_xtoy_airsr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_transform_xtoy_airsr.inc
+END
+da_check_max_iv_airsr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_check_max_iv_airsr.inc
+END
+da_jo_and_grady_airsr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_airsr/da_jo_and_grady_airsr.inc
+END

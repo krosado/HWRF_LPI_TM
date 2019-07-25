@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/8205/branches/HWRF/var/da/da_test
+END
+da_check_xtoy_adjoint_qscat.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_qscat.inc
+END
+da_check_xtovptox_errors.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtovptox_errors.inc
+END
+da_test.f90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/8205/branches/HWRF/var/da/da_test/da_test.f90
+END
+da_check_xtoy_adjoint_geoamv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_geoamv.inc
+END
+da_check_xtoy_adjoint_buoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5208/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_buoy.inc
+END
+da_check_xtoy_adjoint_bogus.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_bogus.inc
+END
+da_transform_xtovp.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7425/branches/HWRF/var/da/da_test/da_transform_xtovp.inc
+END
+da_check.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check.inc
+END
+da_check_xtoy_adjoint_ships.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/5208/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_ships.inc
+END
+da_check_xtoy_adjoint_gpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_gpsref.inc
+END
+da_check_vp_errors.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7191/branches/HWRF/var/da/da_test/da_check_vp_errors.inc
+END
+da_check_xtoy_adjoint_pilot.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_pilot.inc
+END
+da_set_tst_trnsf_fld.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_set_tst_trnsf_fld.inc
+END
+da_check_xtoy_adjoint_pseudo.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_pseudo.inc
+END
+da_test_vxtransform.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/8205/branches/HWRF/var/da/da_test/da_test_vxtransform.inc
+END
+da_check_xtoy_adjoint_ssmi_tb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_ssmi_tb.inc
+END
+da_check_psfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_psfc.inc
+END
+da_check_xtoy_adjoint_gpspw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_gpspw.inc
+END
+da_check_gradient.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/8205/branches/HWRF/var/da/da_test/da_check_gradient.inc
+END
+da_check_xtoy_adjoint_sonde_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/5208/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_sonde_sfc.inc
+END
+da_check_xtoy_adjoint_tamdar_sfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/7191/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_tamdar_sfc.inc
+END
+da_check_xtoy_adjoint_synop.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/5208/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_synop.inc
+END
+da_check_xtoy_adjoint_tamdar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_tamdar.inc
+END
+da_setup_testfield.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/8205/branches/HWRF/var/da/da_test/da_setup_testfield.inc
+END
+da_check_vtox_adjoint.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/8205/branches/HWRF/var/da/da_test/da_check_vtox_adjoint.inc
+END
+da_check_vtoy_adjoint.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_vtoy_adjoint.inc
+END
+da_check_xtoy_adjoint.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/8205/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint.inc
+END
+da_get_y_lhs_value.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7191/branches/HWRF/var/da/da_test/da_get_y_lhs_value.inc
+END
+da_check_xtoy_adjoint_polaramv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_polaramv.inc
+END
+da_check_vvtovp_adjoint.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/7191/branches/HWRF/var/da/da_test/da_check_vvtovp_adjoint.inc
+END
+da_check_xtoy_adjoint_profiler.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_profiler.inc
+END
+da_check_xtoy_adjoint_ssmi_rv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_ssmi_rv.inc
+END
+da_check_xtoy_adjoint_sound.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_sound.inc
+END
+da_check_xtoy_adjoint_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5431/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_rain.inc
+END
+da_check_xtoy_adjoint_radar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/8205/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_radar.inc
+END
+da_check_balance.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_balance.inc
+END
+da_check_vptox_adjoint.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8205/branches/HWRF/var/da/da_test/da_check_vptox_adjoint.inc
+END
+da_check_sfc_assi.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_sfc_assi.inc
+END
+da_check_xtoy_adjoint_airep.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/7191/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_airep.inc
+END
+da_test_vtoy_transform.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_test_vtoy_transform.inc
+END
+da_check_cvtovv_adjoint.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8205/branches/HWRF/var/da/da_test/da_check_cvtovv_adjoint.inc
+END
+da_check_xtoy_adjoint_mtgirs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_mtgirs.inc
+END
+da_check_xtoy_adjoint_rad.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_rad.inc
+END
+da_check_xtoy_adjoint_ssmt1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_ssmt1.inc
+END
+da_check_xtoy_adjoint_satob.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_satob.inc
+END
+da_check_xtoy_adjoint_metar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/5208/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_metar.inc
+END
+da_check_xtoy_adjoint_ssmt2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_ssmt2.inc
+END
+da_check_xtoy_adjoint_satem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_test/da_check_xtoy_adjoint_satem.inc
+END

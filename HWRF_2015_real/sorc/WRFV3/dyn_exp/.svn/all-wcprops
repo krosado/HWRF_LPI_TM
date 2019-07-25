@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/4946/branches/HWRF/dyn_exp
+END
+module_exp.F
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/4946/branches/HWRF/dyn_exp/module_exp.F
+END
+module_initialize_exp.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/dyn_exp/module_initialize_exp.F
+END
+solve_exp.F
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/4946/branches/HWRF/dyn_exp/solve_exp.F
+END
+init_modules_exp.F
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/dyn_exp/init_modules_exp.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/4946/branches/HWRF/dyn_exp/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/4946/branches/HWRF/dyn_exp/README
+END

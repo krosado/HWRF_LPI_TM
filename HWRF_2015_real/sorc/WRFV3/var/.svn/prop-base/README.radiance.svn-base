@@ -1,0 +1,16 @@
+K 13
+svn:mergeinfo
+V 668
+/branches/H15A/var/README.radiance:7932,8013
+/branches/H15B/var/README.radiance:7799-7931
+/branches/HWRF_CC/var/README.radiance:5849-5941,6682-6691,6704-6735,7814-7831,8165-8204
+/branches/HWRF_gthompson/var/README.radiance:6521-6556
+/branches/ens-sas/var/README.radiance:7647-7754
+/branches/hwrf-interp-mp/var/README.radiance:6078-6189
+/branches/hwrf-nesting-bugs/var/README.radiance:7698-7752
+/branches/hwrf-xlf-is-buggy/var/README.radiance:6424-6478
+/branches/merge-H215/var/README.radiance:8355-8426
+/branches/merge-H215-step2/var/README.radiance:8396-8400,8414-8425
+/tags/trunk_20131220_03_mk/var/README.radiance:7046
+/trunk/var/README.radiance:4946-7045,7047-8365
+END

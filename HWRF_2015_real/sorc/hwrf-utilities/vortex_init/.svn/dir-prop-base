@@ -1,0 +1,20 @@
+K 13
+svn:mergeinfo
+V 635
+/branches/2011_oper/vortex_init:276-285
+/branches/H15T/vortex_init:1124-1146
+/branches/H15X/vortex_init:1106-1145
+/branches/H211-final/vortex_init:193-205
+/branches/H215/vortex_init:1146-1155
+/branches/HWRF-new-gfs/vortex_init:1101-1103
+/branches/HWRF_v3.6a/vortex_init:1070-1071,1073
+/branches/hwrf-baseline/vortex_init:407-413
+/branches/hwrf-southern-hemis/vortex_init:985-995
+/branches/merge-H215/vortex_init:1156-1162
+/branches/the-great-merge/vortex_init:451-467,469
+/tags/hwrf-20120302/vortex_init:414
+/tags/v3.3_rc1/vortex_init:260
+/tags/v3.3_rc2/vortex_init:261-262
+/tags/v3.3_rc3/vortex_init:263
+/tags/v3.3_rc4/vortex_init:266
+END

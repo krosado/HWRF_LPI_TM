@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass
+END
+rad_bias.f90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass/rad_bias.f90
+END
+da_bias_scan.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass/da_bias_scan.f90
+END
+tqli.f90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass/tqli.f90
+END
+da_bias_sele.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass/da_bias_sele.f90
+END
+regress_one.f90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass/regress_one.f90
+END
+pythag.f90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass/pythag.f90
+END
+da_bias_verif.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass/da_bias_verif.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass/Makefile
+END
+tred2.f90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass/tred2.f90
+END
+da_bias_airmass.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_biascorr_airmass/da_bias_airmass.f90
+END

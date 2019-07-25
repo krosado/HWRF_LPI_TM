@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice
+END
+hslice_draw.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/hslice_draw.m
+END
+vslice.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/vslice.m
+END
+cslice_capture.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/cslice_capture.m
+END
+hvfo.mat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/hvfo.mat
+END
+hslice.mat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/hslice.mat
+END
+cslice_linterp.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/cslice_linterp.m
+END
+get_hslice_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/get_hslice_data.m
+END
+hvfo_command.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/hvfo_command.m
+END
+pslice2.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/pslice2.m
+END
+cslice.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/cslice.m
+END
+hvfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/hvfo.m
+END
+vslice_draw.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/vslice_draw.m
+END
+what_type.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/what_type.m
+END
+cslice.tar.Z
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/cslice.tar.Z
+END
+hslice_varmenu.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/hslice_varmenu.m
+END
+hslice_command.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/hslice_command.m
+END
+get_cross_slice.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/get_cross_slice.m
+END
+hslice.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/hslice.m
+END
+zoomrb.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/zoomrb.m
+END
+jd2str.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/jd2str.m
+END
+cslice_getline.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/cslice_getline.m
+END
+vslice.mat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/vslice.mat
+END
+contourbar.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/contourbar.m
+END
+mstartup.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/mstartup.m
+END
+cslice_obj_index.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/cslice_obj_index.m
+END
+cslice_interp.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/cslice_interp.m
+END
+vslice_command.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/cslice/vslice_command.m
+END

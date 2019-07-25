@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/7425/branches/HWRF/test/em_tropical_cyclone
+END
+README.tropical_cyclone
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/test/em_tropical_cyclone/README.tropical_cyclone
+END
+input_sounding
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/test/em_tropical_cyclone/input_sounding
+END
+run_me_first.csh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/test/em_tropical_cyclone/run_me_first.csh
+END
+namelist.input
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/7425/branches/HWRF/test/em_tropical_cyclone/namelist.input
+END

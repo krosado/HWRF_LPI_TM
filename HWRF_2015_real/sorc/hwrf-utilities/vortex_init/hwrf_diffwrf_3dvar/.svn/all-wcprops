@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/1163/branches/HWRF/vortex_init/hwrf_diffwrf_3dvar
+END
+diffwrf_3dvar.f90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/1163/branches/HWRF/vortex_init/hwrf_diffwrf_3dvar/diffwrf_3dvar.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/650/branches/HWRF/vortex_init/hwrf_diffwrf_3dvar/Makefile
+END

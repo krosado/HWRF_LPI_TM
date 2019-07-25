@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/5750/branches/HWRF/var/obsproc/MAP_plot
+END
+configure.user.sgi
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/configure.user.sgi
+END
+mac_Makefile2
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/mac_Makefile2
+END
+mapco.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/mapco.tbl
+END
+Map.USA.csh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Map.USA.csh
+END
+configure.user.mac_g95
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/configure.user.mac_g95
+END
+configure.user.dec
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/configure.user.dec
+END
+Map.csh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/5750/branches/HWRF/var/obsproc/MAP_plot/Map.csh
+END
+configure.user.linux
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/configure.user.linux
+END
+configure.user.mac
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/5750/branches/HWRF/var/obsproc/MAP_plot/configure.user.mac
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/README
+END
+Map.KMA.csh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Map.KMA.csh
+END
+namelist.file.template
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/namelist.file.template
+END
+configure.user.ibm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/configure.user.ibm
+END
+Map.CAA_SSMI.csh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Map.CAA_SSMI.csh
+END
+no_comment.sed
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/no_comment.sed
+END
+Map.USA_SSMI.csh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Map.USA_SSMI.csh
+END
+Map.CAA.csh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Map.CAA.csh
+END
+Map.RT.csh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Map.RT.csh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Makefile
+END
+mac_Makefile1
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/mac_Makefile1
+END

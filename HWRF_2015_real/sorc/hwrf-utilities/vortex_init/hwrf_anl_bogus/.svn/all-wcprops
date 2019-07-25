@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/1163/branches/HWRF/vortex_init/hwrf_anl_bogus
+END
+correct_mat_2.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/1043/branches/HWRF/vortex_init/hwrf_anl_bogus/correct_mat_2.f90
+END
+cort_wrf_2_no1.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/408/branches/HWRF/vortex_init/hwrf_anl_bogus/cort_wrf_2_no1.f90
+END
+convert_axi_xy_8.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/1043/branches/HWRF/vortex_init/hwrf_anl_bogus/convert_axi_xy_8.f90
+END
+hwrf_anl_bogus_10m.f90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/1163/branches/HWRF/vortex_init/hwrf_anl_bogus/hwrf_anl_bogus_10m.f90
+END
+interp_coef.f90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/1163/branches/HWRF/vortex_init/hwrf_anl_bogus/interp_coef.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/839/branches/HWRF/vortex_init/hwrf_anl_bogus/Makefile
+END

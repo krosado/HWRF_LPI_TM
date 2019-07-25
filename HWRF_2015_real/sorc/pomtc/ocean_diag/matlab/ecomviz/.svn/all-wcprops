@@ -1,0 +1,401 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz
+END
+clegend4.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/clegend4.m
+END
+ts.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ts.m
+END
+swstate.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/swstate.m
+END
+tsrich.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/tsrich.m
+END
+tstau.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/tstau.m
+END
+zsliceuv.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/zsliceuv.m
+END
+depave.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/depave.m
+END
+kslice.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/kslice.m
+END
+gregorian.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/gregorian.m
+END
+depaveuv.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/depaveuv.m
+END
+gregaxd.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/gregaxd.m
+END
+hms2h.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/hms2h.m
+END
+cmean.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/cmean.m
+END
+near.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/near.m
+END
+ksliceuv.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ksliceuv.m
+END
+gregaxh.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/gregaxh.m
+END
+emean.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/emean.m
+END
+ecomvel.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ecomvel.m
+END
+ecomts.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ecomts.m
+END
+mcagt.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/mcagt.m
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/Contents.m
+END
+ecomelev.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ecomelev.m
+END
+tselev.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/tselev.m
+END
+allmean.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/allmean.m
+END
+jslice.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/jslice.m
+END
+ecomviz.tar.Z
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ecomviz.tar.Z
+END
+mcvgt.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/mcvgt.m
+END
+julian.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/julian.m
+END
+ctotal.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ctotal.m
+END
+doportrait.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/doportrait.m
+END
+w100.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/w100.m
+END
+ecomdemo.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ecomdemo.m
+END
+zslice.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/zslice.m
+END
+psliceuv.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/psliceuv.m
+END
+gmin.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/gmin.m
+END
+gmax.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/gmax.m
+END
+tsvel.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/tsvel.m
+END
+hfmean.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/hfmean.m
+END
+freshtot.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/freshtot.m
+END
+tind.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/tind.m
+END
+greg2str.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/greg2str.m
+END
+stacklbl.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/stacklbl.m
+END
+pomdemo.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/pomdemo.m
+END
+ecomtime.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ecomtime.m
+END
+nearxy.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/nearxy.m
+END
+islice.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/islice.m
+END
+sp2gc.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/sp2gc.m
+END
+get_tsdata.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/get_tsdata.m
+END
+mcdump.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/mcdump.m
+END
+gregaxm.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/gregaxm.m
+END
+taumean.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/taumean.m
+END
+s2hms.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/s2hms.m
+END
+Readme.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/Readme.m
+END
+ecomtau.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ecomtau.m
+END
+tmean.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/tmean.m
+END
+vmean.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/vmean.m
+END
+gregaxy.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/gregaxy.m
+END
+gregaxis.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/gregaxis.m
+END
+mcdinq.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/mcdinq.m
+END
+replace.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/replace.m
+END
+arrows.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/arrows.m
+END
+dolandscape.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/dolandscape.m
+END
+depmax.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/depmax.m
+END
+pslice.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/pslice.m
+END
+readgrid.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/readgrid.m
+END
+ecom.cdf
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/ecomviz/ecom.cdf
+END

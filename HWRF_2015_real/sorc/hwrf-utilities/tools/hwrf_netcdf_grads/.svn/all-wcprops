@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1163/branches/HWRF/tools/hwrf_netcdf_grads
+END
+wrf_nmm_netcdf_grads_ijk.f90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/1064/branches/HWRF/tools/hwrf_netcdf_grads/wrf_nmm_netcdf_grads_ijk.f90
+END
+wrf_nmm_netcdf_grads_ijk_egrid.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/741/branches/HWRF/tools/hwrf_netcdf_grads/wrf_nmm_netcdf_grads_ijk_egrid.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/1126/branches/HWRF/tools/hwrf_netcdf_grads/Makefile
+END

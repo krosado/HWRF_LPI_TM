@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/!svn/ver/895/branches/HWRF/geogrid
+END
+gribmap.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/602/branches/HWRF/geogrid/gribmap.txt
+END
+GEOGRID.TBL
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/602/branches/HWRF/geogrid/GEOGRID.TBL
+END
+GEOGRID.TBL.ARW_CHEM
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/895/branches/HWRF/geogrid/GEOGRID.TBL.ARW_CHEM
+END
+GEOGRID.TBL.FIRE
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/895/branches/HWRF/geogrid/GEOGRID.TBL.FIRE
+END
+GEOGRID.TBL.NMM
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/720/branches/HWRF/geogrid/GEOGRID.TBL.NMM
+END
+GEOGRID.TBL.ARW
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/895/branches/HWRF/geogrid/GEOGRID.TBL.ARW
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/602/branches/HWRF/geogrid/Makefile
+END

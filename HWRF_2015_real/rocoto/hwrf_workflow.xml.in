@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<!DOCTYPE workflow
+[
+  <!-- Scrub Times -->
+@** if ENSEMBLE==YES
+  <!-- GEFS-based HWRF ensemble, no DA -->
+  <!ENTITY COM_SCRUB_TIME "1800">
+  <!ENTITY WORK_SCRUB_TIME "600">
+  <!ENTITY CYCLE_THROTTLE "2">
+  <!ENTITY TASK_THROTTLE "120">
+@** elseif CASE_ROOT==FORECAST
+  <!-- GFS-based HWRF, may or may not have DA -->
+  <!ENTITY COM_SCRUB_TIME "86400">
+  <!ENTITY WORK_SCRUB_TIME "14400">
+  <!ENTITY CYCLE_THROTTLE "7">
+  <!ENTITY TASK_THROTTLE "43">
+@** elseif DA_ENSEMBLE==YES
+  <!-- Deterministic GFS-based HWRF forecast with GFS ENKF based HWRF
+  ensemble -->
+  <!ENTITY COM_SCRUB_TIME "1800">
+  <!ENTITY WORK_SCRUB_TIME "600">
+  <!ENTITY CYCLE_THROTTLE "3">
+  <!ENTITY TASK_THROTTLE "43">
+@** else
+  <!-- Deterministic HWRF, no DA ensemble -->
+  <!ENTITY COM_SCRUB_TIME "1800">
+  <!ENTITY WORK_SCRUB_TIME "1200">
+  <!ENTITY CYCLE_THROTTLE "4">
+  <!ENTITY TASK_THROTTLE "20">
+@** endif
+
+  <!-- Maximum number of times to try various jobs -->
+  <!ENTITY MAX_TRIES_TRANSFER "5"> <!-- pulling data over network -->
+  <!ENTITY MAX_TRIES_BIG_JOBS "3"> <!-- forecast or other huge jobs -->
+  <!ENTITY MAX_TRIES "3"> <!-- everything else -->
+@** if WHERE_AM_I==jet
+  <!ENTITY MAX_TRIES_JET_WORKAROUND "7"> <!-- jobs that fail a lot on jet -->
+@** else
+  <!ENTITY MAX_TRIES_JET_WORKAROUND "3"> <!-- jobs that fail a lot on jet -->
+@** endif
+
+  <!-- Need to set the number of products job tasks here so it is
+  available when loading the TASKS entity a few lines down. -->
+@** if EXTRA_TRACKERS==YES
+  <!ENTITY PRODUCTS_JOB_RANKS "11">
+@** else
+  <!ENTITY PRODUCTS_JOB_RANKS "7">
+@**endif
+
+  <!-- External parameter entities -->
+  <!ENTITY % SITES    SYSTEM "sites/all.ent">
+  <!ENTITY % TASKS    SYSTEM "tasks/all.ent">
+  <!ENTITY % DEPS     SYSTEM "deps/all.ent">
+  <!ENTITY % STORMS   SYSTEM "storms/H214.ent">
+  <!ENTITY % SITE_DEFAULTS SYSTEM "sites/defaults.ent">
+  %SITES;
+  %TASKS;
+  %DEPS;
+  %STORMS;
+
+  <!-- Choose between *_2KM and *_3KM entitites for forecast jobs -->
+  <!ENTITY CPL_FCST    "&CPL_FCST_@[FCST_RES];">
+  <!ENTITY CPL_TASKS   "&CPL_TASKS_@[FCST_RES];">
+  <!ENTITY ATM_FCST    "&ATM_FCST_@[FCST_RES];">
+  <!ENTITY ATM_TASKS   "&ATM_TASKS_@[FCST_RES];">
+
+  <!-- Site that we are currently running on -->
+@** if SITE_FILE==
+  <!-- No site file, so choose from defaults. -->
+@**   if WHERE_AM_I==jet
+@**     if WHICH_JET==t
+  %tjet;     
+@**     elseif WHICH_JET==s
+  %sjet;
+@**     elseif WHICH_JET==n
+  %njet;
+@**     elseif WHICH_JET==v
+  %vjet;
+@**     else
+  %ujet; <!-- Default is ujet when nothing else is specified -->
+@**     endif
+@**   else
+  %@[WHERE_AM_I];
+@**   endif
+@** else
+  <!ENTITY % CUSTOM_SITE SYSTEM "@[SITE_FILE]">
+  %CUSTOM_SITE;
+@** endif
+
+  %SITE_DEFAULTS;
+
+  <!-- Initialization variables for FGAT -->
+  <!ENTITY INIT_FHR "@[INIT_FHR]">
+  <!ENTITY INIT_MODEL "@[INIT_MODEL]">
+  <!ENTITY INIT_PARTS "@[INIT_PARTS]">
+
+  <!-- Ensemble member list (or 99 for deterministic) -->
+  <!ENTITY ENSIDS "@[ENSIDS]">
+
+  <!-- Data Assimilation member list (only run for ENSID=99) -->
+  <!ENTITY ENSDA_IDS "@[ENSDA_IDS]">
+
+  <!-- The value to use for ENS (forecast ensemble) when running the
+  data assimilation ensemble.  This is needed because the DA ensemble
+  re-uses some of the forecast ensemble initialization, and shares the
+  hwrf_state.sqlite3 database file from one of the members. Hence, we
+  need to know which forecast ensemble member's files should be
+  used.-->
+  <!ENTITY ENSDA_ENS_MEMBER "@[ENSDA_ENS_MEMBER]">
+
+  <!-- Extra variables to send to the exhwrf_launch.py -->
+  <!ENTITY MORE_LAUNCH_VARS "@[MORE_LAUNCH_VARS]">
+  
+  <!-- Storm we are going to run -->
+  <!ENTITY SID "@[SID.uc]">
+  <!ENTITY sidlc "@[SID.lc]">
+  <!ENTITY STORMLABEL "@[stormlabel]">
+  <!ENTITY CASE_ROOT "@[CASE_ROOT]">
+  
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- Directory paths and experiment names.  The tasks/launch.ent
+  will override the Python *.conf files to use these settings
+
+  NOTE: To add or remove these, you must also update tasks/launch.ent
+  -->
+  <!ENTITY WHERE_AM_I "@[WHERE_AM_I]">
+  <!ENTITY PRE "@[USHhwrf]/rocoto_pre_job.sh">
+  <!ENTITY DA_ENSEMBLE "@[DA_ENSEMBLE]">
+  <!ENTITY ENSEMBLE "@[ENSEMBLE]">
+  <!ENTITY EXPT "@[EXPT]">
+  <!ENTITY SUBEXPT "@[SUBEXPT:-EXPT]">
+  <!ENTITY HOMEhwrf "@[CDSAVE]/&EXPT;">
+  <!ENTITY WORKhwrf "@[CDSCRUB]/&SUBEXPT;@[ENSEMBLE==YES?/#ENS#:]/@Y@m@d@H/&SID;">
+  <!ENTITY COMhwrf "@[CDSCRUB]/&SUBEXPT;@[ENSEMBLE==YES?/#ENS#:]/com/@Y@m@d@H/&SID;">
+  <!ENTITY PARMhwrf "@[PARMhwrf]"> <!-- parm area with *.conf files -->
+  <!ENTITY LOGhwrf  "@[CDSCRUB]/&SUBEXPT;/log">  <!-- rocoto log area -->
+  <!ENTITY EXhwrf   "@[EXhwrf]"> <!-- where to find HWRF scripts -->
+  <!ENTITY USHhwrf   "@[USHhwrf]"> <!-- where to find HWRF util scripts -->
+  
+  <!-- The output conf file for each cycle: -->
+  <!ENTITY CONFhwrf "&COMhwrf;/&STORMLABEL;.conf">
+
+  <!-- Enabling or disabling  parts of the workflow: -->
+  <!ENTITY RUN_GSI "@[RUN_GSI]">
+  <!ENTITY RUN_OCEAN "@[RUN_OCEAN]">
+  <!ENTITY RUN_RELOCATION "@[RUN_RELOCATION]">
+  <!ENTITY FETCH_INPUT "@[FETCH_INPUT]">
+  <!ENTITY EXTRA_TRACKERS "@[EXTRA_TRACKERS]">
+  <!ENTITY ARCHIVE_WRFOUT "@[ARCHIVE_WRFOUT]">
+  <!ENTITY CONDITIONAL_GSID03 "@[CONDITIONAL_GSID03]">
+  
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- External entities -->
+  <!ENTITY ENV_VARS   SYSTEM "env_vars.ent">
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+]>
+
+<!-- Workflow below here -->
+
+<workflow realtime="F" cyclethrottle="&CYCLE_THROTTLE;"
+          scheduler="&SCHEDULER;" taskthrottle="&TASK_THROTTLE;">
+
+  @[CYCLE_LIST]
+
+  <log><cyclestr>&LOGhwrf;/rocoto_&SID;_@Y@m@d@H.log</cyclestr></log>
+
+@** if DA_ENSEMBLE==YES
+  &ensda_pre_task;
+@** endif
+
+  <!-- Initialization tasks -->
+  <metatask name="meta_init" mode="parallel">
+    <var name="ENS">&ENSIDS;</var>
+    &launch_task;
+    &input_task;
+    &bdy_task;
+    &init_gfs_metatask;
+    &init_gdas1_metatask;
+    &ocean_init_task;
+    &relocate_gfs_metatask;
+    &relocate_gdas1_metatask;
+    &bufrprep_task;
+    &gsi_metatask;
+    &gsi_post_task;
+    &merge_task;
+  </metatask>
+
+  <!-- Check the initialization -->
+  <metatask name="meta_check_init" mode="parallel">
+    <var name="ENS">&ENSIDS;</var>
+    &check_init_task;
+  </metatask>
+
+  <!-- Forecast and post-processing tasks -->
+  <metatask name="meta_fcst" mode="parallel">
+    <var name="ENS">&ENSIDS;</var>
+    &forecast_task;
+    &unpost_task;
+    &post_task;
+    &post_helper_task;
+    &products_task;
+    <!-- &graphics_task; -->
+  </metatask>
+
+  <!-- Data delivery tasks -->
+  <metatask name="meta_output" mode="parallel">
+    <var name="ENS">&ENSIDS;</var>
+    &output_task;
+  </metatask>
+
+@** if DA_ENSEMBLE==YES
+  <!-- Data assimilation ensemble -->
+  <metatask name="da_ensemble_ens_meta" mode="parallel">
+    <var name="ENS">&ENSDA_ENS_MEMBER;</var>
+    <metatask name="da_ensemble" mode="parallel">
+      <var name="ENSDA">&ENSDA_IDS;</var>
+      &ensdamemb_task;
+    </metatask>
+  </metatask>
+  &ensda_output_task;
+@** endif
+
+  <!-- Data delivery tasks -->
+  <metatask name="meta_archive" mode="parallel">
+    <var name="ENS">&ENSIDS;</var>
+    &disk_archive_task;
+    &tape_archive_task;
+  </metatask>
+
+  <!-- More data delivery tasks -->
+  <metatask name="meta_wrfout_archive" mode="parallel">
+    <var name="ENS">&ENSIDS;</var>
+    &wrfout_archive_task;
+  </metatask>
+
+@** if ENSEMBLE==YES
+  <!-- Ensemble post-processing is not yet implemented. -->
+  <!-- &ensemble_post; -->
+  <!-- &ensemble_late_post; -->
+@** endif
+
+  <!-- Scrub disk areas -->
+  <metatask name="meta_scrub" mode="parallel">
+    <var name="ENS">&ENSIDS;</var>
+    &scrub_work_task;
+@** if SCRUB_COM==YES
+    &scrub_com_task;
+@** endif
+  </metatask>
+
+  <!-- Final task.  This task exists mainly to set the "final" state
+  for the cycle (final="true"), and it also sents a "cycle completed"
+  message to the jlogfile.  It is here, instead of in an entity, so
+  that you can edit the <dependency> section to match your
+  configuration. -->
+  <task name="completion" maxtries="&MAX_TRIES;" final="true">
+    <command>&USHhwrf;/hwrf_completion.py &SID; <cyclestr>@Y@m@d@H</cyclestr></command>
+    <jobname><cyclestr>hwrf_completion_&SID;_@Y@m@d@H</cyclestr></jobname>
+    <account>&ACCOUNT;</account>
+    <cores>1</cores>
+    <walltime>00:15:00</walltime>
+    <queue>&SERIAL;</queue>
+    <memory>1G</memory>
+    <stdout><cyclestr>&LOGhwrf;/hwrf_completion_&SID;_@Y@m@d@H.out</cyclestr></stdout>
+    <stderr><cyclestr>&LOGhwrf;/hwrf_completion_&SID;_@Y@m@d@H.err</cyclestr></stderr>
+    &ENV_VARS;
+    &RESERVATION;
+    &CORES_EXTRA;
+    &SERIAL_EXTRA;
+    <dependency>
+      <or>
+        <and>
+          <metataskdep metatask="meta_archive"/>
+          <metataskdep metatask="meta_scrub"/>
+          <metataskdep metatask="meta_wrfout_archive"/>
+          <metataskdep metatask="meta_output"/>
+@** if ENSEMBLE==YES
+          <taskdep task="ensemble_post"/>
+          <taskdep task="ensemble_late_post"/>
+@** endif
+@** if DA_ENSEMBLE==YES
+          <or>
+            <taskdep task="ensda_output"/>
+            <sh>grep 'RUN_ENSDA=NO' <cyclestr>&COMhwrf;/&STORMLABEL;.run_ensda</cyclestr></sh>
+          </or>
+@** endif
+        </and>
+
+        <!-- Allow a scrubbed cycle to complete.  This is needed to
+        handle cases where someone changes the configuration
+        mid-stream, leaving some cycles scrubbed that have not run
+        jobs that are newly needed. -->
+
+        <metataskdep metatask="meta_scrub"/>
+      </or>
+    </dependency>
+  </task>
+
+</workflow>

@@ -1,0 +1,10 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD>
+    <TITLE>Sending you to REDIRECT_TITLE ....</TITLE>
+    <META http-equiv="REFRESH" content="1;url=REDIRECT_URL">
+  </HEAD>
+  <BODY>
+    Sending you to <a href="REDIRECT_URL">REDIRECT_URL</a> in one second...
+  </BODY>
+</HTML>

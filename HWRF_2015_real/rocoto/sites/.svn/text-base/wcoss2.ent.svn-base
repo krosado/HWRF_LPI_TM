@@ -1,0 +1,48 @@
+<!-- NOAA WCOSS Gyre and Tide systems -->
+<!ENTITY SCHEDULER       "lsf">
+<!ENTITY ACCOUNT         "HUR-T2O">
+<!ENTITY SERIAL          "dev2_shared">
+<!ENTITY PE              "dev2">
+<!ENTITY PAR_SHARED      "dev2_shared">
+<!ENTITY RESERVATION     "">
+<!ENTITY CORES_EXTRA     "<nodesize>16</nodesize>">
+<!ENTITY NODES_EXTRA     "">
+<!ENTITY MPI_EXTRA       "<native>-a poe</native><envar><name>MP_USE_BULK_XFER</name><value>yes</value></envar>">
+<!ENTITY PURE_OPENMP     "<nodes>1:ppn=2:tpp=8</nodes>">
+<!ENTITY SERVICE_QUEUE   "transfer">
+<!ENTITY SERVICE_EXTRA   "<native>-R affinity[core]</native>">
+<!ENTITY SERIAL_EXTRA   "<native>-R affinity[core]</native>">
+<!ENTITY MPI_SHARED_EXTRA "<native>-a poe</native><native>-R affinity[core]</native>">
+<!ENTITY PRODUCTS_JOB_MORE "<memory>1G</memory>">
+
+<!ENTITY THREADS         "8">
+<!ENTITY REQUEST_THREADS "<envar><name>OMP_NUM_THREADS</name><value>&THREADS;</value></envar><envar><name>KMP_NUM_THREADS</name><value>&THREADS;</value></envar>">
+<!ENTITY FORECAST_MORE   "<envar><name>WHICH_WCOSS</name><value>2</value></envar>">
+
+<!--
+   IMPORTANT: If you change the task geometry or task count for WRF
+   here, you MUST update the ush/hwrf_wcoss.py module's
+   LSB_PJL_TASK_GEOMETRY settings or the model will fail on WCOSS.
+-->
+<!ENTITY CPL_FCST_2KM    "1:ppn=13+20:ppn=24+1:ppn=16">
+<!ENTITY ATM_FCST_2KM    "20:ppn=24+1:ppn=16">
+<!ENTITY CPL_TASKS_2KM   "509">
+<!ENTITY ATM_TASKS_2KM   "496">
+<!ENTITY CPL_FCST_3KM    "1:ppn=10+8:ppn=23+1:ppn=16">
+<!ENTITY ATM_FCST_3KM    "8:ppn=23+1:ppn=16">
+<!ENTITY CPL_TASKS_3KM   "210">
+<!ENTITY ATM_TASKS_3KM   "200">
+
+
+<!ENTITY GSI_D02_NODES   "5:ppn=12">
+<!ENTITY GSI_D03_NODES   "5:ppn=24">
+<!ENTITY GSI_D02_TASKS   "60">
+<!ENTITY GSI_D03_TASKS   "120">
+
+<!ENTITY FORECAST_WALLTIME "2:29:00">
+<!ENTITY POST_WALLTIME "2:59:00">
+<!ENTITY GSI_D02_WALLTIME "00:29:00">
+<!ENTITY GSI_D03_WALLTIME "00:29:00">
+
+
+<!ENTITY INPUT_WALLTIME  "2:00:00">

@@ -1,0 +1,8 @@
+<and> 
+  <taskdep task="products_E#ENS#"/>
+  <or>
+    <taskdep task="post_E#ENS#"/>
+    <taskdep task="post_helper_E#ENS#"/>
+  </or>
+  &forecast_complete;
+</and>

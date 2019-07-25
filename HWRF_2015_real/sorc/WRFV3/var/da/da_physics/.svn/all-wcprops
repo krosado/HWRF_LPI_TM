@@ -1,0 +1,419 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/7885/branches/HWRF/var/da/da_physics
+END
+da_check_rh.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_check_rh.inc
+END
+da_tv_profile.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tv_profile.inc
+END
+da_tp_to_qs1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tp_to_qs1.inc
+END
+da_pt_to_rho_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_pt_to_rho_adj.inc
+END
+da_find_layer_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_find_layer_tl.inc
+END
+da_moist_phys_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_moist_phys_adj.inc
+END
+da_check_rh_simple.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_check_rh_simple.inc
+END
+da_roughness_from_lanu.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/7191/branches/HWRF/var/da/da_physics/da_roughness_from_lanu.inc
+END
+da_sfc_pre_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_sfc_pre_lin.inc
+END
+da_tpq_to_slp_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tpq_to_slp_lin.inc
+END
+da_transform_xtoztd_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_transform_xtoztd_lin.inc
+END
+da_tp_to_qs_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tp_to_qs_lin.inc
+END
+da_find_layer_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_find_layer_adj.inc
+END
+da_sfc_pre_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_sfc_pre_adj.inc
+END
+da_tpq_to_slp_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tpq_to_slp_adj.inc
+END
+da_transform_xtoztd_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_transform_xtoztd_adj.inc
+END
+da_tp_to_qs_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tp_to_qs_adj.inc
+END
+da_sfc_wtq_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/5431/branches/HWRF/var/da/da_physics/da_sfc_wtq_lin.inc
+END
+da_thickness_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_thickness_adj.inc
+END
+da_integrat_dz.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_integrat_dz.inc
+END
+da_tp_to_qs_lin1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tp_to_qs_lin1.inc
+END
+da_find_layer.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_find_layer.inc
+END
+da_transform_xtotpw_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_transform_xtotpw_adj.inc
+END
+da_transform_xtogpsref_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_transform_xtogpsref_lin.inc
+END
+da_sfc_pre.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_sfc_pre.inc
+END
+da_tprh_to_q_lin1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tprh_to_q_lin1.inc
+END
+da_uv_to_sd_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7425/branches/HWRF/var/da/da_physics/da_uv_to_sd_lin.inc
+END
+da_sfc_wtq_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/5431/branches/HWRF/var/da/da_physics/da_sfc_wtq_adj.inc
+END
+da_tpq_to_slp.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7885/branches/HWRF/var/da/da_physics/da_tpq_to_slp.inc
+END
+da_trh_to_td.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_trh_to_td.inc
+END
+da_transform_xtoztd.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_transform_xtoztd.inc
+END
+da_tp_to_qs_adj1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tp_to_qs_adj1.inc
+END
+da_tp_to_qs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tp_to_qs.inc
+END
+f_qv_from_rh.f90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/f_qv_from_rh.f90
+END
+da_thickness_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_thickness_tl.inc
+END
+da_transform_xtogpsref_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_transform_xtogpsref_adj.inc
+END
+da_thickness.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_thickness.inc
+END
+da_tprh_to_q_adj1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tprh_to_q_adj1.inc
+END
+da_transform_xtopsfc_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_transform_xtopsfc_adj.inc
+END
+da_uv_to_sd_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7425/branches/HWRF/var/da/da_physics/da_uv_to_sd_adj.inc
+END
+da_transform_xtotpw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_transform_xtotpw.inc
+END
+da_tprh_to_q_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tprh_to_q_lin.inc
+END
+da_filter_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_filter_adj.inc
+END
+da_sfc_wtq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/5431/branches/HWRF/var/da/da_physics/da_sfc_wtq.inc
+END
+da_tv_profile_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tv_profile_tl.inc
+END
+da_get_q_error.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_get_q_error.inc
+END
+da_transform_xtogpsref.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/6694/branches/HWRF/var/da/da_physics/da_transform_xtogpsref.inc
+END
+da_tprh_to_q_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tprh_to_q_adj.inc
+END
+da_uvprho_to_w_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_uvprho_to_w_lin.inc
+END
+da_transform_xtopsfc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_transform_xtopsfc.inc
+END
+da_wrf_tpq_2_slp.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/7673/branches/HWRF/var/da/da_physics/da_wrf_tpq_2_slp.inc
+END
+da_tpq_to_rh_lin1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tpq_to_rh_lin1.inc
+END
+da_filter.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_filter.inc
+END
+da_uvprho_to_w_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_uvprho_to_w_adj.inc
+END
+da_condens_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_condens_lin.inc
+END
+da_prho_to_t_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_prho_to_t_lin.inc
+END
+da_tpq_to_rh_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tpq_to_rh_lin.inc
+END
+da_physics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/7425/branches/HWRF/var/da/da_physics/da_physics.f90
+END
+da_condens_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_condens_adj.inc
+END
+da_prho_to_t_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_prho_to_t_adj.inc
+END
+da_evapo_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_evapo_lin.inc
+END
+da_julian_day.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_julian_day.inc
+END
+da_transform_xtowtq_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5431/branches/HWRF/var/da/da_physics/da_transform_xtowtq_adj.inc
+END
+da_tv_profile_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tv_profile_adj.inc
+END
+da_wdt.inc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_wdt.inc
+END
+da_pt_to_rho_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_pt_to_rho_lin.inc
+END
+da_tpq_to_rh.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_tpq_to_rh.inc
+END
+da_moist_phys_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_physics/da_moist_phys_lin.inc
+END
+da_transform_xtowtq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/5431/branches/HWRF/var/da/da_physics/da_transform_xtowtq.inc
+END

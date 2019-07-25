@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/4946/branches/HWRF/var/da/da_wavelet
+END
+da_wavelet.f90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_wavelet/da_wavelet.f90
+END
+da_transform_through_wavelet_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/4946/branches/HWRF/var/da/da_wavelet/da_transform_through_wavelet_adj.inc
+END
+da_transform_through_wavelet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/4946/branches/HWRF/var/da/da_wavelet/da_transform_through_wavelet.inc
+END

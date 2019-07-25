@@ -1,0 +1,62 @@
+#BSUB -J %E%hwrf%NUM%_init_bdy_%CYC%
+#BSUB -o /com2/output/%ENVIR%/today/hwrf%NUM%_init_bdy_%CYC%.o%J
+#BSUB -e /com2/output/%ENVIR%/today/hwrf%NUM%_init_bdy_%CYC%.o%J
+#BSUB -L /bin/sh
+#BSUB -q %QUEUE%
+#BSUB -a poe
+#BSUB -n 24
+#BSUB -R span[ptile=24]
+#BSUB -R affinity[core]
+#BSUB -cwd /tmpnwprd
+#BSUB -W 01:00
+#BSUB -P %PROJ%
+#BSUB -x
+
+%include <head.h>
+%include <envir-p2.h>
+
+set -x
+
+export MP_EUIDEVICE=sn_all
+export MP_EUILIB=us
+
+export job=hwrf%NUM%_init_bdy_%CYC%
+export PDY=${PDY:-%PDY:%}
+export cyc=%CYC%
+export storm_num=%NUM%
+export stormlabel=storm%NUM%
+
+export INIT_MODEL=GFS
+export INIT_PARTS=BDY
+export INIT_FHR=0
+
+# versions file for hwrf sets $hwrf_ver and $code_ver
+VERSION_FILE=${NWROOT}/versions/hwrf.ver
+if [ -f $VERSION_FILE ]; then
+  . $VERSION_FILE
+else
+  ecflow_client --msg="***JOB ${ECF_NAME} ERROR: Version File $VERSION_FILE does not exist ***"
+  ecflow_client --abort
+  exit
+fi
+
+${NWROOT}/hwrf.${hwrf_ver}/jobs/JHWRF_INIT
+
+if [ $? -ne 0 ]; then
+  ecflow_client --msg="***JOB ${ECF_NAME} ERROR RUNNING J-SCRIPT ***"
+  ecflow_client --abort
+  exit
+fi
+
+%include <tail.h>
+%manual
+#
+#  PURPOSE:  Initialize ocean domain for POM (COUPLE or NON-COUPLE).
+#
+
+# Job specific troubleshooting instructions:
+#  see generic troubleshoot manual page
+#
+
+# include manual page below
+%end

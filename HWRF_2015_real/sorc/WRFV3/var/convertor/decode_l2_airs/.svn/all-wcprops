@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/5247/branches/HWRF/var/convertor/decode_l2_airs
+END
+geth_newdate.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/convertor/decode_l2_airs/geth_newdate.c
+END
+qual_threshold.nl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/convertor/decode_l2_airs/qual_threshold.nl
+END
+calc_rh.f90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/convertor/decode_l2_airs/calc_rh.f90
+END
+decode_l2_airs.README
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/4946/branches/HWRF/var/convertor/decode_l2_airs/decode_l2_airs.README
+END
+module_read_airs.f90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/convertor/decode_l2_airs/module_read_airs.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/5247/branches/HWRF/var/convertor/decode_l2_airs/Makefile
+END
+time_window.nl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/convertor/decode_l2_airs/time_window.nl
+END
+decode_airs.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/convertor/decode_l2_airs/decode_airs.f90
+END

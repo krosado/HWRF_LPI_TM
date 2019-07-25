@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results
+END
+amsua_metop-a.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results/amsua_metop-a.RTSolution.bin
+END
+ssmis_f16.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results/ssmis_f16.RTSolution.bin
+END
+mhs_n18.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results/mhs_n18.RTSolution.bin
+END
+amsre_aqua.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results/amsre_aqua.RTSolution.bin
+END
+amsua_metop-a.output
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results/amsua_metop-a.output
+END
+hirs4_n18.RTSolution.bin
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results/hirs4_n18.RTSolution.bin
+END
+ssmis_f16.output
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results/ssmis_f16.output
+END
+mhs_n18.output
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results/mhs_n18.output
+END
+amsre_aqua.output
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results/amsre_aqua.output
+END
+hirs4_n18.output
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example4_ODPS/results/hirs4_n18.output
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/1043/branches/HWRF/graphics/plot_track
+END
+statsin_domain_TI.f90
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/1043/branches/HWRF/graphics/plot_track/statsin_domain_TI.f90
+END
+hwrf_atcf_intensity.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/1043/branches/HWRF/graphics/plot_track/hwrf_atcf_intensity.f90
+END
+hwrf_atcf_tracks.f90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/1043/branches/HWRF/graphics/plot_track/hwrf_atcf_tracks.f90
+END
+statsin_domain.f90
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/1043/branches/HWRF/graphics/plot_track/statsin_domain.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/1043/branches/HWRF/graphics/plot_track/Makefile
+END
+Makefile_orig
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/1043/branches/HWRF/graphics/plot_track/Makefile_orig
+END

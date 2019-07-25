@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/4946/branches/HWRF/var/external/lapack
+END
+dlatrd.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlatrd.inc
+END
+dlarft.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlarft.inc
+END
+dlartg.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlartg.inc
+END
+dlaev2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlaev2.inc
+END
+dlae2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlae2.inc
+END
+dlamch.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlamch.inc
+END
+dorgql.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dorgql.inc
+END
+dlasrt.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlasrt.inc
+END
+iparmq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/iparmq.inc
+END
+dsyev.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dsyev.inc
+END
+dorgqr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dorgqr.inc
+END
+dlascl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlascl.inc
+END
+dsteqr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dsteqr.inc
+END
+dlasr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlasr.inc
+END
+dsytd2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dsytd2.inc
+END
+dsytrd.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dsytrd.inc
+END
+dlaset.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlaset.inc
+END
+ilaenv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/ilaenv.inc
+END
+da_lapack.f90
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/external/lapack/da_lapack.f90
+END
+dlanst.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlanst.inc
+END
+ieeeck.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/ieeeck.inc
+END
+dlassq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlassq.inc
+END
+dsterf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dsterf.inc
+END
+dlarf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlarf.inc
+END
+dorg2l.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dorg2l.inc
+END
+dlarfb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlarfb.inc
+END
+dlansy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlansy.inc
+END
+dlapy2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlapy2.inc
+END
+dlarfg.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dlarfg.inc
+END
+dorg2r.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dorg2r.inc
+END
+dorgtr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/lapack/dorgtr.inc
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/7425/branches/HWRF/var/da/da_pseudo
+END
+da_oi_stats_pseudo.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_pseudo/da_oi_stats_pseudo.inc
+END
+da_pseudo.f90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_pseudo/da_pseudo.f90
+END
+da_residual_pseudo.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_pseudo/da_residual_pseudo.inc
+END
+da_get_innov_vector_pseudo.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/5431/branches/HWRF/var/da/da_pseudo/da_get_innov_vector_pseudo.inc
+END
+da_print_stats_pseudo.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/5431/branches/HWRF/var/da/da_pseudo/da_print_stats_pseudo.inc
+END
+da_transform_xtoy_pseudo_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/7425/branches/HWRF/var/da/da_pseudo/da_transform_xtoy_pseudo_adj.inc
+END
+da_ao_stats_pseudo.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_pseudo/da_ao_stats_pseudo.inc
+END
+da_transform_xtoy_pseudo.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5431/branches/HWRF/var/da/da_pseudo/da_transform_xtoy_pseudo.inc
+END
+da_jo_and_grady_pseudo.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_pseudo/da_jo_and_grady_pseudo.inc
+END
+da_calculate_grady_pseudo.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_pseudo/da_calculate_grady_pseudo.inc
+END

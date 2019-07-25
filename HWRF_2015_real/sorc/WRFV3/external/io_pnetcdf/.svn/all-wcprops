@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/8367/branches/HWRF/external/io_pnetcdf
+END
+wrf_io.F90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/8367/branches/HWRF/external/io_pnetcdf/wrf_io.F90
+END
+transpose.code
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/6694/branches/HWRF/external/io_pnetcdf/transpose.code
+END
+testWRFRead.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/testWRFRead.F90
+END
+WRFIO.doc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/WRFIO.doc
+END
+ext_pnc_put_dom_ti.code
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/ext_pnc_put_dom_ti.code
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/README
+END
+ext_pnc_put_var_td.code
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/ext_pnc_put_var_td.code
+END
+module_wrfsi_static.F90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/module_wrfsi_static.F90
+END
+ext_pnc_get_dom_ti.code
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/ext_pnc_get_dom_ti.code
+END
+ext_pnc_put_var_ti.code
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/ext_pnc_put_var_ti.code
+END
+testWRFWrite.F90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/testWRFWrite.F90
+END
+ext_pnc_get_var_td.code
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/ext_pnc_get_var_td.code
+END
+field_routines.F90
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/field_routines.F90
+END
+ext_pnc_get_var_ti.code
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/external/io_pnetcdf/ext_pnc_get_var_ti.code
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/8366/branches/HWRF/external/io_pnetcdf/Makefile
+END

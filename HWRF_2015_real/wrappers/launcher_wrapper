@@ -1,0 +1,40 @@
+#!/bin/sh
+######################################################################
+#                       launcher wrapper script                          
+######################################################################
+######################################################################
+#                                                                    #
+#   Author: DTC July 2014					     #
+######################################################################
+
+######################################################################
+#   Definitions
+######################################################################
+#---------------------------------------------------------------------
+#   Global definitions of environment variables
+#---------------------------------------------------------------------
+set -x
+
+. ./global_vars.sh
+
+if [ -z "$PYTHONPATH" ] ; then
+	export PYTHONPATH=${USHhwrf}
+else
+	export PYTHONPATH=${PYTHONPATH}:${USHhwrf}
+fi
+YMDH=$START_TIME
+STID=$SID
+CASE_ROOT=$CASE
+
+######################################################################
+#   Main
+######################################################################
+
+export TOTAL_TASKS='1'
+
+
+${HOMEhwrf}/scripts/exhwrf_launch.py "$YMDH" "$STID" "$CASE_ROOT"  "$HOMEhwrf/parm" \
+    "config.EXPT=${EXPT}" "config.startfile=${startfile}" \
+    "config.HOMEhwrf=$HOMEhwrf" "config.case_root=$CASE_ROOT" \
+    "$HOMEhwrf/parm/hwrf_v3.7release.conf" \
+    "$@"

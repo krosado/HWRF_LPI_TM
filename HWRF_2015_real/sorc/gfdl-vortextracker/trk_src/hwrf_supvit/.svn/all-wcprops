@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/202/branches/HWRF/trk_src/hwrf_supvit
+END
+supvit_main.f
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/202/branches/HWRF/trk_src/hwrf_supvit/supvit_main.f
+END
+supvit_modules.f
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/202/branches/HWRF/trk_src/hwrf_supvit/supvit_modules.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/202/branches/HWRF/trk_src/hwrf_supvit/Makefile
+END

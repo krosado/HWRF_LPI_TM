@@ -1,0 +1,13 @@
+
+SHELL           	=       /bin/sh
+
+# Listing of options that are usually independent of machine type.
+# When necessary, these are over-ridden by each architecture.
+
+ARFLAGS			=	-X64
+
+# Ensure FFLAGS_SP exists:
+FFLAGS_SP               =     
+
+#### Architecture specific settings ####
+

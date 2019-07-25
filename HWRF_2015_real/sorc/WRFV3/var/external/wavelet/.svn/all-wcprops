@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/4946/branches/HWRF/var/external/wavelet
+END
+dwtai_w.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/dwtai_w.c
+END
+test_filter.F90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/test_filter.F90
+END
+PrintFilter.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/PrintFilter.c
+END
+idwtai2.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/idwtai2.c
+END
+dwta_partition.F90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/dwta_partition.F90
+END
+qftest.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/qftest.c
+END
+idwtai_w.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/idwtai_w.c
+END
+dwtai.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/dwtai.c
+END
+l2norm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/l2norm.c
+END
+realt.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/realt.h
+END
+print_filter.F90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/print_filter.F90
+END
+dwtai2_w.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/dwtai2_w.c
+END
+idwtai.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/idwtai.c
+END
+TestFilter.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/TestFilter.c
+END
+idwtai2_w.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/idwtai2_w.c
+END
+DWTAPartition.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/DWTAPartition.c
+END
+dwtai2.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/dwtai2.c
+END
+qf_w.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/qf_w.c
+END
+qftest_w.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/qftest_w.c
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/makefile
+END

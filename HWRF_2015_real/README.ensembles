@@ -1,0 +1,34 @@
+There are two different HWRF ensembles: 
+
+1. A twenty member HWRF 126hr forecast ensemble from GEFS input and
+boundary conditions.
+
+2. A deterministic HWRF forecast with data assimilation whose ensemble
+covariances come from 30-80 six hour forecasts, each initialized off
+of one member of the GFS ENKF.
+
+You cannot use both options at the same time.  
+
+To run the GEFS-based forecast ensemble:
+
+    ./run_hwrf.py 01-20 2014 19w HISTORY config.EXPT=(whatever) ../parm/hwrf_ensemble_2014.conf
+
+The 01-20 selects the GEFS members (00 through 20 are valid) and the
+../parm/hwrf_ensemble_2014.conf overrides various settings to properly
+run the ensemble.
+
+To run the deterministic forecast with 6hr HWRF forecasts driving the
+GSI:
+
+    ./run_hwrf.py 2014 19w HISTORY config.EXPT=(whatever) config.run_ensemble_da=yes
+
+Note the lack of ensemble IDs.  The config.run_ensemble_da=yes enables
+the DA ensemble.  To set the number of ensemble members, use the
+ensda_size option in the [hwrf_da_ens] section:
+
+    ./run_hwrf.py ... stuff ... hwrf_da_ens.ensda_size=57
+
+any number from 30 to 80 is valid.  It will automatically choose GFS
+ENKF ensemble members from 001 through the number you choose.  The
+highest valid value is 80, and the scripts will give you an error if
+you try to use fewer than 30 ensemble members.

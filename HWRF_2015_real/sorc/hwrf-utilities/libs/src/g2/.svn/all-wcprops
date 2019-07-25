@@ -1,0 +1,413 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/1075/branches/HWRF/libs/src/g2
+END
+getgb2r.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getgb2r.f
+END
+specunpack.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1058/branches/HWRF/libs/src/g2/specunpack.f
+END
+gf_free.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gf_free.f
+END
+gdt2gds.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gdt2gds.f
+END
+gribinfo.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gribinfo.f
+END
+g2grids.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/g2grids.f
+END
+enc_png.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/enc_png.c
+END
+misspack.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1058/branches/HWRF/libs/src/g2/misspack.f
+END
+getgb2rp.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getgb2rp.f
+END
+getfield.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getfield.f
+END
+pngpack.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/pngpack.f
+END
+gribmod.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gribmod.f
+END
+grib2.doc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/grib2.doc
+END
+pngunpack.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1058/branches/HWRF/libs/src/g2/pngunpack.f
+END
+addfield.F
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1058/branches/HWRF/libs/src/g2/addfield.F
+END
+dec_png.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/dec_png.c
+END
+gettemplates.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gettemplates.f
+END
+mkieee.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1058/branches/HWRF/libs/src/g2/mkieee.f
+END
+gbytesc.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gbytesc.f
+END
+getg2ir.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getg2ir.f
+END
+putgb2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1058/branches/HWRF/libs/src/g2/putgb2.f
+END
+gridtemplates.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gridtemplates.f
+END
+gribcreate.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gribcreate.f
+END
+reduce.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1058/branches/HWRF/libs/src/g2/reduce.f
+END
+getgb2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getgb2.f
+END
+gribend.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gribend.f
+END
+ixgb2.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/1058/branches/HWRF/libs/src/g2/ixgb2.f
+END
+gf_unpack2.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gf_unpack2.f
+END
+gf_unpack4.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gf_unpack4.f
+END
+realloc.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/realloc.f
+END
+gf_unpack6.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gf_unpack6.f
+END
+getidx.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getidx.f
+END
+simpack.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/simpack.f
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1075/branches/HWRF/libs/src/g2/makefile
+END
+simunpack.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1058/branches/HWRF/libs/src/g2/simunpack.f
+END
+getlocal.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getlocal.f
+END
+rdieee.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1058/branches/HWRF/libs/src/g2/rdieee.f
+END
+getgb2s.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getgb2s.f
+END
+dec_jpeg2000.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/1058/branches/HWRF/libs/src/g2/dec_jpeg2000.c
+END
+gb_info.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gb_info.f
+END
+params_ecmwf.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/1058/branches/HWRF/libs/src/g2/params_ecmwf.f
+END
+pack_gp.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/pack_gp.f
+END
+getdim.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getdim.f
+END
+jpcpack.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/jpcpack.f
+END
+jpcunpack.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1058/branches/HWRF/libs/src/g2/jpcunpack.f
+END
+gf_getfld.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gf_getfld.f
+END
+cmplxpack.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1058/branches/HWRF/libs/src/g2/cmplxpack.f
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/1058/branches/HWRF/libs/src/g2/CHANGES
+END
+gf_unpack7.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gf_unpack7.F
+END
+addgrid.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/addgrid.f
+END
+addlocal.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1058/branches/HWRF/libs/src/g2/addlocal.f
+END
+pdstemplates.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/1058/branches/HWRF/libs/src/g2/pdstemplates.f
+END
+drstemplates.f
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/1058/branches/HWRF/libs/src/g2/drstemplates.f
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/1058/branches/HWRF/libs/src/g2/README
+END
+enc_jpeg2000.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/1058/branches/HWRF/libs/src/g2/enc_jpeg2000.c
+END
+compack.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/compack.f
+END
+gf_unpack1.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gf_unpack1.f
+END
+comunpack.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1058/branches/HWRF/libs/src/g2/comunpack.f
+END
+gf_unpack3.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gf_unpack3.f
+END
+getg2i.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getg2i.f
+END
+gf_unpack5.f
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1058/branches/HWRF/libs/src/g2/gf_unpack5.f
+END
+getpoly.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getpoly.f
+END
+params.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1058/branches/HWRF/libs/src/g2/params.f
+END
+getgb2l.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getgb2l.f
+END
+skgb.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/1058/branches/HWRF/libs/src/g2/skgb.f
+END
+specpack.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1058/branches/HWRF/libs/src/g2/specpack.f
+END
+getgb2p.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1058/branches/HWRF/libs/src/g2/getgb2p.f
+END
+mova2i.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/1058/branches/HWRF/libs/src/g2/mova2i.c
+END

@@ -1,0 +1,14 @@
+K 13
+svn:mergeinfo
+V 556
+/branches/HWRF_20130215_tb_2013_DTC/arch/configure.defaults:107-114
+/branches/hwrf-baseline/arch/configure.defaults:49-56
+/branches/port_zeus/arch/configure.defaults:63-65
+/branches/reflon/arch/configure.defaults:172-177
+/branches/stream1.5/arch/configure.defaults:39-48
+/branches/stream1.5commit/arch/configure.defaults:45-47
+/branches/wrfcheck/arch/configure.defaults:174-177
+/tags/HWRF_20130209-0609_sgt_2013HWRFtests/arch/configure.defaults:105-106
+/tags/hwrf-baseline-20120216-2300/arch/configure.defaults:57
+/trunk/arch/configure.defaults:41-45,47-53
+END

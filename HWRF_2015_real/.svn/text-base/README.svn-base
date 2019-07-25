@@ -1,0 +1,111 @@
+HWRF
+====
+
+This is Hurricane WRF (HWRF).
+
+Homepage:       http://www.dtcenter.org/HurrWRF/users/
+SVN Repository: https://svn-dtc-hwrf.cgd.ucar.edu/
+
+
+Prerequisites
+-------------
+
+The bulk of the code is written in Fortran, with a sputtering of C and
+various Perl and Ksh scripts.
+
+You will need:
+
+1. C and Fortran compilers with MPI (and optionally OpenMP) support.
+   Supported compiler suites are:
+   - Intel (icc and ifort)    http://www.intel.com/
+   - IBM XL (xlc and xlf)     http://www.ibm.com/
+   - PGI (pgc and pgcfortran) http://www.pgroup.com/
+   - GNU (gcc and gfortran)   http://gcc.gnu.org/
+
+2. GNU Make.                   http://www.gnu.org/software/make/
+
+3. Perl.                       http://www.perl.org/
+
+4. Korn shell (ksh88).         http://web.cs.mun.ca/~michael/pdksh/
+
+
+Building
+--------
+
+To build and install all HWRF components with the default site compilers:
+	% cd sorc
+	% make
+	% make install
+
+If this was sucessful all the binaries will be located in the "exec"
+directory.
+
+A more detailed build explanation and available options are within the
+"sorc" directory README and Makefile, please read these.
+
+
+Usage
+-----
+
+It should be noted that a few programs (real and wrf) require large stacks.
+Therefore it is advised that your login shell set a stack size of
+approximately 500M.
+In bash:
+	% ulimit -s 524288
+In csh:
+	% limit stacksize 524288
+
+
+Layout
+------
+
+The current toplevel directory layout is as follows:
+
+ --\
+    +-- exec            HWRF compiled executables.
+    |
+    +-- jobs            SMS job scripts to set environment variables.
+    |
+    +-- kick_scripts    Toplevel scripts to run the sms/job scripts.
+    |
+    +-- nwjet           Jet[1] specific programs and libraries.
+    |
+    +-- parm            Parameter files.
+    |
+    +-- scripts         Mid-level scripts.
+    |
+    +-- sorc            Source directory containing all HWRF components.
+    |
+    \-- ush             Low-level scripts to run HWRF executables.
+
+
+The existence of multiple script directories is consequence of the
+National Weather Service (NWS), National Centers for Environmental
+Prediction (NCEP) Central Operations (NCO) ( http://www.nco.ncep.noaa.gov/ ).
+It is a three tiered structure, the toplevel is "jobs", midlevel "scripts"
+and the lowest level is "ush".
+
+ Precedence: jobs --> scripts --> ush
+
+Where by the "jobs" scripts contain the Supervisory Monitoring System (SMS)
+commands and environment variables needed to run a HWRF simulation. This is
+the entry point for NCO.
+
+The "scripts" scripts the mid-level scripts containing all the logic for
+running a HWRF simulation.
+
+The "ush" scripts are the low-level scripts that run HWRF binaries.
+
+1. Jet ( https://jetdocs.rdhpcs.noaa.gov/wiki/index.php/Main_Page ) is
+   NOAA's current Research and Development High Performance Computing
+   System (HPCS) located at Earth Systems Research Laboratory's (ESRL)
+   Global Systems Division (GSD) in Boulder, Colorado. It is currently
+   an Intel (x86) cluster.
+
+
+Contact
+-------
+
+
+Copyright
+---------

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/650/branches/HWRF/tools/hwrf_aux_rw
+END
+hwrf_simple_aux_rw.f90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/432/branches/HWRF/tools/hwrf_aux_rw/hwrf_simple_aux_rw.f90
+END
+var_summary.f90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/289/branches/HWRF/tools/hwrf_aux_rw/var_summary.f90
+END
+wrf_lookalikes.f90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/289/branches/HWRF/tools/hwrf_aux_rw/wrf_lookalikes.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/650/branches/HWRF/tools/hwrf_aux_rw/Makefile
+END

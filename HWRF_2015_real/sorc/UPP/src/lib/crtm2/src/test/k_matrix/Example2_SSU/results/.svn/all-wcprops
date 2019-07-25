@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/results
+END
+ssu_n14.Atmosphere.bin
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/results/ssu_n14.Atmosphere.bin
+END
+ssu_n06.Atmosphere.bin
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/results/ssu_n06.Atmosphere.bin
+END
+ssu_n14.Surface.bin
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/results/ssu_n14.Surface.bin
+END
+ssu_n06.Surface.bin
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/results/ssu_n06.Surface.bin
+END
+ssu_n14.output
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/results/ssu_n14.output
+END
+ssu_n06.output
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/results/ssu_n06.output
+END

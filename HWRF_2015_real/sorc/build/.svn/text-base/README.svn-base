@@ -1,0 +1,111 @@
+HWRF version 0.01
+=================
+
+This HWRF package is a group of Perl modules to manipulate and
+interact with the HWRF suite.
+
+The current modules supported are:
+  - HWRF Utilities
+  - HWRF TnE
+  - WRF
+  - WPS
+  - WPP
+  - GSI
+  - POMTC
+  - NCEP Coupler
+  - GFDL Vortex Tracker
+  - Workflow Manager
+
+Included in this distribution are a few scripts to be used as
+interfaces for the actual HWRF modules. In the "bin" directory, you
+will find:
+
+  - build_HWRF : build the complete HWRF suite
+  - run_HWRF   : run a built HWRF suite
+
+If you are more interested in using the HWRF modules directly, then
+you examine this scripts and some of the testing scripts in the "t"
+directory.
+
+There are manual pages for the scripts and modules.
+
+INSTALLATION
+------------
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+If you are unable to write to the systems default installation directory
+(as in you do not have root access). You can specify an installation
+base with:
+   perl Makefile.PL INSTALL_BASE=${HOME}
+
+In this case the perl module will be install:
+   executables => ${HOME}/bin
+   libaries    => ${HOME}/lib/perl5
+   man pages   => ${HOME}/man
+
+If your ExtUtils::MakeMaker does not understand the INSTALL_BASE argument
+you can fall back to the old PREFIX method. However some systems will
+the place the libraries in site specific directories like
+lib/aix-thread-multi/ . If this is the case you will need to edit the
+scripts in bin/ so they can find the HWRF module. That is the "use lib"
+line. There are two alternatives to this.
+
+1. Explicitly set the library path during configuration:
+       perl Makefile.PL PREFIX=${HOME} LIB=${HOME}/lib/perl5
+   Since the scripts have the following lines:
+       use FindBin qw($Bin);
+       use lib "$Bin/../lib/perl5";
+
+2. At run time set your PERL5LIB environment variable to the directory
+   containing the HWRF module (that is the HWRF.pm file).
+
+DEPENDENCIES
+------------
+
+This module requires these other modules and libraries:
+
+  - Carp
+  - Cwd
+  - FindBin
+  - File::Basename
+  - File::Copy
+  - File::Path
+  - IO::Handle
+  - IO::Select
+  - IPC::Open3
+  - POSIX
+  - Symbol
+
+
+BUGS
+----
+
+Please report any bugs to Timothy Brown <Timothy.P.Brown@noaa.gov>
+
+
+COPYRIGHT AND LICENSE
+---------------------
+
+Copyright (C) 2011 by Timothy P Brown
+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or (at
+ your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ MA 02110-1301, USA.
+

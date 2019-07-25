@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman
+END
+Example3_Zeeman.f90
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/Example3_Zeeman.f90
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/makefile
+END

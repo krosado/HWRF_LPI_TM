@@ -1,0 +1,4 @@
+<metatask name="da_ensemble" mode="parallel" throttle="10">
+  <var name="ENSDA">&DA_ENSEMBLE_MEMBERS;</var>
+  &ensdamemb;
+</metatask>

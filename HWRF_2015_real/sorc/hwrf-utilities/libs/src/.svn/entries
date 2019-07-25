@@ -1,0 +1,89 @@
+10
+
+dir
+1172
+https://svn-dtc-hwrf-utilities.cgd.ucar.edu/branches/HWRF/libs/src
+https://svn-dtc-hwrf-utilities.cgd.ucar.edu
+
+
+
+2015-05-19T13:13:23.628034Z
+1163
+samuel.trahan@noaa.gov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+73c41662-f2b5-460d-820b-8fac66e072ed
+
+blas
+dir
+
+sp
+dir
+
+sfcio
+dir
+
+hwrfutil
+dir
+
+g2
+dir
+
+w3
+dir
+
+sigio
+dir
+
+bacio
+dir
+
+Makefile
+file
+
+
+
+
+2015-06-08T15:31:14.000000Z
+8e188364cb78320674d96ffe6d5cf63b
+2014-07-14T21:12:04.182387Z
+1058
+timothy.p.brown@noaa.gov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+355
+
+bufr
+dir
+

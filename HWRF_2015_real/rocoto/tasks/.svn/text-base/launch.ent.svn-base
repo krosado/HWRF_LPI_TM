@@ -1,0 +1,43 @@
+<task name="launch_E#ENS#" maxtries="&MAX_TRIES;">
+
+  <command>&PRE; &EXhwrf;/exhwrf_launch.py <cyclestr>@Y@m@d@H &SID; &CASE_ROOT; '&PARMhwrf;' config.HOMEhwrf='&HOMEhwrf;' config.CONFhwrf='&CONFhwrf;' dir.WORKhwrf='&WORKhwrf;' dir.EXhwrf='&EXhwrf;' dir.com='&COMhwrf;' config.EXPT='&EXPT;' config.SUBEXPT='&SUBEXPT;'</cyclestr> <cyclestr offset="-6:00:00">dir.oldcom='&COMhwrf;' dir.USHhwrf='&USHhwrf;' &MORE_LAUNCH_VARS;</cyclestr> config.ENS=#ENS#</command>
+  <jobname>hwrf_launch_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&SERIAL;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>00:15:00</walltime>
+  <memory>1G</memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_launch.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_launch.err</cyclestr></stderr>
+
+  &SERIAL_EXTRA;
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+
+  <dependency>
+    <and>
+      <!-- Cycling dependency: do not start until the prior cycle's
+      launch job is done, unless there is no prior cycle. -->
+      <or>
+        <taskdep task="launch_E#ENS#" cycle_offset="-6:00:00"/> 
+        <not>
+          <cycleexistdep cycle_offset="-6:00:00"/> 
+        </not>
+      </or>
+
+      <!-- AND... don't start until 3:20 past the synoptic time.  The
+      GFS does not start until then, so there is little point to
+      starting earlier. -->
+      <timedep><cyclestr offset="3:20:00">@Y@m@d@H@M@S</cyclestr></timedep>
+    </and>
+  </dependency>
+
+  <rewind>
+    <sh>&USHhwrf;/hwrf_scrub.py '<cyclestr>&COMhwrf;</cyclestr>' '<cyclestr>&WORKhwrf;</cyclestr>'</sh>
+  </rewind>
+</task>

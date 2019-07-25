@@ -1,0 +1,41 @@
+#%Module######################################################################
+#############################################################
+##     Samuel.Trahan@noaa.gov
+##     NOAA NCEP EMC, IMSG contractor
+## 2015 HWRF operational model prerequisite module
+#############################################################
+proc ModulesHelp { } {
+    puts stderr "Set environment veriables for compiling or running HWRF"
+}
+module-whatis " HWRF hurricane model"
+
+set ver 9.0.0
+
+# Known conflicts
+conflict HWRF
+
+# We'll be using non-default versions of everything so make sure we
+# unload older versions of those modules first:
+module unload ics ibmpe nco NetCDF PNetCDF
+
+# Newer version of compiler and MPI than what is presently the
+# default:
+module load ibmpe
+module load ics/15.0.1
+
+# NetCDF Operators:
+module load nco/4.4.4
+
+# NetCDF and prerequisites:
+module load HDF5/1.8.9/serial
+module load NetCDF/4.2/serial
+
+# PNetCDF
+module load PNetCDF/1.5.0
+
+# Need these to run but not build:
+module load grib_util lsf hpss
+
+# Need these for Rocoto:
+module use /hwrf/noscrub/soft/modulefiles
+module load ruby/1.8.7 rocoto/1.2

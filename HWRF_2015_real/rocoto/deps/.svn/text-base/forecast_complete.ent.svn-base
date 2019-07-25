@@ -1,0 +1,4 @@
+<or>
+  <taskdep task="coupled_forecast_E#ENS#"/>
+  <taskdep task="uncoupled_forecast_E#ENS#"/>
+</or>

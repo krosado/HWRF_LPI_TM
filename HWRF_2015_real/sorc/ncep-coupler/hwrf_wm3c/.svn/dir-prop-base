@@ -1,0 +1,12 @@
+K 13
+svn:mergeinfo
+V 309
+/branches/hwrf-baseline/hwrf_wm3c:49-56,60-61
+/branches/reflon/hwrf_wm3c:172-177
+/branches/stream1.5/hwrf_wm3c:39-48
+/branches/stream1.5commit/hwrf_wm3c:45-47
+/branches/wrfcheck/hwrf_wm3c:174-177
+/tags/hwrf-20120310-2225/hwrf_wm3c:62
+/tags/hwrf-baseline-20120216-2300/hwrf_wm3c:57
+/trunk/hwrf_wm3c:41-45,47-53
+END

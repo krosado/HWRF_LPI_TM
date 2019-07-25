@@ -1,0 +1,6 @@
+<!-- Complex dependencies -->
+
+<!ENTITY cycling_condition SYSTEM "cycling_condition.ent">
+<!ENTITY forecast_complete SYSTEM "forecast_complete.ent">
+<!ENTITY forecast_running  SYSTEM "forecast_running.ent">
+<!ENTITY post_complete     SYSTEM "post_complete.ent">

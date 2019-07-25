@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/8366/branches/HWRF/var/da/da_rain
+END
+da_get_innov_vector_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/8366/branches/HWRF/var/da/da_rain/da_get_innov_vector_rain.inc
+END
+da_print_stats_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/5750/branches/HWRF/var/da/da_rain/da_print_stats_rain.inc
+END
+da_transform_xtoy_rain_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5750/branches/HWRF/var/da/da_rain/da_transform_xtoy_rain_adj.inc
+END
+da_ao_stats_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/5750/branches/HWRF/var/da/da_rain/da_ao_stats_rain.inc
+END
+da_transform_xtoy_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/5750/branches/HWRF/var/da/da_rain/da_transform_xtoy_rain.inc
+END
+da_check_max_iv_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/5750/branches/HWRF/var/da/da_rain/da_check_max_iv_rain.inc
+END
+da_jo_and_grady_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/5750/branches/HWRF/var/da/da_rain/da_jo_and_grady_rain.inc
+END
+da_calculate_grady_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/5750/branches/HWRF/var/da/da_rain/da_calculate_grady_rain.inc
+END
+da_oi_stats_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/5750/branches/HWRF/var/da/da_rain/da_oi_stats_rain.inc
+END
+da_rain.f90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/5750/branches/HWRF/var/da/da_rain/da_rain.f90
+END
+da_get_hr_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/8366/branches/HWRF/var/da/da_rain/da_get_hr_rain.inc
+END
+da_residual_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/5750/branches/HWRF/var/da/da_rain/da_residual_rain.inc
+END

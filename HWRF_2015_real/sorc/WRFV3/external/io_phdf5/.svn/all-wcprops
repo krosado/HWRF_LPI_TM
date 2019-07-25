@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/7191/branches/HWRF/external/io_phdf5
+END
+wrf-phdf5.F90
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/external/io_phdf5/wrf-phdf5.F90
+END
+README.phdf5
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/external/io_phdf5/README.phdf5
+END
+wrf-phdf5attr.F90btg
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/external/io_phdf5/wrf-phdf5attr.F90btg
+END
+wrf-phdf5attr.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/external/io_phdf5/wrf-phdf5attr.F90
+END
+wrf-phdf5support.F90
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/external/io_phdf5/wrf-phdf5support.F90
+END
+INSTALL.htm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/external/io_phdf5/INSTALL.htm
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/7191/branches/HWRF/external/io_phdf5/Makefile
+END

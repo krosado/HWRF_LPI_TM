@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/563/branches/HWRF/src/lib/xml
+END
+read_from_buffer.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/563/branches/HWRF/src/lib/xml/read_from_buffer.inc
+END
+xmlreader.f90
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/563/branches/HWRF/src/lib/xml/xmlreader.f90
+END
+read_xml_array.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/563/branches/HWRF/src/lib/xml/read_xml_array.inc
+END
+read_xml_prims.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/563/branches/HWRF/src/lib/xml/read_xml_prims.f90
+END
+post_t.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/563/branches/HWRF/src/lib/xml/post_t.xml
+END
+xmlreader.conf
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/563/branches/HWRF/src/lib/xml/xmlreader.conf
+END
+make_xmlreadf90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/563/branches/HWRF/src/lib/xml/make_xmlreadf90
+END
+read_xml_scalar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/563/branches/HWRF/src/lib/xml/read_xml_scalar.inc
+END
+xmlparse.f90
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/563/branches/HWRF/src/lib/xml/xmlparse.f90
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/563/branches/HWRF/src/lib/xml/makefile
+END

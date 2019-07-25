@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/220/branches/HWRF/trk_src/hwrf_gettrk
+END
+cwaitfor.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/100/branches/HWRF/trk_src/hwrf_gettrk/cwaitfor.c
+END
+module_waitfor.f
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/100/branches/HWRF/trk_src/hwrf_gettrk/module_waitfor.f
+END
+gettrk_main.f
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/220/branches/HWRF/trk_src/hwrf_gettrk/gettrk_main.f
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/63/branches/HWRF/trk_src/hwrf_gettrk/readme.txt
+END
+gettrk_modules.f
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/220/branches/HWRF/trk_src/hwrf_gettrk/gettrk_modules.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/202/branches/HWRF/trk_src/hwrf_gettrk/Makefile
+END

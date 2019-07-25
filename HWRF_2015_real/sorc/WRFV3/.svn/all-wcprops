@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/!svn/ver/8481/branches/HWRF
+END
+README.DA
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/8366/branches/HWRF/README.DA
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/8205/branches/HWRF/configure
+END
+README.hydro
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/7191/branches/HWRF/README.hydro
+END
+clean
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/7425/branches/HWRF/clean
+END
+README.NMM
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/4946/branches/HWRF/README.NMM
+END
+README.SF_CLM_HWRF
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/6337/branches/HWRF/README.SF_CLM_HWRF
+END
+README.windturbine
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/7425/branches/HWRF/README.windturbine
+END
+compile
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/8366/branches/HWRF/compile
+END
+README.io_config
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/4946/branches/HWRF/README.io_config
+END
+README_test_cases
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8205/branches/HWRF/README_test_cases
+END
+README.rsl_output
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/4946/branches/HWRF/README.rsl_output
+END
+README.SSIB
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/8205/branches/HWRF/README.SSIB
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/8366/branches/HWRF/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/!svn/ver/8366/branches/HWRF/README
+END

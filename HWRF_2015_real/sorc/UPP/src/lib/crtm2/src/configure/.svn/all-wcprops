@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure
+END
+gfortran.setup
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure/gfortran.setup
+END
+ifort.setup
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure/ifort.setup
+END
+g95.setup
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure/g95.setup
+END
+pgi_debug.setup
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure/pgi_debug.setup
+END
+gfortran_debug.setup
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure/gfortran_debug.setup
+END
+ifort_debug.setup
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure/ifort_debug.setup
+END
+xlf.setup
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure/xlf.setup
+END
+g95_debug.setup
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure/g95_debug.setup
+END
+pgi.setup
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure/pgi.setup
+END
+xlf_debug.setup
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/configure/xlf_debug.setup
+END

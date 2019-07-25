@@ -1,0 +1,232 @@
+#!/usr/bin/env perl
+#
+# Copyright (C) 2011 Timothy Brown
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+# MA 02110-1301, USA.
+#
+# Script to compare HWRF outputs.
+#
+# $Id: cmp_HWRF 124 2011-04-05 21:49:53Z tpbrown@ucar.edu $
+
+use strict;
+use warnings;
+
+use FindBin qw($Bin);
+use lib "$Bin/../lib/perl5";
+
+use HWRF::Threads;
+
+use Getopt::Long qw(:config no_ignore_case);
+use Pod::Usage;
+use Data::Dumper;
+use Verbose      qw(:all);
+
+use HWRF::WRF;
+use HWRF::GSI;
+use HWRF::Utils;
+use HWRF::Coupler;
+use HWRF::POMTC;
+use HWRF::VortexTrk;
+use HWRF::WPS;
+use HWRF::WPP;
+
+our $VERBOSE    = 0;             # Running verbosity
+my  $SRC_LOC    = undef;         # Source location
+
+my $errno = main();
+exit $errno;
+
+#################### Main ####################
+sub main {
+
+	# process the command line options
+	my ($s1, $s2) = get_options();
+
+	# list of all packages to check
+	my @pkgs = (
+		"HWRF::WRF",
+		"HWRF::GSI",
+#		"HWRF::Utils",
+#		"HWRF::Coupler",
+#		"HWRF::POMTC",
+#		"HWRF::VortexTrk",
+#		"HWRF::WPS",
+#		"HWRF::UPP",
+	);
+
+	# exit status
+	my $estat = 0;
+
+	# check all the packages
+	foreach my $pkg (@pkgs) {
+		$estat += cmp_output($pkg, $s1, $s2);
+	}
+	return $estat;
+}
+
+
+#################### Get Options ####################
+sub get_options {
+
+	my ($help, $verbose, $l, $s1, $s2);
+
+	# process the command line arguments
+	GetOptions(
+		"help|?",       => \$help,         # user is requesting help
+		"man",          => sub {$help=2},  # user is requesting man page
+		"verbose|v+",   => \$verbose,      # verbosity level
+		"location|l=s", => \$l,            # source toplevel location
+	);
+
+	# See if we need to give any help
+	if ($help) {
+		pod2usage(-exitstatus => 0,
+			  -verbose    => $help);
+	}
+
+	# Set our global verbosity level and build filename
+	if (defined $verbose) {
+		$VERBOSE = $verbose;
+	}
+
+        # Make sure we have a source location
+	if (! defined $l) {
+		print STDERR "source location not specifed\n";
+		exit 65;
+		if (! -d $l) {
+			print STDERR "unable to access $l: $!\n";
+			exit 65;
+		}
+	} else {
+		$SRC_LOC = $l;
+	}
+
+	# See if we have extra arguments that we don't know about
+	if ($#ARGV != 1) {
+		print STDERR "Incorrect number of arguments\n\n";
+		pod2usage(-exitstatus => 64,
+			  -verbose    => 2);
+	}
+
+	$s1 = $ARGV[0];
+	$s2 = $ARGV[1];
+
+	# Might as well make sure the directories exist.
+	if (! -d $s1) {
+		print STDERR "unable to access $s1: $!\n";
+		exit 66;
+	}
+	if (! -d $s2) {
+		print STDERR "unable to access $s2: $!\n";
+		exit 66;
+	}
+
+	return ($s1, $s2);
+
+}
+
+#################### Compare A Module Output ####################
+sub cmp_output {
+	my $pkg_name = shift;
+	my ($s1, $s2) = @_;
+
+	VERB_2("Checking $pkg_name");
+	my $pkg = ${pkg_name}->new(verbose  => $VERBOSE,
+				   toplevel => $SRC_LOC,
+				  );
+	my $ref = $pkg->cmp($s1, $s2);
+	if (scalar(@$ref)) {
+		if ($VERBOSE >= 1) {
+			print "="x25 ." $pkg_name " ."="x25 ."\n";
+			if ($VERBOSE >= 2) {
+				foreach my $file (@$ref) {
+					print "\t$file\n";
+				}
+			}
+		}
+		return 1;
+	}
+	return 0;
+}
+
+__END__
+
+=head1 NAME
+
+cmp_HWRF - Perl script to compare HWRF simulations
+
+=head1 SYNOPSIS
+
+B<cmp_HWRF> [-?] [-v] -l loc simulation_1 simulation_2
+
+=head1 DESCRIPTION
+
+This script is to setup and compare HWRF tests. It will check all the
+output of all the packages.
+
+The options are as follows:
+
+=over 4
+
+=item B<-?, --help>
+
+Print a brief help message and exits.
+
+=item B<--man>
+
+Print the manual page.
+
+=item B<-v, --verbose>
+
+Verbose mode. Causes B<cmp_HWRF> to print debugging messages about its
+progress. Multiple B<-v> options increase the verbosity. The maximum is 3.
+
+=item B<-l, --location> I<directory>
+
+The location of a HWRF source/build directory. As B<cmp_HWRF> will try
+to use B<diffwrf> to compare WRF output files. It will look for B<diffwrf>
+within B<directory/WRF/external/io_FORMAT/>. Where B<FORMAT> is the output
+file format such as netcdf or int.
+
+=back
+
+=head1 EXAMPLES
+
+To compare two previously built and run HWRF simulations, using the first
+(I<4880>) as the location of executables (I<diffwrf>).
+
+B<cmp_HWRF -l 4880/sorc/ 4880/results/07L/200808271800 4881/results/07L/200808271800>
+
+=head1 DIAGNOSTICS
+
+The B<cmp_HWRF> script exits 0 on success, and >0 if an error occurs.
+
+Exit status >64 refer to B<sysexits> numbers. All other numbers indicate
+the number of components that are not similar.
+
+=head1 SEE ALSO
+
+L<perl(1)>,
+L<build_HWRF(1)>,
+L<run_HWRF(1)>
+
+=head1 AUTHORS
+
+Timothy Brown <Timothy.P.Brown@noaa.gov>
+
+=head1 BUGS
+
+=cut

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/652/branches/HWRF/src/cnvgrib
+END
+putgbexn.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/652/branches/HWRF/src/cnvgrib/putgbexn.f
+END
+gdt2gds.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/652/branches/HWRF/src/cnvgrib/gdt2gds.f
+END
+gds2gdt.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/652/branches/HWRF/src/cnvgrib/gds2gdt.f
+END
+makefile.nco
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/652/branches/HWRF/src/cnvgrib/makefile.nco
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/652/branches/HWRF/src/cnvgrib/README
+END
+pds2pdt.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/652/branches/HWRF/src/cnvgrib/pds2pdt.f
+END
+makepds.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/652/branches/HWRF/src/cnvgrib/makepds.f
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/652/branches/HWRF/src/cnvgrib/CHANGES
+END
+pds2pdtens.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/652/branches/HWRF/src/cnvgrib/pds2pdtens.f
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/652/branches/HWRF/src/cnvgrib/makefile
+END
+cnv21.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/652/branches/HWRF/src/cnvgrib/cnv21.f
+END
+cnv12.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/652/branches/HWRF/src/cnvgrib/cnv12.f
+END
+setbit.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/652/branches/HWRF/src/cnvgrib/setbit.f
+END
+makepdsens.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/652/branches/HWRF/src/cnvgrib/makepdsens.f
+END
+cnvgrib.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/652/branches/HWRF/src/cnvgrib/cnvgrib.f
+END
+cnv22.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/652/branches/HWRF/src/cnvgrib/cnv22.f
+END

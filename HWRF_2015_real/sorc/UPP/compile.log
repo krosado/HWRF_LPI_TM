@@ -1,0 +1,1145 @@
+**** Compiling UPP and all libs ****
+make[1]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP'
+Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib
+make[2]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib'
+/bin/cp crtm2.makefile crtm2/makefile
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/bacio/src =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/bacio/src'
+makefile:52: warning: overriding commands for target `.f.o'
+../../../../configure.upp:126: warning: ignoring old commands for target `.f.o'
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include bafrio.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include baciof.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include chk_endianc.f
+mpicc  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3 -c   bacio.c
+mpicc  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3 -c   byteswap.c
+ar ru   libbacio.a  bafrio.o baciof.o chk_endianc.o bacio.o byteswap.o
+ar: creating libbacio.a
+/bin/cp libbacio.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+/bin/cp *.mod /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/bacio/src'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2 =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2'
+( cd src; echo "Making CRTM library in `pwd`" ; \
+	  make FC="mpif90 -f90=ifort -free " FL="mpif90 -f90=ifort -free " FC_FLAGS="-c -fp-model precise -ftz  -assume byterecl -convert big_endian  -O3 " FL_FLAGS="" install; \
+		\
+	  /bin/cp lib/libCRTM.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib/libCRTM.a ; \
+	  ln -sf `pwd`/include /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2 ; \
+	)
+Making CRTM library in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src
+make[4]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src'
+test -d lib || mkdir lib
+make[5]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src'
+
+Making `all' in directory /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src/libsrc
+
+make[6]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src/libsrc'
+a - Type_Kinds.o
+a - File_Utility.o
+a - Message_Handler.o
+a - Date_Utility.o
+a - Compare_Float_Numbers.o
+a - Endian_Utility.o
+a - Binary_File_Utility.o
+a - Sort_Utility.o
+a - Search_Utility.o
+a - Fundamental_Constants.o
+a - Spectral_Units_Conversion.o
+a - SensorInfo_Parameters.o
+a - AntCorr_Define.o
+a - AntCorr_Binary_IO.o
+a - SpcCoeff_Define.o
+a - SpcCoeff_Binary_IO.o
+a - CloudCoeff_Define.o
+a - CloudCoeff_Binary_IO.o
+a - AerosolCoeff_Define.o
+a - AerosolCoeff_Binary_IO.o
+a - EmisCoeff_Define.o
+a - EmisCoeff_Binary_IO.o
+a - BeCoeff_Define.o
+a - BeCoeff_Binary_IO.o
+a - NESDIS_AMSRE_SICEEM_Module.o
+a - NESDIS_AMSRE_SNOWEM_Module.o
+a - NESDIS_AMSU_SICEEM_Module.o
+a - NESDIS_AMSU_SnowEM_Module.o
+a - NESDIS_MHS_SICEEM_Module.o
+a - NESDIS_MHS_SnowEM_Module.o
+a - NESDIS_LandEM_Module.o
+a - NESDIS_OCEANEM_Module.o
+a - NESDIS_SEAICE_PHYEM_MODULE.o
+a - NESDIS_SnowEM_Parameters.o
+a - NESDIS_SSMI_Module.o
+a - NESDIS_SSMI_SIceEM_Module.o
+a - NESDIS_SSMI_SnowEM_Module.o
+a - NESDIS_SSMIS_SeaIceEM_Module.o
+a - NESDIS_SSMIS_SnowEM_Module.o
+a - CRTM_Utility.o
+a - CRTM_Interpolation.o
+a - CRTM_SpcCoeff.o
+a - CRTM_TauCoeff.o
+a - TauCoeff_Define.o
+a - CRTM_AerosolCoeff.o
+a - CRTM_CloudCoeff.o
+a - CRTM_EmisCoeff.o
+a - CRTM_BeCoeff.o
+a - CRTM_Atmosphere_Define.o
+a - CRTM_Cloud_Define.o
+a - CRTM_Aerosol_Define.o
+a - CRTM_Atmosphere_IO.o
+a - CRTM_Cloud_IO.o
+a - CRTM_Aerosol_IO.o
+a - CRTM_Surface_Define.o
+a - CRTM_SensorData_Define.o
+a - CRTM_Surface_IO.o
+a - CRTM_SensorData_IO.o
+a - CRTM_SensorInfo.o
+a - CRTM_ChannelInfo_Define.o
+a - CRTM_Geometry_Define.o
+a - CRTM_Geometry_IO.o
+a - CRTM_GeometryInfo_Define.o
+a - CRTM_GeometryInfo.o
+a - CRTM_Atmosphere.o
+a - iAtm_Define.o
+a - CRTM_Model_Profiles.o
+a - CRTM_AtmAbsorption.o
+a - CRTM_AtmScatter_Define.o
+a - CRTM_AerosolScatter.o
+a - ASvar_Define.o
+a - CRTM_CloudScatter.o
+a - CSvar_Define.o
+a - CRTM_MoleculeScatter.o
+a - CRTM_SfcOptics_Define.o
+a - CRTM_SfcOptics.o
+a - CRTM_IR_Ice_SfcOptics.o
+a - CRTM_IR_Land_SfcOptics.o
+a - CRTM_IR_Snow_SfcOptics.o
+a - CRTM_IR_Water_SfcOptics.o
+a - CRTM_MW_Ice_SfcOptics.o
+a - CRTM_MW_Land_SfcOptics.o
+a - CRTM_MW_Snow_SfcOptics.o
+a - CRTM_MW_Water_SfcOptics.o
+a - CRTM_VIS_Water_SfcOptics.o
+a - CRTM_LowFrequency_MWSSEM.o
+a - Ocean_Permittivity.o
+a - Fresnel.o
+a - CRTM_Fastem1.o
+a - CRTM_Fastem3.o
+a - CRTM_IRSSEM.o
+a - CRTM_surface_ir_emissivity.o
+a - CRTM_AtmOptics.o
+a - CRTM_RTSolution_Define.o
+a - CRTM_RTSolution_IO.o
+a - RTV_Define.o
+a - CRTM_RTSolution.o
+a - CRTM_Planck_Functions.o
+a - CRTM_AntCorr.o
+a - CRTM_AncillaryInput_Define.o
+a - SSU_Input_Define.o
+a - Zeeman_Input_Define.o
+a - CRTM_Options_Define.o
+a - CRTM_Parameters.o
+a - CRTM_LifeCycle.o
+a - CRTM_Forward_Module.o
+a - CRTM_Tangent_Linear_Module.o
+a - CRTM_Adjoint_Module.o
+a - CRTM_K_Matrix_Module.o
+a - CRTM_Module.o
+a - ODAS_AtmAbsorption.o
+a - ODAS_Predictor.o
+a - ODAS_Predictor_Define.o
+a - ODAS_Binary_IO.o
+a - ODAS_Define.o
+a - ODAS_TauCoeff.o
+a - ODPS_AtmAbsorption.o
+a - ODPS_Predictor.o
+a - ODPS_Predictor_Define.o
+a - ODPS_Binary_IO.o
+a - ODPS_Define.o
+a - ODPS_TauCoeff.o
+a - CRTM_GeometryInfo.o
+a - ODSSU_AtmAbsorption.o
+a - ODSSU_Define.o
+a - ODSSU_Binary_IO.o
+a - ODSSU_TauCoeff.o
+a - Profile_Utility_Parameters.o
+a - ODPS_CoordinateMapping.o
+a - ODZeeman_TauCoeff.o
+a - ODZeeman_AtmAbsorption.o
+a - ODZeeman_Predictor.o
+a - Zeeman_Utility.o
+make[6]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src/libsrc'
+
+Returning to directory /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src
+
+make[5]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src'
+
+Installing libCRTM.a in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src/lib
+
+test -d include || mkdir include
+
+Installing *.mod in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src/include
+
+make[4]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2/src'
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/crtm2'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/ip =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/ip'
+makefile:65: warning: overriding commands for target `.f.o'
+../../../configure.upp:126: warning: ignoring old commands for target `.f.o'
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gausslat.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gcdist.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdsawt.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswiz00.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswiz01.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswiz03.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswiz04.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswiz05.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswizc9.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswizca.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswizcb.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswizcd.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswiz.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswzd00.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswzd01.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswzd03.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswzd04.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswzd05.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswzdc9.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswzdca.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswzdcb.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswzdcd.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdswzd.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ijkgds0.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ijkgds1.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ijkgds.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ipmerge2.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ipolates.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ipolatev.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ipsector.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ipspaste.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ipxetas.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ipxwafs2.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ipxwafs3.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ipxwafs.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include makgds.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include movect.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polateg0.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polateg1.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polateg4.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polates0.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polates1.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polates2.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polates3.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polates4.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polates6.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polatev0.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polatev1.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polatev2.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polatev3.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polatev4.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polatev6.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polfixs.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include polfixv.f
+ar ru   libip.a gausslat.o gcdist.o gdsawt.o gdswiz00.o gdswiz01.o gdswiz03.o gdswiz04.o gdswiz05.o gdswizc9.o gdswizca.o gdswizcb.o gdswizcd.o gdswiz.o gdswzd00.o gdswzd01.o gdswzd03.o gdswzd04.o gdswzd05.o gdswzdc9.o gdswzdca.o gdswzdcb.o gdswzdcd.o gdswzd.o ijkgds0.o ijkgds1.o ijkgds.o ipmerge2.o ipolates.o ipolatev.o ipsector.o ipspaste.o ipxetas.o ipxwafs2.o ipxwafs3.o ipxwafs.o makgds.o movect.o polateg0.o polateg1.o polateg4.o polates0.o polates1.o polates2.o polates3.o polates4.o polates6.o polatev0.o polatev1.o polatev2.o polatev3.o polatev4.o polatev6.o polfixs.o polfixv.o
+ar: creating libip.a
+/bin/cp libip.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/ip'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/sfcio =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/sfcio'
+makefile:45: warning: overriding commands for target `.f.o'
+../../../configure.upp:126: warning: ignoring old commands for target `.f.o'
+mpif90 -f90=ifort -free  -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sfcio_module.f
+ar ru   libsfcio.a sfcio_module.o
+ar: creating libsfcio.a
+/bin/cp libsfcio.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+/bin/cp *.mod /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/sfcio'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/sigio =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/sigio'
+mpif90 -f90=ifort -free  -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sigio_module.f sigio_r_module.f
+mpif90 -f90=ifort  -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include bafrio.f
+ar ru   libsigio.a sigio_module.o sigio_r_module.o bafrio.o
+ar: creating libsigio.a
+/bin/cp libsigio.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+/bin/cp *.mod /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/sigio'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/sp =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/sp'
+makefile:63: warning: overriding commands for target `.f.o'
+../../../configure.upp:126: warning: ignoring old commands for target `.f.o'
+makefile:66: warning: overriding commands for target `.F.o'
+../../../configure.upp:132: warning: ignoring old commands for target `.F.o'
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include bll2ps.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spanaly.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spdz2uv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include speps.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spfft1.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spffte.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spfft.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spfftpt.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spgradq.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spgradx.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spgrady.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include splaplac.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include splegend.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sppad.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spsynth.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptezd.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptez.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptezmd.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptezm.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptezmv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptezv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgpmd.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgpm.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgpmv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgpsd.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgps.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgpsv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgptd.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgpt.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgptsd.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgptvd.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptgptv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptrand.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptran.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptranf0.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptranf1.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptranf.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptranfv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptranv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptrund.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptrun.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptrung.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptrungv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptrunl.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptrunm.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptrunmv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptruns.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptrunsv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sptrunv.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spuv2dz.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spvar.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include spwget.f
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN splat.F > splat.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include splat.f
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN ncpus.F > ncpus.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ncpus.f
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN lapack_gen.F > lapack_gen.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include lapack_gen.f
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN fftpack.F > fftpack.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include fftpack.f
+ar ru   libsp.a bll2ps.o spanaly.o spdz2uv.o speps.o spfft1.o spffte.o spfft.o spfftpt.o spgradq.o spgradx.o spgrady.o splaplac.o splegend.o sppad.o spsynth.o sptezd.o sptez.o sptezmd.o sptezm.o sptezmv.o sptezv.o sptgpmd.o sptgpm.o sptgpmv.o sptgpsd.o sptgps.o sptgpsv.o sptgptd.o sptgpt.o sptgptsd.o sptgptvd.o sptgptv.o sptrand.o sptran.o sptranf0.o sptranf1.o sptranf.o sptranfv.o sptranv.o sptrund.o sptrun.o sptrung.o sptrungv.o sptrunl.o sptrunm.o sptrunmv.o sptruns.o sptrunsv.o sptrunv.o spuv2dz.o spvar.o spwget.o splat.o ncpus.o lapack_gen.o fftpack.o
+ar: creating libsp.a
+/bin/cp libsp.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/sp'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/w3emc =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/w3emc'
+makefile:57: warning: overriding commands for target `.f.o'
+../../../configure.upp:126: warning: ignoring old commands for target `.f.o'
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fa09.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fb06.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fb11.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbens.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include mova2i.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include putgbens.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include start.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include summary.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3log.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include mersenne_twister.f
+ar ru  libw3emc.a w3fa09.o w3fb06.o w3fb11.o getgbens.o mova2i.o putgbens.o start.o summary.o w3log.o mersenne_twister.o
+ar: creating libw3emc.a
+/bin/cp libw3emc.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+/bin/cp *.mod /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/w3emc'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/w3nco =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/w3nco'
+makefile:62: warning: overriding commands for target `.f.o'
+../../../configure.upp:126: warning: ignoring old commands for target `.f.o'
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include errexit.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include errmsg.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include fparsei.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include fparser.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getbit.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgb.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgb1r.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgb1re.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgb1s.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbe.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbeh.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbem.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbemh.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbemp.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbep.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbex.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbexm.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbh.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbm.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbmh.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbmp.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgbp.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgi.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgir.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include idsdef.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include instrument.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include iw3jdn.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ixgb.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include lengds.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include pdsens.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include pdseup.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include putgb.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include putgbe.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include putgben.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include putgbex.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include putgbn.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include r63w72.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include skgb.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3difdat.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3doxdat.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi01.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi58.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi59.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi63.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi68.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi71.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi72.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi73.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi74.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi75.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi76.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi82.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fi83.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fs21.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3fs26.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3locdat.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3movdat.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3reddat.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3tagb.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3utcdat.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include w3valdat.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gbytesc.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gbytec.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sbytesc.f
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include sbytec.f
+ar ru  libw3nco.a errexit.o errmsg.o fparsei.o fparser.o getbit.o getgb.o getgb1r.o getgb1re.o getgb1s.o getgbe.o getgbeh.o getgbem.o getgbemh.o getgbemp.o getgbep.o getgbex.o getgbexm.o getgbh.o getgbm.o getgbmh.o getgbmp.o getgbp.o getgi.o getgir.o idsdef.o instrument.o iw3jdn.o ixgb.o lengds.o pdsens.o pdseup.o putgb.o putgbe.o putgben.o putgbex.o putgbn.o r63w72.o skgb.o w3difdat.o w3doxdat.o w3fi01.o w3fi58.o w3fi59.o w3fi63.o w3fi68.o w3fi71.o w3fi72.o w3fi73.o w3fi74.o w3fi75.o w3fi76.o w3fi82.o w3fi83.o w3fs21.o w3fs26.o w3locdat.o w3movdat.o w3reddat.o w3tagb.o w3utcdat.o w3valdat.o gbytesc.o gbytec.o sbytesc.o sbytec.o
+ar: creating libw3nco.a
+/bin/cp libw3nco.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/w3nco'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/nemsio =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/nemsio'
+makefile:52: warning: overriding commands for target `.f.o'
+../../../configure.upp:126: warning: ignoring old commands for target `.f.o'
+makefile:54: warning: overriding commands for target `.f90.o'
+../../../configure.upp:129: warning: ignoring old commands for target `.f90.o'
+mpif90 -f90=ifort -free  -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I../wrfmpi_stubs nemsio_openclose.f90
+mpif90 -f90=ifort -free  -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I../wrfmpi_stubs nemsio_read.f90
+mpif90 -f90=ifort -free  -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I../wrfmpi_stubs nemsio_write.f90
+mpif90 -f90=ifort -free  -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I../wrfmpi_stubs nemsio_module.f90
+mpif90 -f90=ifort -free  -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I../wrfmpi_stubs nemsio_module_mpi.f90
+ifort -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I../wrfmpi_stubs bafrio.f
+ar ru   libnemsio.a nemsio_openclose.o nemsio_read.o nemsio_write.o nemsio_module.o nemsio_module_mpi.o bafrio.o  
+ar: creating libnemsio.a
+/bin/cp libnemsio.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+/bin/cp *.mod /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/nemsio'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/gfsio =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/gfsio'
+makefile:54: warning: overriding commands for target `.f.o'
+../../../configure.upp:126: warning: ignoring old commands for target `.f.o'
+makefile:56: warning: overriding commands for target `.F.o'
+../../../configure.upp:132: warning: ignoring old commands for target `.F.o'
+ifort -free -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gfsio_module.f
+ar ru   libgfsio.a gfsio_module.o  
+ar: creating libgfsio.a
+/bin/cp libgfsio.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+/bin/cp *.mod /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/gfsio'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/g2 =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/g2'
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gridtemplates.f
+ar ru   libg2.a gridtemplates.o
+ar: creating libg2.a
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include pdstemplates.f
+ar ru   libg2.a pdstemplates.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include drstemplates.f
+ar ru   libg2.a drstemplates.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gribmod.f
+ar ru   libg2.a gribmod.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include realloc.f
+ar ru   libg2.a realloc.o
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -DUSE_JPEG2000 addfield.F addfield.f
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include addfield.f
+ar ru   libg2.a addfield.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include addgrid.f
+ar ru   libg2.a addgrid.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include addlocal.f
+ar ru   libg2.a addlocal.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getfield.f
+ar ru   libg2.a getfield.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gb_info.f
+ar ru   libg2.a gb_info.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gf_getfld.f
+ar ru   libg2.a gf_getfld.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gf_free.f
+ar ru   libg2.a gf_free.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gf_unpack1.f
+ar ru   libg2.a gf_unpack1.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gf_unpack2.f
+ar ru   libg2.a gf_unpack2.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gf_unpack3.f
+ar ru   libg2.a gf_unpack3.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gf_unpack4.f
+ar ru   libg2.a gf_unpack4.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gf_unpack5.f
+ar ru   libg2.a gf_unpack5.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gf_unpack6.f
+ar ru   libg2.a gf_unpack6.o
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -DUSE_JPEG2000 gf_unpack7.F gf_unpack7.f
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gf_unpack7.f
+ar ru   libg2.a gf_unpack7.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gettemplates.f
+ar ru   libg2.a gettemplates.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getlocal.f
+ar ru   libg2.a getlocal.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getdim.f
+ar ru   libg2.a getdim.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getpoly.f
+ar ru   libg2.a getpoly.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gribcreate.f
+ar ru   libg2.a gribcreate.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gribend.f
+ar ru   libg2.a gribend.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gribinfo.f
+ar ru   libg2.a gribinfo.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include mkieee.f
+ar ru   libg2.a mkieee.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include rdieee.f
+ar ru   libg2.a rdieee.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include simpack.f
+ar ru   libg2.a simpack.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include simunpack.f
+ar ru   libg2.a simunpack.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include cmplxpack.f
+ar ru   libg2.a cmplxpack.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include compack.f
+ar ru   libg2.a compack.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include misspack.f
+ar ru   libg2.a misspack.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include pack_gp.f
+ar ru   libg2.a pack_gp.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include reduce.f
+ar ru   libg2.a reduce.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include comunpack.f
+ar ru   libg2.a comunpack.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include specpack.f
+ar ru   libg2.a specpack.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include specunpack.f
+ar ru   libg2.a specunpack.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include jpcpack.f
+ar ru   libg2.a jpcpack.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include jpcunpack.f
+ar ru   libg2.a jpcunpack.o
+mpicc  -c -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3 -c -I/usr/include enc_jpeg2000.c
+ar ru   libg2.a enc_jpeg2000.o
+mpicc  -c -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3 -c -I/usr/include dec_jpeg2000.c
+dec_jpeg2000.c(89): warning #592: variable "ier" is used before its value is set
+         printf(" jpc_decode return = %d \n",ier);
+                                             ^
+
+ar ru   libg2.a dec_jpeg2000.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include pngpack.f
+ar ru   libg2.a pngpack.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include pngunpack.f
+ar ru   libg2.a pngunpack.o
+mpicc  -c -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3 -c -I/usr/include enc_png.c
+ar ru   libg2.a enc_png.o
+mpicc  -c -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3 -c -I/usr/include dec_png.c
+ar ru   libg2.a dec_png.o
+mpicc  -c -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3 -c -I/usr/include mova2i.c
+ar ru   libg2.a mova2i.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gbytesc.f
+ar ru   libg2.a gbytesc.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include skgb.f
+ar ru   libg2.a skgb.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include ixgb2.f
+ar ru   libg2.a ixgb2.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getg2i.f
+ar ru   libg2.a getg2i.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getg2ir.f
+ar ru   libg2.a getg2ir.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgb2s.f
+ar ru   libg2.a getgb2s.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgb2r.f
+ar ru   libg2.a getgb2r.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgb2l.f
+ar ru   libg2.a getgb2l.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgb2.f
+ar ru   libg2.a getgb2.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgb2p.f
+ar ru   libg2.a getgb2p.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getgb2rp.f
+ar ru   libg2.a getgb2rp.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include putgb2.f
+ar ru   libg2.a putgb2.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include g2grids.f
+ar ru   libg2.a g2grids.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include params.f
+ar ru   libg2.a params.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include params_ecmwf.f
+ar ru   libg2.a params_ecmwf.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include getidx.f
+ar ru   libg2.a getidx.o
+mpif90 -f90=ifort  -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdt2gds.f
+ar ru   libg2.a gdt2gds.o
+/bin/cp libg2.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+/bin/cp *.mod /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/g2'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/g2tmpl =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/g2tmpl'
+makefile:40: warning: overriding commands for target `.f.o'
+../../../configure.upp:126: warning: ignoring old commands for target `.f.o'
+mpicc  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3 -c  process_4dot2.c
+ifort -free -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include grib2_all_tables_module.f
+ifort -free -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c  -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include gdtsec3.f
+ar ru   libg2tmpl.a process_4dot2.o grib2_all_tables_module.o gdtsec3.o
+ar: creating libg2tmpl.a
+/bin/cp libg2tmpl.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib
+/bin/cp *.mod /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/g2tmpl'
+
+===== Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/xml =====
+make[3]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/xml'
+makefile:42: warning: overriding commands for target `.f90.o'
+../../../configure.upp:129: warning: ignoring old commands for target `.f90.o'
+mpif90 -f90=ifort  -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -O2 xmlparse.f90
+ifort: command line warning #10120: overriding '-O3' with '-O2'
+mpif90 -f90=ifort  -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -O2 read_xml_prims.f90
+ifort: command line warning #10120: overriding '-O3' with '-O2'
+ar ru  libxmlparse.a xmlparse.o read_xml_prims.o
+ar: creating libxmlparse.a
+/bin/cp *.mod  /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include
+/bin/cp libxmlparse.a /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib 
+make[3]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib/xml'
+make[2]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/lib'
+Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/unipost
+make[2]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/unipost'
+makefile:128: warning: overriding commands for target `.F.o'
+../../configure.upp:132: warning: ignoring old commands for target `.F.o'
+makefile:132: warning: overriding commands for target `.f.o'
+../../configure.upp:126: warning: ignoring old commands for target `.f.o'
+makefile:135: warning: overriding commands for target `.f90.o'
+../../configure.upp:129: warning: ignoring old commands for target `.f90.o'
+makefile:138: warning: overriding commands for target `.c.o'
+../../configure.upp:123: warning: ignoring old commands for target `.c.o'
+ln -sf  /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/frame/module_internal_header_util.mod /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/
+ln -sf  /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/external/io_int/module_io_int_idx.mod /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  wrf_io_flags.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  getVariable.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  getIVariable.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  getIVariableN.f
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN  kinds_mod.F > kinds_mod.f
+kinds_mod.F:8:65: warning: missing terminating ' character
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  kinds_mod.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  machine.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  physcons.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  native_endianness.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  count_recs_wrf_binary_file.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  inventory_wrf_binary_file.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  next_buf.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  retrieve_index.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  ZENSUN.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CLDFRAC_ZHAO.f
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN  GFSPOST.F > GFSPOST.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  GFSPOST.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  GETGBANDSCATTER.f
+mpicc  -c -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3 -Dfunder -DFortranByte=char -DFortranInt=int -DFortranLlong='long long' blockIO.c
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  initialize_byte_swap_wrf_binary_file.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  post_t.f90
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  VRBLS2D_mod.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  VRBLS3D_mod.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  VRBLS4D_mod.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MASKS_mod.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  PMICRPH.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SOIL_mod.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CMASSI.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CTLBLK.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  GRIDSPEC.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  LOOKUP.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  PARAMR.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  RHGRD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  RQSTFLD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  cuparm.f
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN  params.F > params.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  params.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  svptbl.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  get_postfilename.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  grib2_module.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SET_LVLSXML.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  FILL_PSETFLD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  BNDLYR.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  BOUND.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALCAPE.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALDWP.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALDRG.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALHEL.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALLCL.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALMCVG.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALPOT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALPW.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALRH.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALRCH.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALRH_GSD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALSTRM.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALTAU.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALTHTE.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALVIS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALVIS_GSD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALVOR.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALWXT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALWXT_RAMER.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALWXT_BOURG.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALWXT_REVISED.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALRH_PW.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALWXT_EXPLICIT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALWXT_DOMINANT.f
+CALWXT_DOMINANT.f(10): remark #6536: All symbols from this module are already visible due to another USE; the ONLY clause will have no effect. Rename clauses, if any, will be honored.   [CTLBLK_MOD]
+      use ctlblk_mod, only: jsta, jend, pthresh, im, jsta_2l, jend_2u, jm
+----------^
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CLDRAD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CLMAX.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  COLLECT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  COLLECT_LOC.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  DEWPOINT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  FDLVL.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  FGAMMA.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  FIXED.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  FRZLVL.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  FRZLVL2.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  GET_BITS.f
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN  GRIBIT.F > GRIBIT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  GRIBIT.f
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN  INITPOST.F > INITPOST.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  INITPOST.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  LFMFLD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MAPSSLP.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MISCLN.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MIXLEN.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MDL2P.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MDLFLD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MPI_FIRST.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MPI_LAST.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  NGMFLD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  NGMSLP.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  OTLFT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  OTLIFT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SLP_new.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SLP_NMM.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  EXCH.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  PARA_RANGE.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  PROCESS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  INITPOST_NMM.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  EXCH2.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  READCNTRL.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  READ_xml.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SET_OUTFLDS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SCLFLD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SERVER.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SETUP_SERVERS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SMOOTH.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SURFCE.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SPLINE.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  TABLE.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  TABLEQ.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  TRPAUS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  TTBLEX.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  WETBULB.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  WRFPOST.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALMICT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MICROINIT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  GPVS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MDL2SIGMA.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  ETCALC.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CANRES.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALGUST.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  WETFRZLVL.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SNFRAC.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MDL2AGL.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SNFRAC_GFS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  AVIATION.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  DEALLOCATE.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  INITPOST_NMM_BIN_MPIIO_READ.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  INITPOST_NMM_BIN_MPIIO.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALPBL.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MDL2SIGMA2.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  INITPOST_GFS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALRH_GFS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  LFMFLD_GFS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALRAD_WCLOUD_newcrtm.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MDL2THANDPV.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALPBLREGIME.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  POLEAVG.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  INITPOST_NEMS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  GETNEMSNDSCATTER.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  ICAOHEIGHT.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  INITPOST_GFS_NEMS.f
+/lib/cpp -C -P -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN  INITPOST_BIN_MPIIO.F > INITPOST_BIN_MPIIO.f
+INITPOST_BIN_MPIIO.F:961:7: warning: missing terminating ' character
+INITPOST_BIN_MPIIO.F:1426:64: warning: missing terminating ' character
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  INITPOST_BIN_MPIIO.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  GEO_ZENITH_ANGLE.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  GFIP3.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  GRIDAVG.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  CALUPDHEL.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  MSFPS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  INITPOST_GFS_SIGIO.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  AllGETHERV_GSD.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  SELECT_CHANNELS.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  ALLOCATE_ALL.f
+mpif90 -f90=ifort -free   -c -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -c -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/include/crtm2  ASSIGNNEMSIOVAR.f
+mpif90 -f90=ifort -free  -o unipost.exe -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/frame/module_internal_header_util.o /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/frame/pack_utils.o /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/frame/module_machine.o /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/frame/module_wrf_error.o /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/frame/wrf_debug.o VRBLS2D_mod.o VRBLS3D_mod.o VRBLS4D_mod.o MASKS_mod.o PMICRPH.o SOIL_mod.o CMASSI.o CTLBLK.o GRIDSPEC.o LOOKUP.o PARAMR.o RHGRD.o RQSTFLD.o cuparm.o params.o svptbl.o get_postfilename.o grib2_module.o SET_LVLSXML.o FILL_PSETFLD.o BNDLYR.o  BOUND.o  CALCAPE.o CALDWP.o  CALDRG.o CALHEL.o  CALLCL.o  CALMCVG.o CALPOT.o  CALPW.o CALRH.o  CALRCH.o CALRH_GSD.o CALSTRM.o CALTAU.o CALTHTE.o CALVIS.o CALVIS_GSD.o CALVOR.o CALWXT.o  CALWXT_RAMER.o CALWXT_BOURG.o CALWXT_REVISED.o CALRH_PW.o CALWXT_EXPLICIT.o CALWXT_DOMINANT.o CLDRAD.o CLMAX.o COLLECT.o  COLLECT_LOC.o DEWPOINT.o FDLVL.o  FGAMMA.o FIXED.o  FRZLVL.o  FRZLVL2.o GET_BITS.o  GRIBIT.o INITPOST.o LFMFLD.o  MAPSSLP.o MISCLN.o MIXLEN.o MDL2P.o MDLFLD.o MPI_FIRST.o  MPI_LAST.o NGMFLD.o NGMSLP.o  OTLFT.o OTLIFT.o SLP_new.o SLP_NMM.o EXCH.o PARA_RANGE.o PROCESS.o INITPOST_NMM.o EXCH2.o READCNTRL.o  READ_xml.o SET_OUTFLDS.o SCLFLD.o  SERVER.o SETUP_SERVERS.o SMOOTH.o SURFCE.o SPLINE.o  TABLE.o  TABLEQ.o  TRPAUS.o  TTBLEX.o WETBULB.o WRFPOST.o CALMICT.o MICROINIT.o GPVS.o MDL2SIGMA.o ETCALC.o CANRES.o CALGUST.o WETFRZLVL.o SNFRAC.o MDL2AGL.o SNFRAC_GFS.o AVIATION.o DEALLOCATE.o INITPOST_NMM_BIN_MPIIO_READ.o INITPOST_NMM_BIN_MPIIO.o CALPBL.o MDL2SIGMA2.o INITPOST_GFS.o CALRH_GFS.o LFMFLD_GFS.o CALRAD_WCLOUD_newcrtm.o MDL2THANDPV.o CALPBLREGIME.o POLEAVG.o INITPOST_NEMS.o GETNEMSNDSCATTER.o ICAOHEIGHT.o INITPOST_GFS_NEMS.o INITPOST_BIN_MPIIO.o GEO_ZENITH_ANGLE.o GFIP3.o GRIDAVG.o CALUPDHEL.o MSFPS.o INITPOST_GFS_SIGIO.o AllGETHERV_GSD.o SELECT_CHANNELS.o ALLOCATE_ALL.o ASSIGNNEMSIOVAR.o post_t.o wrf_io_flags.o getVariable.o getIVariable.o getIVariableN.o kinds_mod.o machine.o physcons.o native_endianness.o count_recs_wrf_binary_file.o inventory_wrf_binary_file.o next_buf.o retrieve_index.o ZENSUN.o CLDFRAC_ZHAO.o GFSPOST.o GETGBANDSCATTER.o blockIO.o initialize_byte_swap_wrf_binary_file.o -Wl,-noinhibit-exec  -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib -lnemsio -lsigio -lsfcio -lgfsio -lsp -lw3nco -lw3emc -lbacio -lCRTM  -lg2 -lg2tmpl -lxmlparse -L/usr/lib64 -lpng -lz -ljasper -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main  -lwrflib -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/external/io_int -lwrfio_int -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/external/io_netcdf -lwrfio_nf -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/external/io_grib1 -lio_grib1 -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/external/io_grib_share -lio_grib_share -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/external/esmf_time_f90 -lesmf_time -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/external/fftpack/fftpack5 -lfftpack -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/external/RSL_LITE -lrsl_lite -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/external/atm_ocn -latm_ocn -L/apps/netcdf/4.2.1.1-intel/lib -lnetcdff -lnetcdf 
+WRFPOST.o: In function `MAIN__':
+WRFPOST.f:(.text+0x380b): undefined reference to `initpost_nems_mpiio_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_ti_real_arr_':
+module_io.f90:(.text+0x30f): undefined reference to `ext_pnc_get_dom_ti_real_'
+module_io.f90:(.text+0x4e7): undefined reference to `ext_gr2_get_dom_ti_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_ti_real_sca_':
+module_io.f90:(.text+0xa8b): undefined reference to `ext_pnc_get_dom_ti_real_'
+module_io.f90:(.text+0xc63): undefined reference to `ext_gr2_get_dom_ti_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_ti_real_arr_':
+module_io.f90:(.text+0x11a2): undefined reference to `ext_pnc_put_dom_ti_real_'
+module_io.f90:(.text+0x1311): undefined reference to `ext_gr2_put_dom_ti_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_ti_real_sca_':
+module_io.f90:(.text+0x1796): undefined reference to `ext_pnc_put_dom_ti_real_'
+module_io.f90:(.text+0x1905): undefined reference to `ext_gr2_put_dom_ti_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_ti_double_arr_':
+module_io.f90:(.text+0x1d97): undefined reference to `ext_pnc_get_dom_ti_double_'
+module_io.f90:(.text+0x1f26): undefined reference to `ext_gr2_get_dom_ti_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_ti_double_sca_':
+module_io.f90:(.text+0x23e1): undefined reference to `ext_pnc_get_dom_ti_double_'
+module_io.f90:(.text+0x2570): undefined reference to `ext_gr2_get_dom_ti_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_ti_double_arr_':
+module_io.f90:(.text+0x2a0f): undefined reference to `ext_pnc_put_dom_ti_double_'
+module_io.f90:(.text+0x2b7e): undefined reference to `ext_gr2_put_dom_ti_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_ti_double_sca_':
+module_io.f90:(.text+0x2ff5): undefined reference to `ext_pnc_put_dom_ti_double_'
+module_io.f90:(.text+0x3164): undefined reference to `ext_gr2_put_dom_ti_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_ti_integer_arr_':
+module_io.f90:(.text+0x364f): undefined reference to `ext_pnc_get_dom_ti_integer_'
+module_io.f90:(.text+0x3827): undefined reference to `ext_gr2_get_dom_ti_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_ti_integer_sca_':
+module_io.f90:(.text+0x3dcb): undefined reference to `ext_pnc_get_dom_ti_integer_'
+module_io.f90:(.text+0x3fa3): undefined reference to `ext_gr2_get_dom_ti_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_ti_integer_arr_':
+module_io.f90:(.text+0x44e2): undefined reference to `ext_pnc_put_dom_ti_integer_'
+module_io.f90:(.text+0x4651): undefined reference to `ext_gr2_put_dom_ti_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_ti_integer_sca_':
+module_io.f90:(.text+0x4ad6): undefined reference to `ext_pnc_put_dom_ti_integer_'
+module_io.f90:(.text+0x4c45): undefined reference to `ext_gr2_put_dom_ti_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_ti_logical_arr_':
+module_io.f90:(.text+0x512f): undefined reference to `ext_pnc_get_dom_ti_logical_'
+module_io.f90:(.text+0x5307): undefined reference to `ext_gr2_get_dom_ti_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_ti_logical_sca_':
+module_io.f90:(.text+0x58ab): undefined reference to `ext_pnc_get_dom_ti_logical_'
+module_io.f90:(.text+0x5a83): undefined reference to `ext_gr2_get_dom_ti_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_ti_logical_arr_':
+module_io.f90:(.text+0x5fc2): undefined reference to `ext_pnc_put_dom_ti_logical_'
+module_io.f90:(.text+0x6131): undefined reference to `ext_gr2_put_dom_ti_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_ti_logical_sca_':
+module_io.f90:(.text+0x65b6): undefined reference to `ext_pnc_put_dom_ti_logical_'
+module_io.f90:(.text+0x6725): undefined reference to `ext_gr2_put_dom_ti_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_ti_char_arr_':
+module_io.f90:(.text+0x6c07): undefined reference to `ext_pnc_get_dom_ti_char_'
+module_io.f90:(.text+0x6dee): undefined reference to `ext_gr2_get_dom_ti_char_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_ti_char_arr_':
+module_io.f90:(.text+0x7331): undefined reference to `ext_pnc_put_dom_ti_char_'
+module_io.f90:(.text+0x74bc): undefined reference to `ext_gr2_put_dom_ti_char_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_td_real_arr_':
+module_io.f90:(.text+0x7a01): undefined reference to `ext_pnc_get_dom_td_real_'
+module_io.f90:(.text+0x7c1e): undefined reference to `ext_gr2_get_dom_td_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_td_real_sca_':
+module_io.f90:(.text+0x823d): undefined reference to `ext_pnc_get_dom_td_real_'
+module_io.f90:(.text+0x845a): undefined reference to `ext_gr2_get_dom_td_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_td_real_arr_':
+module_io.f90:(.text+0x8a24): undefined reference to `ext_pnc_put_dom_td_real_'
+module_io.f90:(.text+0x8be5): undefined reference to `ext_gr2_put_dom_td_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_td_real_sca_':
+module_io.f90:(.text+0x9116): undefined reference to `ext_pnc_put_dom_td_real_'
+module_io.f90:(.text+0x92d7): undefined reference to `ext_gr2_put_dom_td_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_td_double_arr_':
+module_io.f90:(.text+0x9805): undefined reference to `ext_pnc_get_dom_td_double_'
+module_io.f90:(.text+0x99d9): undefined reference to `ext_gr2_get_dom_td_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_td_double_sca_':
+module_io.f90:(.text+0x9f0d): undefined reference to `ext_pnc_get_dom_td_double_'
+module_io.f90:(.text+0xa0e1): undefined reference to `ext_gr2_get_dom_td_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_td_double_arr_':
+module_io.f90:(.text+0xa609): undefined reference to `ext_pnc_put_dom_td_double_'
+module_io.f90:(.text+0xa7ca): undefined reference to `ext_gr2_put_dom_td_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_td_double_sca_':
+module_io.f90:(.text+0xaced): undefined reference to `ext_pnc_put_dom_td_double_'
+module_io.f90:(.text+0xaeae): undefined reference to `ext_gr2_put_dom_td_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_td_integer_arr_':
+module_io.f90:(.text+0xb435): undefined reference to `ext_pnc_get_dom_td_integer_'
+module_io.f90:(.text+0xb652): undefined reference to `ext_gr2_get_dom_td_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_td_integer_sca_':
+module_io.f90:(.text+0xbc71): undefined reference to `ext_pnc_get_dom_td_integer_'
+module_io.f90:(.text+0xbe8e): undefined reference to `ext_gr2_get_dom_td_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_td_integer_arr_':
+module_io.f90:(.text+0xc458): undefined reference to `ext_pnc_put_dom_td_integer_'
+module_io.f90:(.text+0xc619): undefined reference to `ext_gr2_put_dom_td_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_td_integer_sca_':
+module_io.f90:(.text+0xcb4a): undefined reference to `ext_pnc_put_dom_td_integer_'
+module_io.f90:(.text+0xcd0b): undefined reference to `ext_gr2_put_dom_td_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_td_logical_arr_':
+module_io.f90:(.text+0xd291): undefined reference to `ext_pnc_get_dom_td_logical_'
+module_io.f90:(.text+0xd4ae): undefined reference to `ext_gr2_get_dom_td_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_td_logical_sca_':
+module_io.f90:(.text+0xdacd): undefined reference to `ext_pnc_get_dom_td_logical_'
+module_io.f90:(.text+0xdcea): undefined reference to `ext_gr2_get_dom_td_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_td_logical_arr_':
+module_io.f90:(.text+0xe2b4): undefined reference to `ext_pnc_put_dom_td_logical_'
+module_io.f90:(.text+0xe475): undefined reference to `ext_gr2_put_dom_td_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_td_logical_sca_':
+module_io.f90:(.text+0xe9a6): undefined reference to `ext_pnc_put_dom_td_logical_'
+module_io.f90:(.text+0xeb67): undefined reference to `ext_gr2_put_dom_td_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_dom_td_char_arr_':
+module_io.f90:(.text+0xf0ef): undefined reference to `ext_pnc_get_dom_td_char_'
+module_io.f90:(.text+0xf326): undefined reference to `ext_gr2_get_dom_td_char_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_dom_td_char_arr_':
+module_io.f90:(.text+0xf909): undefined reference to `ext_pnc_put_dom_td_char_'
+module_io.f90:(.text+0xfaea): undefined reference to `ext_gr2_put_dom_td_char_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_ti_real_arr_':
+module_io.f90:(.text+0x1008d): undefined reference to `ext_pnc_get_var_ti_real_'
+module_io.f90:(.text+0x102aa): undefined reference to `ext_gr2_get_var_ti_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_ti_real_sca_':
+module_io.f90:(.text+0x108c9): undefined reference to `ext_pnc_get_var_ti_real_'
+module_io.f90:(.text+0x10ae6): undefined reference to `ext_gr2_get_var_ti_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_ti_real_arr_':
+module_io.f90:(.text+0x110b0): undefined reference to `ext_pnc_put_var_ti_real_'
+module_io.f90:(.text+0x11271): undefined reference to `ext_gr2_put_var_ti_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_ti_real_sca_':
+module_io.f90:(.text+0x117a2): undefined reference to `ext_pnc_put_var_ti_real_'
+module_io.f90:(.text+0x11963): undefined reference to `ext_gr2_put_var_ti_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_ti_double_arr_':
+module_io.f90:(.text+0x11e91): undefined reference to `ext_pnc_get_var_ti_double_'
+module_io.f90:(.text+0x12065): undefined reference to `ext_gr2_get_var_ti_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_ti_double_sca_':
+module_io.f90:(.text+0x12599): undefined reference to `ext_pnc_get_var_ti_double_'
+module_io.f90:(.text+0x1276d): undefined reference to `ext_gr2_get_var_ti_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_ti_double_arr_':
+module_io.f90:(.text+0x12c95): undefined reference to `ext_pnc_put_var_ti_double_'
+module_io.f90:(.text+0x12e56): undefined reference to `ext_gr2_put_var_ti_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_ti_double_sca_':
+module_io.f90:(.text+0x13379): undefined reference to `ext_pnc_put_var_ti_double_'
+module_io.f90:(.text+0x1353a): undefined reference to `ext_gr2_put_var_ti_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_ti_integer_arr_':
+module_io.f90:(.text+0x13ac1): undefined reference to `ext_pnc_get_var_ti_integer_'
+module_io.f90:(.text+0x13cde): undefined reference to `ext_gr2_get_var_ti_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_ti_integer_sca_':
+module_io.f90:(.text+0x142fd): undefined reference to `ext_pnc_get_var_ti_integer_'
+module_io.f90:(.text+0x1451a): undefined reference to `ext_gr2_get_var_ti_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_ti_integer_arr_':
+module_io.f90:(.text+0x14ae4): undefined reference to `ext_pnc_put_var_ti_integer_'
+module_io.f90:(.text+0x14ca5): undefined reference to `ext_gr2_put_var_ti_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_ti_integer_sca_':
+module_io.f90:(.text+0x151d6): undefined reference to `ext_pnc_put_var_ti_integer_'
+module_io.f90:(.text+0x15397): undefined reference to `ext_gr2_put_var_ti_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_ti_logical_arr_':
+module_io.f90:(.text+0x1591d): undefined reference to `ext_pnc_get_var_ti_logical_'
+module_io.f90:(.text+0x15b3a): undefined reference to `ext_gr2_get_var_ti_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_ti_logical_sca_':
+module_io.f90:(.text+0x16159): undefined reference to `ext_pnc_get_var_ti_logical_'
+module_io.f90:(.text+0x16376): undefined reference to `ext_gr2_get_var_ti_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_ti_logical_arr_':
+module_io.f90:(.text+0x16940): undefined reference to `ext_pnc_put_var_ti_logical_'
+module_io.f90:(.text+0x16b01): undefined reference to `ext_gr2_put_var_ti_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_ti_logical_sca_':
+module_io.f90:(.text+0x17032): undefined reference to `ext_pnc_put_var_ti_logical_'
+module_io.f90:(.text+0x171f3): undefined reference to `ext_gr2_put_var_ti_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_ti_char_arr_':
+module_io.f90:(.text+0x1777b): undefined reference to `ext_pnc_get_var_ti_char_'
+module_io.f90:(.text+0x179b2): undefined reference to `ext_gr2_get_var_ti_char_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_ti_char_arr_':
+module_io.f90:(.text+0x17f95): undefined reference to `ext_pnc_put_var_ti_char_'
+module_io.f90:(.text+0x18176): undefined reference to `ext_gr2_put_var_ti_char_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_td_real_arr_':
+module_io.f90:(.text+0x18759): undefined reference to `ext_pnc_get_var_td_real_'
+module_io.f90:(.text+0x189b6): undefined reference to `ext_gr2_get_var_td_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_td_real_sca_':
+module_io.f90:(.text+0x19055): undefined reference to `ext_pnc_get_var_td_real_'
+module_io.f90:(.text+0x192b2): undefined reference to `ext_gr2_get_var_td_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_td_real_arr_':
+module_io.f90:(.text+0x198f6): undefined reference to `ext_pnc_put_var_td_real_'
+module_io.f90:(.text+0x19af8): undefined reference to `ext_gr2_put_var_td_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_td_real_sca_':
+module_io.f90:(.text+0x1a098): undefined reference to `ext_pnc_put_var_td_real_'
+module_io.f90:(.text+0x1a29a): undefined reference to `ext_gr2_put_var_td_real_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_td_double_arr_':
+module_io.f90:(.text+0x1a83d): undefined reference to `ext_pnc_get_var_td_double_'
+module_io.f90:(.text+0x1aa51): undefined reference to `ext_gr2_get_var_td_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_td_double_sca_':
+module_io.f90:(.text+0x1b005): undefined reference to `ext_pnc_get_var_td_double_'
+module_io.f90:(.text+0x1b219): undefined reference to `ext_gr2_get_var_td_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_td_double_arr_':
+module_io.f90:(.text+0x1b7bb): undefined reference to `ext_pnc_put_var_td_double_'
+module_io.f90:(.text+0x1b9bd): undefined reference to `ext_gr2_put_var_td_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_td_double_sca_':
+module_io.f90:(.text+0x1bf4d): undefined reference to `ext_pnc_put_var_td_double_'
+module_io.f90:(.text+0x1c14f): undefined reference to `ext_gr2_put_var_td_double_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_td_integer_arr_':
+module_io.f90:(.text+0x1c749): undefined reference to `ext_pnc_get_var_td_integer_'
+module_io.f90:(.text+0x1c9a6): undefined reference to `ext_gr2_get_var_td_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_td_integer_sca_':
+module_io.f90:(.text+0x1d045): undefined reference to `ext_pnc_get_var_td_integer_'
+module_io.f90:(.text+0x1d2a2): undefined reference to `ext_gr2_get_var_td_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_td_integer_arr_':
+module_io.f90:(.text+0x1d8e6): undefined reference to `ext_pnc_put_var_td_integer_'
+module_io.f90:(.text+0x1dae8): undefined reference to `ext_gr2_put_var_td_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_td_integer_sca_':
+module_io.f90:(.text+0x1e088): undefined reference to `ext_pnc_put_var_td_integer_'
+module_io.f90:(.text+0x1e28a): undefined reference to `ext_gr2_put_var_td_integer_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_td_logical_arr_':
+module_io.f90:(.text+0x1e885): undefined reference to `ext_pnc_get_var_td_logical_'
+module_io.f90:(.text+0x1eae2): undefined reference to `ext_gr2_get_var_td_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_td_logical_sca_':
+module_io.f90:(.text+0x1f181): undefined reference to `ext_pnc_get_var_td_logical_'
+module_io.f90:(.text+0x1f3de): undefined reference to `ext_gr2_get_var_td_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_td_logical_arr_':
+module_io.f90:(.text+0x1fa22): undefined reference to `ext_pnc_put_var_td_logical_'
+module_io.f90:(.text+0x1fc24): undefined reference to `ext_gr2_put_var_td_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_td_logical_sca_':
+module_io.f90:(.text+0x201c4): undefined reference to `ext_pnc_put_var_td_logical_'
+module_io.f90:(.text+0x203c6): undefined reference to `ext_gr2_put_var_td_logical_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_td_char_arr_':
+module_io.f90:(.text+0x209c3): undefined reference to `ext_pnc_get_var_td_char_'
+module_io.f90:(.text+0x20c3a): undefined reference to `ext_gr2_get_var_td_char_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_put_var_td_char_arr_':
+module_io.f90:(.text+0x2129d): undefined reference to `ext_pnc_put_var_td_char_'
+module_io.f90:(.text+0x214be): undefined reference to `ext_gr2_put_var_td_char_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_ioinit_':
+module_io.f90:(.text+0x23ce8): undefined reference to `ext_gr2_ioinit_'
+module_io.f90:(.text+0x23d26): undefined reference to `ext_pnc_ioinit_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_ioexit_':
+module_io.f90:(.text+0x23f4d): undefined reference to `ext_gr2_ioexit_'
+module_io.f90:(.text+0x23f7b): undefined reference to `ext_pnc_ioexit_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_open_for_write_begin_':
+module_io.f90:(.text+0x24b9f): undefined reference to `ext_pnc_open_for_write_begin_'
+module_io.f90:(.text+0x24f4c): undefined reference to `ext_gr2_open_for_write_begin_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_open_for_write_commit_':
+module_io.f90:(.text+0x257aa): undefined reference to `ext_pnc_open_for_write_commit_'
+module_io.f90:(.text+0x25863): undefined reference to `ext_gr2_open_for_write_commit_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_open_for_read_begin_':
+module_io.f90:(.text+0x25d3e): undefined reference to `ext_pnc_open_for_read_begin_'
+module_io.f90:(.text+0x260c9): undefined reference to `ext_gr2_open_for_read_begin_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_open_for_read_commit_':
+module_io.f90:(.text+0x26479): undefined reference to `ext_pnc_open_for_read_commit_'
+module_io.f90:(.text+0x264ad): undefined reference to `ext_gr2_open_for_read_commit_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_open_for_read_':
+module_io.f90:(.text+0x2690c): undefined reference to `ext_pnc_open_for_read_'
+module_io.f90:(.text+0x26c97): undefined reference to `ext_gr2_open_for_read_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_inquire_opened_':
+module_io.f90:(.text+0x27154): undefined reference to `ext_pnc_inquire_opened_'
+module_io.f90:(.text+0x2725c): undefined reference to `ext_gr2_inquire_opened_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_inquire_filename_':
+module_io.f90:(.text+0x27718): undefined reference to `ext_pnc_inquire_filename_'
+module_io.f90:(.text+0x27826): undefined reference to `ext_gr2_inquire_filename_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_iosync_':
+module_io.f90:(.text+0x27bfe): undefined reference to `ext_gr2_iosync_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_ioclose_':
+module_io.f90:(.text+0x27e5a): undefined reference to `ext_pnc_ioclose_'
+module_io.f90:(.text+0x27ef9): undefined reference to `ext_gr2_ioclose_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_next_time_':
+module_io.f90:(.text+0x28282): undefined reference to `ext_pnc_get_next_time_'
+module_io.f90:(.text+0x282db): undefined reference to `ext_pnc_get_next_time_'
+module_io.f90:(.text+0x284a6): undefined reference to `ext_gr2_get_next_time_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_previous_time_':
+module_io.f90:(.text+0x28945): undefined reference to `ext_pnc_get_previous_time_'
+module_io.f90:(.text+0x28aa4): undefined reference to `ext_gr2_get_previous_time_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_set_time_':
+module_io.f90:(.text+0x28daa): undefined reference to `ext_pnc_set_time_'
+module_io.f90:(.text+0x28e8d): undefined reference to `ext_gr2_set_time_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_next_var_':
+module_io.f90:(.text+0x2924d): undefined reference to `ext_gr2_get_next_var_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `module_io_mp_wrf_get_var_info_':
+module_io.f90:(.text+0x29666): undefined reference to `ext_pnc_get_var_info_'
+module_io.f90:(.text+0x297ba): undefined reference to `ext_gr2_get_var_info_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `wrf_read_field1_':
+module_io.f90:(.text+0x2acd5): undefined reference to `ext_pnc_read_field_'
+module_io.f90:(.text+0x2b0ba): undefined reference to `ext_gr2_read_field_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io.o): In function `wrf_write_field1_':
+module_io.f90:(.text+0x2c4b5): undefined reference to `ext_pnc_write_field_'
+module_io.f90:(.text+0x2c6e4): undefined reference to `ext_gr2_write_field_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_io_quilt.o): In function `module_wrf_quilt_mp_quilt_pnc_':
+module_io_quilt.f90:(.text+0x8e0): undefined reference to `ext_pnc_ioinit_'
+module_io_quilt.f90:(.text+0x91c): undefined reference to `ext_gr2_ioinit_'
+module_io_quilt.f90:(.text+0x18a5): undefined reference to `ext_pnc_write_field_'
+module_io_quilt.f90:(.text+0x1d53): undefined reference to `ext_pnc_iosync_'
+module_io_quilt.f90:(.text+0x1ead): undefined reference to `ext_pnc_inquire_filename_'
+module_io_quilt.f90:(.text+0x1efa): undefined reference to `ext_gr2_inquire_filename_'
+module_io_quilt.f90:(.text+0x2038): undefined reference to `ext_pnc_open_for_write_commit_'
+module_io_quilt.f90:(.text+0x206c): undefined reference to `ext_gr2_open_for_write_commit_'
+module_io_quilt.f90:(.text+0x2270): undefined reference to `ext_pnc_open_for_write_begin_'
+module_io_quilt.f90:(.text+0x22b4): undefined reference to `ext_gr2_open_for_write_begin_'
+module_io_quilt.f90:(.text+0x2469): undefined reference to `ext_pnc_inquire_filename_'
+module_io_quilt.f90:(.text+0x249d): undefined reference to `ext_pnc_ioclose_'
+module_io_quilt.f90:(.text+0x24d4): undefined reference to `ext_gr2_inquire_filename_'
+module_io_quilt.f90:(.text+0x2508): undefined reference to `ext_gr2_ioclose_'
+module_io_quilt.f90:(.text+0x27ce): undefined reference to `ext_pnc_put_var_ti_char_'
+module_io_quilt.f90:(.text+0x2875): undefined reference to `ext_gr2_put_var_ti_char_'
+module_io_quilt.f90:(.text+0x2bb3): undefined reference to `ext_pnc_put_dom_ti_char_'
+module_io_quilt.f90:(.text+0x2c28): undefined reference to `ext_gr2_put_dom_ti_char_'
+module_io_quilt.f90:(.text+0x3048): undefined reference to `ext_pnc_put_dom_ti_integer_'
+module_io_quilt.f90:(.text+0x309e): undefined reference to `ext_gr2_put_dom_ti_integer_'
+module_io_quilt.f90:(.text+0x33db): undefined reference to `ext_pnc_put_dom_td_integer_'
+module_io_quilt.f90:(.text+0x3462): undefined reference to `ext_gr2_put_dom_td_integer_'
+module_io_quilt.f90:(.text+0x3802): undefined reference to `ext_pnc_put_dom_ti_real_'
+module_io_quilt.f90:(.text+0x3858): undefined reference to `ext_gr2_put_dom_ti_real_'
+module_io_quilt.f90:(.text+0x3b95): undefined reference to `ext_pnc_put_dom_td_real_'
+module_io_quilt.f90:(.text+0x3c1c): undefined reference to `ext_gr2_put_dom_td_real_'
+module_io_quilt.f90:(.text+0x3f80): undefined reference to `ext_pnc_ioexit_'
+module_io_quilt.f90:(.text+0x3fad): undefined reference to `ext_gr2_ioexit_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_quilt_outbuf_ops.o): In function `module_quilt_outbuf_ops_mp_write_outbuf_pnc_':
+module_quilt_outbuf_ops.f90:(.text+0xdeb): undefined reference to `ext_pnc_write_field_'
+module_quilt_outbuf_ops.f90:(.text+0x10c1): undefined reference to `ext_pnc_start_independent_mode_'
+module_quilt_outbuf_ops.f90:(.text+0x15b2): undefined reference to `ext_pnc_write_field_'
+module_quilt_outbuf_ops.f90:(.text+0x1893): undefined reference to `ext_pnc_end_independent_mode_'
+module_quilt_outbuf_ops.f90:(.text+0x1e40): undefined reference to `ext_pnc_write_field_'
+module_quilt_outbuf_ops.f90:(.text+0x20e0): undefined reference to `ext_pnc_start_independent_mode_'
+module_quilt_outbuf_ops.f90:(.text+0x25a8): undefined reference to `ext_pnc_write_field_'
+module_quilt_outbuf_ops.f90:(.text+0x285f): undefined reference to `ext_pnc_end_independent_mode_'
+/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/../WRFV3/main/libwrflib.a(module_quilt_outbuf_ops.o): In function `module_quilt_outbuf_ops_mp_write_outbuf_':
+module_quilt_outbuf_ops.f90:(.text+0x5baf): undefined reference to `ext_gr2_write_field_'
+module_quilt_outbuf_ops.f90:(.text+0x63f9): undefined reference to `ext_gr2_write_field_'
+/bin/cp unipost.exe /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/bin
+make[2]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/unipost'
+Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/copygb
+make[2]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/copygb'
+ifort -o copygb.exe copygb.f ../unipost/kinds_mod.o -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3   -Wl,-noinhibit-exec  -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib -lip -lbacio -lsp -lw3nco -lw3emc 
+/bin/cp copygb.exe /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/bin
+make[2]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/copygb'
+Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/ndate
+make[2]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/ndate'
+ifort -o ndate.exe ndate.f -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3   -Wl,-noinhibit-exec   /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib/libw3nco.a
+/bin/cp ndate.exe /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/bin
+make[2]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/ndate'
+Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/cnvgrib
+make[2]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/cnvgrib'
+ifort -o cnvgrib.exe gds2gdt.f pds2pdt.f pds2pdtens.f cnvgrib.f cnv12.f cnv22.f cnv21.f gdt2gds.f makepds.f putgbexn.f makepdsens.f setbit.f -fp-model precise -ftz -assume byterecl -convert big_endian -heap-arrays  -DCOMMCODE -DLINUX -DUPPLITTLEENDIAN -O3  -I../lib/g2    -Wl,-noinhibit-exec   -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/lib -lg2 -lw3nco -lbacio -ljasper -lpng -lz
+pds2pdt.f(1): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [COORDLIST]
+        subroutine pds2pdt(kpds,ipdsnum,ipdstmpl,numcoord,coordlist,
+----------------------------------------------------------^
+pds2pdtens.f(2): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [COORDLIST]
+     &                     ipdsnum,ipdstmpl,numcoord,coordlist,
+-----------------------------------------------------^
+/bin/cp cnvgrib.exe /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/bin
+make[2]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP/src/cnvgrib'
+make[1]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/UPP'

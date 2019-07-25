@@ -1,0 +1,42 @@
+<task name="merge_E#ENS#" maxtries="&MAX_TRIES;">
+  
+  <command>&PRE; &EXhwrf;/exhwrf_merge.py</command>
+  <jobname>hwrf_merge_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&PE;</queue>
+  &PURE_OPENMP;
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>01:39:00</walltime>
+  <memory></memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_merge.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_merge.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+  &REQUEST_THREADS;
+
+  <dependency>
+    <and>
+      <taskdep task="gsi_d02_E#ENS#"/>
+      <or>
+        <and>
+          <taskdep task="gsi_d03_E#ENS#"/>
+          <metataskdep metatask="meta_gsi_E#ENS#"/>
+        </and>
+        <and>
+          <streq><left>&CONDITIONAL_GSID03;</left><right>YES</right></streq>
+          <taskdep task="bufrprep_E#ENS#"/>
+          <not><datadep><cyclestr>&COMhwrf;/&STORMLABEL;.tdr</cyclestr></datadep></not>
+        </and>
+      </or>
+      <taskdep task="init_GFS_0_E#ENS#"/>
+      <streq><left>&RUN_GSI;</left><right>YES</right></streq>
+      <sh>grep '=YES' <cyclestr>&COMhwrf;/&STORMLABEL;.gsi_status</cyclestr></sh>
+    </and>
+  </dependency>
+
+</task>

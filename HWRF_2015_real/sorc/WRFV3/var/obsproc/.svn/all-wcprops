@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/8427/branches/HWRF/var/obsproc
+END
+namelist.obsproc.3dvar.wrfvar-tut
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/8427/branches/HWRF/var/obsproc/namelist.obsproc.3dvar.wrfvar-tut
+END
+namelist.obsproc.4dvar.wrfvar-tut
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/obsproc/namelist.obsproc.4dvar.wrfvar-tut
+END
+Changes
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/7673/branches/HWRF/var/obsproc/Changes
+END
+README.namelist
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/7673/branches/HWRF/var/obsproc/README.namelist
+END
+no_comment.sed
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/obsproc/no_comment.sed
+END
+obserr.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/7425/branches/HWRF/var/obsproc/obserr.txt
+END
+prepbufr_table_filename
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/prepbufr_table_filename
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/4946/branches/HWRF/var/obsproc/Makefile
+END

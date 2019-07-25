@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/4946/branches/HWRF/external/ioapi_share
+END
+wrf_status_codes.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/external/ioapi_share/wrf_status_codes.h
+END
+wrf_io_flags.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/external/ioapi_share/wrf_io_flags.h
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/external/ioapi_share/makefile
+END

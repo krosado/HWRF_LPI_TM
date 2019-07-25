@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/5750/branches/HWRF/var/da/da_dynamics
+END
+da_uv_to_divergence_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/5750/branches/HWRF/var/da/da_dynamics/da_uv_to_divergence_adj.inc
+END
+da_hydrostaticp_to_rho_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_hydrostaticp_to_rho_adj.inc
+END
+da_balance_cycloterm.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_balance_cycloterm.inc
+END
+da_w_adjustment_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_w_adjustment_lin.inc
+END
+da_balance_geoterm.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_balance_geoterm.inc
+END
+da_balance_cycloterm_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_balance_cycloterm_lin.inc
+END
+da_uv_to_vorticity.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_uv_to_vorticity.inc
+END
+da_balance_equation_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_balance_equation_adj.inc
+END
+da_balance_geoterm_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_balance_geoterm_lin.inc
+END
+da_psichi_to_uv_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_psichi_to_uv_adj.inc
+END
+da_w_adjustment_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_w_adjustment_adj.inc
+END
+da_balance_cycloterm_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_balance_cycloterm_adj.inc
+END
+da_balance_geoterm_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_balance_geoterm_adj.inc
+END
+da_uv_to_divergence.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_uv_to_divergence.inc
+END
+da_hydrostaticp_to_rho_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_hydrostaticp_to_rho_lin.inc
+END
+da_wz_base.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_wz_base.inc
+END
+da_psichi_to_uv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_psichi_to_uv.inc
+END
+da_balance_equation_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_balance_equation_lin.inc
+END
+da_dynamics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/da/da_dynamics/da_dynamics.f90
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/728/branches/HWRF/tools/hwrf_read_indi
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/289/branches/HWRF/tools/hwrf_read_indi/readme.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/289/branches/HWRF/tools/hwrf_read_indi/Makefile
+END
+read_indi_write_all.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/728/branches/HWRF/tools/hwrf_read_indi/read_indi_write_all.f90
+END

@@ -1,0 +1,1187 @@
+========================================================================
+
+   HH      HH WW               WW RRRRRRRR    FFFFFFFF    99999
+   HH      HH  WW             WW  RR     RR   FF         99   99
+   HH      HH   WW           WW   RR      RR  FF         99   99
+   HHHHHHHHHH    WW   WWW   WW    RR    RRR   FFFFF       999999
+   HH      HH    WW  WW WW  WW    RRRRRRR     FF              99
+   HH      HH    WW WW   WW WW    RR    RR    FF    V V  99   99
+   HH      HH     WWW     WWW     RR     RR   FF     V    99999  .0.0
+
+========================================================================
+
+This document overviews the setup and installation of HWRF in the 2015
+NCEP HWRF Operational system, version 9.0.0 of HWRF.  The instructions
+in this document are specifically for the NCEP SPA team and do not
+apply to public or EMC parallel NCEP versions.
+
+1. Overview: Installing HWRF
+1.1. HWRF Fix Files
+1.2. Modules: HWRF Prerequisites
+1.3. Compiling HWRF
+1.4. Installing HWRF Executables
+1.5. Make the system.conf File
+1.6. Auto-Generate the J-Jobs
+1.7. Customization of the HWRF System
+1.7.1. Change Paths
+1.7.2. Add ecflow-client Calls
+1.7.3. The DBN Alerts
+
+2. HWRF System and Jobs
+2.1. HWRF Jobs and Dependencies
+2.2. Overview of ex-scripts
+2.3. Overview of ush
+
+3. Configuring HWRF
+3.3.1. Executables
+3.3.2. Input Files
+3.3.3. Changing Forecast Job Configuration
+3.3.4. Other Important Configuration Options
+3.4. The storm*.holdvars.txt Files
+
+4. Needed ecFlow Client Calls
+4.1. Coupled vs. Uncoupled Forecast Job
+4.2. GSI (FGAT Initialization) vs. No GSI (GFS Initialization)
+4.3. ENSDA
+
+5. Hurricane Setup and DCOM Scripts
+5.1. JTWC Bulletins
+5.2. NHC Storm Files
+5.3. SDM and the "setup_hurricane" Script
+5.4. Reconfiguring "setup_hurricane" for Production
+5.5. The Message Files
+
+========================================================================
+1. Overview: Installing HWRF
+
+The source code of version 9.0.0 of the HWRF system is here on the EMC
+Subversion server:
+
+    https://svnemc.ncep.noaa.gov/projects/hwrf/branches/hwrf.v9.0.0
+
+it can be checked out of the Subversion server via the "svn" command
+if you have access to the EMC Subversion server:
+
+   me@wcoss> cd /my/favorite/directory
+   me@wcoss> svn checkout https://svnemc.ncep.noaa.gov/projects/hwrf/branches/hwrf.v9.0.0
+
+You will need to provide a username and password for the EMC
+Subversion server.  If you do not have access to that server, please
+contact Samuel.Trahan@noaa.gov, Zhan.Zhang@noaa.gov, or Mingjing.Tong@noaa.gov and we will
+provide you with a snapshot of the repository on disk.
+
+------------------------------------------------------------------------
+1.1. HWRF Fix Files
+
+The large HWRF fix files (~4.4 GB) are not stored on Subversion due to
+their size.  Instead, we archive them on tape, and keep a shared copy
+on disk.  You must copy those from disk or tape.  Disk is clearly the
+easier method.  Do this after checking out the hwrf.v9.0.0 source
+code:
+
+  me@wcoss> cd hwrf.v9.0.0
+  me@wcoss> cp -rp /hwrf/noscrub/fix-files/hwrf-20150313-fix/fix .
+
+That should create a local directory "fix" with all HWRF fix files.
+The files will all be read-only.
+
+------------------------------------------------------------------------
+1.2. Modules: HWRF Prerequisites
+
+The HWRF model requires several modules to be loaded before compiling.
+All modules are IBM-installed software in /usrx/local.  We need newer
+versions than the defaults, however.  For your convenience, as
+requested by Steven Earle, we have produced a module you can load,
+which will load the proper software before compiling.  That modulefile
+is inside the hwrf.v9.0.0 repository that you checked out at the top
+of this chapter:
+
+  me@wcoss> cd /path/to/hwrf.v9.0.0
+  me@wcoss> ls -lR modulefiles/
+    modulefiles/:
+    total 0
+    drwxrwsr-x 3 Samuel.Trahan hwrf 512 Apr  6 16:30 HWRF
+
+    modulefiles/HWRF:
+    total 128
+    -rw-rw-r-- 1 Samuel.Trahan hwrf 952 Apr  1 16:45 9.0.0
+
+It is not in your $MODULEPATH, so we have to add it.  We also need to
+do a module purge:
+
+  me@wcoss> module purge
+  me@wcoss> module list
+    No Modulefiles Currently Loaded.
+  me@wcoss> module use /path/to/hwrf.v9.0.0/modulefiles
+  me@wcoss> module load HWRF/9.0.0
+  me@wcoss> module list
+    Currently Loaded Modulefiles:
+      1) ibmpe/1.3.0.8       3) nco/4.4.4           5) NetCDF/4.2/serial
+      2) ics/15.0.1          4) HDF5/1.8.9/serial   6) PNetCDF/1.5.0
+      7) HWRF/9.0.0
+
+------------------------------------------------------------------------
+1.3. Compiling HWRF
+
+Now that you've checked out the HWRF and loaded its prerequisites, we
+need to compile.  
+
+  me@wcoss> module purge
+  me@wcoss> module list
+    No Modulefiles Currently Loaded.
+  me@wcoss> module use /path/to/hwrf.v9.0.0/modulefiles
+  me@wcoss> module load HWRF/9.0.0
+  me@wcoss> module list
+    Currently Loaded Modulefiles:
+      1) ibmpe/1.3.0.8       3) nco/4.4.4           5) NetCDF/4.2/serial
+      2) ics/15.0.1          4) HDF5/1.8.9/serial   6) PNetCDF/1.5.0
+      7) HWRF/9.0.0
+  me@wcoss> cd /path/to/hwrf.v9.0.0/sorc
+  me@wcoss> ./compile.sh
+
+That last command, ./compile.sh, generally takes several hours.  It
+will loop over the directories in sorc/ and also the ../libs
+directory, running many install_(something).scr scripts.
+
+These many installation scripts can each be run independently as well,
+if the need arises.  The process is quite clear if one reads the
+contents of sorc/compile.sh.  For example, the last directory built is
+hwrf_wps.fd:
+
+    sorc/compile.sh:42: cd ../hwrf_wps.fd
+    sorc/compile.sh:43: ./clean -a
+    sorc/compile.sh:44: ./install_wps.scr
+
+rerunning commands on line 43 and 44 inside sorc/hwrf_wps.fd will
+rebuild ONLY the hwrf_wps.fd.
+
+------------------------------------------------------------------------
+1.4. Installing the HWRF Executables
+
+The final step in installation of the HWRF is to copy the executables
+to their destinations in exec.  This can only be done after the
+compilation process (in section 1.3) is complete.  Some of the
+executables have to be renamed in specific ways, so we provided a
+script to do the installation for you:
+
+  me@wcoss> cd /path/to/hwrf.v9.0.0/sorc
+  me@wcoss> ./install.sh
+
+------------------------------------------------------------------------
+1.5. Make the system.conf File
+
+The HWRF is configured through UNIX Conf files, which will be
+discussed in detail in chapter 3.  However, you cannot run at all,
+unless you create the parm/system.conf file.  We have a ready-made
+file for you, parm/system.conf.nco, which should be very close to what
+you need.  Make sure you copy it to parm/system.conf
+
+  me@wcoss> cd /path/to/hwrf.v9.0.0/parm
+  me@wcoss> cp -p system.conf.nco system.conf
+
+------------------------------------------------------------------------
+1.6. Auto-Generate the J-Jobs
+
+The HWRF J-jobs, and NCEP j-jobs in general, are extremely repetative,
+which leads to errors.  Both EMC and NCO have made mistakes in past
+years during the implementation period of making changes to 90% of the
+j-jobs and forgetting the last 10%.  To prevent this in the future, we
+now automatically generate our J-jobs from jobs/JHWRF.in using the
+ush/hwrf_make_jobs.py script.
+
+  me@wcoss> cd /path/to/hwrf.v9.0.0
+  me@wcoss> ush/hwrf_make_jobs.py
+  me@wcoss> ls jobs/JHWRF_*
+    jobs/JHWRF_BUFRPREP      jobs/JHWRF_GSI_POST    jobs/JHWRF_POST
+    jobs/JHWRF_ENSDA         jobs/JHWRF_INIT        jobs/JHWRF_PRODUCTS
+    jobs/JHWRF_ENSDA_OUTPUT  jobs/JHWRF_LAUNCH      jobs/JHWRF_RELOCATE
+    jobs/JHWRF_ENSDA_PRE     jobs/JHWRF_MERGE       jobs/JHWRF_UNPOST
+    jobs/JHWRF_FORECAST      jobs/JHWRF_OCEAN_INIT
+    jobs/JHWRF_GSI           jobs/JHWRF_OUTPUT
+
+------------------------------------------------------------------------
+1.7. Customization of the HWRF System
+
+At this point, the HWRF is installed, but it may need to be customized
+to meet NCO's needs, either in the prod version, or to run tests.
+
+1.7.1. Change Paths
+
+The configuration files may need customization in order for the HWRF
+to use the file paths you desire.  Generally this can be done by
+setting the below environment variables.  Make sure the variables are
+consistent among all jobs.  For more complicated path changes, look in
+Chapter 3.
+
+   $DATA - temporary area in which to run.  Each storm needs its own.
+   $stormlabel - one of: storm1, storm2, storm3, ... storm7
+   $PYTHONPATH - Python library path, which must include the HWRF ush/
+   $HWRF_VERSION - should be "9.0.0"
+   $COMOUT - HWRF output COM directory (/com2/hwrf/prod/hwrf.2015091818)
+   $HISTDATA - prior cycle's COM directory (/com2/hwrf/prod/hwrf.2015091812)
+   $envir - para, prod or test
+   $utilexec - /nwprod/util/exec, used to find mpiserial
+   $WGRIB, $CNVGRIB, $GRBINDEX - from "module load grib_util"
+   $COMINGFS - where to find GFS (/com/gfs/prod)
+   $COMINGDAS - where to find GDAS (/com/gfs/prod)
+   $COMINARCH - where to find syndat_tcvitals (/com/arch/prod)
+   $mesagdir - where to find message1 through message7 and nstorms
+                 in 2014, that was /com/hur/prod/inpdata
+                 but for HWRF in 2015, it will be /com/hwrf/prod/inpdata
+   $COMTPC - where to find loop current (/com/nhc/test/storm-data/ncep)
+
+1.7.2. Add ecflow-client Calls
+
+The jobs/JHWRF* files should match what is needed by NCO, except for
+the lack of ecflow-client calls.  However, you may wish to set extra
+environment variables.  Make sure the existing ones are not removed,
+and make sure the modules are not changed.  If you load the wrong
+modules, the HWRF will fail.  If the variables we've set are not set,
+HWRF will fail.
+
+Read chapter 4 for the list of ecflow-client calls needed for:
+
+  - JHWRF_OCEAN_INIT to cancel the coupled or uncoupled forecast
+  - JHWRF_LAUNCH to cancel many jobs if GSI is disabled
+  - JHWRF_ENSDA_PRE to cancel many jobs if TDR is unavailable
+
+1.7.3. The DBN_Alerts
+
+The DBN alerts are generated by the ush/hwrf_alerts.py Python module.
+We have added the alerts for the new HWRF global 0.25 degree grid.
+All alerts for prior years are still present, as is the custom
+delivery of track files to NHC, also found in that file.
+
+When it comes time to test the DBN alerts, please contact Sam Trahan.
+
+========================================================================
+========================================================================
+2. HWRF Scripting System
+
+First, an overview of this system and its technical requirements.
+
+The HWRF system is the first end-to-end Python HWRF system.  Last year
+(HWRF 8.0 and 8.1), we had a hybrid ksh-Python system: the
+post-processing was Python and the rest was ksh.  This year, all ush/
+and scripts/ files are Python.
+
+The J-Jobs (jobs/JHWRF*) are still ksh due to a limitation of the
+"module" command and some parts of the NCEP suite.  Our parallel and
+retrospective systems do NOT use these J-Jobs at all - we have written
+them just for the NCO SPA team to use, to easily plug our system into
+ecFlow.  Our automation systems call the scripts/ex*py files directly.
+The purpose of thoe J-Jobs scripts are to:
+
+1. Provide the SPA with a reference job card, at the top of each J-Job
+2. Inform the SPA of dependencies, in comments at the top of J-Jobs
+3. Purge and load modules
+4. Load environment variables from the $COMhwrf/$stormlabel.holdvars.txt
+5. Load per-job environment variables as needed
+6. Decide which "python" executable to use.
+7. Pass control to the scripts/ex*.py 
+8. Inform ecFlow if the ex-script failed.
+
+The files in the jobs/ directory perform all of those actions, and
+were paintstakingly compared to the process run by our automation
+system.  They have also been tested thuroughly by the jobs/runjob.sh
+script, which manually runs the jobs, with environment variables set
+how nwprod sets them.  In addition, the SPA may want to add additional
+environment variables, or move the module load commands into separate
+ecFlow scripts.  The scripts should run without that though.  However,
+the SPA must make sure the environment variables still match what is
+expected by the underlying configuration.
+
+Modification of this system to match operational requirements is the
+subject of the rest of this document.
+
+------------------------------------------------------------------------
+2.1. HWRF Jobs, Dependencies and Configuration
+
+First off, we refer you to the PDF or ODP document with tremendous
+detail about the jobs and dependencies.  The graphical workflow
+displayed there does a better job than one can do in text.  
+
+The rest of this chapter assumes you have read that document.
+
+We would like to point out one job that is critical to understanding
+the rest of this document.  That is the new JHWRF_LAUNCH job.  There
+is one of those jobs per storm, and they replace the JHWRF_PRE_MASTER
+and JHWRF_PRE_ATMOS jobs.  Their main purpose is to create the
+configuration files:
+
+    $COMhwrf/$stormlabel.conf
+    $COMhwrf/$stormlabel.holdvars.txt
+
+which would look like:
+
+    /com2/hwrf/prod/hwrf.2015081318/storm7.conf
+    /com2/hwrf/prod/hwrf.2015081318/storm7.holdvars.txt
+
+The .holdvars.txt files contain the critical variables needed by the
+J-Jobs as described the previous section.  The .conf file is a UNIX
+Conf format file that contains extensive configuration information
+that can be used to customize any aspect of the Python system.
+
+There are a number of configuration files that control the actions of
+the Python system.  The big four are the following:
+
+  parm/hwrf_input.conf - where to get input files
+  parm/hwrf.conf - more detailed configuration, like timesteps and grid sizes
+  parm/hwrf_basic.conf - turn on and off various parts of the HWRF system
+  parm/system.conf - where to run HWRF and other customizations.
+
+These are only used for certain storms:
+
+  parm/hwrf_JTWC.conf - additional configuration for JTWC storms
+  parm/hwrf_EP.conf - configuration for North East Pacific NHC storms
+  parm/hwrf_CP.conf - configuration for North Central Pacific NHC storms
+
+Those files will be combined into a $stormlabel.conf file in each
+storm's directory as described above, and that conf file is the only
+one read by any later jobs.  
+
+These configuration files will be discussed in great detail in Chapter 3.
+
+------------------------------------------------------------------------
+2.2. Overview of Python Scripting System
+
+Before going into the system's details, it is importing to note that
+the Python scripting system is pretty solid and configurable.  The
+files in ush/ should not require any modification by the SPA team with
+the exception of the ush/hwrf_alerts.py (DBN alerts).  Nearly any
+configuration can done via parm/*.conf files, as described in the
+previous section.
+
+The scripts follow the usual NCEP three tier structure, but with a
+three-tier tweak as ush is split into two tiers:
+
+  jobs/JHWRF* - loads modules, sets up environment, starts ex-scripts,
+                communicates with ecflow to cancel future jobs
+  scripts/ex*py - high-level logic
+  ush/hwrf_expt.py - a Python object structure that describes the
+      entire HWRF system
+  ush/hwrf/, ush/produtil, ush/pom/ - Python packages that implement
+      the low-level logic
+        ush/hwrf - HWRF system
+        ush/pom - the Princeton Ocean Model, which we couple to
+        ush/produtil - low level production logic like dbn alerts,
+           safe file copying, and signal handling
+
+Lastly, there are a few more files specific to WCOSS or NCO:
+
+  ush/hwrf_wcoss.py - sets environment variables specific to WCOSS
+  ush/hwrf_alerts.py - DBN alerts and NHC track delivery (NCO only)
+  ush/setup_hurricane - run by the SDM to decide which storms to run
+
+It is likely that the SPA will need to change the ush/hwrf_alerts.py.
+If the SPA wishes to experiment with different processor
+configurations (which I discourage) then ush/hwrf_wcoss.py must be
+modified as well.  This will be discussed in detail in Chapter 3.
+
+------------------------------------------------------------------------
+2.3. Overview of ex-scripts
+
+The system has many ex-scripts in the usual places, with names
+identical to the J-Jobs, but lower-case, as is the NCEP standard:
+  scripts/exhwrf_launch.py
+  scripts/exhwrf_ocean_init.py
+  ... and so on ...
+
+Most of these goes through a similar process:
+  import produtil.setup, hwrf_expt
+  from produtil.log import jlogger
+  produtil.setup.setup()
+  try:
+    jlogger.info("my job is now starting")
+    hwrf_expt.init_module()
+    ( ... pass control to hwrf_expt.* objects ... )
+    jlogger.info("my job succeeded")
+  except BaseException as e:
+    jlogger.error("my job failed: %s"%(str(e),),exc_info=True)
+    raise
+
+Here is what each critical bit does:
+
+  import produtil.setup, hwrf_expt
+     - makes these two modules available to the script.  Will fail
+       if the $PYTHONPATH is not set correctly.
+  from produtil.log import jlogger
+     - the jlogger is an object that can log to the NCEP-wide jlogfile
+  produtil.setup.setup()
+     - the setup() function in produtil.setup initializes the produtil
+       Python package.  This initializes dbn alerts; logging to stdout, 
+       stderr and the jlogfile; limits the Python stack size; and sets
+       up signal handlers; among other things.
+  try...except
+     - the try...except block is an exception handling block.  Any
+       exception raised between "try" and "except" will be handled by
+       the indented code after the "except"
+  jlogger.info("my job is now starting")
+     - sends a message to the jlogfile explaining that the job is
+       starting.  The actual message is a bit more informative than
+       the one in this example.
+  hwrf_expt.init_module()
+     - creates the object structure that defines the entire HWRF
+       workflow.  Some jobs may pass arguments to init_module to
+       define only part of the workflow.  If there is an error in
+       the workflow configuration, this may raise an exception,
+       aborting the job (such as if the com directory is missing)
+  ( ... pass control to hwrf_expt.* objects ... )
+     - After the hwrf_expt module is initialized, the ex-script will
+       call the .run() method of various object created in hwrf_expt.
+       That will do the actual work of the HWRF system.  If something
+       goes wrong, an exception is raised, and is caught by the
+       except block later on.   
+  jlogger.info("my job succeeded")
+     - Every ex-script prints a message stating that its job has
+       succeeded, if it did succeed.  The actual message is more
+       informative than the one displayed here.  We will not get
+       to this line if the earlier lines raised an exception.
+  except BaseException as e:
+     - Any exception raised is caught.  That leads to this code
+       being executed:
+
+      jlogger.error("my job failed: %s"%(str(e),),exc_info=True)
+         - We print detailed information about the exception
+           (exc_info=True) to the stdout and stderr, but only print
+           short information to the jlogfile.  The shortness of
+           the jlogfile message is due to some magic in produtil.log
+
+           Also, you may see jlogger.critical or jlogger.warning
+           instead, depending on the severity of the failure of this
+           job.  The workflow can continue without certain aspects of
+           the HWRF system, such as ocean coupling or ENSDA.
+      raise
+         - The exception is re-raised to ensure the job exits with
+           non-zero status.
+
+------------------------------------------------------------------------
+2.4. Overview of ush
+
+The top-level ush files are as follows:
+
+  setup_hurricane - a Python script run manually by the NOAA Senior
+    Duty Meteorologist (SDM) to create the input files for the HWRF
+    and GFDL, and select which storms are to be run.  This replaces
+    /nwprod/ush/setup_hurricane
+
+  hwrf_wcoss.py - this is a module, not a script.  It sets environment
+    variables to speed up the forecast and GSI jobs.  No other jobs
+    use it.
+
+  hwrf_expt.py - this is a module, not a script.  It contains the HWRF
+    system, described as an object structure.  The module is initially
+    empty, and is populated by an hwrf_expt.init_module() call, done
+    by every job in the HWRF system at least once.  One can speed the
+    module creation by sending arguments to init_module to tell it not
+    to create some parts of the module.  For example, the ENSDA jobs
+    don't need the post-processing objects.
+
+  hwrf_alerts.py - this is a module, not a script.  It connects
+    delivery functions (or callable objects) to
+    produtil.datastore.Product objects created throughout the HWRF
+    system.  We implement DBN alerts this way because the SPA only
+    needs to know which Product object matches which output file,
+    rather than having to edit the ush/hwrf/*.py or ush/pom/*.py
+    scripts.  The SPA will probably need to edit this.
+
+  hwrf/*.py - the "hwrf" Python package is the low-level logic of the
+    HWRF system.  These modules know how to run the WRF, GSI, WPS, and
+    everything else, but not the POM.  They require the produtil
+    package to implement lower-level tasks such as file copying,
+    signal handling, database manipulation and other non-modeling
+    tasks.  There are many of these, but I'll mention a few
+    interesting ones:
+      hwrf/config.py, launcher.py - create and read HWRF's storm*.conf
+         file, and validate the HWRF installation before execution.
+      hwrf/gsi.py - runs GSI, delivers output
+      hwrf/gsipost.py - runs the post-processer on GSI inputs and outputs
+      hwrf/wrf.py, wrfbase.py - prepares WRF namelists, can 
+         determine WRF input and output filenames
+      hwrf/fcsttask.py, hwrf/mpipomtc.py - runs the hwrf_wrf,
+         hwrf_real_exe and any coupling components.  This implements
+         the forecast model, ENSDA and parts of the JHWRF_INIT jobs.
+      hwrf/relocate.py - implements the relocation and merge jobs
+      hwrf/init.py - HWRF initialization system abstract definition
+         (both FGAT and non-FGAT, includes GSI, relocate and merge)
+         This exists just to simplify the hwrf_expt.py.
+      hwrf/ensda.py - ENSDA implementation, including ensda_pre job
+      hwrf/copywrf.py - WRF output file delivery, including NetCDF4
+         compression via ncks (NetCDF Operators, "nco" module)
+      hwrf/post.py, regrib.py, gribtask.py - post-processing
+      hwrf/storminfo.py, revital.py - tcvitals or message processing
+      hwrf/prep.py - prep_hybrid execution, for preparing GFS spectral 
+         files for input
+      hwrf/nhc_products.py - execution of hwrf_nhc_products program
+         to generate AFOS, HTCF, swath and other custom NHC products
+      hwrf/tracker.py - run the GFDL vortex tracker on HWRF output
+         or pre-processed GFS/GDAS input.  Used by JHWRF_PRODUCTS 
+         and JHWRF_INIT
+
+  pom/*.py - the "pom" Python package knows how to run the Princeton
+    Ocean Model.  The "hwrf" package interfaces with it in the
+    ush/hwrf/mpipomtc.py file (also known as the hwrf.mpipomtc module)
+
+  produtil/*.py - the produtil package has no knowledge of the HWRF or
+    POM; it is model-independent.  It implements critical
+    functionality missing from the Python standard libraries, and
+    works around known bugs in the ancient Python 2.6.6 that we're
+    forced to use on WCOSS.  There are quite a few modules and
+    subpackages in produtil.  I'll only mention a few:
+      produtil/setup.py - intialize the produtil package      
+      produtil/cluster.py - cluster-specific information (Tide? Gyre? Prod?)
+      produtil/batchsystem.py - batch system information (job ID, etc.)
+      produtil/run.py - runs serial, MPI, mpiserial and OpenMP programs.
+         Knows how to do this on multiple clusters, including WCOSS.
+         Works around some bugs in the Python subprocess module.
+         (Never use the RedHat Python 2.6.6 subprocess module!!)
+      prog, mpiprog, mpi_impl/ - implementation of produtil/run.py
+      produtil/sigsafety.py - signal handling
+      produtil/locking.py - file locking, with knowledge of signals
+      produtil/rstprod.py - rstprod handling on various clusters
+      produtil/datastore.py - database manipulation, inter-job 
+         communication (suggestion from Simon last year), product
+         delivery and waiting for products from other jobs
+      produtil/dbnalert.py - DBN alerts
+      produtil/log.py - Improved logging, a wrapper around the Python
+         "logging" module.  Reproduces postmsg exactly, in Python.
+      produtil/fileop.py - File operations, with logging.
+      produtil/rusage.py - resource limits and resource querying
+         Equivalent of bash "limit" and "/usr/bin/time --verbose"
+         routines but with more functionality and fewer bugs.
+      produtil/cd.py - changing and creating directories, including
+         temporary directories.  Connected to signal safety routines
+         to work around GPFS, Panasas and Lustre bugs.
+
+========================================================================
+3. Configuring HWRF
+
+As discussed in chapters 1 and 2, the HWRF system is largely
+configured through the *.conf files found in the parm/ directory.  The
+first job in the workflow, the JHWRF_LAUNCH, creates the storm*.conf
+files in the COM directory, which all later jobs read in.  The
+parm/system.conf is intended to let the SPA customize the HWRF system
+without having to edit many different files.
+
+This chapter overviews the major aspects of each configuration
+section, and highlights the sections NCO will probably want to change.
+The J-Jobs are set up so they should set up the sections correctly
+already.  Unfortunately, we cannot run ecFlow, so we have not tested
+these J-Jobs in action as the SPA team can do that.  However, we have
+confirmed that the j-jobs work when run manually in the correct order,
+and do call the ecflow_client at appropriate times.
+
+Note that each storm has its own configuration file, storm*.conf
+(storm1.conf, storm2.conf, ...)  This is necessary because the
+configuration is slightly different from storm to storm.  This is in
+part because the domain and storm are different, and in part because
+different parts of the initialization are disabled for different
+basins and forecasting centers (NHC/JTWC).
+
+In some cases, the SPA will have to edit other files if certain
+configuration options are changed, such as WRF processor counts or GFS
+input locations.  When that is so, it is explained.
+
+------------------------------------------------------------------------
+3.1. HWRF Configuration Files
+
+These are all of the input *.conf files and their purposes.  It is
+listed in the order the files are read.  Later conf files' values will
+override earlier ones.
+
+  parm/hwrf_input.conf
+     - input file paths.  Where do we find GFS, GFS ENKF, GDAS, and
+       NHC loop current files?  
+  parm/hwrf.conf
+     - the gory details of configuration.  Sets domain sizes, timesteps,
+       physics options, how long to wait for input, and everything else
+       imaginable.
+  parm/hwrf_holdvars.conf
+     - used only to set variables for the storm*.holdvars.txt; serves
+       no other purpose.
+  parm/hwrf_basic.conf
+     - used by all storms.  This specifies simple, high-level options like
+       highest-level file paths, and which options are enabled by default.
+  parm/system.conf
+     - Sets system-specific file paths and processor counts.  Note that
+       this file does not exist in the repository.  Instead, ...
+
+Note that there is no parm/system.conf in the repository.  Instead,
+you copy this one:
+
+  cp parm/system.conf.nco parm/system.conf
+
+and edit as needed.  Since this is the last file read in among the
+default files, it lets you override all prior files' options.
+
+These files are only read in for specific storms.  They are read in
+after the system.conf, but only reconfigure ocean, GSI, and
+science-related namelist values.  They will not modify input or output
+paths.  This is already implemented in the JHWRF_LAUNCH:
+
+  hwrf_JTWC.conf
+    - used if the forecast center (first four characters of the
+      message) are JTWC Disables ocean coupling and GSI, switches to
+      43 levels with a different sigma-pressure transition level, and
+      uses a smaller timestep.  
+  hwrf_EP.conf
+    - used for NHC storms in the North East Pacific.  Turns off GSI
+  hwrf_CP.conf
+    - used for NHC storms in the North Central Pacific (actually, CPHC
+      storms, but the message file will say "NHC").  Turns off GSI and
+      ocean coupling.
+
+There is no hwrf_AL.conf because the default configuration is for AL
+storms.  The extremely rare South Atlantic (SL, LS, or Q basin ID)
+storms will use the hwrf_JTWC.conf, even if they come from NHC.
+
+------------------------------------------------------------------------
+3.2. HWRF Configuration Sections
+
+Within each of the above mentioned configuration files, there are many
+configuration sections.  Some of these sections will appear in
+multiple files; if a configuration option is specified twice, the
+later occurrance wqill override it.  There are only a few sections of
+interest to the SPA team.  The rest are mainly for scientific
+configuration of the system and will not be discussed here.
+
+[config] - sets global config options.  One comes from an environment
+variable:
+  HWRF_VERSION = $HWRF_VERSION, should be 9.0.0
+
+[dir] - sets file paths (some are files, not directories).  The run
+  locations assume certain environment variables are set:
+     $DATA - directory in which to run.  Set by JHWRF_LAUNCH, 
+        unless it is already set by ecFlow.
+     $COMOUT - COM output location for current cycle
+     $HISTDATA - COM output location for previous cycle
+     $utilscript - /nwprod/util/ush, which we never use for anything
+         we thought you may still need it for ecflow or dbn_alert
+
+[exe] - sets executable locations.  The system.conf.nco assumes the
+  following environment variables are set:
+     $envir - test, prod or para, used to find HWRF executables
+     $HWRF_VERSION - 9.0.0, used to find HWRF executables
+     $utilexec - used to find /nwprod/util/exec/mpiserial
+  These come from "module load grib_util":
+     $WGRIB - used to find wgrib
+     $CNVGRIB - used to find cnvgrib
+     $GRBINDEX - used to find grbindex
+
+[sanity] - configures sanity checks run by the JHWRF_LAUNCH
+
+[holdvars] - sets variables used to make storm*.holdvars.txt from the
+    parm/hwrf_holdvars.txt.  Described in detail in section 3.4.
+
+[runwrf] - used to configure the actual forecast job's WRF processor
+    configuration.  Make sure the LSB_PJL_TASK_GEOMETRY in
+    ush/hwrf_wcoss.py matches.
+
+[wcoss_fcst_nco] - input locations which assume certain environment
+    variables are set, as requested by NCO in the past.  Note that
+    com_canned, para or other locations are okay, as long as the data
+    is all there.  The relevant input variables are:
+       $COMINGFS = /com/gfs/prod
+       $COMINARCH = /com/arch/prod
+       $mesagdir = /com/hur/prod/inpdata in 2014, BUT
+             it will be /com2/hwrf/prod/inpdata in 2015
+
+[gfs_2014_naming] - how files are named in the GFS 2015 COM
+    directories.  We call it "2014" for historical reasons - the model
+    was delayed a couple weeks.
+
+[prod_loop_naming] - how NHC names their loop current data
+
+========================================================================
+3.3. Major Configuration Options
+
+This section details the main configuration options in the *.conf
+files the SPA may be interested in.  We also discuss any other
+associated files that need to be changed, if *.conf options are
+changed.  First, we remind you that the *.conf files are read in a
+specific order, and later files override earlier ones.  The last file
+read in is the system.conf file (copied from system.conf.nco) and so
+any production-specific configuration should be done in that file.
+That will prevent any accidental clobbering of the options by later
+files.
+
+------------------------------------------------------------------------
+3.3.1. Executables
+
+Nearly all executables used by the HWRF are compiled from the HWRF
+sorc directory.  The HWRF scripts do not use system programs like ls,
+cp, or chmod; instead, the produtil package re-implements those in
+pure Python.  However, there are a few /usrx/local or /nwprod
+programs, and we need to make sure the HWRF knows how to find them.
+That is done by the [exe] section of the configuration files.  The
+system.conf.nco overrides these to use NCO locations:
+
+[exe]
+wgrib={ENV[WGRIB]}
+cnvgrib={ENV[CNVGRIB]}
+grbindex={ENV[GRBINDEX]}
+mpiserial={utilexec}/mpiserial
+
+All other executables are set in the parm/hwrf.conf and match the
+installation locations set by sorc/install.sh.  We request that you do
+not change those, as it will complicate troubleshooting.
+
+------------------------------------------------------------------------
+3.3.2. Input Files
+
+Input file sources are set in two locations.  The first is the
+[config] section in system.conf:
+
+######################################## FROM parm/system.conf.nco
+[config]
+input_sources=wcoss_fcst_nco
+fcst_catalog=wcoss_fcst_nco
+######################################## END CODE
+
+That tells the HWRF system to read the [wcoss_fcst_nco] section for
+input data.  Specifically, the ush/hwrf/input.py parses this section
+from parm/hwrf_input.conf:
+
+######################################## FROM parm/hwrf_input.conf
+[wcoss_fcst_nco]
+# WCOSS: Input locations for the production HWRF
+gfs={ENV[COMINGFS]}/gfs.{aYMD}/
+gdas1={ENV[COMINGDAS]}/gdas.{aYMD}/
+enkf={ENV[COMINGFS]}/enkf.{aYMD}/{aHH}/
+messages={ENV[mesagdir]}/
+syndatdir={ENV[COMINARCH]}
+loopdata={ENV[COMTPC]}
+@inc=gfs2014_naming,prod_loop_naming
+######################################## END CODE
+
+Note that we expect certain variables to be set.  Here they are and
+their 2014 HWRF values:
+
+  $COMINGFS=/com/gfs/prod
+  $COMINGDAS=/com/gfs/prod
+  $COMINARCH=/com/arch/prod/syndat
+  $mesagdir=/com/hur/prod/inpdata
+  $COMTPC=/com/nhc/test/storm-data/ncep
+
+The JHWRF_LAUNCH sets those variables.  Note that the $mesagdir will
+be changing due to the separate GFDL and HWRF message files.  Some
+other variables may change when the GFS is upgraded later this year.
+
+The @inc line in [wcoss_fcst_nco] tells the ush/hwrf/input.py to read
+the [gfs2014_naming] and [prod_loop_naming] sections for names of
+specific files.  They are correct for the current version of GFS.  You
+probably won't need to change those until the GFS upgrade later this
+year.  They are both in the hwrf_input.conf, just below the
+[wcoss_fcst_nco] section.
+
+  [gfs2014_naming] - names of 2015 GFS, GDAS and GFS ENKF com files
+  [prod_loop_naming] - names of files in $COMTPC
+
+If you look in one of those sections, you'll see lines like this:
+
+######################################## FROM parm/hwrf_input.conf
+gfs_sf            = gfs.t{aHH}z.sf{fahr:02d}
+gfs_sfcanl        = gfs.t{aHH}z.sfcanl
+...
+######################################## END CODE
+
+The name on the left (eg.: gfs_sf) is the "item=" value requested by
+the Python code.  See the ush/hwrf/gsi.py inputiter function for an
+example.  The name on the right (eg.: gfs.t{aHH}z.sf{fahr:02d}) is the
+name of the file in the GFS com directory.  Stuff in set braces {} are
+substituted with corresponding values.  For example, {aHH} is the
+two-digit analysis hour and {fahr:02d} is the forecast hour
+zero-padded to two digits.
+
+------------------------------------------------------------------------
+3.3.3. Changing Forecast Job Configuration
+
+It is unlikely that you will get any more significant speedup out of
+manipulating the forecast job configuration.  Carolyn Pasti (IBM),
+Zhan Zhang (EMC) and Sam Trahan (EMC) experimented with the processor
+count, task geometry, environment variables, and source code quite a
+lot already and managed to speed up the forecast from 160 minutes down
+to about 94-99.  However, we would like to make sure the SPA knows how
+to make changes to this configuration, so we describe how in this
+section.  If you do find a better configuration, congradulations!
+Please communicate it back to EMC so we can use it in our own runs.
+
+First off, note that there are two forecast jobs: one coupled, one
+uncoupled.  Only one of those is run for each workflow, and the
+ocean_init job decides which.  The uncoupled job only runs the WRF
+compute processors and WRF I/O servers.  The coupled job also runs the
+coupler and ocean model.  The ordering of the MPI ranks is as follows:
+
+  Coupled Forecast MPI Distribution:
+    0-3 = hwrf_wm3c (coupler)
+    4-12 = hwrf_ocean_fcst (POM ocean model)
+    13-492 = hwrf_wrf (WRF compute grid)
+    493-508 = hwrf_wrf (WRF I/O servers)
+
+In the uncoupled forecast, skip the hwrf_wm3c and hwrf_ocean_fcst, and
+subtract 13 from the other MPI ranks:
+
+  Uncoupled Forecast MPI Distribution:
+    0-489 = hwrf_wrf (WRF compute grid)
+    490-495 = hwrf_wrf (WRF I/O servers)
+
+The LSB_PJL_TASK_GEOMETRY is not a simple round-robin configuration.
+Instead, we group WRF compute processes together in 4x6 grids to
+reduce communication between nodes.  This is done in
+ush/hwrf_wcoss.py, in the fcst_wcoss2 function (fcst_wcoss1 is for
+Phase 1 WCOSS).  Note that there are two settings in there in an "if
+coupled" block: the first is for the coupled forecasts, and the second
+is for uncoupled.
+
+After you change that, you need to modify the parm/system.conf.  These
+variables need to be changed in [holdvars] and [runwrf]:
+
+[holdvars]
+NPROCS_A_NOIO=480
+NPROCS_C=4
+
+[runwrf]
+wm3c_ranks=4
+nio_groups=4
+nio_tasks_per_group=4
+nproc_x=16
+nproc_y=30
+wrf_ranks=496
+
+The wm3c_ranks and NPROCS_C are the number of coupler (hwrf_wm3c)
+ranks in the coupled forecast job.  The nproc_x and nproc_y are the
+dimensions of the WRF compute grid, while nio_tasks_per_group is the
+number of I/O servers in each group in the Y direction.  The
+nio_groups is the number of I/O server groups, each of which can
+handle one file at a time.  Make sure that:
+
+   [runwrf] wrf_ranks=nproc_x*nproc_y+nio_groups*nio_tasks_per_group
+   [holdvars] NPROCS_A_NOIO=nproc_x*nproc_y
+   [holdvars] NPROCS_C = [runwrf] wm3c_ranks
+   nproc_x < 142/7
+   nproc_y < 274/7
+
+The wm3c_ranks is the number of coupler (hwrf_wm3c) ranks, which must
+be at least 1.  You cannot change the number of ocean model ranks.  It
+has to be 9.
+
+------------------------------------------------------------------------
+3.3.4. Other Important Configuration Options
+
+[dir]
+WORKhwrf={ENV[DATA]}
+  - temporary area in which to run the HWRF.  Requires an environment
+    variable from ecFlow or JHWRF_LAUNCH: $DATA
+
+[config]
+EXPT=hwrf.v{HWRF_VERSION}
+[dir]
+CDSAVE=/nw{ENV[envir]}
+HOMEhwrf={CDSAVE}/{EXPT}
+  - The HOMEhwrf in [dir] is the parent of the HWRF scripts, parm,
+    ush, etc.  Note that four variables are involved: [config] EXPT,
+    HWRF_VERSION; [dir] CDSAVE and HOMEhwrf.  It all results in
+    /nw$envir/hwrf.v$HWRF_VERSION
+
+[config]
+scrub=yes
+#scrub=no
+  - Set scrub=no to disable nearly all scrubbing of temp areas.
+    Setting scrub=yes (the default) will scrub most data areas except
+    those EMC thinks we'll need for debugging.
+
+[config]
+datastore={WORKhwrf}/hwrf_state.sqlite3
+  - The HWRF system communicates between jobs with a sqlite3 database
+    file, specified by this option
+
+[config]
+CONFhwrf={com}/{stormlabel}.conf
+  - The storm*.conf file in the COM directory, created by the JHWRF_LAUNCH
+    job.
+
+[config]
+stormlabel=storm{storm_num}
+  - which storm is being run? storm1, storm2, storm3, ..., storm7?
+
+[config]
+cycling_interval=6.0
+com={ENV[COMOUT]}
+oldcom={ENV[HISTDATA]}
+  - com is the current cycle's com directory, while oldcom is the 
+    previous cycle's com directory, cycling_interval hours ago.
+    Do not change cycling_interval.
+
+[dir]
+ocstatus={stormlabel}.ocean_status
+ocstatus2=ocean_status.{vit[stormname]}{vit[stnum]:02d}{vit[basin1lc]}.{cycle}
+  - the ocean status files, used to indicate whether ocean coupling
+    should be used.  The two are identical.
+
+[dir]
+gsistatus={stormlabel}.gsi_status
+gsistatus2=gsi_status.{vit[stormname]}{vit[stnum]:02d}{vit[basin1lc]}.{cycle}
+  - the GSI status files, used to describe the GSI configuration, 
+    and whether GSI is to be used
+
+------------------------------------------------------------------------
+3.4. The storm*.holdvars.txt Files
+
+This file contains a number of environment variables that are needed
+by all jobs.  It is created from parm/hwrf_holdvars.txt, using
+variables set by parm/hwrf_holdvars.conf and other conf files, in the
+JHWRF_LAUNCH job.  All later jobs in the workflow read the file before
+passing control to Python.  
+
+========================================================================
+========================================================================
+4. Needed ecFlow Client Calls
+
+There are several parts of the HWRF system that need to instruct
+ecFlow to skip over some HWRF jobs.  Please read the 2015 Operational
+HWRF Workflow Document to see a diagramatic description of the HWRF
+workflow before reading this chapter.  Otherwise, this will make
+little sense.
+
+These completion marks can be set via calls to the ecflow_client
+program, inserted into the jobs/JHWRF* scripts.  We advise against
+placing it in the ush or scripts level as that will complicate
+maintanence for both EMC and NCO.  However, if you prefer to put it in
+the ush or scripts level, then we request that you use the ecFlow
+Python interface to do so.
+
+We split this chapter into one section per job that needs to make
+ecflow_client completion marks.
+
+------------------------------------------------------------------------
+4.1. Coupled vs. Uncoupled Forecast Job
+
+The JHWRF_OCEAN_INIT determines whether the HWRF should be coupled or
+uncoupled.  Uncoupled storms should only run the uncoupled forecast
+job, while coupled storms should only run the coupled forecast job.
+We cannot express both jobs as one since the job card (processor
+count) is different between the two.
+
+This requires the following logic in ecFlow:
+
+   If $COMOUT/$stormlabel.ocean_status contains RUN_COUPLED=YES:
+     skip the uncoupled forecast job
+   else if $COMOUT/$stormlabel.ocean_status contains RUN_COUPLED=NO:
+     skip the coupled forecast job
+   else:
+     # Should never get here due to failsafes in python code.
+     # Just in case though...
+     workflow has failed
+     fallback is to skip the coupled forecast job and run uncoupled
+
+------------------------------------------------------------------------
+4.2. GSI (FGAT Initialization) vs. No GSI (GFS Initialization)
+
+A large portion of the workflow is skipped if GSI is disabled, where
+as one job is skipped if GSI is enabled.  This determination is made
+in the JHWRF_LAUNCH job after calling exhwrf_launch.py.  It is not
+critical to skip these jobs if GSI is disabled since the jobs are
+smart enough to exit without doing anything if GSI is disabled.
+However, it is advisable to skip the jobs as it will save significant
+runtime:
+
+  If $RUN_GSI == YES in storm1.holdvars.txt, then:
+    skip the JHWRF_RELOCATE $MODEL=GFS job
+  else:
+    skip all three JHWRF_RELOCATE $MODEL=GDAS jobs
+    skip the JHWRF_MERGE
+    skip both JHWRF_GSI jobs
+    skip all JHWRF_ENSDA jobs
+    skip the JHWRF_ENSDA_PRE job
+    skip the JHWRF_ENSDA_OUTPUT job
+    skip the JHWRF_BUFRPREP job
+
+------------------------------------------------------------------------
+4.3. JHWRF_ENSDA_PRE and JHWRF_ENSDA
+
+There is a job, JHWRF_ENSDA_PRE, whose sole purpose is to decide if
+the JHWRF_ENSDA and JHWRF_ENSDA_OUTPUT jobs are to be run.  It is run
+once the AOC sends a flag file to NCEP, and reads that file to
+determine if the current storm is going to have a NOAA aircraft flying
+through it, collecting Tail Doppler Radar (TDR) data.  The ENSDA
+represents a huge amount of forecast jobs, so we need to make sure we
+disable it if it is supposed to be disabled.  The TDR collection
+represents a huge investment of people and money, so we need to make
+sure we run the ENSDA if it supposed to be run.  This determination is
+made at the bottom of the JHWRF_ENSDA_PRE.
+
+It is absolutely critical to skip the JHWRF_ENSDA jobs if they are not
+in use.  There are 280 of them, they each take 2 nodes for 30 minutes,
+and they will (intentionally) continue running if TDR is not present.
+That is 280 core-hours wasted, every six hours, if you do not add the
+ecflow_client calls to skip these jobs.
+
+  If $COMOUT/$stormlabel.run_ensda contains "RUN_ENSDA=YES":
+    it is okay to run the JHWRF_ENSDA and JHWRF_ENSDA_OUTPUT jobs
+  Else if $COMOUT/$stormlabel.run_ensda contains "RUN_ENSDA=NO":
+    skip all JHWRF_ENSDA and JHWRF_ENSDA_OUTPUT jobs
+  Else:
+    # should never get here due to failsafes in Python scripts
+    scripts failed
+    Fallback is to skip all JHWRF_ENSDA and JHWRF_ENSDA_OUTPUT jobs
+
+========================================================================
+========================================================================
+5. Hurricane Setup and DCOM Scripts
+
+Before the HWRF or GFDL models can even run, the NOAA Senior Duty
+Meteorologist has to choose which storms to run, and generate the
+input hurricane message files.  That process requires inputs from the
+US National Hurricane Center (NHC) and US Joint Typhoon Warning Center
+(JTWC) storm files.  This chapter discusses the process surrounding
+that, and the final message files that are input to HWRF and GFDL.
+
+The process is as follows:
+
+~T+1:00-1:30 - JTWC generates bulletin files (sec. 5.1)
+~T+1:00-1:30 - NCEP dbnet runs the getjtbul.py script (sec. 5.1)
+               to generate JTWC storm files
+before T+2:45 - NHC generates NHC storm files
+before T+2:45 - SDM and NHC talk on the phone
+before T+2:45 - SDM runs the setup_hurricane script
+about T+2:45 - HWRF starts
+about T+3:30 - GFDL starts
+by T+6:00 - HWRF and GFDL track files are delivered to NHC and JTWC
+by about T+7:00 - NHC and JTWC prepare next cycle's vitals
+
+------------------------------------------------------------------------
+5.1. JTWC Bulletins
+
+The JTWC sends bulletin files to NCEP, which show up in the /dcom
+directory here:
+
+    /dcom/us007003/$YYYYMMDD/wtxtbul/tropcyc
+
+and consist of a number of bulletins separated by End-of-Text
+(control-C) files.  Each bulletin has a header, which is a single line
+of text beginning with a marker that describes the type of bulletin
+followed by a date and time (DDHHMM).  The bulletins that are relevant
+begin with either "ATXX01 PGTW" or "ATXX01 KNWC".  This is then parsed
+by the getjtbul.py script, located in the HWRF install directory under
+ush/hwrf_getjtbul.py.  
+
+That script generates a directory here:
+
+    /dcom/us007003/$YYYYMMDD/wtxtbul/storm_data
+
+which contains a number of "storm" files: storm1 through (at most)
+storm7.  Each file contains data for one JTWC-requested storm.
+
+Sometimes the bulletins will be missing or corrupted.  In such cases,
+the storm files will be absent and the vitals data will have to come
+from another source.  Unfortunately, as of this writing, JTWC has no
+way to resend the bulletins.
+
+------------------------------------------------------------------------
+5.2. NHC Storm Files
+
+NHC also generates storm files similar to what JTWC generates, but in
+another directory.  Also, unlike JTWC, NHC is able to regenerate these
+files if they contain errors or are missing.  Four times a day, NHC
+and the SDM communicate over phone to verify the files manually before
+the SDM generates the final message files (discussed in sections
+5.3-5.5).  The NHC storm files are here:
+
+    /nhc/save/guidance/storm-data/ncep
+
+There are storm1 through, at most, storm5 files each of which contains
+data for one storm.  Unfortunately, some of the storm files are for
+old cycles, so the setup scripts (sections 5.3-5.5) have to be smart
+enough to ignore them.
+
+------------------------------------------------------------------------
+5.3. SDM and the "setup_hurricane" Script
+
+Four times a day, the NOAA Senior Duty Meteorologist (SDM) runs the
+setup_hurricane script.  This has to happen after the JTWC and NHC
+storm files are available, and has to be complete before the GFDL and
+HWRF jobs are triggered.  
+
+Fortunately, the script is easy to run:
+
+  SDM@WCOSSprod>   setup_hurricane
+
+HOWEVER, the setup_hurricane.conf file must be correctly configured.
+It looks about like this:
+
+[setup_hurricane]
+deliver=yes
+source=stormfiles
+##deliver=no
+##source=tcvitals
+envir={ENV[envir|-test]}
+gfdl_output=/com2/hur/{envir}/inpdata
+hwrf_output=/com2/hur/{envir}/inphwrf
+maxgfdl=5
+maxhwrf=7
+nhc_max_storms=5
+jtwc_max_storms=9
+dcomroot={ENV[DCOMROOT|-/dcom/us007003]}
+nhcdir={ENV[nhcdir|-/nhc/save/guidance/storm-data/ncep]}
+nhc_input={nhcdir}/storm{istorm}
+jtwc_input={dcomroot}/{YMD}/wtxtbul/storm_data/storm{istorm}
+tcvitals={ENV[COMINARCH|-/com/arch/prod/syndat]}/syndat_tcvitals.{year}
+
+There are two variables that are critical to configure:
+
+  deliver=yes or no
+
+If "yes", files will actually be copied to locations specified to the
+gfdl_output and hwrf_output directories.  The other key is:
+
+    source=stormfiles or tcvitals
+
+The "stormfiles" option reads from the operational locations,
+discussed in sections 5.1 and 5.2.  The "tcvitals" option reads the
+archived tcvitals instead, and should only be used for testing.
+
+------------------------------------------------------------------------
+5.4. Reconfiguring "setup_hurricane" for Production
+
+The repository version of setup_hurricane.conf instructs
+setup_hurricane to use the development options, rather than production
+options, to prevent accidental modification of production message
+files:
+
+deliver=no      ; do not generate message files
+source=tcvitals ; read archived tcvitals
+
+clearly that has to be changed.  Specificially,
+
+deliver=yes     ; create message files
+source=stormfiles  ; read JTWC and NHC "storm?" files
+
+Those two changes must be made in parm/setup_hurricane.conf.
+
+------------------------------------------------------------------------
+5.5. The Message Files
+
+The message files generated by the setup_hurricane end up in two
+directories, as configured by the setup_hurricane.conf:
+
+gfdl_output=/com2/hur/{envir}/inpdata
+hwrf_output=/com2/hur/{envir}/inphwrf
+
+The following files are created or modified in each directory every
+time the setup_hurricane is run:
+
+message1 ... message7 - a single line of storm information in the same
+    format as tcvitals, but with the century removed
+
+storms.nhc - all NHC storms from message1...message7
+storms.jtwc - all JTWC storms from message1...message7
+storms.all - the contents of message1...message7, concatenated
+storms.prev - parsed from storms.all, the prior contents of storms.all
+    from before setup_hurricane was run
+
+history1 ... history7 - a history of the contents of message1 throuhg
+    message7.  Each setup_hurricane execution appends to it, for each
+    message index that is in use.
+
+nstorms - the last storm index (number N at the end of messageN) that
+    is in use for this cycle

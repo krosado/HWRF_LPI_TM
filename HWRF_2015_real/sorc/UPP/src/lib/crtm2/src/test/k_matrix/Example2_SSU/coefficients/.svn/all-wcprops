@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/coefficients
+END
+ssu_n06.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/coefficients/ssu_n06.TauCoeff.bin
+END
+CloudCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/coefficients/CloudCoeff.bin
+END
+make.link_data
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/coefficients/make.link_data
+END
+Nalli.EK-PDF.W_W-RefInd.EmisCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/coefficients/Nalli.EK-PDF.W_W-RefInd.EmisCoeff.bin
+END
+ssu_n14.SpcCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/coefficients/ssu_n14.SpcCoeff.bin
+END
+ssu_n06.SpcCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/coefficients/ssu_n06.SpcCoeff.bin
+END
+AerosolCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/coefficients/AerosolCoeff.bin
+END
+ssu_n14.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example2_SSU/coefficients/ssu_n14.TauCoeff.bin
+END

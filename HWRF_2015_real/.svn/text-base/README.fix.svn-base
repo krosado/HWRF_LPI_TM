@@ -1,0 +1,36 @@
+The fix files for the operational HWRF are not in Subversion due to
+their large size.  You must obtain them elsewhere (details below) and
+make one symbolic link.  (The nwport/fix is no longer used.)
+
+    ln -s /path/to/hwrf-20150507-fix/fix/ fix
+
+You can find the fix files on disk on these clusters:
+
+    Jet:    /lfs3/projects/hwrf-data/fix-files/hwrf-20150507-fix/
+    WCOSS:  /hwrf/noscrub/fix-files/hwrf-20150507-fix/
+    Zeus:   /scratch1/portfolios/NCEPDEV/hwrf/noscrub/fix-files/hwrf-20150507-fix/
+    Yellowstone: /glade/p/work/strahan/hwrf-20150507-fix/
+
+The files are stored on tape here:
+
+    NOAA: /NCEPDEV/hpssuser/g01/wx20st/svn-exec-fix/hwrf-20150507-fix.tar.gz
+    CISL: /home/strahan/svn-fix/hwrf-20150507-fix.tar.gz
+
+You cannot use htar, hpsstar or AIX tar on that archive.  Instead, you
+must get it using "hsi get" and decompress with GNU tar:
+
+    hsi get /NCEPDEV/hpssuser/g01/wx20st/svn-exec-fix/hwrf-20150507-fix.tar.gz
+    tar -xzpf hwrf-20150507-fix.tar.gz
+
+You can check to see if you have the right file using md5sum:
+
+    me@machine:/some/dir> md5sum hwrf-20150507-fix.tar.gz
+    ed98a58ce315cbcc5c240dd258cd420a  hwrf-20150507-fix.tar.gz
+
+If a different hexadecimal number is printed, you have the wrong file.
+
+For the graphics processes in real-time, the a/b deck files need to be provided 
+since these decks files may contain restricted information from other forecast
+centers.
+
+    Jet: ln -sf /mnt/lfs2/projects/hwrfv3/hurrun/abdeck ./abdeck

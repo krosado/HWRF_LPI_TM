@@ -1,0 +1,289 @@
+#!/usr/bin/env perl
+#
+# Copyright (C) 2011 Timothy Brown
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+# MA 02110-1301, USA.
+#
+# Script to install HWRF pre-built components.
+#
+# $Id: install_HWRF 156 2011-05-16 20:24:43Z timothy.p.brown@noaa.gov $
+
+use strict;
+use warnings;
+#use threads;
+
+use FindBin qw($Bin);
+use lib "$Bin/../lib/perl5";
+
+#use HWRF::Threads;
+
+use Getopt::Long qw(:config no_ignore_case);
+use Pod::Usage;
+use Data::Dumper;
+use Cwd qw(abs_path cwd);
+
+use HWRF;
+use HWRF::Renamer;
+use HWRF::Utils;
+use HWRF::TNE;
+use HWRF::WRF;
+use HWRF::WPS;
+use HWRF::WPP;
+use HWRF::UPP;
+use HWRF::GSI;
+use HWRF::EMCGSI;
+use HWRF::POMTC;
+use HWRF::Coupler;
+use HWRF::VortexTrk;
+
+our $VERBOSE   = 0;             # Running verbosity
+my $PREFIX     = undef;         # Default filename prefix (i.e. "hwrf_")
+my $SUFFIX     = undef;         # Default filename suffix (i.e. ".exe")
+my $SRC        = undef;         # Package source directory (from build_HWRF)
+my $DST        = undef;         # Installation directory
+my $WPP        = undef;         # WPP as the Post Processor
+my $exelist    = undef;         # exe list for HWRF::Renamer
+my $renamer    = undef;         # HWRF::Renamer obj. if used
+
+my $errno = main();
+exit $errno;
+
+#################### Main ####################
+sub main {
+
+	# save a copy of the command line arguments
+	my $args = join(" ", @ARGV);
+
+	# process the command line options
+	get_options();
+
+        # Use HWRF::Renamer if applicable
+        if(defined($exelist)) {
+            $renamer=HWRF::Renamer->new($exelist);
+        }
+
+	# Change into the source directory
+	chdir($SRC) or die "can not change into dir $SRC : $!";
+
+	# Install all the executables (order is not important)
+
+#	## WRF ##
+#	threads->create(\&install_pkg, "HWRF::WRF");
+#
+#	## GSI ##
+#	threads->create(\&install_pkg, "HWRF::GSI");
+#
+#	## HWRF Utilities ##
+#	threads->create(\&install_pkg, "HWRF::Utils");
+#
+#	## NCEP Coupler ##
+#	threads->create(\&install_pkg, "HWRF::Coupler");
+#
+#	## POMTC ##
+#	threads->create(\&install_pkg, "HWRF::POMTC");
+#
+#	## GFDL Vortex Tracker ##
+#	threads->create(\&install_pkg, "HWRF::VortexTrk");
+#
+#	## WPS ##
+#	threads->create(\&install_pkg, "HWRF::WPS");
+#
+#	## WPP or UPP ##
+#	if ($WPP) {
+#		threads->create(\&install_pkg, "HWRF::WPP");
+#	} else {
+#		threads->create(\&install_pkg, "HWRF::UPP");
+#	}
+#
+#	foreach my $thr (threads->list()) {
+#		$thr->join();
+#	}
+
+	## WRF ##
+	install_pkg("HWRF::WRF",$renamer);
+
+	## HWRF Utilities ##
+	install_pkg("HWRF::Utils",$renamer);
+
+	## NCEP Coupler ##
+	install_pkg("HWRF::Coupler",$renamer);
+
+	## POMTC ##
+	install_pkg("HWRF::POMTC",$renamer);
+
+	## GFDL Vortex Tracker ##
+	install_pkg("HWRF::VortexTrk",$renamer);
+
+	## WPS ##
+	install_pkg("HWRF::WPS",$renamer);
+
+	## WPP or UPP ##
+	if ($WPP) {
+		install_pkg("HWRF::WPP",$renamer);
+	} else {
+		install_pkg("HWRF::UPP",$renamer);
+	}
+
+	## GSI ##
+        if ( -d 'EMCGSI' && -d 'GSI' ) {
+            die "ERROR: Both EMCGSI and GSI directories exist.  Please delete one.\n";
+        } elsif ( -d 'GSI' ) {
+            install_pkg("HWRF::GSI", $renamer);
+        } elsif ( -d 'EMCGSI' ) {
+            install_pkg("HWRF::EMCGSI", $renamer);
+        } else {
+            warn "NO GSI nor EMCGSI directories.  Will not build GSI\n";
+        }
+
+	return 0;
+}
+
+
+#################### Verbose ####################
+sub verbose_1 {
+	my $msg = shift;
+
+	if ($VERBOSE >= 1) {
+		printf("============ %23s ============\n", $msg);
+	}
+	return;
+}
+
+#################### Get Options ####################
+sub get_options {
+
+	my $help;
+
+	# process the command line arguments
+	my $err = GetOptions(
+		"help|?"          => \$help,       # user is requesting help
+		"man"             => sub {$help=2},# user is requesting man page
+		"v+"              => \$VERBOSE,    # verbosity level
+		"verbose=i"       => \$VERBOSE,    # verbosity level
+		"prefix|p=s"      => \$PREFIX,     # install file prefix
+		"suffix|s=s"      => \$SUFFIX,     # install file suffix
+		"wpp"             => \$WPP,        # use WPP as post processor
+                "renamer=s"       => \$exelist,    # use HWRF::Renamer to rename
+	);
+
+	# See if we need to give any help
+	if ($help or $err == 0 or $#ARGV != 1) {
+		pod2usage(-exitstatus => 0,
+			  -verbose    => $help);
+	}
+
+	# Get the source and destination directories
+	$SRC = abs_path($ARGV[0]);
+	$DST = abs_path($ARGV[1]);
+
+	if (! -d $SRC) {
+		print STDERR "source directory $SRC does not exist.";
+		exit 66;
+	}
+	if (! -d $DST) {
+		HWRF::make_dir(dir => $DST);
+	}
+	return;
+}
+
+#################### Build A Package/Module ####################
+sub install_pkg {
+	my $pkg_name = shift;
+        my $renamer=shift;
+
+	verbose_1("Installing $pkg_name");
+	my $pkg;
+        if(defined($renamer)) {
+            $pkg=${pkg_name}->new(verbose => $VERBOSE,renamer => $renamer);
+        } else {
+            $pkg=${pkg_name}->new(verbose => $VERBOSE);
+        }
+
+	$pkg->install(dst => $DST, prefix => $PREFIX, suffix => $SUFFIX);
+	verbose_1("Finished $pkg_name");
+	return;
+
+}
+
+__END__
+
+=head1 NAME
+
+install_HWRF - Perl script to install HWRF component executables.
+
+=head1 SYNOPSIS
+
+B<install_HWRF> [-?] [-s suffix] src dst
+
+=head1 DESCRIPTION
+
+This script is to install all the HWRF component executables. It assumes
+that B<build_HWRF> has been run successfully in the F<src> source directory
+previously.
+
+If the F<dst> destination directory does not exist it will be created.
+If it does exist it will be renamed with the mtime prepended. As in, if
+the directory F<foo> exists and B<install_HWRF> is called with the
+destination argument B<foo>. The I<original> F<foo> will be renamed to
+F<foo.20100907100804> and the install will place files in a new F<foo>
+directory.
+
+The options are as follows:
+
+=over 4
+
+=item B<-?, --help>
+
+Print a brief help message and exits.
+
+=item B<-p, --prefix> I<.xxx>
+
+Append a file prefix.
+
+=item B<-s, --suffix> I<.xxx>
+
+Override the default file suffix.
+
+=back
+
+=head1 EXAMPLES
+
+A typical usage would be to install all the community built HWRF components
+into an EMC directory structure.
+
+=over 4
+B<install_HWRF -p hwrf_ -s "" . ../exec>
+=back
+
+This will prefix all the executables with B<hwrf_> and remove all the
+default B<.exe> suffixes.
+
+=head1 DIAGNOSTICS
+
+The install_HWRF script exits 0 on success, and >0 if an error occurs.
+
+=head1 SEE ALSO
+
+L<perl(1)>,
+L<build_HWRF(1)>,
+
+=head1 AUTHORS
+
+Timothy Brown <Timothy.P.Brown@noaa.gov>
+
+=head1 BUGS
+
+=cut

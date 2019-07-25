@@ -1,0 +1,19 @@
+K 13
+svn:mergeinfo
+V 475
+/branches/H15T/libs:1124-1146
+/branches/H15X/libs:1106-1145
+/branches/H211-final/libs:193-205
+/branches/H215/libs:1146-1155
+/branches/HWRF-new-gfs/libs:1101-1103
+/branches/HWRF_v3.6a/libs:1070-1071,1073
+/branches/hwrf-baseline/libs:407-413
+/branches/merge-H215/libs:1156-1162
+/branches/the-great-merge/libs:451-467,469
+/tags/hwrf-20120302/libs:414
+/tags/v3.3_rc1/libs:260
+/tags/v3.3_rc2/libs:261-262
+/tags/v3.3_rc3/libs:263
+/tags/v3.3_rc4/libs:266
+/trunk/libs:274-313,315-397
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/8366/branches/HWRF/var/da/da_define_structures
+END
+da_zero_x.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_define_structures/da_zero_x.inc
+END
+da_zero_y.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/7191/branches/HWRF/var/da/da_define_structures/da_zero_y.inc
+END
+da_allocate_y.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/8205/branches/HWRF/var/da/da_define_structures/da_allocate_y.inc
+END
+da_gauss_noise.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_define_structures/da_gauss_noise.inc
+END
+da_allocate_background_errors.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/7425/branches/HWRF/var/da/da_define_structures/da_allocate_background_errors.inc
+END
+da_random_seed.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/7425/branches/HWRF/var/da/da_define_structures/da_random_seed.inc
+END
+da_define_structures.f90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/8366/branches/HWRF/var/da/da_define_structures/da_define_structures.f90
+END
+da_allocate_observations.inc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/8366/branches/HWRF/var/da/da_define_structures/da_allocate_observations.inc
+END
+da_zero_vp_type.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/8205/branches/HWRF/var/da/da_define_structures/da_zero_vp_type.inc
+END
+da_deallocate_y.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/7191/branches/HWRF/var/da/da_define_structures/da_deallocate_y.inc
+END
+da_allocate_y_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/5750/branches/HWRF/var/da/da_define_structures/da_allocate_y_rain.inc
+END
+da_allocate_y_radar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/8366/branches/HWRF/var/da/da_define_structures/da_allocate_y_radar.inc
+END
+da_deallocate_background_errors.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/8205/branches/HWRF/var/da/da_define_structures/da_deallocate_background_errors.inc
+END
+da_initialize_cv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/7425/branches/HWRF/var/da/da_define_structures/da_initialize_cv.inc
+END
+da_deallocate_observations.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/7191/branches/HWRF/var/da/da_define_structures/da_deallocate_observations.inc
+END
+da_allocate_observations_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/5750/branches/HWRF/var/da/da_define_structures/da_allocate_observations_rain.inc
+END

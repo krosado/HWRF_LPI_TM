@@ -1,0 +1,30 @@
+#!/bin/csh -f
+
+set TOUCH = ORIG
+if ( ! -e configure.pom ) then
+	touch configure.pom
+	set TOUCH = TOUCH
+endif
+
+set nonomatch
+
+(make -i clean )
+
+
+
+if ( "$1" == '-a' ) then
+	( make -i clean >& /dev/null )
+	if ( -e configure.pom ) then
+		/bin/cp configure.pom configure.pom.backup
+		/bin/rm -f configure.pom
+	endif
+#	The nuclear option
+	find . -name \*.exe -exec \rm {} \; 
+	find . -name \*.o -exec \rm {} \; 
+	find . -name \*.a -exec \rm {} \; 
+	find . -name \*.mod -exec \rm {} \; 
+endif
+
+if ( ( $TOUCH == TOUCH ) && ( -e configure.pom ) ) then
+	/bin/rm -f configure.pom
+endif

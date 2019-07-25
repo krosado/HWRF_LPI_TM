@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/1163/branches/HWRF/libs/src/hwrfutil
+END
+out4wave_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/1012/branches/HWRF/libs/src/hwrfutil/out4wave_module.f90
+END
+swathgen_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/1012/branches/HWRF/libs/src/hwrfutil/swathgen_module.f90
+END
+interp_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/1043/branches/HWRF/libs/src/hwrfutil/interp_module.f90
+END
+etime.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/1043/branches/HWRF/libs/src/hwrfutil/etime.c
+END
+vardata_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1036/branches/HWRF/libs/src/hwrfutil/vardata_module.f90
+END
+wrfdiag_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1163/branches/HWRF/libs/src/hwrfutil/wrfdiag_module.f90
+END
+decomp_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/1012/branches/HWRF/libs/src/hwrfutil/decomp_module.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/1075/branches/HWRF/libs/src/hwrfutil/Makefile
+END
+constants_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/1012/branches/HWRF/libs/src/hwrfutil/constants_module.f90
+END
+projection_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/1036/branches/HWRF/libs/src/hwrfutil/projection_module.f90
+END
+sysutil_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1036/branches/HWRF/libs/src/hwrfutil/sysutil_module.f90
+END
+tcf_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/1145/branches/HWRF/libs/src/hwrfutil/tcf_module.f90
+END

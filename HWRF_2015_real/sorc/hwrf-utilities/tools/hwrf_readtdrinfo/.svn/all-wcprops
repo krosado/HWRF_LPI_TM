@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1163/branches/HWRF/tools/hwrf_readtdrinfo
+END
+readtdrtime.f90
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/1163/branches/HWRF/tools/hwrf_readtdrinfo/readtdrtime.f90
+END
+readtdrstmid.f90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/1163/branches/HWRF/tools/hwrf_readtdrinfo/readtdrstmid.f90
+END
+readtdrtrigger.f90
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/1163/branches/HWRF/tools/hwrf_readtdrinfo/readtdrtrigger.f90
+END
+readtdrtrack.f90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/1163/branches/HWRF/tools/hwrf_readtdrinfo/readtdrtrack.f90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/1163/branches/HWRF/tools/hwrf_readtdrinfo/Makefile
+END

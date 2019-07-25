@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/7425/branches/HWRF/var/da/da_buoy
+END
+da_buoy.f90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/7425/branches/HWRF/var/da/da_buoy/da_buoy.f90
+END
+da_oi_stats_buoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7425/branches/HWRF/var/da/da_buoy/da_oi_stats_buoy.inc
+END
+da_residual_buoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_buoy/da_residual_buoy.inc
+END
+da_get_innov_vector_buoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/7425/branches/HWRF/var/da/da_buoy/da_get_innov_vector_buoy.inc
+END
+da_print_stats_buoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_buoy/da_print_stats_buoy.inc
+END
+da_transform_xtoy_buoy_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/7425/branches/HWRF/var/da/da_buoy/da_transform_xtoy_buoy_adj.inc
+END
+da_ao_stats_buoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7425/branches/HWRF/var/da/da_buoy/da_ao_stats_buoy.inc
+END
+da_transform_xtoy_buoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/7425/branches/HWRF/var/da/da_buoy/da_transform_xtoy_buoy.inc
+END
+da_check_max_iv_buoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/7425/branches/HWRF/var/da/da_buoy/da_check_max_iv_buoy.inc
+END
+da_jo_and_grady_buoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_buoy/da_jo_and_grady_buoy.inc
+END
+da_calculate_grady_buoy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_buoy/da_calculate_grady_buoy.inc
+END

@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma
+END
+PREGSM.F
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/PREGSM.F
+END
+REDGES.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/REDGES.inc
+END
+BSSLZ1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/BSSLZ1.inc
+END
+Einc_to_Ganl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/Einc_to_Ganl.inc
+END
+MONTWO.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/MONTWO.inc
+END
+GH2TV.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/GH2TV.inc
+END
+RELHUM.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/RELHUM.inc
+END
+OUTZ.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/OUTZ.inc
+END
+ZMNLAT.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/ZMNLAT.inc
+END
+REDANL.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/REDANL.inc
+END
+MOVEC.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/MOVEC.inc
+END
+REDDAT_ASCII.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/REDDAT_ASCII.inc
+END
+SPLDIF3_H.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/SPLDIF3_H.inc
+END
+module_wave2grid_kma.f90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/module_wave2grid_kma.f90
+END
+CR8I2V.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/CR8I2V.inc
+END
+PACK.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/PACK.inc
+END
+PREGSM1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/PREGSM1.inc
+END
+ZE2TVE.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/ZE2TVE.inc
+END
+TETEN.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/TETEN.inc
+END
+pvchkdv.F
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/pvchkdv.F
+END
+GAUSS.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/GAUSS.inc
+END
+RESET.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/RESET.inc
+END
+VPRM.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/VPRM.inc
+END
+GPLHGT.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/GPLHGT.inc
+END
+ZMNT.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/ZMNT.inc
+END
+MINMAX.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/MINMAX.inc
+END
+REDDAT_BIN.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/REDDAT_BIN.inc
+END
+REDHED.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/REDHED.inc
+END
+PREGSM.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/PREGSM.inc
+END
+WRTHED.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/WRTHED.inc
+END
+LT2GAU.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/LT2GAU.inc
+END
+PRESUB.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/PRESUB.inc
+END
+REDDAT.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/REDDAT.inc
+END
+WRTDAT.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/WRTDAT.inc
+END
+CVDATE.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/CVDATE.inc
+END
+WRTEOF.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/convertor/wave2grid_kma/WRTEOF.inc
+END

@@ -1,0 +1,355 @@
+#!/usr/bin/env perl
+#
+# Copyright (C) 2011 Timothy Brown
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+# MA 02110-1301, USA.
+#
+# Script to run HWRF on a hurricane.
+#
+# $Id: run_HWRF 130 2011-04-11 20:08:36Z tpbrown@ucar.edu $
+
+use strict;
+use warnings;
+
+use Getopt::Long qw(:config no_ignore_case);
+use Pod::Usage;
+use Cwd          qw(abs_path cwd);
+use FindBin      qw($Bin);
+use lib          "$Bin/../lib/perl5";
+
+use Data::Dumper;
+
+use HWRF;
+use HWRF::Workflow;
+
+my $errno = main();
+exit $errno;
+
+#################### Main ####################
+sub main {
+
+	# command line arguments
+	my %opts = (
+		basin     => undef,
+		coupled   => undef,
+		cycle     => undef,
+		format    => undef,
+		frequency => undef,
+		interval  => 6,
+		length    => 126,
+		name      => undef,
+		vortex    => undef,
+		start     => undef,
+		sid       => undef,
+		wmg       => undef,
+		monthly   => undef,
+	);
+	# process the command line arguments
+	GetOptions(
+		\%opts,
+		"help|?",		# user is requesting help
+		"man",			# user is requesting man page
+		"basin|b=s",		# storm basin
+		"coupled|C!",		# coupled (ocean & atm)
+		"cycle|c!",		# cycle the storm
+		"format|f=s",		# I/O format
+		"frequency|F=i",	# workflow manager frequency
+		"interval|I=i",		# storm forecast interval
+		"length|L=i",		# storm forecast length
+		"name|n=s",		# storm name
+		"vortex|v!",		# vortex initialization
+		"start|s=i",		# storm start time
+		"sid|i=s",		# storm ID
+		"wmg|w=s",		# workflow manager executable
+		"monthly=s",		# pre-defined monthly test storms
+	);
+
+	# See if we need to give any help
+	pod2usage(1) if $opts{'help'};
+	pod2usage(-exitstatus => 0, -verbose => 2) if $opts{'man'};
+
+	# See if we have a run location
+	my $location = $ARGV[0] ? abs_path($ARGV[0]) : abs_path(cwd());
+	if ($#ARGV > 0) {
+		my @args = @ARGV;
+		shift(@args);
+		print STDERR "ignoring arguments: @args\n";
+	}
+
+	# Load the monthly storm settings
+	if (defined $opts{'monthly'}) {
+		my $r = monthly($opts{'monthly'});
+		# merge the hashes
+		while (my ($k, $v) = each(%$r)) {
+			# let any command line options over-ride defaults
+			if (!defined $opts{$k}) {
+				$opts{$k} = $v;
+			}
+		}
+	}
+
+	# Double check to make sure we have a storm ID
+	pod2usage(-exitstatus => 0, -verbose => 2) if ! $opts{'sid'};
+
+	# Make sure we get the absolute paths for options
+	if (defined $opts{'wmg'}) {
+		$opts{'wmg'} = abs_path($opts{'wmg'});
+	}
+
+	# Make a sandbox to work in
+	my $hwrf = HWRF->new();
+	$hwrf->site();
+
+	chdir($location) or die "can not change into dir $location: $!";
+
+	my $home = abs_path(cwd() . "/src");
+	my $data = abs_path(cwd() . "/results");
+
+	chdir($home) or die "can not change into dir $home: $!";
+
+	my $wkfl = HWRF::Workflow->new(
+		xml        => {
+			file => "xml/HWRF.xml"
+		},
+		site       => {
+			hwrf_home => $home,
+			hwrf_data => $data,
+		},
+		storm      => {
+			name  => $opts{'name'},
+			id    => $opts{'sid'},
+			basin => $opts{'basin'},
+		},
+		forecast   => {
+			length   => $opts{'length'},
+			interval => $opts{'interval'},
+		},
+		io         => {
+			format => $opts{'forecast'},
+		},
+		cycle      => $opts{'cycle'},
+		coupled    => $opts{'coupled'},
+		start_time => $opts{'start'},
+		vortex     => $opts{'vortex'},
+		exe        => {
+			file      => $opts{'wmg'},
+			frequency => $opts{'freq'}
+		},
+	);
+
+	my $ierr = $wkfl->run();
+	return $ierr;
+}
+
+#################### Pre-defined Storms ####################
+sub monthly {
+	my $storm = shift;
+
+	my %o = ();
+
+	if ($storm =~ /gustav/i) {
+		%o = (
+			basin     => "AL",
+			coupled   => "T",
+			cycle     => "T",
+			vortex    => "T",
+			interval  => 6,
+			length    => 126,
+			name      => "GUSTAV",
+			start     => "200808251200",
+			sid       => "07L",
+		);
+	} elsif ($storm =~ /ike/i) {
+		%o = (
+			basin     => "AL",
+			coupled   => "T",
+			cycle     => "T",
+			vortex    => "T",
+			interval  => 6,
+			length    => 126,
+			name      => "IKE",
+			start     => "2008090112",
+			sid       => "09L",
+		);
+	} else {
+		die "unknown monthly storm: $storm\n";
+	}
+
+	return \%o;
+
+}
+
+__END__
+
+=head1 NAME
+
+run_HWRF - Perl script to run HWRF and all of it's dependencies.
+
+=head1 SYNOPSIS
+
+B<run_HWRF> [-?] [-b] [-c] [-C] [-F #] [-f io] [-I #] [-L #] [-v] [-w]
+            -n name -i id -s start [location]
+
+=head1 DESCRIPTION
+
+This script is to configure and run a HWRF test case. It assumes you
+have built all the necessary packages with B<build_HWRF> in the current
+working directory unless I<location> is given.
+
+The options are as follows:
+
+=over 4
+
+=item B<-?, --help>
+
+Print a brief help message and exits.
+
+=item B<-b, --basin>
+
+Specify the basin the storm is in.
+
+=item B<-c, --cycle>
+
+Cycle the storm. If a storm is cycled, it will be re-run in 6 hour
+increments for the storm length.
+
+=item B<-C, --coupled>
+
+Specify that the storm should run in an atmosphere and ocean coupled
+simulation. By default coupling is turned off.
+
+=item B<-f, --format> I<io_method>
+
+Override the default site I/O method for WPS and WRF.
+The default I/O method for the following systems are:
+
+=over 8
+
+=item Jet      => netCDF
+
+=item Bluefire => WRF binary
+
+=item Vapor    => WRF binary
+
+=back
+
+=item B<-F, --frequency> I<seconds>
+
+Specifies the frequency to execute the workflow manager with in seconds.
+The default is 180 seconds.
+
+=item B<-i, --sid> I<storm_id>
+
+Specifies the storm ID. This should be of the format of 2 digits followed
+by an upper case character. For example the storm Gustav in 2008 had a
+storm ID of B<07L>.
+
+=item B<-I, --interval> I<hours>
+
+Specifies the forecast interval of the storm simulation to run. The
+default is 6 hours.
+
+=item B<-L, --length> I<hours>
+
+Specifies the length of the storm simulation to run. The default is 126 hours.
+
+=item B<-n, --name> I<storm_name>
+
+Specifies the storm name.
+
+=cut
+
+=item B<-s, --start> I<start_time>
+
+Specifies the storm start time. This should be either 10 or 12 digits
+of the format %C%y%m%d%H[%M].
+
+=item B<-v, --vortex>
+
+Initialize the vortex.
+
+=item B<-w, --wmg> I<workflowmgr.rb>
+
+Specifies an alternate workflow manager executable to run.
+
+=item B<--man>
+
+Print the manual page.
+
+=back
+
+The following options can be negated by specifying B<--no> before their long
+option version:
+
+=over
+
+=item B<--nocycle>
+
+Disables cycling.
+
+=item B<--nocoupled>
+
+Disables running a coupled atmosphere and ocean.
+
+=item B<--novortex>
+
+Disables running the vortex initialization.
+
+=back
+
+These are useful in combination with the monthly option to override a
+specific condition.
+
+=head1 EXAMPLES
+
+To run the 2008 Gustav storm, that is typically used for the DTC HWRF
+tutorials:
+
+=over 4
+
+=item run_HWRF -b E -I 6 -l 126 -i 07L -s 200808251200 -n Gustav
+
+=back
+
+There are two pre-defined storms, I<Gustav> and I<Ike>. These storms
+are run as part of the monthly consistency check of HWRF. To run either
+of these:
+
+=over 4
+
+=item run_HWRF --monthly=gustav
+
+=item run_HWRF --monthly=ike
+
+=back
+
+
+=head1 DIAGNOSTICS
+
+The run_HWRF script exits 0 on success, and >0 if an error occurs.
+
+=head1 SEE ALSO
+
+L<perl(1)>,
+L<build_HWRF(1)>,
+
+=head1 AUTHORS
+
+Timothy Brown <Timothy.P.Brown@noaa.gov>
+
+=head1 BUGS
+
+=cut

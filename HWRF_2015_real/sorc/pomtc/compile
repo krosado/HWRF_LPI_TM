@@ -1,0 +1,21 @@
+#!/bin/csh -f
+
+set conf_file  = configure.pom
+
+if ( ! -e $conf_file ) then
+	echo "$0: $conf_file: Configuration file does not exist"
+	echo "Do 'configure' first"
+	exit(1)
+else if ( -z $conf_file ) then
+	echo "$0: $conf_file: Empty configuration file"
+	echo "Do 'configure' first"
+	exit(2)
+endif
+
+echo " "
+/bin/rm -rf ./ocean_exec/*
+
+make $argv[*] -i -f makefile all
+
+exit
+

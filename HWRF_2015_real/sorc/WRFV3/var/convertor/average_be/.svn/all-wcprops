@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/7191/branches/HWRF/var/convertor/average_be
+END
+da_1d_eigendecomposition.F
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/4946/branches/HWRF/var/convertor/average_be/da_1d_eigendecomposition.F
+END
+module_be_type.F
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/convertor/average_be/module_be_type.F
+END
+module_readwrf.F
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/convertor/average_be/module_readwrf.F
+END
+average_be.F
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/convertor/average_be/average_be.F
+END
+namelist.average_be
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/convertor/average_be/namelist.average_be
+END
+rd_be_cv_5.F
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/convertor/average_be/rd_be_cv_5.F
+END
+README.average_be
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/convertor/average_be/README.average_be
+END
+da_interpolate_stats.F
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/convertor/average_be/da_interpolate_stats.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7191/branches/HWRF/var/convertor/average_be/Makefile
+END
+da_interpolate_regcoeff.F
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/4946/branches/HWRF/var/convertor/average_be/da_interpolate_regcoeff.F
+END
+wr_be_cv_5.F
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/convertor/average_be/wr_be_cv_5.F
+END

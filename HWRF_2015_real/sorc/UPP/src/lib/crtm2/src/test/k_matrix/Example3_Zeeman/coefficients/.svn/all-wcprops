@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/coefficients
+END
+CloudCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/coefficients/CloudCoeff.bin
+END
+make.link_data
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/coefficients/make.link_data
+END
+zssmis_f16.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/coefficients/zssmis_f16.TauCoeff.bin
+END
+ssmis_f16.SpcCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/coefficients/ssmis_f16.SpcCoeff.bin
+END
+Nalli.EK-PDF.W_W-RefInd.EmisCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/coefficients/Nalli.EK-PDF.W_W-RefInd.EmisCoeff.bin
+END
+ssmis_f16.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/coefficients/ssmis_f16.TauCoeff.bin
+END
+AerosolCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example3_Zeeman/coefficients/AerosolCoeff.bin
+END

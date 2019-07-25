@@ -1,0 +1,29 @@
+K 13
+svn:mergeinfo
+V 874
+/branches/2011_oper:27-76
+/branches/3km:3501-3543
+/branches/H15W:3120-3246,3251-3255
+/branches/H15X:2933-3168
+/branches/H15X-conditional-tdr:3055-3256
+/branches/H215:3247-3405,3407-3414
+/branches/HWRF-new-gfs:2904,2924
+/branches/MPI_POMTC:1170
+/branches/MPI_POMTC_20140930:2715-3044
+/branches/MPI_POMTC_WP:2249-2445
+/branches/bg-archive:2844-2854
+/branches/for-2013-oper-tag:1343-1391
+/branches/hwrf-2012-mtong:716-1099
+/branches/hwrf-2013-pre-implementation:1115,1122-1125,1134-1153,1206-1223
+/branches/hwrf-2013-rrtmg:1262-1263
+/branches/hwrf-add-some-things:1323-1331
+/branches/hwrf-for-taiwan:1449-1461
+/branches/iplib-bugfix:1309-1319
+/branches/jet-2013-final:1507-1508
+/branches/merge-H215:3404-3493
+/branches/port-wcoss-newjet:944-965,967-968
+/branches/py-new-gsi:2644
+/branches/pyHWRF:2620,2622
+/branches/the-great-merge:649-687
+/branches/wcoss-rocoto:2796-2803,2805
+END

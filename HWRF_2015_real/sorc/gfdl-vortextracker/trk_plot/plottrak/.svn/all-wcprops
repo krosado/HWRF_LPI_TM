@@ -1,0 +1,779 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/220/branches/HWRF/trk_plot/plottrak
+END
+plottrak.ix
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/plottrak.ix
+END
+aal162011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal162011.dat
+END
+aal172011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal172011.dat
+END
+aal182011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal182011.dat
+END
+bep102011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep102011.dat
+END
+aal192011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal192011.dat
+END
+get_verif.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/get_verif.sh
+END
+bep112011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep112011.dat
+END
+bep122011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep122011.dat
+END
+bep132011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep132011.dat
+END
+get_storms.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/get_storms.sh
+END
+ndate.ksh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/ndate.ksh
+END
+aal012005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal012005.dat
+END
+aal022005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal022005.dat
+END
+aal032005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal032005.dat
+END
+aal042005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal042005.dat
+END
+aal052005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal052005.dat
+END
+aal062005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal062005.dat
+END
+aal072005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal072005.dat
+END
+aal032009.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal032009.dat
+END
+aal082005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal082005.dat
+END
+atcfplot.gs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/atcfplot.gs
+END
+aal092005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal092005.dat
+END
+bal012011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal012011.dat
+END
+bal022011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal022011.dat
+END
+bal032011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal032011.dat
+END
+aal102005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal102005.dat
+END
+bal042011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal042011.dat
+END
+aal112005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal112005.dat
+END
+bal052011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal052011.dat
+END
+aal122005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal122005.dat
+END
+nhour.ksh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/nhour.ksh
+END
+bal062011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal062011.dat
+END
+aal132005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal132005.dat
+END
+bal072011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal072011.dat
+END
+aal142005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal142005.dat
+END
+plottrak.ctl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/plottrak.ctl
+END
+bal082011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal082011.dat
+END
+aep012011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep012011.dat
+END
+aal152005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal152005.dat
+END
+bal092011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal092011.dat
+END
+aep022011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep022011.dat
+END
+aal162005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal162005.dat
+END
+aep032011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep032011.dat
+END
+aal172005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal172005.dat
+END
+aep042011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep042011.dat
+END
+aal182005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal182005.dat
+END
+aep052011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep052011.dat
+END
+aal192005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal192005.dat
+END
+aep062011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep062011.dat
+END
+aep072011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep072011.dat
+END
+aep082011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep082011.dat
+END
+aep092011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep092011.dat
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/README
+END
+bal102011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal102011.dat
+END
+bal112011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal112011.dat
+END
+bal122011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal122011.dat
+END
+bal132011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal132011.dat
+END
+aal202005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal202005.dat
+END
+bal142011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal142011.dat
+END
+aal212005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal212005.dat
+END
+bal152011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal152011.dat
+END
+aal222005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal222005.dat
+END
+bal162011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal162011.dat
+END
+aal232005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal232005.dat
+END
+bal172011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal172011.dat
+END
+aep102011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep102011.dat
+END
+aal242005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal242005.dat
+END
+bal182011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal182011.dat
+END
+aep112011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep112011.dat
+END
+aal252005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal252005.dat
+END
+bal192011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal192011.dat
+END
+aep122011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aep122011.dat
+END
+aal262005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal262005.dat
+END
+aal272005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal272005.dat
+END
+aal282005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal282005.dat
+END
+aal292005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal292005.dat
+END
+make_random.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/make_random.sh
+END
+bal202011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal202011.dat
+END
+aal302005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal302005.dat
+END
+aal312005.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal312005.dat
+END
+plottrak.grib
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/plottrak.grib
+END
+step_dates.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/step_dates.sh
+END
+aal012008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal012008.dat
+END
+aal022008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal022008.dat
+END
+aal032008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal032008.dat
+END
+aal042008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal042008.dat
+END
+aal052008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal052008.dat
+END
+aal062008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal062008.dat
+END
+aal072008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal072008.dat
+END
+atcfplot.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/atcfplot.sh
+END
+aal082008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal082008.dat
+END
+aal092008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal092008.dat
+END
+aal012011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal012011.dat
+END
+aal022011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal022011.dat
+END
+aal032011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal032011.dat
+END
+aal042011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal042011.dat
+END
+aal052011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal052011.dat
+END
+aal062011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal062011.dat
+END
+aal102008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal102008.dat
+END
+aal072011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal072011.dat
+END
+aal082011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal082011.dat
+END
+aal112008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal112008.dat
+END
+aal092011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal092011.dat
+END
+aal122008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal122008.dat
+END
+aal132008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal132008.dat
+END
+bep012011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep012011.dat
+END
+aal142008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal142008.dat
+END
+bep022011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep022011.dat
+END
+aal152008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal152008.dat
+END
+bep032011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep032011.dat
+END
+aal162008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal162008.dat
+END
+bep042011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep042011.dat
+END
+aal172008.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/aal172008.dat
+END
+bep052011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep052011.dat
+END
+bep062011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep062011.dat
+END
+bep072011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep072011.dat
+END
+bep082011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep082011.dat
+END
+bep092011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bep092011.dat
+END
+list_vdates.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/list_vdates.sh
+END
+aal102011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal102011.dat
+END
+get_mods.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/get_mods.sh
+END
+aal112011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal112011.dat
+END
+aal122011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal122011.dat
+END
+use.log
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/63/branches/HWRF/trk_plot/plottrak/use.log
+END
+aal132011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal132011.dat
+END
+aal142011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal142011.dat
+END
+bal502011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/bal502011.dat
+END
+aal152011.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/143/branches/HWRF/trk_plot/plottrak/aal152011.dat
+END

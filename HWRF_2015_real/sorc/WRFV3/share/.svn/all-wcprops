@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/8470/branches/HWRF/share
+END
+module_compute_geop.F
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6876/branches/HWRF/share/module_compute_geop.F
+END
+init_modules.F
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/5591/branches/HWRF/share/init_modules.F
+END
+module_interp_fcn.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/share/module_interp_fcn.F
+END
+mediation_wrfmain.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/7191/branches/HWRF/share/mediation_wrfmain.F
+END
+module_llxy.F
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/7191/branches/HWRF/share/module_llxy.F
+END
+module_io_domain_defs.m4
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/share/module_io_domain_defs.m4
+END
+module_MPP.F
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/share/module_MPP.F
+END
+bobrand.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/5431/branches/HWRF/share/bobrand.c
+END
+module_optional_input.F
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/7673/branches/HWRF/share/module_optional_input.F
+END
+set_timekeeping.F
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/8366/branches/HWRF/share/set_timekeeping.F
+END
+module_interp_nmm.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/7506/branches/HWRF/share/module_interp_nmm.F
+END
+input_wrf.F
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8366/branches/HWRF/share/input_wrf.F
+END
+sint.F
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/4946/branches/HWRF/share/sint.F
+END
+mediation_interp_domain.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/7673/branches/HWRF/share/mediation_interp_domain.F
+END
+module_interp_store.F
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/7447/branches/HWRF/share/module_interp_store.F
+END
+module_check_a_mundo.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/8470/branches/HWRF/share/module_check_a_mundo.F
+END
+wrf_bdyout.F
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/share/wrf_bdyout.F
+END
+module_random.F
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/5431/branches/HWRF/share/module_random.F
+END
+wrf_timeseries.F
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/8427/branches/HWRF/share/wrf_timeseries.F
+END
+mediation_nest_move.F
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/8427/branches/HWRF/share/mediation_nest_move.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/6166/branches/HWRF/share/Makefile
+END
+wrf_restartin.F
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/4946/branches/HWRF/share/wrf_restartin.F
+END
+wrf_ext_write_field.F
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/8205/branches/HWRF/share/wrf_ext_write_field.F
+END
+wrf_tsin.F
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/6694/branches/HWRF/share/wrf_tsin.F
+END
+module_date_time.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/7885/branches/HWRF/share/module_date_time.F
+END
+start_domain_nmm.int
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/share/start_domain_nmm.int
+END
+module_model_constants.F
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/7673/branches/HWRF/share/module_model_constants.F
+END
+module_bc_time_utilities.F
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/5137/branches/HWRF/share/module_bc_time_utilities.F
+END
+dfi.F
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/8205/branches/HWRF/share/dfi.F
+END
+module_io_domain.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/8367/branches/HWRF/share/module_io_domain.F
+END
+mediation_feedback_domain.F
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7673/branches/HWRF/share/mediation_feedback_domain.F
+END
+solve_nmm.int
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/4946/branches/HWRF/share/solve_nmm.int
+END
+wrf_fddaobs_in.F
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/7191/branches/HWRF/share/wrf_fddaobs_in.F
+END
+set_timekeeping_alarms.m4
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/share/set_timekeeping_alarms.m4
+END
+module_get_file_names.F
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/7673/branches/HWRF/share/module_get_file_names.F
+END
+landread.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/7673/branches/HWRF/share/landread.c
+END
+solve_interface.F
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/7885/branches/HWRF/share/solve_interface.F
+END
+set_timekeeping_defs.m4
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/share/set_timekeeping_defs.m4
+END
+landread.c.dist
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/6876/branches/HWRF/share/landread.c.dist
+END
+start_domain_em.int
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/share/start_domain_em.int
+END
+mediation_integrate.F
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/7885/branches/HWRF/share/mediation_integrate.F
+END
+wrf_ext_read_field.F
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/8205/branches/HWRF/share/wrf_ext_read_field.F
+END
+setfeenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/4946/branches/HWRF/share/setfeenv.c
+END
+landread.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/4946/branches/HWRF/share/landread.h
+END
+mediation_force_domain.F
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/8427/branches/HWRF/share/mediation_force_domain.F
+END
+output_wrf.F
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/8366/branches/HWRF/share/output_wrf.F
+END
+solve_em.int
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/share/solve_em.int
+END
+track_driver.F
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/8205/branches/HWRF/share/track_driver.F
+END
+module_soil_pre.F
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/7673/branches/HWRF/share/module_soil_pre.F
+END
+track_input.F
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/5431/branches/HWRF/share/track_input.F
+END
+wrf_bdyin.F
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/4946/branches/HWRF/share/wrf_bdyin.F
+END
+start_domain.F
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/5431/branches/HWRF/share/start_domain.F
+END
+interp_fcn.F
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/7885/branches/HWRF/share/interp_fcn.F
+END
+module_bc.F
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8366/branches/HWRF/share/module_bc.F
+END
+module_io_wrf.F
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/4946/branches/HWRF/share/module_io_wrf.F
+END
+wrf_restartout.F
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/4946/branches/HWRF/share/wrf_restartout.F
+END

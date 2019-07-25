@@ -1,0 +1,31 @@
+K 13
+svn:mergeinfo
+V 1260
+/branches/2011_oper/sorc/build:27-76
+/branches/3km/sorc/build:3501-3543
+/branches/H15W/sorc/build:3120-3180,3251-3255
+/branches/H15X/sorc/build:2933-3168
+/branches/H15X-conditional-tdr/sorc/build:3055-3256
+/branches/H215/sorc/build:3247-3405,3407-3414
+/branches/HWRF-new-gfs/sorc/build:2904,2924
+/branches/HWRF_v3.6a/sorc/build:2537,2546-2548,2553-2554,2571,2586
+/branches/MPI_POMTC/sorc/build:1170
+/branches/MPI_POMTC_20140930/sorc/build:2715-3044
+/branches/MPI_POMTC_WP/sorc/build:2249-2445
+/branches/bg-archive/sorc/build:2844-2854
+/branches/for-2013-oper-tag/sorc/build:1346
+/branches/hwrf-2012-mtong/sorc/build:716-1099
+/branches/hwrf-2013-pre-implementation/sorc/build:1115,1122-1125,1134-1153,1206-1223
+/branches/hwrf-2013-rrtmg/sorc/build:1262-1263
+/branches/hwrf-add-some-things/sorc/build:1323-1331
+/branches/hwrf-for-taiwan/sorc/build:1449-1461
+/branches/iplib-bugfix/sorc/build:1309-1319
+/branches/jet-2013-final/sorc/build:1507-1508
+/branches/merge-H215/sorc/build:3404-3493
+/branches/port-wcoss-newjet/sorc/build:944-965,967-968
+/branches/port_zeus/sorc/build:523-557
+/branches/py-new-gsi/sorc/build:2644
+/branches/pyHWRF/sorc/build:2578-2585,2620,2622
+/branches/the-great-merge/sorc/build:649-687
+/branches/wcoss-rocoto/sorc/build:2796-2803,2805
+END

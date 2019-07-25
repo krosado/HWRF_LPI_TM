@@ -1,0 +1,33 @@
+<!-- NOAA Jet system -->
+<!ENTITY SCHEDULER       "moabtorque">
+<!ENTITY ACCOUNT         "rtwpac">
+<!ENTITY SERIAL          "rtjet">
+<!ENTITY PE              "rtjet">
+<!ENTITY PAR_SHARED      "rtjet">
+<!ENTITY RESERVATION     "">
+<!ENTITY SERIAL_EXTRA     "<native>-l partition=vjet:ujet:sjet:tjet:njet</native>">
+<!ENTITY CORES_EXTRA     "<native>-l partition=vjet:ujet:sjet:tjet:njet</native>">
+<!ENTITY NODES_EXTRA     "<native>-l partition=vjet</native>">
+<!ENTITY PURE_OPENMP     "<nodes>1:ppn=2:tpp=8</nodes>&CORES_EXTRA;">
+<!ENTITY MPI_EXTRA       "">
+<!ENTITY SERVICE_QUEUE   "service">
+<!ENTITY SERVICE_EXTRA   "<native>-l partition=service</native>">
+
+<!ENTITY THREADS         "8">
+<!ENTITY REQUEST_THREADS "<envar><name>OMP_NUM_THREADS</name><value>&THREADS;</value></envar><envar><name>KMP_NUM_THREADS</name><value>&THREADS;</value></envar>">
+<!ENTITY CPL_FCST_2KM    "1:ppn=13+28:ppn=16+2:ppn=8">
+<!ENTITY ATM_FCST_2KM    "28:ppn=16+2:ppn=8">
+<!ENTITY CPL_TASKS_2KM   "477">
+<!ENTITY ATM_TASKS_2KM   "464">
+<!ENTITY CPL_FCST_3KM    "1:ppn=10+4:ppn=16+8:ppn=15+2:ppn=8">
+<!ENTITY ATM_FCST_3KM    "4:ppn=16+8:ppn=15+2:ppn=8">
+<!ENTITY CPL_TASKS_3KM   "210">
+<!ENTITY ATM_TASKS_3KM   "200">
+
+<!ENTITY INPUT_MEMORY    "2G">
+<!ENTITY TAPE_ARCHIVE_MEMORY    "1G">
+
+<!ENTITY FORECAST_WALLTIME "3:19:00">
+<!ENTITY POST_WALLTIME "3:59:00">
+<!ENTITY GSI_D02_WALLTIME "01:49:00">
+<!ENTITY GSI_D03_WALLTIME "01:49:00">

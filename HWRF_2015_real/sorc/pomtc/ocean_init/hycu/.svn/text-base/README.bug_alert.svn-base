@@ -1,0 +1,5 @@
+
+While the "hycu" prep module is functional, it still has some sort of bug or other issue whereby anomalous cooling occurs in certain locations during ocean model integration, even in the absence of surface forcing.  This bug/issue should be solved before the "hycu" prep module is used as an ocean initialization option in the HWRF/MPIPOM-TC coupled system.
+
+- Richard M. Yablonsky, 10 December 2014
+

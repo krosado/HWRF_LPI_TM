@@ -1,0 +1,43 @@
+<task name="scrub_work_E#ENS#" maxtries="&MAX_TRIES;">
+  <command>&PRE; &USHhwrf;/hwrf_scrub.py <cyclestr>&WORKhwrf;</cyclestr></command>
+  <jobname>hwrf_scrub_work_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&SERIAL;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>00:15:00</walltime>
+  <memory>1G</memory>
+  <stdout><cyclestr>&LOGhwrf;/hwrf_scrub_work_&SID;_@Y@m@d@H_E#ENS#.out</cyclestr></stdout>
+  <stderr><cyclestr>&LOGhwrf;/hwrf_scrub_work_&SID;_@Y@m@d@H_E#ENS#.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+  &SERIAL_EXTRA;
+
+  <dependency>
+    <and>
+      <taskdep task="tape_archive_E#ENS#"/>
+      <datadep age="&WORK_SCRUB_TIME;"><cyclestr>&COMhwrf;/&STORMLABEL;.done</cyclestr></datadep>
+      <or>
+        <strneq><left>&ARCHIVE_WRFOUT;</left><right>YES</right></strneq>
+        <taskdep task="wrfout_archive_E#ENS#"/>
+        <taskdep task="scrub_com_E#ENS#"/>
+      </or>
+      <or>
+        <strneq><left>&ARCHIVE_WRFOUT;</left><right>YES</right></strneq>
+        <taskdep task="wrfout_archive_E#ENS#"/>
+        <taskdep task="scrub_com_E#ENS#"/>
+      </or>
+      <or>
+        <strneq><left>&DA_ENSEMBLE;</left><right>YES</right></strneq>
+        <taskdep task="ensda_output"/>
+        <sh>grep 'RUN_ENSDA=NO' <cyclestr>&COMhwrf;/&STORMLABEL;.run_ensda</cyclestr></sh>
+      </or>
+    </and>
+  </dependency>
+
+</task>

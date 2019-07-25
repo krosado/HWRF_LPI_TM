@@ -1,0 +1,13 @@
+K 13
+svn:mergeinfo
+V 373
+/branches/HWRF_v3.6a/ocean_init:272-273
+/branches/MPI_POMTC_20140930/ocean_init:282-311
+/branches/MPI_POMTC_WP/ocean_init:259-271
+/branches/hwrf-baseline/ocean_init:114-123,125-130
+/branches/port_zeus/ocean_init:132-137
+/branches/the-great-merge/ocean_init:147-150
+/tags/hwrf-20120302/ocean_init:131
+/tags/hwrf-baseline-20120216-2300/ocean_init:124
+/trunk/ocean_init:94-114
+END

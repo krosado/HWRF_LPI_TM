@@ -1,0 +1,135 @@
+10
+
+dir
+682
+https://svn-dtc-unifiedpostproc.cgd.ucar.edu/branches/HWRF/src/lib
+https://svn-dtc-unifiedpostproc.cgd.ucar.edu
+
+
+
+2015-04-01T16:36:58.829508Z
+652
+samuel.trahan@noaa.gov
+has-props
+
+
+svn:externals
+
+
+
+
+
+
+
+
+
+
+3ad70301-0a67-45a7-a7d4-3cbace1a8cc5
+
+sp
+dir
+
+wrfmpi_stubs
+dir
+
+w3nco
+dir
+
+nemsio
+dir
+
+xml
+dir
+
+sfcio
+dir
+
+crtm2.makefile
+file
+
+
+
+
+2015-06-08T15:31:50.000000Z
+e7d6829c8f63603c8a78c4591d849401
+2014-05-08T15:15:55.542545Z
+563
+samuel.trahan@noaa.gov
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1168
+
+g2tmpl
+dir
+
+gfsio
+dir
+
+g2
+dir
+
+ip
+dir
+
+sigio
+dir
+
+bacio
+dir
+
+makefile
+file
+
+
+
+
+2015-06-08T15:31:50.000000Z
+1d84e4223b29dff60030e0744e143362
+2014-05-08T15:15:55.542545Z
+563
+samuel.trahan@noaa.gov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1151
+
+w3emc
+dir
+

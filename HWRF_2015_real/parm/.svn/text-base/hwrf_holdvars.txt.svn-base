@@ -1,0 +1,64 @@
+# This file is parsed through the hwrf.conf [holdvars] configuration
+# section.  It is used to control the workflow for the NCO J-Jobs, and
+# can also be used for debugging: simply source the
+# storm*.holdvars.txt in a ksh/sh/bash shell, set PYTHONPATH and then
+# start python - it will be able to access the hwrf_expt and other
+# Python libraries as any scripts/*py would be able to.
+
+export envir={ENV[envir|-prod]}
+
+export storm_num={storm_num}
+export SPINUP_DATA={SPINUP_DATA}
+export OCEAN={OCEAN}
+export MODEL={MODEL}
+export INIT={INIT}
+export GSI={GSI}
+export GSID01={GSID01}
+export GSID02={GSID02}
+export GSID03={GSID03}
+export FGATSTR={FGATSTR}
+export FGATINV={FGATINV}
+export FGATEND={FGATEND}
+
+# Path to the ocean status file
+export OCSTATFILE={com}/{ocstatus}
+
+export utilexec={utilexec}
+
+export HOMEhwrf={HOMEhwrf}
+export EXEChwrf={EXEChwrf}
+export PARMhwrf={PARMhwrf}
+export EXhwrf={EXhwrf}
+export JOBhwrf={JOBhwrf}
+export USHhwrf={USHhwrf}
+export FIXhwrf={FIXhwrf}
+export WORKhwrf={WORKhwrf}
+export DATA={WORKhwrf}
+export COMIN={COMIN}
+export COMOUT={COMOUT}
+
+export YMDH={YMDH} cyc={HH} CYCLE={YMDH}
+
+export stormlabel={stormlabel}
+export STORM={vit[stormname]}
+export STORMID={vit[stormid3]}
+
+export PARAFLAG={PARAFLAG}
+export PATH=:.:$PATH:$utilexec
+
+export CONFhwrf={CONFhwrf}
+
+export CENLO={domlon}
+export CENLA={domlat}
+
+if [[ "$PARAFLAG" == YES ]] ; then
+    export NWPROD={HOMEhwrf}/nwport
+    export EXPT={EXPT}
+    export SUBEXPT={SUBEXPT}
+    export WHERE_AM_I={ENVEQUIV}
+    export CDSAVE={CDSAVE}
+    export CDNOSCRUB={CDNOSCRUB}
+    export CDSCRUB={CDSCRUB}
+    export RUNhwrf={RUNhwrf}
+    export EMCGRAPHICS={EMCGRAPHICS}
+fi

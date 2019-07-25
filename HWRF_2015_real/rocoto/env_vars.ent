@@ -1,0 +1,46 @@
+<!-- Environment Variables -->
+
+<!-- Kludge: uncomment to disable emails on WCOSS:
+    <native>-u nobody@localhost</native>
+-->
+
+<envar>
+  <name>envir</name>      
+  <value>prod</value>
+</envar>
+<envar>
+  <name>PARAFLAG</name>
+  <value>YES</value>
+</envar>
+<envar>
+  <name>USHhwrf</name>
+  <value>&USHhwrf;</value>
+</envar>
+<envar>
+  <name>WHERE_AM_I</name>
+  <value>&WHERE_AM_I;</value>
+</envar>
+<envar>
+  <name>HWRF_FORCE_TMPDIR</name>
+  <value><cyclestr>&WORKhwrf;/tmpdir</cyclestr></value>
+</envar>
+<envar>
+  <name>HOMEhwrf</name>
+  <value>&HOMEhwrf;</value>
+</envar>
+<envar>
+  <name>PYTHONPATH</name>
+  <value>&USHhwrf;</value>
+</envar>
+<envar>
+  <name>CONFhwrf</name>
+  <value><cyclestr>&CONFhwrf;</cyclestr></value>
+</envar>
+<envar>
+  <name>WORKhwrf</name>
+  <value><cyclestr>&WORKhwrf;</cyclestr></value>
+</envar>
+<envar>
+  <name>jlogfile</name>
+  <value>&LOGhwrf;/jlogfile</value>
+</envar>

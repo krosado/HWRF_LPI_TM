@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/WRF_conform/TEMP
+END
+ros2w.def
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/WRF_conform/TEMP/ros2w.def
+END
+ros2w.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/WRF_conform/TEMP/ros2w.f90
+END
+ros3w.def
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/WRF_conform/TEMP/ros3w.def
+END
+ros3w.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/WRF_conform/TEMP/ros3w.f90
+END
+kpp_seulex.def
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/WRF_conform/TEMP/kpp_seulex.def
+END
+kpp_seulex.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/WRF_conform/TEMP/kpp_seulex.f90
+END

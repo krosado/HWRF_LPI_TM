@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/!svn/ver/3584/trunk/ecf/fcst
+END
+jhwrf_noncouple_forecast.ecf
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/3584/trunk/ecf/fcst/jhwrf_noncouple_forecast.ecf
+END
+jhwrf_couple_forecast.ecf
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/3584/trunk/ecf/fcst/jhwrf_couple_forecast.ecf
+END

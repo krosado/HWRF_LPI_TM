@@ -1,0 +1,58 @@
+#!/bin/sh
+######################################################################
+#                       relocate wrapper script                          
+######################################################################
+######################################################################
+#                                                                    #
+#   Author: DTC July 2014					     #
+######################################################################
+
+######################################################################
+#   Definitions
+######################################################################
+#---------------------------------------------------------------------
+#   Global definitions of environment variables
+#---------------------------------------------------------------------
+
+. ./global_vars.sh
+
+# Source the start file and holdvars
+. "$startfile"
+. "$holdvars"
+
+if [ -z "$PYTHONPATH" ] ; then
+	export PYTHONPATH=${USHhwrf}
+else
+	export PYTHONPATH=${PYTHONPATH}:${USHhwrf}
+fi
+export TOTAL_TASKS=1
+export KMP_NUM_THREADS=8
+export OMP_NUM_THREADS=8
+cd $WORKhwrf
+
+######################################################################
+#   Main
+######################################################################
+# export DEBUG=1
+
+# Run the python relocate script for analysis time on GFS
+export INIT_MODEL=gfs
+export INIT_FHR=0
+$EXhwrf/exhwrf_relocate.py
+
+# Run the python relocate script for fgat times 
+if test "$GSI" = "YES" ; then
+    export INIT_MODEL=gdas1
+    for fhr in 3 6 9 ; do
+        export INIT_FHR=$fhr
+        $EXhwrf/exhwrf_relocate.py
+    done
+fi
+
+
+
+######################################################################
+# Suggested resources based on NOAA's Jet
+# walltime = 4:29:00
+# nodes=1
+######################################################################

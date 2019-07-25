@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/315/branches/HWRF/ocean_diag/matlab
+END
+prephmpitrak.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/prephmpitrak.sh
+END
+readhwrftrak.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/readhwrftrak.m
+END
+coast.dat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/coast.dat
+END
+runhmpidiag.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/runhmpidiag.m
+END
+runssttimeseries.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/runssttimeseries.m
+END
+state.dat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/state.dat
+END
+plothmpitmp.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/plothmpitmp.m
+END
+plotssttimeseries.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/plotssttimeseries.m
+END
+readme
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/315/branches/HWRF/ocean_diag/matlab/readme
+END
+conus.dat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/312/branches/HWRF/ocean_diag/matlab/conus.dat
+END

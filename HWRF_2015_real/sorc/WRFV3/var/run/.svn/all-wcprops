@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/7425/branches/HWRF/var/run
+END
+gmao_airs_bufr.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/run/gmao_airs_bufr.tbl
+END
+VARBC.in
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/7425/branches/HWRF/var/run/VARBC.in
+END
+fso.io_config
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/5026/branches/HWRF/var/run/fso.io_config
+END
+be.dat.cv3
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/var/run/be.dat.cv3
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/7425/branches/HWRF/var/run/README
+END
+plus.io_config
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/5137/branches/HWRF/var/run/plus.io_config
+END

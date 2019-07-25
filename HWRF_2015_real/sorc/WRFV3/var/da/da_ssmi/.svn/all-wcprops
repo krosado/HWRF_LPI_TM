@@ -1,0 +1,497 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi
+END
+da_tb_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_tb_tl.inc
+END
+tbatmos.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/tbatmos.inc
+END
+da_oi_stats_ssmi_tb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_oi_stats_ssmi_tb.inc
+END
+da_read_ssmi_real_array.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_read_ssmi_real_array.inc
+END
+da_tbatmos_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_tbatmos_tl.inc
+END
+da_calculate_grady_ssmt1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_calculate_grady_ssmt1.inc
+END
+da_residual_ssmi_rv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_residual_ssmi_rv.inc
+END
+da_calculate_grady_ssmt2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_calculate_grady_ssmt2.inc
+END
+da_transform_xtoseasfcwind_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoseasfcwind_lin.inc
+END
+da_transform_xtoy_ssmi_tb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoy_ssmi_tb.inc
+END
+da_ao_stats_ssmi_rv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_ao_stats_ssmi_rv.inc
+END
+da_transform_xtoseasfcwind_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoseasfcwind_adj.inc
+END
+da_get_innov_vector_ssmi_tb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_get_innov_vector_ssmi_tb.inc
+END
+da_transform_xtozrhoq_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtozrhoq_lin.inc
+END
+da_effht_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_effht_tl.inc
+END
+da_check_max_iv_ssmi_tb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_check_max_iv_ssmi_tb.inc
+END
+da_print_stats_ssmt1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_print_stats_ssmt1.inc
+END
+da_spemiss_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_spemiss_adj.inc
+END
+module_ssmi.f90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/module_ssmi.f90
+END
+da_print_stats_ssmt2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_print_stats_ssmt2.inc
+END
+da_calculate_grady_ssmi_tb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_calculate_grady_ssmi_tb.inc
+END
+da_sigma_v_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_sigma_v_adj.inc
+END
+da_transform_xtoy_ssmt1_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoy_ssmt1_adj.inc
+END
+da_transform_xtoy_ssmt2_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoy_ssmt2_adj.inc
+END
+da_ao_stats_ssmt1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_ao_stats_ssmt1.inc
+END
+da_effang_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_effang_adj.inc
+END
+da_ao_stats_ssmt2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_ao_stats_ssmt2.inc
+END
+da_roughem_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_roughem_tl.inc
+END
+da_jo_and_grady_ssmt1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_jo_and_grady_ssmt1.inc
+END
+da_transform_xtozrhoq_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtozrhoq_adj.inc
+END
+da_jo_and_grady_ssmt2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_jo_and_grady_ssmt2.inc
+END
+da_effht_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_effht_adj.inc
+END
+da_transform_xtoseasfcwind.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoseasfcwind.inc
+END
+da_read_ssmi_integer_array.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_read_ssmi_integer_array.inc
+END
+da_spemiss_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_spemiss_tl.inc
+END
+da_tb_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_tb_adj.inc
+END
+epsalt.inc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/epsalt.inc
+END
+da_transform_xtoy_ssmt1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoy_ssmt1.inc
+END
+da_transform_xtoy_ssmt2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoy_ssmt2.inc
+END
+da_tbatmos_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_tbatmos_adj.inc
+END
+da_residual_ssmi_tb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_residual_ssmi_tb.inc
+END
+da_transform_xtospeed_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtospeed_lin.inc
+END
+da_transform_xtozrhoq.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtozrhoq.inc
+END
+da_ao_stats_ssmi_tb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_ao_stats_ssmi_tb.inc
+END
+da_get_innov_vector_ssmt1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_get_innov_vector_ssmt1.inc
+END
+da_get_innov_vector_ssmt2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_get_innov_vector_ssmt2.inc
+END
+roughem.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/roughem.inc
+END
+da_transform_xtospeed_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtospeed_adj.inc
+END
+da_check_max_iv_ssmt1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_check_max_iv_ssmt1.inc
+END
+da_check_max_iv_ssmt2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_check_max_iv_ssmt2.inc
+END
+da_transform_xtoy_ssmi_rv_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoy_ssmi_rv_adj.inc
+END
+da_read_ssmi_info.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_read_ssmi_info.inc
+END
+da_jo_and_grady_ssmi_rv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_jo_and_grady_ssmi_rv.inc
+END
+da_effang_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_effang_tl.inc
+END
+da_transform_xtospeed.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtospeed.inc
+END
+da_oi_stats_ssmi_rv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_oi_stats_ssmi_rv.inc
+END
+da_epsalt_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_epsalt_tl.inc
+END
+da_transform_xtotb_lin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtotb_lin.inc
+END
+da_residual_ssmt1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_residual_ssmt1.inc
+END
+da_residual_ssmt2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_residual_ssmt2.inc
+END
+da_ssmi.f90
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_ssmi.f90
+END
+da_transform_xtoy_ssmi_rv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoy_ssmi_rv.inc
+END
+da_epsalt_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_epsalt_adj.inc
+END
+da_read_obs_ssmi.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_read_obs_ssmi.inc
+END
+da_transform_xtotb_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtotb_adj.inc
+END
+da_oi_stats_ssmt1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_oi_stats_ssmt1.inc
+END
+da_get_innov_vector_ssmi_rv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_get_innov_vector_ssmi_rv.inc
+END
+da_oi_stats_ssmt2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_oi_stats_ssmt2.inc
+END
+spemiss.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/spemiss.inc
+END
+effang.inc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/effang.inc
+END
+da_scan_obs_ssmi.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_scan_obs_ssmi.inc
+END
+da_check_max_iv_ssmi_rv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_check_max_iv_ssmi_rv.inc
+END
+da_roughem_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_roughem_adj.inc
+END
+da_sigma_v_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_sigma_v_tl.inc
+END
+da_calculate_grady_ssmi_rv.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_calculate_grady_ssmi_rv.inc
+END
+effht.inc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/effht.inc
+END
+da_transform_xtotb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtotb.inc
+END
+da_transform_xtoy_ssmi_tb_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_transform_xtoy_ssmi_tb_adj.inc
+END
+da_jo_and_grady_ssmi_tb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/da_jo_and_grady_ssmi_tb.inc
+END
+cal_sigma_v.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/cal_sigma_v.inc
+END
+tb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/tb.inc
+END
+read_ssmi.inc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/da/da_ssmi/read_ssmi.inc
+END

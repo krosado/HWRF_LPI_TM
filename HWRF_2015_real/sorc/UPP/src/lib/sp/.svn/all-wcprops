@@ -1,0 +1,389 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/563/branches/HWRF/src/lib/sp
+END
+sptrun.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptrun.f
+END
+sptranf1.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptranf1.f
+END
+spgradq.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/spgradq.f
+END
+sptranfv.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptranfv.f
+END
+sptrunsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptrunsv.f
+END
+spanaly.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/spanaly.f
+END
+sppad.f
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/72/branches/HWRF/src/lib/sp/sppad.f
+END
+sptgptsd.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgptsd.f
+END
+spgrady.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/spgrady.f
+END
+sptgpmd.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgpmd.f
+END
+sptgpt.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgpt.f
+END
+sptezm.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptezm.f
+END
+lapack_gen.F
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/sp/lapack_gen.F
+END
+spfftpt.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/spfftpt.f
+END
+spvar.f
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/72/branches/HWRF/src/lib/sp/spvar.f
+END
+bll2ps.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/72/branches/HWRF/src/lib/sp/bll2ps.f
+END
+sptgpmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgpmv.f
+END
+sptrung.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptrung.f
+END
+sptez.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/563/branches/HWRF/src/lib/sp/sptez.f
+END
+sptrunm.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptrunm.f
+END
+makelibsp.sh_Linux
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/563/branches/HWRF/src/lib/sp/makelibsp.sh_Linux
+END
+sptgptvd.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgptvd.f
+END
+spuv2dz.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/spuv2dz.f
+END
+sptruns.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptruns.f
+END
+fftpack.F
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/563/branches/HWRF/src/lib/sp/fftpack.F
+END
+sptgptd.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgptd.f
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/563/branches/HWRF/src/lib/sp/makefile
+END
+splib.doc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/splib.doc
+END
+sptranf0.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptranf0.f
+END
+sptrunmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptrunmv.f
+END
+spfft1.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/72/branches/HWRF/src/lib/sp/spfft1.f
+END
+sptgptv.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgptv.f
+END
+spgradx.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/spgradx.f
+END
+spsynth.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/spsynth.f
+END
+sptezd.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptezd.f
+END
+spwget.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/72/branches/HWRF/src/lib/sp/spwget.f
+END
+sptgpm.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgpm.f
+END
+makelibsp.sh_Linux.orig
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/563/branches/HWRF/src/lib/sp/makelibsp.sh_Linux.orig
+END
+sptrand.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptrand.f
+END
+sptranf.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/563/branches/HWRF/src/lib/sp/sptranf.f
+END
+spdz2uv.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/spdz2uv.f
+END
+sptgps.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgps.f
+END
+sptgpsd.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgpsd.f
+END
+sptezmd.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptezmd.f
+END
+ncpus.F
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/563/branches/HWRF/src/lib/sp/ncpus.F
+END
+sptezv.f
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptezv.f
+END
+sptranv.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptranv.f
+END
+splaplac.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/72/branches/HWRF/src/lib/sp/splaplac.f
+END
+sptrund.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptrund.f
+END
+splegend.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/72/branches/HWRF/src/lib/sp/splegend.f
+END
+makefile.dtc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/sp/makefile.dtc
+END
+sptgpsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptgpsv.f
+END
+sptran.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/563/branches/HWRF/src/lib/sp/sptran.f
+END
+sptrunl.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptrunl.f
+END
+sptezmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptezmv.f
+END
+splat.f_IBM
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/72/branches/HWRF/src/lib/sp/splat.f_IBM
+END
+makelibsp.sh_Linux_debug
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/563/branches/HWRF/src/lib/sp/makelibsp.sh_Linux_debug
+END
+sptrunv.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptrunv.f
+END
+spfft.f
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/72/branches/HWRF/src/lib/sp/spfft.f
+END
+splat.F
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/563/branches/HWRF/src/lib/sp/splat.F
+END
+makelibsp.sh_IBM
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/72/branches/HWRF/src/lib/sp/makelibsp.sh_IBM
+END
+spffte.f
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/563/branches/HWRF/src/lib/sp/spffte.f
+END
+sptrungv.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/72/branches/HWRF/src/lib/sp/sptrungv.f
+END
+speps.f
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/72/branches/HWRF/src/lib/sp/speps.f
+END

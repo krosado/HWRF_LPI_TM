@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/8366/branches/HWRF/var/da/da_obs_io
+END
+da_scan_obs_bufr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/var/da/da_obs_io/da_scan_obs_bufr.inc
+END
+da_write_obs_etkf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/6162/branches/HWRF/var/da/da_obs_io/da_write_obs_etkf.inc
+END
+da_final_write_obs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/7425/branches/HWRF/var/da/da_obs_io/da_final_write_obs.inc
+END
+da_read_obs_bufrgpsro.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/7425/branches/HWRF/var/da/da_obs_io/da_read_obs_bufrgpsro.inc
+END
+da_search_obs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/7885/branches/HWRF/var/da/da_obs_io/da_search_obs.inc
+END
+da_write_noise_to_ob.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/5953/branches/HWRF/var/da/da_obs_io/da_write_noise_to_ob.inc
+END
+da_write_filtered_obs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/7191/branches/HWRF/var/da/da_obs_io/da_write_filtered_obs.inc
+END
+da_write_modified_filtered_obs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/7425/branches/HWRF/var/da/da_obs_io/da_write_modified_filtered_obs.inc
+END
+da_read_rand_unit.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_obs_io/da_read_rand_unit.inc
+END
+da_join_iv_for_multi_inc.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/5750/branches/HWRF/var/da/da_obs_io/da_join_iv_for_multi_inc.c
+END
+da_scan_obs_bufrgpsro.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/da/da_obs_io/da_scan_obs_bufrgpsro.inc
+END
+da_write_y.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/7191/branches/HWRF/var/da/da_obs_io/da_write_y.inc
+END
+da_read_iv_for_multi_inc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5750/branches/HWRF/var/da/da_obs_io/da_read_iv_for_multi_inc.inc
+END
+da_final_write_filtered_obs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/5953/branches/HWRF/var/da/da_obs_io/da_final_write_filtered_obs.inc
+END
+da_final_write_modified_filtered_obs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/7425/branches/HWRF/var/da/da_obs_io/da_final_write_modified_filtered_obs.inc
+END
+da_read_obs_ascii.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/8366/branches/HWRF/var/da/da_obs_io/da_read_obs_ascii.inc
+END
+da_read_obs_radar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/8366/branches/HWRF/var/da/da_obs_io/da_read_obs_radar.inc
+END
+da_read_obs_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/5750/branches/HWRF/var/da/da_obs_io/da_read_obs_rain.inc
+END
+da_read_omb_tmp.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/7425/branches/HWRF/var/da/da_obs_io/da_read_omb_tmp.inc
+END
+da_final_write_y.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/5953/branches/HWRF/var/da/da_obs_io/da_final_write_y.inc
+END
+da_read_obs_bufr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/7673/branches/HWRF/var/da/da_obs_io/da_read_obs_bufr.inc
+END
+da_read_errfac.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_obs_io/da_read_errfac.inc
+END
+da_write_obs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7425/branches/HWRF/var/da/da_obs_io/da_write_obs.inc
+END
+da_obs_io.f90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/7425/branches/HWRF/var/da/da_obs_io/da_obs_io.f90
+END
+da_scan_obs_ascii.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/8366/branches/HWRF/var/da/da_obs_io/da_scan_obs_ascii.inc
+END
+da_scan_obs_rain.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/5750/branches/HWRF/var/da/da_obs_io/da_scan_obs_rain.inc
+END
+da_scan_obs_radar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/8366/branches/HWRF/var/da/da_obs_io/da_scan_obs_radar.inc
+END
+da_write_iv_for_multi_inc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/7191/branches/HWRF/var/da/da_obs_io/da_write_iv_for_multi_inc.inc
+END
+da_read_y_unit.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7673/branches/HWRF/var/da/da_obs_io/da_read_y_unit.inc
+END

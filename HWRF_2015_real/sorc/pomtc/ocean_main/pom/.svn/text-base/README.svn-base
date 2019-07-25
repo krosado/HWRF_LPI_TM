@@ -1,0 +1,32 @@
+The original POM serial code is reconfigured into :
+
+   drive_ocean.f : main dirver
+   initialize.f : set up the problem
+   advance.f : advance the code in time
+   bounds_forcing.f : conditions, atmospheric forcing, restoring...
+   solver.f : subroutines for basic dynamics
+   parallel_mpi.f : parallel tasks (communications between processors)
+   io_pnetcdf.F : parallel I/O
+
+The following files should always be identical here and in ../../ocean_init/pom :
+
+   initialize.f
+   advance.f
+   bounds_forcing.f
+   solver.f
+   io_pnetcdf.F
+   hurricane_wind.f
+   smoothing.f
+   geovel.f
+   calcpwave.f
+   pom.h
+   pom.nml
+
+If a change is made to any of these files here, an identical change should be made
+   to the analogous file in ../../ocean_init/pom
+
+Note that drive_ocean.f is here only, pom.f is there only, and parallel_mpi.f
+   is slightly different here vs. there.
+
+Richard M. Yablonsky, URI/GSO, 11 May 2014
+

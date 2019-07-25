@@ -1,0 +1,32 @@
+<task name="ensda_output" maxtries="&MAX_TRIES;">
+  
+  <command>&PRE; &EXhwrf;/exhwrf_ensda_output.py</command>
+  <jobname>hwrf_ensda_output_&SID;_<cyclestr>@Y@m@d@H</cyclestr></jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&SERIAL;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>00:05:00</walltime>
+  <memory>1G</memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_ensda_output.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_ensda_output.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &SERIAL_EXTRA;
+
+  <dependency>
+    <and>
+      <metataskdep metatask="meta_output"/>
+      <metataskdep metatask="da_ensemble"/>
+      <sh>grep 'RUN_ENSDA=YES' <cyclestr>&COMhwrf;/&STORMLABEL;.run_ensda</cyclestr></sh>
+    </and>
+  </dependency>
+
+  <rewind>
+    <sh>rm -f '<cyclestr>&COMhwrf;/&STORMLABEL;.done</cyclestr>'</sh>
+  </rewind>
+</task>

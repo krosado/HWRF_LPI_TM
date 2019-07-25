@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/8205/branches/HWRF/hydro/Data_Rec
+END
+rt_include.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/8205/branches/HWRF/hydro/Data_Rec/rt_include.inc
+END
+module_GW_baseflow_data.F
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/6162/branches/HWRF/hydro/Data_Rec/module_GW_baseflow_data.F
+END
+namelist.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/8205/branches/HWRF/hydro/Data_Rec/namelist.inc
+END
+module_namelist.F
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/8205/branches/HWRF/hydro/Data_Rec/module_namelist.F
+END
+module_RT_data.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/8205/branches/HWRF/hydro/Data_Rec/module_RT_data.F
+END
+gw_field_include.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/6162/branches/HWRF/hydro/Data_Rec/gw_field_include.inc
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6162/branches/HWRF/hydro/Data_Rec/Makefile
+END

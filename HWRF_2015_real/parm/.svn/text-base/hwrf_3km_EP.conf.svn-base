@@ -1,0 +1,6 @@
+# This file sets up the 3km version of the 2015 HWRF configuration for
+# NHC East Pacific (E) storms.
+
+[config]
+conditional_gsid03=yes ; run gsi_d03, only when high-res inner-core data are available
+conditional_gsid02=yes ; run gsi_d02, only when high-res inner-core data are available

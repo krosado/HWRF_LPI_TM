@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/6325/branches/HWRF/var/da/da_verif_grid
+END
+da_verif_grid.f90
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/6325/branches/HWRF/var/da/da_verif_grid/da_verif_grid.f90
+END
+da_verif_grid_control.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/5431/branches/HWRF/var/da/da_verif_grid/da_verif_grid_control.f90
+END

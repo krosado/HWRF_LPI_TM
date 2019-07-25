@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/util/WRF_conform
+END
+WRFUserRateLaws.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/util/WRF_conform/WRFUserRateLaws.f90
+END
+sutil.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/util/WRF_conform/sutil.f90
+END
+blas.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/util/WRF_conform/blas.f90
+END

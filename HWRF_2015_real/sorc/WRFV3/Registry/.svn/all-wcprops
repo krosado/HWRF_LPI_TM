@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/8472/branches/HWRF/Registry
+END
+Registry.EM_COMMON
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/8470/branches/HWRF/Registry/Registry.EM_COMMON
+END
+registry.clm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/6876/branches/HWRF/Registry/registry.clm
+END
+registry.lake
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/7673/branches/HWRF/Registry/registry.lake
+END
+registry.chem
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/8366/branches/HWRF/Registry/registry.chem
+END
+registry.afwa
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/8366/branches/HWRF/Registry/registry.afwa
+END
+Registry.CONVERT
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/8205/branches/HWRF/Registry/Registry.CONVERT
+END
+registry.stoch
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/8366/branches/HWRF/Registry/registry.stoch
+END
+registry.bdy_perturb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/8205/branches/HWRF/Registry/registry.bdy_perturb
+END
+registry.sbm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/8205/branches/HWRF/Registry/registry.sbm
+END
+registry.les
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/4946/branches/HWRF/Registry/registry.les
+END
+registry.var_chem
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6876/branches/HWRF/Registry/registry.var_chem
+END
+registry.dimspec
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/8205/branches/HWRF/Registry/registry.dimspec
+END
+registry.fire
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/5750/branches/HWRF/Registry/registry.fire
+END
+registry.avgflx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/Registry/registry.avgflx
+END
+registry.diags
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/8205/branches/HWRF/Registry/registry.diags
+END
+Registry.NMM
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/8472/branches/HWRF/Registry/Registry.NMM
+END
+registry.var
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/8205/branches/HWRF/Registry/registry.var
+END
+registry.io_boilerplate
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/7425/branches/HWRF/Registry/registry.io_boilerplate
+END
+registry.tracker
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/7753/branches/HWRF/Registry/registry.tracker
+END
+Registry.EM_CHEM
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/8205/branches/HWRF/Registry/Registry.EM_CHEM
+END
+registry.cam
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/8205/branches/HWRF/Registry/registry.cam
+END
+Registry.EM_COMMON.var
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/8205/branches/HWRF/Registry/Registry.EM_COMMON.var
+END
+registry.ssib
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/5431/branches/HWRF/Registry/registry.ssib
+END
+Registry.EM
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/7885/branches/HWRF/Registry/Registry.EM
+END
+registry.tornado
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/7753/branches/HWRF/Registry/registry.tornado
+END
+Registry.wrfvar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/6694/branches/HWRF/Registry/Registry.wrfvar
+END

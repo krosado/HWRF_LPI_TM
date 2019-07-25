@@ -1,0 +1,3 @@
+#%Module###########################################################
+# Default version
+set ModulesVersion      "9.0.0"

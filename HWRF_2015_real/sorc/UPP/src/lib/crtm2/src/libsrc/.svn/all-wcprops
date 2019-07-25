@@ -1,0 +1,815 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc
+END
+CRTM_Adjoint_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Adjoint_Module.f90
+END
+CRTM_SfcOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_SfcOptics.f90
+END
+CRTM_Tangent_Linear_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Tangent_Linear_Module.f90
+END
+BeCoeff_Binary_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/BeCoeff_Binary_IO.f90
+END
+ASvar_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ASvar_Define.f90
+END
+CRTM_IRSSEM.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_IRSSEM.f90
+END
+CRTM_Geometry_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Geometry_Define.f90
+END
+CRTM_MW_Snow_SfcOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_MW_Snow_SfcOptics.f90
+END
+CRTM_AntCorr.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_AntCorr.f90
+END
+NESDIS_SSMIS_SnowEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_SSMIS_SnowEM_Module.f90
+END
+ODAS_TauCoeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODAS_TauCoeff.f90
+END
+SpcCoeff_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/SpcCoeff_Define.f90
+END
+BeCoeff_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/BeCoeff_Define.f90
+END
+NESDIS_SSMIS_SeaIceEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_SSMIS_SeaIceEM_Module.f90
+END
+CRTM_MW_Ice_SfcOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_MW_Ice_SfcOptics.f90
+END
+make.dependencies
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/make.dependencies
+END
+ODZeeman_Predictor.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODZeeman_Predictor.f90
+END
+ODPS_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODPS_Define.f90
+END
+ODPS_Predictor.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODPS_Predictor.f90
+END
+AerosolCoeff_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/AerosolCoeff_Define.f90
+END
+CRTM_IR_Snow_SfcOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_IR_Snow_SfcOptics.f90
+END
+CRTM_Surface_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Surface_Define.f90
+END
+ODPS_CoordinateMapping.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODPS_CoordinateMapping.f90
+END
+CRTM_Utility.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Utility.f90
+END
+ODPS_Predictor_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODPS_Predictor_Define.f90
+END
+ODSSU_AtmAbsorption.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODSSU_AtmAbsorption.f90
+END
+NESDIS_SnowEM_Parameters.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_SnowEM_Parameters.f90
+END
+Zeeman_Utility.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Zeeman_Utility.f90
+END
+CRTM_GeometryInfo_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_GeometryInfo_Define.f90
+END
+Binary_File_Utility.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Binary_File_Utility.f90
+END
+Profile_Utility_Parameters.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Profile_Utility_Parameters.f90
+END
+Zeeman_Input_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Zeeman_Input_Define.f90
+END
+ODSSU_TauCoeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODSSU_TauCoeff.f90
+END
+NESDIS_AMSRE_SNOWEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_AMSRE_SNOWEM_Module.f90
+END
+CRTM_SensorData_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_SensorData_IO.f90
+END
+Message_Handler.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Message_Handler.f90
+END
+NESDIS_SSMI_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_SSMI_Module.f90
+END
+CRTM_Fastem1.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Fastem1.f90
+END
+CRTM_Fastem3.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Fastem3.f90
+END
+CRTM_Parameters.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Parameters.f90
+END
+CRTM_Options_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Options_Define.f90
+END
+CRTM_surface_ir_emissivity.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_surface_ir_emissivity.f90
+END
+CRTM_IR_Ice_SfcOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_IR_Ice_SfcOptics.f90
+END
+CRTM_Atmosphere.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Atmosphere.f90
+END
+CRTM_AncillaryInput_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_AncillaryInput_Define.f90
+END
+AerosolCoeff_Binary_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/AerosolCoeff_Binary_IO.f90
+END
+File_Utility.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/File_Utility.f90
+END
+AntCorr_Binary_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/AntCorr_Binary_IO.f90
+END
+SSU_Input_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/SSU_Input_Define.f90
+END
+CRTM_Surface_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Surface_IO.f90
+END
+CRTM_VIS_Water_SfcOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_VIS_Water_SfcOptics.f90
+END
+ODPS_AtmAbsorption.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODPS_AtmAbsorption.f90
+END
+CRTM_RTSolution.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_RTSolution.f90
+END
+Type_Kinds.f90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Type_Kinds.f90
+END
+Ocean_Permittivity.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Ocean_Permittivity.f90
+END
+CRTM_IR_Water_SfcOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_IR_Water_SfcOptics.f90
+END
+ODAS_Binary_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODAS_Binary_IO.f90
+END
+ODPS_TauCoeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODPS_TauCoeff.f90
+END
+CRTM_MW_Water_SfcOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_MW_Water_SfcOptics.f90
+END
+ODSSU_Binary_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODSSU_Binary_IO.f90
+END
+CRTM_AerosolCoeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_AerosolCoeff.f90
+END
+CloudCoeff_Binary_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CloudCoeff_Binary_IO.f90
+END
+CRTM_Cloud_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Cloud_Define.f90
+END
+TauCoeff_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/TauCoeff_Define.f90
+END
+NESDIS_AMSRE_SICEEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_AMSRE_SICEEM_Module.f90
+END
+CRTM_BeCoeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_BeCoeff.f90
+END
+CRTM_RTSolution_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_RTSolution_Define.f90
+END
+CloudCoeff_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CloudCoeff_Define.f90
+END
+CRTM_Atmosphere_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Atmosphere_IO.f90
+END
+CRTM_LifeCycle.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_LifeCycle.f90
+END
+CRTM_EmisCoeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_EmisCoeff.f90
+END
+RTV_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/RTV_Define.f90
+END
+NESDIS_MHS_SICEEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_MHS_SICEEM_Module.f90
+END
+make.filelist
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/make.filelist
+END
+EmisCoeff_Binary_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/EmisCoeff_Binary_IO.f90
+END
+Date_Utility.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Date_Utility.f90
+END
+ODAS_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODAS_Define.f90
+END
+ODPS_Binary_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODPS_Binary_IO.f90
+END
+CRTM_SensorData_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_SensorData_Define.f90
+END
+CRTM_Aerosol_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Aerosol_Define.f90
+END
+Spectral_Units_Conversion.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Spectral_Units_Conversion.f90
+END
+NESDIS_SEAICE_PHYEM_MODULE.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_SEAICE_PHYEM_MODULE.f90
+END
+Sort_Utility.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Sort_Utility.f90
+END
+NESDIS_LandEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_LandEM_Module.f90
+END
+CRTM_Interpolation.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Interpolation.f90
+END
+Endian_Utility.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Endian_Utility.f90
+END
+CRTM_Cloud_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Cloud_IO.f90
+END
+CRTM_ChannelInfo_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_ChannelInfo_Define.f90
+END
+SpcCoeff_Binary_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/SpcCoeff_Binary_IO.f90
+END
+ODAS_AtmAbsorption.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODAS_AtmAbsorption.f90
+END
+NESDIS_MHS_SnowEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_MHS_SnowEM_Module.f90
+END
+CRTM_GeometryInfo.f90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_GeometryInfo.f90
+END
+Fresnel.f90
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Fresnel.f90
+END
+CRTM_RTSolution_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_RTSolution_IO.f90
+END
+CRTM_Forward_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Forward_Module.f90
+END
+CRTM_LowFrequency_MWSSEM.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_LowFrequency_MWSSEM.f90
+END
+NESDIS_AMSU_SICEEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_AMSU_SICEEM_Module.f90
+END
+CRTM_Geometry_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Geometry_IO.f90
+END
+ODZeeman_TauCoeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODZeeman_TauCoeff.f90
+END
+CRTM_MoleculeScatter.f90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_MoleculeScatter.f90
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/makefile
+END
+CRTM_Aerosol_IO.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Aerosol_IO.f90
+END
+AntCorr_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/AntCorr_Define.f90
+END
+CRTM_Planck_Functions.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Planck_Functions.f90
+END
+CSvar_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CSvar_Define.f90
+END
+CRTM_AtmOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_AtmOptics.f90
+END
+Search_Utility.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Search_Utility.f90
+END
+Fundamental_Constants.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Fundamental_Constants.f90
+END
+CRTM_SfcOptics_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_SfcOptics_Define.f90
+END
+CRTM_CloudCoeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_CloudCoeff.f90
+END
+ODZeeman_AtmAbsorption.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODZeeman_AtmAbsorption.f90
+END
+iAtm_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/iAtm_Define.f90
+END
+Compare_Float_Numbers.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/Compare_Float_Numbers.f90
+END
+CRTM_Atmosphere_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Atmosphere_Define.f90
+END
+CRTM_AtmScatter_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_AtmScatter_Define.f90
+END
+CRTM_AtmAbsorption.f90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_AtmAbsorption.f90
+END
+NESDIS_AMSU_SnowEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_AMSU_SnowEM_Module.f90
+END
+SensorInfo_Parameters.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/SensorInfo_Parameters.f90
+END
+CRTM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Module.f90
+END
+ODAS_Predictor_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODAS_Predictor_Define.f90
+END
+NESDIS_SSMI_SnowEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_SSMI_SnowEM_Module.f90
+END
+CRTM_TauCoeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_TauCoeff.f90
+END
+CRTM_CloudScatter.f90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_CloudScatter.f90
+END
+CRTM_MW_Land_SfcOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_MW_Land_SfcOptics.f90
+END
+CRTM_Model_Profiles.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_Model_Profiles.f90
+END
+ODAS_Predictor.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODAS_Predictor.f90
+END
+ODSSU_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/ODSSU_Define.f90
+END
+CRTM_K_Matrix_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_K_Matrix_Module.f90
+END
+EmisCoeff_Define.f90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/EmisCoeff_Define.f90
+END
+NESDIS_SSMI_SIceEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_SSMI_SIceEM_Module.f90
+END
+CRTM_IR_Land_SfcOptics.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_IR_Land_SfcOptics.f90
+END
+CRTM_SensorInfo.f90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_SensorInfo.f90
+END
+CRTM_SpcCoeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_SpcCoeff.f90
+END
+CRTM_AerosolScatter.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/CRTM_AerosolScatter.f90
+END
+NESDIS_OCEANEM_Module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/152/src/crtm/branches/sso_additions/src/libsrc/NESDIS_OCEANEM_Module.f90
+END

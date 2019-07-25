@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/!svn/ver/3790/trunk/ush/hwrf
+END
+gsipost.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/3338/trunk/ush/hwrf/gsipost.py
+END
+mpipomtc.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3757/trunk/ush/hwrf/mpipomtc.py
+END
+ensda.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/3494/trunk/ush/hwrf/ensda.py
+END
+tracker.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/3494/trunk/ush/hwrf/tracker.py
+END
+nhc_products.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3494/trunk/ush/hwrf/nhc_products.py
+END
+wrf.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/3494/trunk/ush/hwrf/wrf.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/2619/trunk/ush/hwrf/__init__.py
+END
+launcher.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3745/trunk/ush/hwrf/launcher.py
+END
+init.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/3790/trunk/ush/hwrf/init.py
+END
+rocoto.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/2875/trunk/ush/hwrf/rocoto.py
+END
+config.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/3544/trunk/ush/hwrf/config.py
+END
+prep.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/3494/trunk/ush/hwrf/prep.py
+END
+revital.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/3494/trunk/ush/hwrf/revital.py
+END
+hwrfsystem.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3750/trunk/ush/hwrf/hwrfsystem.py
+END
+namelist.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/ush/hwrf/namelist.py
+END
+prelaunch.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3572/trunk/ush/hwrf/prelaunch.py
+END
+gsi.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/3701/trunk/ush/hwrf/gsi.py
+END
+fcsttask.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3544/trunk/ush/hwrf/fcsttask.py
+END
+bufrprep.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3494/trunk/ush/hwrf/bufrprep.py
+END
+copywrf.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/3494/trunk/ush/hwrf/copywrf.py
+END
+wrfbase.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/3494/trunk/ush/hwrf/wrfbase.py
+END
+hwrftask.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3544/trunk/ush/hwrf/hwrftask.py
+END
+relocate.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3724/trunk/ush/hwrf/relocate.py
+END
+input.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/3547/trunk/ush/hwrf/input.py
+END
+gribtask.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3494/trunk/ush/hwrf/gribtask.py
+END
+wps.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/3790/trunk/ush/hwrf/wps.py
+END
+regrib.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/3494/trunk/ush/hwrf/regrib.py
+END
+constants.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/2619/trunk/ush/hwrf/constants.py
+END
+storminfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3494/trunk/ush/hwrf/storminfo.py
+END
+exceptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3751/trunk/ush/hwrf/exceptions.py
+END
+numerics.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/ush/hwrf/numerics.py
+END
+post.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/3730/trunk/ush/hwrf/post.py
+END

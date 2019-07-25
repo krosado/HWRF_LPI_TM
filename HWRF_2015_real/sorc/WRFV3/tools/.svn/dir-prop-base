@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 115
+standard.exe
+fortran_2003_iso_c_test.exe
+fseeko_test
+fortran_2003_ieee_test.exe
+registry
+fseeko64_test
+gen_comms.c
+
+END

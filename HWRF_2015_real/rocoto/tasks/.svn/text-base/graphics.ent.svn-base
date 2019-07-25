@@ -1,0 +1,24 @@
+<task name="graphics_E#ENS#" maxtries="&MAX_TRIES;">
+  
+  <command></command>
+  <jobname></jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&SERIAL;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>00:05:00</walltime>
+  <memory></memory>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+  &SERIAL_EXTRA;
+
+  <dependency>
+    <taskdep task="products_E#ENS#"/>
+  </dependency>
+
+</task>

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/!svn/ver/3805/trunk/wrappers
+END
+merge_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3805/trunk/wrappers/merge_wrapper
+END
+init_gdas_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3805/trunk/wrappers/init_gdas_wrapper
+END
+launcher_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3805/trunk/wrappers/launcher_wrapper
+END
+init_gfs_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3805/trunk/wrappers/init_gfs_wrapper
+END
+products_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3805/trunk/wrappers/products_wrapper
+END
+global_vars.sh
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3805/trunk/wrappers/global_vars.sh
+END
+post_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3805/trunk/wrappers/post_wrapper
+END
+bufrprep_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3805/trunk/wrappers/bufrprep_wrapper
+END
+forecast_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3805/trunk/wrappers/forecast_wrapper
+END
+gsi_d02_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3805/trunk/wrappers/gsi_d02_wrapper
+END
+gsi_d03_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3805/trunk/wrappers/gsi_d03_wrapper
+END
+init_ocean_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3805/trunk/wrappers/init_ocean_wrapper
+END
+unpost_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3805/trunk/wrappers/unpost_wrapper
+END
+relocate_wrapper
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3805/trunk/wrappers/relocate_wrapper
+END

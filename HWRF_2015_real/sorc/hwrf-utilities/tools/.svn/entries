@@ -1,0 +1,158 @@
+10
+
+dir
+1172
+https://svn-dtc-hwrf-utilities.cgd.ucar.edu/branches/HWRF/tools
+https://svn-dtc-hwrf-utilities.cgd.ucar.edu
+
+
+
+2015-05-19T13:13:23.628034Z
+1163
+samuel.trahan@noaa.gov
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+73c41662-f2b5-460d-820b-8fac66e072ed
+
+hwrf_atcf_to_stats
+dir
+
+mpiserial
+dir
+
+hwrf_bin_io
+dir
+
+hwrf_combinetrack
+dir
+
+hwrf_readtdrinfo
+dir
+
+hwrf_htcfstats
+dir
+
+hwrf_binary_grads
+dir
+
+mdate
+dir
+
+ndate
+dir
+
+nhour
+dir
+
+serpoe
+dir
+
+mpi_example
+dir
+
+grbindex
+dir
+
+wave_sample
+dir
+
+hwrf_read_indi
+dir
+
+hwrf_wrfout_newtime
+dir
+
+hwrf_bdy_update
+dir
+
+hwrf_gridgenfine
+dir
+
+wgrib
+dir
+
+hwrf_blend_gsi
+dir
+
+Makefile
+file
+
+
+
+
+2015-06-08T15:31:04.000000Z
+5f345c0d16d15ece90fcadea7400f197
+2015-05-19T13:13:23.628034Z
+1163
+samuel.trahan@noaa.gov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+827
+
+hwrf_afos
+dir
+
+bufr_remorest
+dir
+
+hwrf_supvit
+dir
+
+hwrf_nhc_products
+dir
+
+ships
+dir
+
+hwrf_gettrk
+dir
+
+hwrf_aux_rw
+dir
+
+hwrf_metgrid_levels
+dir
+
+hwrf_prep_hybrid
+dir
+
+hwrf_netcdf_grads
+dir
+
+hwrf_prepbufr
+dir
+
+hwrf_swath
+dir
+

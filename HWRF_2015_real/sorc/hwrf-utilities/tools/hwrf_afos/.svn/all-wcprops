@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos
+END
+vitfmtn.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/vitfmtn.inc
+END
+SIND.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/SIND.f
+END
+vitdatn.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/vitdatn.inc
+END
+TIMSUB.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/TIMSUB.f
+END
+DECVAR.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/DECVAR.f
+END
+gfafos.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/gfafos.f
+END
+DISTSP.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/DISTSP.f
+END
+COSD.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/COSD.f
+END
+stmvitn.inc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/stmvitn.inc
+END
+ATAN2D.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/ATAN2D.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/289/branches/HWRF/tools/hwrf_afos/Makefile
+END

@@ -1,0 +1,40 @@
+<task name="gsi_post_E#ENS#" maxtries="&MAX_TRIES;">
+  <command>&PRE; &EXhwrf;/exhwrf_gsi_post.py</command>
+  <jobname>hwrf_gsi_post_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&PE;</queue>
+  <cores>24</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>24</value>
+  </envar>
+  <walltime>02:19:00</walltime>
+  <memory></memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_gsi_post.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_gsi_post.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+  &MPI_EXTRA;
+
+  <dependency>
+    <and>
+      <taskdep task="gsi_d02_E#ENS#"/>
+      <or>
+        <and>
+          <taskdep task="gsi_d03_E#ENS#"/>
+          <metataskdep metatask="meta_gsi_E#ENS#"/>
+        </and>
+        <and>
+          <streq><left>&CONDITIONAL_GSID03;</left><right>YES</right></streq>
+          <taskdep task="bufrprep_E#ENS#"/>
+          <not><datadep><cyclestr>&COMhwrf;/&STORMLABEL;.tdr</cyclestr></datadep></not>
+        </and>
+      </or>
+      <not><taskdep task="scrub_com_E#ENS#"/></not>
+      <not><taskdep task="scrub_work_E#ENS#"/></not>
+      <sh>grep '=YES' <cyclestr>&COMhwrf;/&STORMLABEL;.gsi_status</cyclestr></sh>
+    </and>
+  </dependency>
+</task>

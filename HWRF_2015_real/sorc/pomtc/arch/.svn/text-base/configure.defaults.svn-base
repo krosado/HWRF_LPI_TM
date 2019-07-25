@@ -1,0 +1,309 @@
+##########################################################
+#ARCH	AIX  #dmpar 
+#
+NETCDF         =   CONFIGURE_NETCDF_PATH
+NETCDFINC      =   CONFIGURE_NETCDFINC
+NETCDFLIB      =   CONFIGURE_NETCDFLIB
+PNETCDF        =   CONFIGURE_PNETCDF_PATH
+LIB_W3_PATH    =   CONFIGURE_W3_PATH
+# NOTE: smp=omp is needed to link with the new splib,
+#   even though nothing in pom uses threading
+LIB_SP_PATH    =   CONFIGURE_SP_PATH
+LIB_SFCIO_PATH =   CONFIGURE_SFCIO_PATH
+LIB_BLAS_PATH  =   CONFIGURE_BLAS_PATH
+BYTE_ORDER     =   BIG_ENDIAN
+SFC            =   xlf_r
+SF90           =   xlf90  -qfree
+SCC            =   xlc_r
+OMP_FFLAGS     =   -qsmp=omp
+FFLAGS         =   -O -g -qnosave -qarch=auto -q64 -qinitauto=0 #$(DEBUG_FFLAGS)
+FFLAGS_MPI_POM =   -O -g -qnosave -qarch=auto -q64 -qinitauto=0 #$(DEBUG_FFLAGS)
+DEBUG_FFLAGS   =   -qsigtrap -qfullpath -C -qflttrap=zerodivide:enable \
+                   -qinitauto=FF911299 -qtbtable=full -qextchk
+CPP            =   cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF -Dibm_sp -I/usr/lpp/ppe.poe/include/thread
+
+DM_FC          =   mpxlf_r  
+DM_F90         =   mpxlf90_r  -qfree
+DM_CC          =   mpxlc_r
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         = 
+
+ESSLLIB        = -lessl
+
+###########################################################
+#ARCH	Linux i486 i586 i686, PGI compiler #dmpar  
+#
+NETCDF         =   CONFIGURE_NETCDF_PATH
+NETCDFINC      =   CONFIGURE_NETCDFINC
+NETCDFLIB      =   CONFIGURE_NETCDFLIB
+PNETCDF        =   CONFIGURE_PNETCDF_PATH
+LDFLAGS        =   -Wl,-noinhibit-exec 
+
+LIB_W3_PATH    =   CONFIGURE_W3_PATH
+LIB_SP_PATH    =   CONFIGURE_SP_PATH
+LIB_SFCIO_PATH =   CONFIGURE_SFCIO_PATH
+LIB_BLAS_PATH  =   CONFIGURE_BLAS_PATH
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   pgf90
+SF90           =   pgf90 -Mfree -C 
+SCC            =   pgcc
+OMP_FFLAGS     =   -mp
+FFLAGS         =   -O0 -DLANGUAGE_FORTRAN  -DsysLinux -Kieee -pc 32 \
+                   -byteswapio # $(DEBUG_FFLAGS)
+FFLAGS_MPI_POM =   -O0 -DLANGUAGE_FORTRAN  -DsysLinux -Kieee -pc 32 \
+                    # $(DEBUG_FFLAGS)
+DEBUG_FFLAGS   =   -g -C -Ktrap=fp
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF 
+
+DM_FC          =   mpif90 -f90=pgf90
+DM_F90         =   mpif90 -Mfree -f90=pgf90
+DM_CC          =   mpicc 
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =   
+
+ESSLLIB        = -L$(LIB_BLAS_PATH) -lblas
+
+###########################################################
+#ARCH	Linux x86_64, PGI compiler # dmpar 
+#
+NETCDF         =   CONFIGURE_NETCDF_PATH
+NETCDFINC      =   CONFIGURE_NETCDFINC
+NETCDFLIB      =   CONFIGURE_NETCDFLIB
+PNETCDF        =   CONFIGURE_PNETCDF_PATH
+LDFLAGS        =   -Wl,-noinhibit-exec 
+
+LIB_W3_PATH    =   CONFIGURE_W3_PATH
+LIB_SP_PATH    =   CONFIGURE_SP_PATH
+LIB_SFCIO_PATH =   CONFIGURE_SFCIO_PATH
+LIB_BLAS_PATH  =   CONFIGURE_BLAS_PATH
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   pgf90
+SF90           =   pgf90 -Mfree -C 
+SCC            =   pgcc
+OMP_FFLAGS     =   -mp
+FFLAGS         =   -O0 -Kieee -pc 64 -byteswapio -DLANGUAGE_FORTRAN \
+                   -DsysLinux # $(DEBUG_FFLAGS)
+FFLAGS_MPI_POM =   -O0 -Kieee -pc 64  -DLANGUAGE_FORTRAN \
+                   -DsysLinux # $(DEBUG_FFLAGS)
+DEBUG_FFLAGS   =   -g -C -Ktrap=fp
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+
+DM_FC          =   mpif90 -f90=pgf90
+DM_F90         =   mpif90 -Mfree -f90=pgf90
+DM_CC          =   mpicc 
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =
+
+ESSLLIB        = -L$(LIB_BLAS_PATH) -lblas
+
+###########################################################
+#ARCH	Linux x86_64, PGI compiler, SGI MPT # dmpar 
+#
+NETCDF         =   CONFIGURE_NETCDF_PATH
+NETCDFINC      =   CONFIGURE_NETCDFINC
+NETCDFLIB      =   CONFIGURE_NETCDFLIB
+PNETCDF        =   CONFIGURE_PNETCDF_PATH
+LDFLAGS        =   -Wl,-noinhibit-exec -L$(MPI_ROOT)/lib -lmpi
+
+LIB_W3_PATH    =   CONFIGURE_W3_PATH
+LIB_SP_PATH    =   CONFIGURE_SP_PATH
+LIB_SFCIO_PATH =   CONFIGURE_SFCIO_PATH
+LIB_BLAS_PATH  =   CONFIGURE_BLAS_PATH
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   pgf90
+SF90           =   pgf90 -Mfree -C 
+SCC            =   pgcc
+OMP_FFLAGS     =   -mp
+FFLAGS         =   -O0 -Kieee -pc 64 -byteswapio -DLANGUAGE_FORTRAN \
+                   -DsysLinux -I$(MPI_ROOT)/include # $(DEBUG_FFLAGS)
+FFLAGS_MPI_POM =   -O0 -Kieee -pc 64  -DLANGUAGE_FORTRAN \
+                   -DsysLinux -I$(MPI_ROOT)/include # $(DEBUG_FFLAGS)
+DEBUG_FFLAGS   =   -g -C -Ktrap=fp
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+
+DM_FC          =   pgf90
+DM_F90         =   pgf90 -Mfree -C
+DM_CC          =   pgcc
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =   -I$(MPI_ROOT)/include
+
+ESSLLIB        =   -L$(LIB_BLAS_PATH) -lblas
+
+###########################################################
+#ARCH	Linux i486 i586 i686, Intel compiler	# dmpar 
+#
+NETCDF         =   CONFIGURE_NETCDF_PATH
+NETCDFINC      =   CONFIGURE_NETCDFINC
+NETCDFLIB      =   CONFIGURE_NETCDFLIB
+PNETCDF        =   CONFIGURE_PNETCDF_PATH
+LDFLAGS        =   -Wl,-noinhibit-exec -shared-intel
+
+LIB_W3_PATH    =   CONFIGURE_W3_PATH
+LIB_SP_PATH    =   CONFIGURE_SP_PATH
+LIB_SFCIO_PATH =   CONFIGURE_SFCIO_PATH
+LIB_BLAS_PATH  =   CONFIGURE_BLAS_PATH
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   ifort
+SF90           =   ifort -free
+SCC            =   icc
+OMP_FFLAGS     =   -openmp
+FFLAGS         =   -O2 -fp-model precise -assume byterecl \
+                   -convert big_endian # $(DEBUG_FFLAGS)
+FFLAGS_MPI_POM =   -O1 -fp-model precise                  \
+                    # $(DEBUG_FFLAGS)
+DEBUG_FFLAGS   =   -g -traceback -ftz -fpe0
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+
+DM_FC          =   mpif90 -f90=$(SFC)
+DM_F90         =   mpif90 -f90=$(SFC) -free 
+DM_CC          =   cc
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =
+
+ESSLLIB        = -L$(LIB_BLAS_PATH) -lblas 
+MATHLIB        = -lm
+
+###########################################################
+#ARCH	Linux x86_64, Intel compiler	# dmpar 
+#
+NETCDF         =   CONFIGURE_NETCDF_PATH
+NETCDFINC      =   CONFIGURE_NETCDFINC
+NETCDFLIB      =   CONFIGURE_NETCDFLIB
+PNETCDF        =   CONFIGURE_PNETCDF_PATH
+LDFLAGS        =   -Wl,-noinhibit-exec -shared-intel
+
+LIB_W3_PATH    =   CONFIGURE_W3_PATH
+LIB_SP_PATH    =   CONFIGURE_SP_PATH
+LIB_SFCIO_PATH =   CONFIGURE_SFCIO_PATH
+LIB_BLAS_PATH  =   CONFIGURE_BLAS_PATH
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   ifort
+SF90           =   ifort -free
+SCC            =   icc
+OMP_FFLAGS     =   -openmp
+FFLAGS         =   -O2 -fp-model precise -assume byterecl \
+                   -convert big_endian # $(DEBUG_FFLAGS)
+FFLAGS_MPI_POM =   -O1 -fp-model precise                  \
+                   # $(DEBUG_FFLAGS)
+DEBUG_FFLAGS   =   -g -traceback -ftz -fpe0
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+
+DM_FC          =   mpif90 -f90=$(SFC)
+DM_F90         =   mpif90 -f90=$(SFC) -free 
+DM_CC          =   cc
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =  
+
+ESSLLIB        = -L$(LIB_BLAS_PATH) -lblas
+MATHLIB        = -lm
+
+###########################################################
+#ARCH	Linux x86_64, Intel compiler, SGI MPT	# dmpar 
+#
+NETCDF         =   CONFIGURE_NETCDF_PATH
+NETCDFINC      =   CONFIGURE_NETCDFINC
+NETCDFLIB      =   CONFIGURE_NETCDFLIB
+PNETCDF        =   CONFIGURE_PNETCDF_PATH
+LDFLAGS        =   -Wl,-noinhibit-exec -shared-intel -L$(MPI_ROOT)/lib -lmpi
+
+LIB_W3_PATH    =   CONFIGURE_W3_PATH
+LIB_SP_PATH    =   CONFIGURE_SP_PATH
+LIB_SFCIO_PATH =   CONFIGURE_SFCIO_PATH
+LIB_BLAS_PATH  =   CONFIGURE_BLAS_PATH
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   ifort
+SF90           =   ifort -free
+SCC            =   icc
+OMP_FFLAGS     =   -openmp
+FFLAGS         =   -O2 -fp-model precise -assume byterecl -convert big_endian \
+                   -I$(MPI_ROOT)/include # $(DEBUG_FFLAGS)
+FFLAGS_MPI_POM =   -O1 -fp-model precise                                      \
+                   -I$(MPI_ROOT)/include # $(DEBUG_FFLAGS)
+DEBUG_FFLAGS   =   -g -traceback -ftz -fpe0
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+
+DM_FC          =   ifort
+DM_F90         =   ifort -free
+DM_CC          =   icc
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =  -I$(MPI_ROOT)/include
+
+ESSLLIB        = -L$(LIB_BLAS_PATH) -lblas
+MATHLIB        = -lm
+
+###########################################################
+#ARCH	Linux x86_64, Intel compiler, IBM POE	# dmpar 
+#
+NETCDF         =   CONFIGURE_NETCDF_PATH
+NETCDFINC      =   CONFIGURE_NETCDFINC
+NETCDFLIB      =   CONFIGURE_NETCDFLIB
+PNETCDF        =   CONFIGURE_PNETCDF_PATH
+LDFLAGS        =   -Wl,-noinhibit-exec -shared-intel -L$(MPI_ROOT)/lib
+
+LIB_W3_PATH    =   CONFIGURE_W3_PATH
+LIB_SP_PATH    =   CONFIGURE_SP_PATH
+LIB_SFCIO_PATH =   CONFIGURE_SFCIO_PATH
+LIB_BLAS_PATH  =   CONFIGURE_BLAS_PATH
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   ifort
+SF90           =   ifort -free
+SCC            =   icc
+OMP_FFLAGS     =   -openmp
+FFLAGS         =   -O2 -fp-model precise -assume byterecl -convert big_endian \
+                   -I$(MPI_ROOT)/include # $(DEBUG_FFLAGS)
+FFLAGS_MPI_POM =   -O1 -fp-model precise                                       \
+                   -I$(MPI_ROOT)/include # $(DEBUG_FFLAGS)
+DEBUG_FFLAGS   =   -g -traceback -ftz -fpe0
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+
+DM_FC          =   mpfort
+DM_F90         =   mpfort -free
+DM_CC          =   mpcc
+
+FC             =   CONFIGURE_FC
+F90            =   CONFIGURE_F90
+CC             =   CONFIGURE_CC
+
+CFLAGS         =  -I$(MPI_ROOT)/include
+
+ESSLLIB        = -L$(LIB_BLAS_PATH) -lblas -mkl
+MATHLIB        = -lm
+
+##################################################################
+#ARCH	NULL

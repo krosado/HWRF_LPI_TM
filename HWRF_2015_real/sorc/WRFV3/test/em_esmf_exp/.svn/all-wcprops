@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/7425/branches/HWRF/test/em_esmf_exp
+END
+README_WRF_CPL_SST.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/test/em_esmf_exp/README_WRF_CPL_SST.txt
+END
+namelist.input.jan00.ESMFSST
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/7425/branches/HWRF/test/em_esmf_exp/namelist.input.jan00.ESMFSST
+END
+WRF_CPL_SST.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/test/em_esmf_exp/WRF_CPL_SST.tar.gz
+END
+namelist.input.jan00.NETCDFSST
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/7425/branches/HWRF/test/em_esmf_exp/namelist.input.jan00.NETCDFSST
+END

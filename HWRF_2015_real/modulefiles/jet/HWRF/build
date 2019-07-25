@@ -1,0 +1,40 @@
+#%Module######################################################################
+#############################################################
+##     Samuel.Trahan@noaa.gov
+##     NOAA NCEP EMC, IMSG contractor
+## 2015 HWRF Jet prerequisite module
+#############################################################
+proc ModulesHelp { } {
+    puts stderr "Set environment veriables for compiling HWRF"
+}
+module-whatis " HWRF hurricane model prerequisites"
+
+set ver 9.0.0
+
+# Known conflicts
+conflict HWRF
+
+# We'll be using non-default versions of everything so make sure we
+# unload older versions of those modules first:
+module unload intel
+module unload pgi
+module unload netcdf
+module unload netcdf3
+module unload netcdf4
+module unload pnetcdf
+module unload nco
+module unload szip
+
+# Newer version of compiler and MPI than what is presently the
+# default:
+module load intel/12.1.4
+module load mvapich2/1.8
+module load hsms
+module load pnetcdf/1.5.0
+module load szip/2.1
+module load hdf5/1.8.9
+module load netcdf4/4.2.1.1
+module load nco/4.1.0
+module load rocoto/1.2
+
+#setenv NETCDF $env(NETCDF4)   # should work, but does not due to bug in module

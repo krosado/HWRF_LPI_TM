@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/!svn/ver/832/branches/HWRF/arch
+END
+Config.pl
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/832/branches/HWRF/arch/Config.pl
+END
+postamble
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/602/branches/HWRF/arch/postamble
+END
+configure.defaults
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/832/branches/HWRF/arch/configure.defaults
+END
+fixlinks
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/602/branches/HWRF/arch/fixlinks
+END
+preamble
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/832/branches/HWRF/arch/preamble
+END
+sourceme_windows.bash
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/602/branches/HWRF/arch/sourceme_windows.bash
+END
+sourceme_windows.csh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/602/branches/HWRF/arch/sourceme_windows.csh
+END
+zaplinks
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/602/branches/HWRF/arch/zaplinks
+END

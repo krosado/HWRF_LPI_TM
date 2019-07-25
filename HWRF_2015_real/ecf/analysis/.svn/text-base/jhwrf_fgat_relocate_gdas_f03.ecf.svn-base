@@ -1,0 +1,63 @@
+#BSUB -J %E%hwrf%NUM%_fgate_relocate_gdas_f03_%CYC%
+#BSUB -o /com2/output/%ENVIR%/today/hwrf%NUM%_fgate_relocate_gdas_f03_%CYC%.o%J
+#BSUB -e /com2/output/%ENVIR%/today/hwrf%NUM%_fgate_relocate_gdas_f03_%CYC%.o%J
+#BSUB -L /bin/sh
+#BSUB -q %QUEUE%
+#BSUB -cwd /tmpnwprd
+#BSUB -W 00:30
+#BSUB -P %PROJ%
+#BSUB -a poe
+#BSUB -R affinity[core(8)]
+#BSUB -n 1
+#BSUB -R "span[ptile=1]"
+#BSUB -x
+
+%include <head.h>
+%include <envir-p2.h>
+
+set -x
+
+export OMP_NUM_THREADS=8
+export MKL_NUM_THREADS=1
+export MP_EUIDEVICE=sn_all
+export MP_EUILIB=us
+
+export job=hwrf%NUM%_fgate_relocate_gdas_f03_%CYC%
+export PDY=${PDY:-%PDY:%}
+export cyc=%CYC%
+export storm_num=%NUM%
+export stormlabel=storm%NUM%
+
+export INIT_MODEL=GDAS1
+export INIT_FHR=3
+
+# versions file for hwrf sets $hwrf_ver and $code_ver
+VERSION_FILE=${NWROOT}/versions/hwrf.ver
+if [ -f $VERSION_FILE ]; then
+  . $VERSION_FILE
+else
+  ecflow_client --msg="***JOB ${ECF_NAME} ERROR: Version File $VERSION_FILE does not exist ***"
+  ecflow_client --abort
+  exit
+fi
+
+${NWROOT}/hwrf.${hwrf_ver}/jobs/JHWRF_RELOCATE
+
+if [ $? -ne 0 ]; then
+  ecflow_client --msg="***JOB ${ECF_NAME} ERROR RUNNING J-SCRIPT ***"
+  ecflow_client --abort
+  exit
+fi
+
+%include <tail.h>
+%manual
+#
+#  PURPOSE: perform vortex relocation.
+#
+
+# Job specific troubleshooting instructions:
+#  see generic troubleshoot manual page
+#
+
+# include manual page below
+%end

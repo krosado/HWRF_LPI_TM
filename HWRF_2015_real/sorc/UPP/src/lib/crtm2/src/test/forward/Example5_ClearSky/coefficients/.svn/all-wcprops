@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients
+END
+mhs_n18.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/mhs_n18.TauCoeff.bin
+END
+CloudCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/CloudCoeff.bin
+END
+amsre_aqua.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/amsre_aqua.TauCoeff.bin
+END
+hirs4_n18.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/hirs4_n18.TauCoeff.bin
+END
+amsua_metop-a.SpcCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/amsua_metop-a.SpcCoeff.bin
+END
+v.seviri_m09.SpcCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/v.seviri_m09.SpcCoeff.bin
+END
+amsua_metop-a.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/amsua_metop-a.TauCoeff.bin
+END
+v.seviri_m09.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/v.seviri_m09.TauCoeff.bin
+END
+make.link_data
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/make.link_data
+END
+iasi616_metop-a.SpcCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/iasi616_metop-a.SpcCoeff.bin
+END
+Wu-Smith.CM-PDF.HQS_HQS-RefInd.EmisCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/Wu-Smith.CM-PDF.HQS_HQS-RefInd.EmisCoeff.bin
+END
+iasi616_metop-a.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/iasi616_metop-a.TauCoeff.bin
+END
+ssmis_f16.SpcCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/ssmis_f16.SpcCoeff.bin
+END
+mhs_n18.SpcCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/mhs_n18.SpcCoeff.bin
+END
+amsre_aqua.SpcCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/amsre_aqua.SpcCoeff.bin
+END
+ssmis_f16.TauCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/ssmis_f16.TauCoeff.bin
+END
+hirs4_n18.SpcCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/hirs4_n18.SpcCoeff.bin
+END
+AerosolCoeff.bin
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/forward/Example5_ClearSky/coefficients/AerosolCoeff.bin
+END

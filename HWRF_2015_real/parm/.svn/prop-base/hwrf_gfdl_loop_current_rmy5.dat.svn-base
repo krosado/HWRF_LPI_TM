@@ -1,0 +1,35 @@
+K 13
+svn:mergeinfo
+V 2226
+/branches/2011_oper/parm/hwrf_gfdl_loop_current_rmy5.dat:27-76
+/branches/3km/parm/hwrf_gfdl_loop_current_rmy5.dat:3501-3543
+/branches/H15W/parm/hwrf_gfdl_loop_current_rmy5.dat:3120-3180,3251-3255
+/branches/H15X/parm/hwrf_gfdl_loop_current_rmy5.dat:2944,2955,3120-3168
+/branches/H15X-conditional-tdr/parm/hwrf_gfdl_loop_current_rmy5.dat:3055-3256
+/branches/H215/parm/hwrf_gfdl_loop_current_rmy5.dat:3247-3405,3407-3414
+/branches/HWRF-new-gfs/parm/hwrf_gfdl_loop_current_rmy5.dat:2904,2924
+/branches/HWRF_v3.6a/parm/hwrf_gfdl_loop_current_rmy5.dat:2495-2563
+/branches/MPI_POMTC/parm/hwrf_gfdl_loop_current_rmy5.dat:1170
+/branches/MPI_POMTC_20140930/parm/hwrf_gfdl_loop_current_rmy5.dat:2715-3044
+/branches/bg-archive/parm/hwrf_gfdl_loop_current_rmy5.dat:2844-2854
+/branches/for-2013-oper-tag/parm/hwrf_gfdl_loop_current_rmy5.dat:1343-1391
+/branches/hwrf-2012-mtong/parm/hwrf_gfdl_loop_current_rmy5.dat:716-1099
+/branches/hwrf-2013-pre-implementation/parm/hwrf_gfdl_loop_current_rmy5.dat:1115,1120-1130,1134-1153,1206-1223
+/branches/hwrf-2013-rrtmg/parm/hwrf_gfdl_loop_current_rmy5.dat:1262-1263
+/branches/hwrf-add-some-things/parm/hwrf_gfdl_loop_current_rmy5.dat:1323-1331
+/branches/hwrf-baseline/parm/hwrf_gfdl_loop_current_rmy5.dat:406-482,513-649
+/branches/hwrf-baseline-tagme/parm/hwrf_gfdl_loop_current_rmy5.dat:483-488
+/branches/hwrf-for-taiwan/parm/hwrf_gfdl_loop_current_rmy5.dat:1449-1461
+/branches/iplib-bugfix/parm/hwrf_gfdl_loop_current_rmy5.dat:1309-1319
+/branches/jet-2013-final/parm/hwrf_gfdl_loop_current_rmy5.dat:1507-1508
+/branches/merge-H215/parm/hwrf_gfdl_loop_current_rmy5.dat:3404-3493
+/branches/port-wcoss-newjet/parm/hwrf_gfdl_loop_current_rmy5.dat:944-965,967-968
+/branches/py-new-gsi/parm/hwrf_gfdl_loop_current_rmy5.dat:2644
+/branches/pyHWRF/parm/hwrf_gfdl_loop_current_rmy5.dat:2620,2622
+/branches/stream1.5/parm/hwrf_gfdl_loop_current_rmy5.dat:142-151,153-178
+/branches/stream1.5taskNhalo/parm/hwrf_gfdl_loop_current_rmy5.dat:131-141
+/branches/the-great-merge/parm/hwrf_gfdl_loop_current_rmy5.dat:649-687
+/branches/wcoss-rocoto/parm/hwrf_gfdl_loop_current_rmy5.dat:2796-2803,2805
+/tags/hwrf-20120302-1532/parm/hwrf_gfdl_loop_current_rmy5.dat:489
+/trunk/parm/hwrf_gfdl_loop_current_rmy5.dat:2249-2510
+END

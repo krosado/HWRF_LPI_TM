@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/8205/branches/HWRF/var/da/da_varbc
+END
+da_varbc_direct.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/da/da_varbc/da_varbc_direct.inc
+END
+da_varbc_precond.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/8205/branches/HWRF/var/da/da_varbc/da_varbc_precond.inc
+END
+da_varbc_pred.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7885/branches/HWRF/var/da/da_varbc/da_varbc_pred.inc
+END
+da_varbc_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/da/da_varbc/da_varbc_adj.inc
+END
+da_varbc_coldstart.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/da/da_varbc/da_varbc_coldstart.inc
+END
+da_varbc_tl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/da/da_varbc/da_varbc_tl.inc
+END
+da_varbc_update.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7885/branches/HWRF/var/da/da_varbc/da_varbc_update.inc
+END
+da_varbc_init.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/da/da_varbc/da_varbc_init.inc
+END
+da_varbc.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/da/da_varbc/da_varbc.f90
+END

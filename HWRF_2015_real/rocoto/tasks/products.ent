@@ -1,0 +1,37 @@
+<task name="products_E#ENS#" maxtries="&MAX_TRIES;">
+  
+  <command>&PRE; &EXhwrf;/exhwrf_products.py</command>
+  <jobname>hwrf_products_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&PE;</queue>
+  <cores>&PRODUCTS_JOB_RANKS;</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>&PRODUCTS_JOB_RANKS;</value>
+  </envar>
+  <envar> 
+    <name>ATCFdir</name>
+    <value><cyclestr>&WORKhwrf;</cyclestr></value>
+  </envar>
+  <envar> 
+    <name>gltrkdir</name>
+    <value><cyclestr>&WORKhwrf;</cyclestr></value>
+  </envar>
+  <walltime>&POST_WALLTIME;</walltime>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_products.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_products.err</cyclestr></stderr>
+
+  &PRODUCTS_JOB_MORE;
+  &MPI_EXTRA;
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+
+  <dependency>
+    <or>
+      <taskdep task="post_E#ENS#" state="RUNNING"/>
+      <taskdep task="post_E#ENS#"/>
+    </or>
+  </dependency>
+
+</task>

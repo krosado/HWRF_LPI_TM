@@ -1,0 +1,23 @@
+ 
+**** Compiling NCEP Coupler ****
+ 
+/bin/rm: No match.
+make[1]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/ncep-coupler'
+Making all in /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/ncep-coupler/hwrf_wm3c
+make[2]: Entering directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/ncep-coupler/hwrf_wm3c'
+Makefile:15: warning: overriding commands for target `.f.o'
+../configure.cpl:61: warning: ignoring old commands for target `.f.o'
+mpif90 -fc=ifort -O3 -xW -fp-model precise -assume byterecl -convert big_endian -DLINUX -i4 -r8 -c cplmp.comm.f
+ifort: command line remark #10279: option '-xW' is deprecated and will be removed in a future release. See '-help deprecated'
+mpif90 -fc=ifort -O3 -xW -fp-model precise -assume byterecl -convert big_endian -DLINUX -i4 -r8 -c mpi_more.f
+ifort: command line remark #10279: option '-xW' is deprecated and will be removed in a future release. See '-help deprecated'
+mpif90 -fc=ifort -O3 -xW -fp-model precise -assume byterecl -convert big_endian -DLINUX -i4 -r8 -c interp.f
+ifort: command line remark #10279: option '-xW' is deprecated and will be removed in a future release. See '-help deprecated'
+mpif90 -fc=ifort -O3 -xW -fp-model precise -assume byterecl -convert big_endian -DLINUX -i4 -r8 -c wrf_stuff.f
+ifort: command line remark #10279: option '-xW' is deprecated and will be removed in a future release. See '-help deprecated'
+mpif90 -fc=ifort -O3 -xW -fp-model precise -assume byterecl -convert big_endian -DLINUX -i4 -r8 -c cpl3.f
+ifort: command line remark #10279: option '-xW' is deprecated and will be removed in a future release. See '-help deprecated'
+mpif90 -fc=ifort -Wl,-noinhibit-exec -lm -o ../cpl_exec/hwrf_wm3c.exe cplmp.comm.o mpi_more.o interp.o wrf_stuff.o cpl3.o
+ifort: warning #10315: specifying -lm before files may supercede the Intel(R) math library and affect performance
+make[2]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/ncep-coupler/hwrf_wm3c'
+make[1]: Leaving directory `/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/ncep-coupler'

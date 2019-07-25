@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/8205/branches/HWRF/external/esmf_time_f90
+END
+ESMF_AlarmClock.F90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_AlarmClock.F90
+END
+ESMF_Calendar.F90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_Calendar.F90
+END
+ESMF_Base.F90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/6694/branches/HWRF/external/esmf_time_f90/ESMF_Base.F90
+END
+Meat.F90
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/Meat.F90
+END
+testall.csh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/testall.csh
+END
+ESMF_Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_Mod.F90
+END
+ESMF_TimeMgr.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_TimeMgr.inc
+END
+module_symbols_util.F90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/module_symbols_util.F90
+END
+Test1.F90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/Test1.F90
+END
+ESMF_BaseTime.F90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_BaseTime.F90
+END
+ESMF_Clock.F90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_Clock.F90
+END
+ESMF_Alarm.F90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_Alarm.F90
+END
+module_utility.F90
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/module_utility.F90
+END
+ESMF_Time.F90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_Time.F90
+END
+ESMF_Macros.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_Macros.inc
+END
+Test1.out.correct
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/Test1.out.correct
+END
+ESMF_Stubs.F90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/5137/branches/HWRF/external/esmf_time_f90/ESMF_Stubs.F90
+END
+ESMF_TimeInterval.F90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_TimeInterval.F90
+END
+ESMF_Fraction.F90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/external/esmf_time_f90/ESMF_Fraction.F90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/7673/branches/HWRF/external/esmf_time_f90/Makefile
+END

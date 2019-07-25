@@ -1,0 +1,5 @@
+# This file contains configuration options that should be sent to
+# enable GRIB2 input to ungrib, and disable prep_hybrid.
+
+[config]
+use_spectral=no

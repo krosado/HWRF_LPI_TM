@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/!svn/ver/895/branches/HWRF
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/832/branches/HWRF/configure
+END
+clean
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/!svn/ver/832/branches/HWRF/clean
+END
+namelist.wps.global
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/832/branches/HWRF/namelist.wps.global
+END
+namelist.wps
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/832/branches/HWRF/namelist.wps
+END
+namelist.wps.all_options
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/832/branches/HWRF/namelist.wps.all_options
+END
+compile
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/!svn/ver/832/branches/HWRF/compile
+END
+namelist.wps.fire
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/832/branches/HWRF/namelist.wps.fire
+END
+namelist.wps.nmm
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/832/branches/HWRF/namelist.wps.nmm
+END
+link_grib.csh
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/602/branches/HWRF/link_grib.csh
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/895/branches/HWRF/README
+END

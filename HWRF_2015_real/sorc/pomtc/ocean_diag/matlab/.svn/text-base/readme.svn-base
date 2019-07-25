@@ -1,0 +1,46 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MATLAB code for HWRF/MPIPOM-TC diagnostics %
+% Author: Richard M. Yablonsky, URI          %
+% For questions, contact the                 %
+% Developmental Testbed Center (DTC) at      %
+% wrfhelp@ucar.edu, subject: "HWRF ocean"    %
+% Last Update: 12/5/2014                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This directory contains a combination of community MATLAB code and URI's custom MATLAB code.
+
+The community MATLAB code was originally obtained via "wget" from the following locations:
+
+cslice:                 http://woodshole.er.usgs.gov/operations/modeling/cslice/cslice.tar.Z
+ecomviz:                http://woodshole.er.usgs.gov/operations/sea-mat/omviz-html/ecomviz.tar.Z
+mexcdf:                 https://sourceforge.net/projects/mexcdf/files/mexcdf/mexcdf.r3996.zip
+m_map:                  http://www.eos.ubc.ca/%7Erich/m_map1.4.tar.gz
+pomviz:                 http://imedea.uib-csic.es/users/toni/sbpom/sbpom2010/codes/pomviz.tar.gz
+sbpom_ecoast_proc:      http://imedea.uib-csic.es/users/toni/sbpom/sbpom2010/codes/sbpom_ecoast.tar.gz
+                        Only the contents of subdir ecoast/proc are included from sbpom_ecoast.tar.gz
+                        This code is provided as-is to guide future development of cross sections, etc.
+
+URI's custom MATLAB code and associated files are located in the current directory.
+
+To run ocean diagnostics for HWRF/MPIPOM-TC by making 2-D surface plots (of temperature, for example):
+
+(1) Locate the directory with your HWRF/MPIPOM-TC output files $(WORKhwrf), such that:
+    $(WORKhwrf)/YYYYMMDDHH/SID/runwrf                  has coupled model output
+    $(WORKhwrf)/YYYYMMDDHH/SID/pom/output/OCEAN/PHASE1 has ocean initialization phase 1 output
+    $(WORKhwrf)/YYYYMMDDHH/SID/pom/output/OCEAN/PHASE2 has ocean initialization phase 2 output
+    $(WORKhwrf)/com/YYYYMMDDHH/SID                     has 3-hourly tracker ouput in ATCF format
+(2) Decide on a directory to house your post-processed files (e.g. ./pngs)
+(3) Edit the case-specific parameters in prephmpitrak.sh
+(4) Run ./prephmpitrak.sh
+(5) Edit the case-specific parameters in runhmpidiag.m
+(6) Open MATLAB
+(7) Run runhmpidiag.m
+
+To run ocean diagnostics for HWRF/MPIPOM-TC by making SST time series based on the SST table files:
+
+(1) Make sure you have already created the SST table files by successfully running readsstuvhflux.exe
+(2) Edit the case-specific parameters in runssttimeseries.m
+(3) Open MATLAB
+(4) Run runssttimeseries.m
+

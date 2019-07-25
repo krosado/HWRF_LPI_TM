@@ -1,0 +1,53 @@
+[config]
+input_sources=wcoss_fcst_nco
+fcst_catalog=wcoss_fcst_nco
+archive=none ; Disable EMC archiving jobs, not NCO archiving jobs
+HWRF_VERSION={ENV[HWRF_VERSION]}
+EXPT=hwrf.v{HWRF_VERSION}
+SUBEXPT=hwrf.v{HWRF_VERSION} ; should match EXPT
+extra_trackers=no ; no=turn off experimental 6km, 18km trackers
+allow_fallbacks=yes ; yes=use fallback options if past jobs fail
+
+email_sdm=yes ; email AFOS file to sdm@noaa.gov
+track_email_list=sdm@noaa.gov   ; space-separated list of email addresses
+
+[dir]
+utilexec={ENV[utilexec]}
+utilscript={ENV[utilscript]}
+CDNOSCRUB={ENV[DATA]}
+CDSCRUB={ENV[DATA]}
+CDSAVE=/nw{ENV[envir]}
+syndat={ENV[COMINARCH]}
+com={ENV[COMOUT]}
+oldcom={ENV[HISTDATA]}
+WORKhwrf={ENV[DATA]}
+HOMEhwrf={ENV[HOMEhwrf]}
+
+[exe]
+hur_output_email={USHhwrf}/hur_output_email.sh
+wgrib={ENV[WGRIB]}
+cnvgrib={ENV[CNVGRIB]}
+grbindex={ENV[GRBINDEX]}
+mpiserial={ENV[MPISER]}
+
+[holdvars]
+WHERE_AM_I=wcoss
+WHICH_JET=none
+NPROCS_A_NOIO=480
+NPROCS_C=4
+NPROCS_O=9
+
+[wrfexe]
+nio_groups=3
+nio_tasks_per_group=6
+poll_servers=yes
+nproc_x=-1
+nproc_y=-1
+
+[runwrf]
+nio_groups=4
+nio_tasks_per_group=4
+poll_servers=yes
+nproc_x=16
+nproc_y=30
+wrf_ranks=496

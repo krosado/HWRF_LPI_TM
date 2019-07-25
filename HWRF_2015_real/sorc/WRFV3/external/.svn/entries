@@ -1,0 +1,141 @@
+10
+
+dir
+8507
+https://svn-wrf-model.cgd.ucar.edu/branches/HWRF/external
+https://svn-wrf-model.cgd.ucar.edu
+
+
+
+2015-05-19T14:07:28.204743Z
+8427
+samuel.trahan@noaa.gov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b0b5d27b-6f0f-0410-a2a3-cb1e977edc3d
+
+atm_ocn
+dir
+
+io_esmf
+dir
+
+io_int
+dir
+
+ioapi_share
+dir
+
+esmf_time_f90
+dir
+
+io_netcdf
+dir
+
+io_grib1
+dir
+
+io_grib2
+dir
+
+io_grib_share
+dir
+
+io_phdf5
+dir
+
+IOAPI
+file
+
+
+
+
+2015-06-08T15:33:19.000000Z
+76569d64f7dae1bece491e6ec0081ce3
+2004-10-15T15:39:01.000000Z
+516
+hender
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+120
+
+io_mcel
+dir
+
+io_pnetcdf
+dir
+
+Makefile
+file
+
+
+
+
+2015-06-08T15:33:19.000000Z
+7989ff8d076bdff801c2f0a268f6d9a8
+2015-03-16T18:46:59.830440Z
+8205
+carson@ucar.edu
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+566
+
+RSL_LITE
+dir
+
+io_pio
+dir
+
+fftpack
+dir
+

@@ -1,0 +1,351 @@
+  family hwrf
+    defstatus complete
+    edit QUEUE 'preprod2'
+    edit ECF_FILES '/ecf/ecfnets/scripts/para/hwrf/'
+    edit PROJ 'HWRF-T2O'
+    edit SHAREDQ 'preprod2_shared'
+    edit SERV2Q 'prod2_serv2'
+    edit SERVQ 'prod2_serv'
+    edit ECF_JOB_CMD '/ecf/ecfutils/unixsubmit %ECF_JOB% %ECF_JOBOUT% ibmbkp'
+    family hwrf1
+      edit NUM '1'
+      family prep
+        task jhwrf_launch
+          trigger /prod00/gfs/prdgen/jgfs_pgrb2_manager:release_pgrb2_00
+          edit ECF_PASS 'FREE'
+          label storm1 " "
+          event 1 running_GSI
+          event 2 not_running_GSI
+          time 03:00
+        task jhwrf_init_gfs_f00
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f03
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f06
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f09
+          trigger jhwrf_launch == complete
+        task jhwrf_ocean_init
+          trigger jhwrf_launch == complete
+          event 1 run_couple
+          event 2 run_noncouple
+        task jhwrf_init_bdy
+          trigger jhwrf_launch == complete and jhwrf_init_gfs_f00 == complete
+      endfamily
+      family analysis
+        task jhwrf_fgat_relocate_gfs_f00
+          trigger ../prep/jhwrf_init_gfs_f00 == complete
+        task jhwrf_fgat_relocate_gdas_f09
+          trigger ../prep/jhwrf_init_gdas_f09 == complete
+        task jhwrf_fgat_relocate_gdas_f03
+          trigger ../prep/jhwrf_init_gdas_f03 == complete
+        task jhwrf_fgat_relocate_gdas_f06
+          trigger ../prep/jhwrf_init_gdas_f06 == complete
+        task jhwrf_bufrprep
+          trigger jhwrf_fgat_relocate_gdas_f03 == complete and jhwrf_fgat_relocate_gdas_f06 == complete and jhwrf_fgat_relocate_gdas_f09 == complete
+        task jhwrf_nmm_gsi_d3
+          trigger jhwrf_bufrprep == complete
+        task jhwrf_nmm_gsi_d2
+          trigger jhwrf_bufrprep == complete
+        task jhwrf_merge
+          trigger jhwrf_nmm_gsi_d2 == complete and jhwrf_nmm_gsi_d3 == complete and ../prep/jhwrf_ocean_init == complete
+      endfamily
+      family fcst
+        task jhwrf_noncouple_forecast
+          trigger ../prep/jhwrf_ocean_init:run_noncouple and ../analysis/jhwrf_merge == complete and ../prep/jhwrf_init_bdy == complete and ( /prod00/gfs/post/jgfs_post_f126 == active or /prod00/gfs/post/jgfs_post_f126 == complete )
+        task jhwrf_couple_forecast
+          trigger ../prep/jhwrf_ocean_init:run_couple and ../analysis/jhwrf_merge == complete and ../prep/jhwrf_init_bdy == complete and ( /prod00/gfs/post/jgfs_post_f126 == active or /prod00/gfs/post/jgfs_post_f126 == complete )
+      endfamily
+      family post
+        task jhwrf_unpost
+          trigger ../fcst == active or ../fcst == complete
+        task jhwrf_post
+          trigger jhwrf_unpost == complete
+        task jhwrf_products
+          trigger jhwrf_post == active or jhwrf_post == complete
+      endfamily
+      task jhwrf_output
+        trigger post == complete
+      family gempak
+        task jhwrf_gempak
+          trigger ../post == complete
+        task jhwrf_gempak_meta
+          trigger jhwrf_gempak == complete and ../jhwrf_output == complete
+      endfamily
+      task jhwrf_archive
+        trigger jhwrf_output == complete
+    endfamily
+    family hwrf2
+      edit NUM '2'
+      family prep
+        task jhwrf_launch
+          trigger /prod00/gfs/prdgen/jgfs_pgrb2_manager:release_pgrb2_00
+          edit ECF_PASS 'FREE'
+          label storm2 " "
+          event 1 running_GSI
+          event 2 not_running_GSI
+          time 03:00
+        task jhwrf_init_gfs_f00
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f03
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f06
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f09
+          trigger jhwrf_launch == complete
+        task jhwrf_ocean_init
+          trigger jhwrf_launch == complete
+          event 1 run_couple
+          event 2 run_noncouple
+        task jhwrf_init_bdy
+          trigger jhwrf_launch == complete and jhwrf_init_gfs_f00 == complete
+      endfamily
+      family analysis
+        task jhwrf_fgat_relocate_gfs_f00
+          trigger ../prep/jhwrf_init_gfs_f00 == complete
+        task jhwrf_fgat_relocate_gdas_f09
+          trigger ../prep/jhwrf_init_gdas_f09 == complete
+        task jhwrf_fgat_relocate_gdas_f03
+          trigger ../prep/jhwrf_init_gdas_f03 == complete
+        task jhwrf_fgat_relocate_gdas_f06
+          trigger ../prep/jhwrf_init_gdas_f06 == complete
+        task jhwrf_bufrprep
+          trigger jhwrf_fgat_relocate_gdas_f03 == complete and jhwrf_fgat_relocate_gdas_f06 == complete and jhwrf_fgat_relocate_gdas_f09 == complete
+        task jhwrf_nmm_gsi_d3
+          trigger jhwrf_bufrprep == complete
+        task jhwrf_nmm_gsi_d2
+          trigger jhwrf_bufrprep == complete
+        task jhwrf_merge
+          trigger jhwrf_nmm_gsi_d2 == complete and jhwrf_nmm_gsi_d3 == complete and ../prep/jhwrf_ocean_init == complete
+      endfamily
+      family fcst
+        task jhwrf_noncouple_forecast
+          trigger ../prep/jhwrf_ocean_init:run_noncouple and ../analysis/jhwrf_merge == complete and ../prep/jhwrf_init_bdy == complete and ( /prod00/gfs/post/jgfs_post_f126 == active or /prod00/gfs/post/jgfs_post_f126 == complete )
+        task jhwrf_couple_forecast
+          trigger ../prep/jhwrf_ocean_init:run_couple and ../analysis/jhwrf_merge == complete and ../prep/jhwrf_init_bdy == complete and ( /prod00/gfs/post/jgfs_post_f126 == active or /prod00/gfs/post/jgfs_post_f126 == complete )
+      endfamily
+      family post
+        task jhwrf_unpost
+          trigger ../fcst == active or ../fcst == complete
+        task jhwrf_post
+          trigger jhwrf_unpost == complete
+        task jhwrf_products
+          trigger jhwrf_post == active or jhwrf_post == complete
+      endfamily
+      task jhwrf_output
+        trigger post == complete
+      family gempak
+        task jhwrf_gempak
+          trigger ../post == complete
+        task jhwrf_gempak_meta
+          trigger jhwrf_gempak == complete and ../jhwrf_output == complete
+      endfamily
+      task jhwrf_archive
+        trigger jhwrf_output == complete
+    endfamily
+    family hwrf3
+      edit NUM '3'
+      family prep
+        task jhwrf_launch
+          trigger /prod00/gfs/prdgen/jgfs_pgrb2_manager:release_pgrb2_00
+          edit ECF_PASS 'FREE'
+          label storm3 " "
+          event 1 running_GSI
+          event 2 not_running_GSI
+          time 03:00
+        task jhwrf_init_gfs_f00
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f03
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f06
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f09
+          trigger jhwrf_launch == complete
+        task jhwrf_ocean_init
+          trigger jhwrf_launch == complete
+          event 1 run_couple
+          event 2 run_noncouple
+        task jhwrf_init_bdy
+          trigger jhwrf_launch == complete and jhwrf_init_gfs_f00 == complete
+      endfamily
+      family analysis
+        task jhwrf_fgat_relocate_gfs_f00
+          trigger ../prep/jhwrf_init_gfs_f00 == complete
+        task jhwrf_fgat_relocate_gdas_f09
+          trigger ../prep/jhwrf_init_gdas_f09 == complete
+        task jhwrf_fgat_relocate_gdas_f03
+          trigger ../prep/jhwrf_init_gdas_f03 == complete
+        task jhwrf_fgat_relocate_gdas_f06
+          trigger ../prep/jhwrf_init_gdas_f06 == complete
+        task jhwrf_bufrprep
+          trigger jhwrf_fgat_relocate_gdas_f03 == complete and jhwrf_fgat_relocate_gdas_f06 == complete and jhwrf_fgat_relocate_gdas_f09 == complete
+        task jhwrf_nmm_gsi_d3
+          trigger jhwrf_bufrprep == complete
+        task jhwrf_nmm_gsi_d2
+          trigger jhwrf_bufrprep == complete
+        task jhwrf_merge
+          trigger jhwrf_nmm_gsi_d2 == complete and jhwrf_nmm_gsi_d3 == complete and ../prep/jhwrf_ocean_init == complete
+      endfamily
+      family fcst
+        task jhwrf_noncouple_forecast
+          trigger ../prep/jhwrf_ocean_init:run_noncouple and ../analysis/jhwrf_merge == complete and ../prep/jhwrf_init_bdy == complete and ( /prod00/gfs/post/jgfs_post_f126 == active or /prod00/gfs/post/jgfs_post_f126 == complete )
+        task jhwrf_couple_forecast
+          trigger ../prep/jhwrf_ocean_init:run_couple and ../analysis/jhwrf_merge == complete and ../prep/jhwrf_init_bdy == complete and ( /prod00/gfs/post/jgfs_post_f126 == active or /prod00/gfs/post/jgfs_post_f126 == complete )
+      endfamily
+      family post
+        task jhwrf_unpost
+          trigger ../fcst == active or ../fcst == complete
+        task jhwrf_post
+          trigger jhwrf_unpost == complete
+        task jhwrf_products
+          trigger jhwrf_post == active or jhwrf_post == complete
+      endfamily
+      task jhwrf_output
+        trigger post == complete
+      family gempak
+        task jhwrf_gempak
+          trigger ../post == complete
+        task jhwrf_gempak_meta
+          trigger jhwrf_gempak == complete and ../jhwrf_output == complete
+      endfamily
+      task jhwrf_archive
+        trigger jhwrf_output == complete
+    endfamily
+    family hwrf4
+      edit NUM '4'
+      family prep
+        task jhwrf_launch
+          trigger /prod00/gfs/prdgen/jgfs_pgrb2_manager:release_pgrb2_00
+          edit ECF_PASS 'FREE'
+          label storm4 " "
+          event 1 running_GSI
+          event 2 not_running_GSI
+          time 03:00
+        task jhwrf_init_gfs_f00
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f03
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f06
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f09
+          trigger jhwrf_launch == complete
+        task jhwrf_ocean_init
+          trigger jhwrf_launch == complete
+          event 1 run_couple
+          event 2 run_noncouple
+        task jhwrf_init_bdy
+          trigger jhwrf_launch == complete and jhwrf_init_gfs_f00 == complete
+      endfamily
+      family analysis
+        task jhwrf_fgat_relocate_gfs_f00
+          trigger ../prep/jhwrf_init_gfs_f00 == complete
+        task jhwrf_fgat_relocate_gdas_f09
+          trigger ../prep/jhwrf_init_gdas_f09 == complete
+        task jhwrf_fgat_relocate_gdas_f03
+          trigger ../prep/jhwrf_init_gdas_f03 == complete
+        task jhwrf_fgat_relocate_gdas_f06
+          trigger ../prep/jhwrf_init_gdas_f06 == complete
+        task jhwrf_bufrprep
+          trigger jhwrf_fgat_relocate_gdas_f03 == complete and jhwrf_fgat_relocate_gdas_f06 == complete and jhwrf_fgat_relocate_gdas_f09 == complete
+        task jhwrf_nmm_gsi_d3
+          trigger jhwrf_bufrprep == complete
+        task jhwrf_nmm_gsi_d2
+          trigger jhwrf_bufrprep == complete
+        task jhwrf_merge
+          trigger jhwrf_nmm_gsi_d2 == complete and jhwrf_nmm_gsi_d3 == complete and ../prep/jhwrf_ocean_init == complete
+      endfamily
+      family fcst
+        task jhwrf_noncouple_forecast
+          trigger ../prep/jhwrf_ocean_init:run_noncouple and ../analysis/jhwrf_merge == complete and ../prep/jhwrf_init_bdy == complete and ( /prod00/gfs/post/jgfs_post_f126 == active or /prod00/gfs/post/jgfs_post_f126 == complete )
+        task jhwrf_couple_forecast
+          trigger ../prep/jhwrf_ocean_init:run_couple and ../analysis/jhwrf_merge == complete and ../prep/jhwrf_init_bdy == complete and ( /prod00/gfs/post/jgfs_post_f126 == active or /prod00/gfs/post/jgfs_post_f126 == complete )
+      endfamily
+      family post
+        task jhwrf_unpost
+          trigger ../fcst == active or ../fcst == complete
+        task jhwrf_post
+          trigger jhwrf_unpost == complete
+        task jhwrf_products
+          trigger jhwrf_post == active or jhwrf_post == complete
+      endfamily
+      task jhwrf_output
+        trigger post == complete
+      family gempak
+        task jhwrf_gempak
+          trigger ../post == complete
+        task jhwrf_gempak_meta
+          trigger jhwrf_gempak == complete and ../jhwrf_output == complete
+      endfamily
+      task jhwrf_archive
+        trigger jhwrf_output == complete
+    endfamily
+    family hwrf5
+      edit NUM '5'
+      family prep
+        task jhwrf_launch
+          trigger /prod00/gfs/prdgen/jgfs_pgrb2_manager:release_pgrb2_00
+          edit ECF_PASS 'FREE'
+          label storm5 " "
+          event 1 running_GSI
+          event 2 not_running_GSI
+          time 03:00
+        task jhwrf_init_gfs_f00
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f03
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f06
+          trigger jhwrf_launch == complete
+        task jhwrf_init_gdas_f09
+          trigger jhwrf_launch == complete
+        task jhwrf_ocean_init
+          trigger jhwrf_launch == complete
+          event 1 run_couple
+          event 2 run_noncouple
+        task jhwrf_init_bdy
+          trigger jhwrf_launch == complete and jhwrf_init_gfs_f00 == complete
+      endfamily
+      family analysis
+        task jhwrf_fgat_relocate_gfs_f00
+          trigger ../prep/jhwrf_init_gfs_f00 == complete
+        task jhwrf_fgat_relocate_gdas_f09
+          trigger ../prep/jhwrf_init_gdas_f09 == complete
+        task jhwrf_fgat_relocate_gdas_f03
+          trigger ../prep/jhwrf_init_gdas_f03 == complete
+        task jhwrf_fgat_relocate_gdas_f06
+          trigger ../prep/jhwrf_init_gdas_f06 == complete
+        task jhwrf_bufrprep
+          trigger jhwrf_fgat_relocate_gdas_f03 == complete and jhwrf_fgat_relocate_gdas_f06 == complete and jhwrf_fgat_relocate_gdas_f09 == complete
+        task jhwrf_nmm_gsi_d3
+          trigger jhwrf_bufrprep == complete
+        task jhwrf_nmm_gsi_d2
+          trigger jhwrf_bufrprep == complete
+        task jhwrf_merge
+          trigger jhwrf_nmm_gsi_d2 == complete and jhwrf_nmm_gsi_d3 == complete and ../prep/jhwrf_ocean_init == complete
+      endfamily
+      family fcst
+        task jhwrf_noncouple_forecast
+          trigger ../prep/jhwrf_ocean_init:run_noncouple and ../analysis/jhwrf_merge == complete and ../prep/jhwrf_init_bdy == complete and ( /prod00/gfs/post/jgfs_post_f126 == active or /prod00/gfs/post/jgfs_post_f126 == complete )
+        task jhwrf_couple_forecast
+          trigger ../prep/jhwrf_ocean_init:run_couple and ../analysis/jhwrf_merge == complete and ../prep/jhwrf_init_bdy == complete and ( /prod00/gfs/post/jgfs_post_f126 == active or /prod00/gfs/post/jgfs_post_f126 == complete )
+      endfamily
+      family post
+        task jhwrf_unpost
+          trigger ../fcst == active or ../fcst == complete
+        task jhwrf_post
+          trigger jhwrf_unpost == complete
+        task jhwrf_products
+          trigger jhwrf_post == active or jhwrf_post == complete
+      endfamily
+      task jhwrf_output
+        trigger post == complete
+      family gempak
+        task jhwrf_gempak
+          trigger ../post == complete
+        task jhwrf_gempak_meta
+          trigger jhwrf_gempak == complete and ../jhwrf_output == complete
+      endfamily
+      task jhwrf_archive
+        trigger jhwrf_output == complete
+    endfamily
+  endfamily
+

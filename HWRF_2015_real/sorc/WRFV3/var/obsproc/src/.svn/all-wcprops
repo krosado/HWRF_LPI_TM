@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/8427/branches/HWRF/var/obsproc/src
+END
+module_gpspw_gst.F90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_gpspw_gst.F90
+END
+module_map.F90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_map.F90
+END
+module_recoverh.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_recoverh.F90
+END
+module_type.F90
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_type.F90
+END
+fm_decoder.F90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/fm_decoder.F90
+END
+module_recoverp.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7673/branches/HWRF/var/obsproc/src/module_recoverp.F90
+END
+sort_platform.F90
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/sort_platform.F90
+END
+module_decoded.F90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/7673/branches/HWRF/var/obsproc/src/module_decoded.F90
+END
+module_write.F90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/7673/branches/HWRF/var/obsproc/src/module_write.F90
+END
+module_err_ncep.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_err_ncep.F90
+END
+module_mm5.F90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_mm5.F90
+END
+module_gpspw.F90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_gpspw.F90
+END
+obsproc.F90
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/8427/branches/HWRF/var/obsproc/src/obsproc.F90
+END
+module_gpspw_caa.F90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_gpspw_caa.F90
+END
+module_complete.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_complete.F90
+END
+module_intp.F90
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_intp.F90
+END
+module_duplicate.F90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_duplicate.F90
+END
+platform_interface.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/platform_interface.inc
+END
+qc_reduction.F90
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/qc_reduction.F90
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/7673/branches/HWRF/var/obsproc/src/Makefile
+END
+module_icao.F90
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_icao.F90
+END
+check_obs.F90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/check_obs.F90
+END
+module_namelist.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7673/branches/HWRF/var/obsproc/src/module_namelist.F90
+END
+module_date.F90
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_date.F90
+END
+missing.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/missing.inc
+END
+error_handler.F90
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7673/branches/HWRF/var/obsproc/src/error_handler.F90
+END
+constants.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/constants.inc
+END
+module_thin_ob.F90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_thin_ob.F90
+END
+module_err_afwa.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/7673/branches/HWRF/var/obsproc/src/module_err_afwa.F90
+END
+module_per_type.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_per_type.F90
+END
+module_sort.F90
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/7673/branches/HWRF/var/obsproc/src/module_sort.F90
+END
+setup.F90
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/setup.F90
+END
+module_func.F90
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_func.F90
+END
+module_map_utils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_map_utils.F90
+END
+module_obs_merge.F90
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_obs_merge.F90
+END
+module_qc.F90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/7673/branches/HWRF/var/obsproc/src/module_qc.F90
+END
+module_diagnostics.F90
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_diagnostics.F90
+END
+module_inside.F90
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/obsproc/src/module_inside.F90
+END

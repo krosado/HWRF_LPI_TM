@@ -1,0 +1,33 @@
+#!/bin/csh -f
+
+if ( ! -e configure.trk ) then
+	echo "Do 'configure' first"
+	exit ( 1 ) 
+endif
+
+if      ( ${#argv} == 0 ) then
+	set names	=	( lib trk )
+	set NAMES	=	( LIB TRK )
+else
+        echo "*****"
+        echo " "
+	echo "Unrecognized compile target $1."
+        echo " "
+        echo " or just run compile with no target to build everything."
+        echo " "
+        echo "*****"
+        exit(1)
+endif
+
+echo " "
+if ( ${#argv} == 0 ) then
+	echo "**** Compiling Vortex Tracker ****"
+else
+	echo "**** No arguments are needed... Compiling Vortex Tracker ****"
+endif
+echo " "
+/bin/rm -rf ./trk_exec/*
+
+( make -i -f makefile all )
+
+exit(0)

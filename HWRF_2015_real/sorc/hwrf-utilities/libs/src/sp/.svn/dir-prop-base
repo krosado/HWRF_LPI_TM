@@ -1,0 +1,21 @@
+K 13
+svn:mergeinfo
+V 678
+/branches/H15T/libs/src/sp:1124-1146
+/branches/H15X/libs/src/sp:1106-1145
+/branches/H211-final/libs/src/sp:193-205
+/branches/H215/libs/src/sp:1146-1155
+/branches/HWRF-new-gfs/libs/src/sp:1101-1103
+/branches/HWRF_v3.6a/libs/src/sp:1070-1071,1073
+/branches/hwrf-baseline/libs/src/sp:407-413
+/branches/merge-H215/libs/src/sp:1156-1162
+/branches/py2km-new-gfs/libs/src/sp:1097-1100
+/branches/the-great-merge/libs/src/sp:451-467,469
+/branches/variable-resolution/libs/src/sp:1085-1096
+/tags/hwrf-20120302/libs/src/sp:414
+/tags/v3.3_rc1/libs/src/sp:260
+/tags/v3.3_rc2/libs/src/sp:261-262
+/tags/v3.3_rc3/libs/src/sp:263
+/tags/v3.3_rc4/libs/src/sp:266
+/trunk/libs/src/sp:274-313,315-397
+END

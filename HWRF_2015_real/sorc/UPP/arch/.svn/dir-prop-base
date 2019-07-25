@@ -1,0 +1,28 @@
+K 13
+svn:mergeinfo
+V 837
+/H215/arch:618
+/branches/2011_oper/arch:92-102
+/branches/H215/arch:619-639
+/branches/HWRF+mtsat/arch:430-436
+/branches/HWRF_v3.4a/arch:260-279
+/branches/Merge_05Jan15/arch:609-610
+/branches/Merge_Feb14/arch:510-531
+/branches/Merge_May14/arch:564-567
+/branches/Merge_Oct14/arch:595-597
+/branches/Merge_Sep16/arch:583-589
+/branches/UPPdev/arch:87-118
+/branches/huiya_update2/arch:3-25
+/branches/hwrf-baseline/arch:193-197
+/branches/hwrf-baseline-tagme/arch:198-201
+/branches/iplib-bugfix/arch:383-408
+/branches/microwave-53deg-non-nadir/arch:168-185,188-192
+/branches/port_zeus/arch:205-209
+/branches/sso/arch:587-613
+/branches/sso_and_hwrf-needs/arch:614-617
+/branches/tbrown/arch:93-98
+/branches/the-great-merge/arch:224-225
+/tags/hwrf-20120302/arch:202
+/tags/hwrf-baseline-fewerbugs-20120216-2300/arch:186-187
+/trunk/arch:72-167,506-586
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/8427/branches/HWRF/var/build
+END
+da.make
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8427/branches/HWRF/var/build/da.make
+END
+setup.ksh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/8427/branches/HWRF/var/build/setup.ksh
+END
+da_name_space.pl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/5431/branches/HWRF/var/build/da_name_space.pl
+END
+decode_l2_airs.make
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/8427/branches/HWRF/var/build/decode_l2_airs.make
+END
+gen_be.make
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/8427/branches/HWRF/var/build/gen_be.make
+END
+setup.csh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/8427/branches/HWRF/var/build/setup.csh
+END
+convertor.make
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/8427/branches/HWRF/var/build/convertor.make
+END
+depend.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/8366/branches/HWRF/var/build/depend.txt
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/8427/branches/HWRF/var/build/makefile
+END

@@ -1,0 +1,431 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/8205/branches/HWRF/frame
+END
+nl_set_1_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_set_1_routines.F
+END
+module_driver_constants.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/7673/branches/HWRF/frame/module_driver_constants.F
+END
+nl_set_5_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_set_5_routines.F
+END
+hires_timer.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/7447/branches/HWRF/frame/hires_timer.c
+END
+module_alloc_space.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space.h
+END
+nl_get_0_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_get_0_routines.F
+END
+nl_access_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/frame/nl_access_routines.F
+END
+nl_get_4_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_get_4_routines.F
+END
+module_streams.F
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/4946/branches/HWRF/frame/module_streams.F
+END
+module_cpl.F
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/7191/branches/HWRF/frame/module_cpl.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/7753/branches/HWRF/frame/Makefile
+END
+wrf_shutdown.F
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/6694/branches/HWRF/frame/wrf_shutdown.F
+END
+collect_on_comm.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/4946/branches/HWRF/frame/collect_on_comm.c
+END
+module_alloc_space_1.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space_1.F
+END
+nl_set_0_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_set_0_routines.F
+END
+module_alloc_space_3.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space_3.F
+END
+module_timing.F
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/7447/branches/HWRF/frame/module_timing.F
+END
+module_alloc_space_5.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space_5.F
+END
+nl_set_4_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_set_4_routines.F
+END
+module_comm_dm_1.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/frame/module_comm_dm_1.F
+END
+module_alloc_space_7.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space_7.F
+END
+module_alloc_space_9.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space_9.F
+END
+module_comm_dm_3.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/frame/module_comm_dm_3.F
+END
+module_dm_warning
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/4946/branches/HWRF/frame/module_dm_warning
+END
+module_quilt_outbuf_ops.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/8205/branches/HWRF/frame/module_quilt_outbuf_ops.F
+END
+module_io.F
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8205/branches/HWRF/frame/module_io.F
+END
+module_wrf_error.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/8205/branches/HWRF/frame/module_wrf_error.F
+END
+module_domain_type.F
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/6166/branches/HWRF/frame/module_domain_type.F
+END
+clog.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/5601/branches/HWRF/frame/clog.c
+END
+nl_get_3_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_get_3_routines.F
+END
+module_dm_stubs.F
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6876/branches/HWRF/frame/module_dm_stubs.F
+END
+module_internal_header_util.F
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/5750/branches/HWRF/frame/module_internal_header_util.F
+END
+nl_get_7_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_get_7_routines.F
+END
+wrf_num_bytes_between.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/4946/branches/HWRF/frame/wrf_num_bytes_between.c
+END
+pack_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/frame/pack_utils.c
+END
+module_bdywrite.F
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/6694/branches/HWRF/frame/module_bdywrite.F
+END
+nl_set_3_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_set_3_routines.F
+END
+nl_set_7_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_set_7_routines.F
+END
+wrf_debug.F
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/6166/branches/HWRF/frame/wrf_debug.F
+END
+module_machine.F
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/6694/branches/HWRF/frame/module_machine.F
+END
+libmassv.F
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/4946/branches/HWRF/frame/libmassv.F
+END
+module_clear_halos.F
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/8205/branches/HWRF/frame/module_clear_halos.F
+END
+nl_get_2_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_get_2_routines.F
+END
+nl_get_6_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_get_6_routines.F
+END
+module_configure.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/5750/branches/HWRF/frame/module_configure.F
+END
+loop_based_x_shift_code.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/frame/loop_based_x_shift_code.h
+END
+module_alloc_space_0.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space_0.F
+END
+module_alloc_space_2.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space_2.F
+END
+module_alloc_space_4.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space_4.F
+END
+nl_set_2_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_set_2_routines.F
+END
+module_alloc_space_6.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space_6.F
+END
+module_comm_dm_0.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/frame/module_comm_dm_0.F
+END
+module_alloc_space_8.F
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/frame/module_alloc_space_8.F
+END
+module_comm_dm_2.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/frame/module_comm_dm_2.F
+END
+nl_set_6_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_set_6_routines.F
+END
+module_comm_dm_4.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/frame/module_comm_dm_4.F
+END
+xxx_template_ioapi.F
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/frame/xxx_template_ioapi.F
+END
+module_cpl_oasis3.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/7191/branches/HWRF/frame/module_cpl_oasis3.F
+END
+module_comm_nesting_dm.F
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/4946/branches/HWRF/frame/module_comm_nesting_dm.F
+END
+md_calls.m4
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8205/branches/HWRF/frame/md_calls.m4
+END
+module_domain.F
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/7191/branches/HWRF/frame/module_domain.F
+END
+module_nesting.F
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/4946/branches/HWRF/frame/module_nesting.F
+END
+nl_get_1_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_get_1_routines.F
+END
+module_comm_dm.F
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/4946/branches/HWRF/frame/module_comm_dm.F
+END
+nl_get_5_routines.F
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/frame/nl_get_5_routines.F
+END
+module_sm.F
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/4946/branches/HWRF/frame/module_sm.F
+END
+module_tiles.F
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/6694/branches/HWRF/frame/module_tiles.F
+END
+module_intermediate_nmm.F
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/6166/branches/HWRF/frame/module_intermediate_nmm.F
+END
+module_integrate.F
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/7191/branches/HWRF/frame/module_integrate.F
+END
+loop_based_y_shift_code.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/frame/loop_based_y_shift_code.h
+END
+module_io_quilt.F
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/7673/branches/HWRF/frame/module_io_quilt.F
+END

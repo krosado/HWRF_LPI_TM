@@ -1,0 +1,43 @@
+K 14
+svn:executable
+V 1
+*
+K 13
+svn:mergeinfo
+V 2120
+/branches/2011_oper/ush/hwrf_get_ens_wave.py:27-76
+/branches/3km/ush/hwrf_get_ens_wave.py:3501-3543
+/branches/H15W/ush/hwrf_get_ens_wave.py:3120-3180,3251-3255
+/branches/H15X/ush/hwrf_get_ens_wave.py:2933-3168
+/branches/H15X-conditional-tdr/ush/hwrf_get_ens_wave.py:3055-3256
+/branches/H215/ush/hwrf_get_ens_wave.py:3247-3405,3407-3414
+/branches/HWRF-new-gfs/ush/hwrf_get_ens_wave.py:2904,2924
+/branches/HWRF_v3.6a/ush/hwrf_get_ens_wave.py:2495-2563
+/branches/MPI_POMTC/ush/hwrf_get_ens_wave.py:1170
+/branches/MPI_POMTC_20140930/ush/hwrf_get_ens_wave.py:2715-3044
+/branches/bg-archive/ush/hwrf_get_ens_wave.py:2844-2854
+/branches/for-2013-oper-tag/ush/hwrf_get_ens_wave.py:1343-1391,1401,1441
+/branches/hwrf-2012-mtong/ush/hwrf_get_ens_wave.py:716-1099
+/branches/hwrf-2013-mpi-pom/ush/hwrf_get_ens_wave.py:1386,1389
+/branches/hwrf-2013-pre-implementation/ush/hwrf_get_ens_wave.py:1115,1122-1125,1134-1153,1206-1223
+/branches/hwrf-2013-rrtmg/ush/hwrf_get_ens_wave.py:1262-1263
+/branches/hwrf-add-some-things/ush/hwrf_get_ens_wave.py:1323-1331
+/branches/hwrf-baseline/ush/hwrf_get_ens_wave.py:406-482,513-649
+/branches/hwrf-baseline-tagme/ush/hwrf_get_ens_wave.py:483-488,515-520
+/branches/hwrf-for-taiwan/ush/hwrf_get_ens_wave.py:1449-1461
+/branches/hwrf-tc-diag-2/ush/hwrf_get_ens_wave.py:2005,2052-2053
+/branches/iplib-bugfix/ush/hwrf_get_ens_wave.py:1309-1319
+/branches/jet-2013-final/ush/hwrf_get_ens_wave.py:1507-1508
+/branches/ksH214/ush/hwrf_get_ens_wave.py:2113-2154,2159,2161
+/branches/merge-H215/ush/hwrf_get_ens_wave.py:3404-3493
+/branches/port-wcoss-newjet/ush/hwrf_get_ens_wave.py:944-965,967-968
+/branches/py-new-gsi/ush/hwrf_get_ens_wave.py:2644
+/branches/py1km/ush/hwrf_get_ens_wave.py:2321,2324-2327
+/branches/pyHWRF/ush/hwrf_get_ens_wave.py:2620,2622
+/branches/stream1.5/ush/hwrf_get_ens_wave.py:142-151,153-178
+/branches/stream1.5taskNhalo/ush/hwrf_get_ens_wave.py:131-141
+/branches/the-great-merge/ush/hwrf_get_ens_wave.py:649-687
+/branches/wcoss-rocoto/ush/hwrf_get_ens_wave.py:2796-2803,2805
+/tags/hwrf-20120302-1532/ush/hwrf_get_ens_wave.py:489
+/tags/hwrf-20120312-1737/ush/hwrf_get_ens_wave.py:521
+END

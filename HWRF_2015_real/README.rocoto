@@ -1,0 +1,131 @@
+The HWRF system is moving from a custom kick_scripts/HHS based
+automation system to the NOAA-developed Rocoto automation system for
+our real-time parallels and retrospective runs.  Rocoto has a number
+of advantages, including the ability to resubmit failed jobs, and
+better job dependency tracking.  The later, in particular, is critical
+to the 2014 HWRF system, which has dependencies that cannot be
+represented in the old kick_scripts (leading to uncertainties in
+whether jobs ran correctly).  
+
+This README file documents the new Rocoto system, provides warnings
+about some details changing as our additions to Rocoto are modified
+for acceptance to the Rocoto trunk, and gives instructions for how to
+run the Rocoto-based system.
+
+1. HWRF Rocoto Installation Locations
+2. HWRF Rocoto Definition File
+3. How to run HWRF with Rocoto: Retrospective (HISTORY) Mode
+4. How to run HWRF with Rocoto: Real-Time (FORECAST) Mode
+
+########################################################################
+## HWRF ROCOTO INSTALLATION LOCATIONS ##################################
+########################################################################
+
+The HWRF system needs several upgrades to Rocoto that are not yet
+available in the Rocoto public release.  We have installed a modified
+version of Rocoto on Jet, Zeus and WCOSS, which we will upgrade with
+bug fixes until the new features are in the public Rocoto release.
+Our Rocoto installations are here:
+
+    Jet: /lfs1/projects/hwrf-vd/rocoto/
+    Zeus: /scratch1/portfolios/NCEPDEV/hwrf/noscrub/soft/rocoto/
+    WCOSS: /hwrf/noscrob/soft/rocoto/
+
+Keep in mind that our customizations to Rocoto may change as the lead
+developer (Chris Harrop, ESRL), vets them, and requests changes.  Any
+resulting changes to the Rocoto workflow document will be committed to
+the trunk (rocoto/hwrf_workflow.xml.in) and any Rocoto code changes
+will be updated in those above three locations.
+
+########################################################################
+## HWRF ROCOTO DEFINITION FILE #########################################
+########################################################################
+
+The Rocoto automation system requires an XML document that defines the
+HWRF workflow.  It specifies the tasks that are to be run for each
+forecast cycle (ie.: ocean init, forecast, post), and the dependencies
+between the tasks.  The HWRF Rocoto XML document is automatically
+generated, to fill in information about the cycles to run and add
+platform-specific settings.  Every time you run the Rocoto wrapper
+script, Rocoto submits jobs to run each task whose dependencies are
+met.  It is able to keep track of when jobs fail, and resubmit them up
+to a maximum number of tries.  There are facilities to check the
+status of various jobs and cycles.  There are also ways to limit the
+number of jobs that are running.
+
+The template for generating the Rocoto XML file is here:
+
+  rocoto/hwrf_workflow.xml.in
+
+and the script that generates the file is in the same directory:
+
+  rocoto/run_hwrf.py
+
+Upon executing that script with the proper arguments (discussed below)
+it will generate a new *.xml file in your local directory, and run the
+"rocotorun" program to create the initial Rocoto database *.db file,
+and submit the first jobs (the ones where all dependencies are already
+met).
+
+########################################################################
+## HOW TO RUN HWRF WITH ROCOTO: RETROSPECTIVE (HISTORY) MODE ###########
+########################################################################
+
+To run HWRF with Rocoto, you cd to the rocoto subdirectory and run
+something like this:
+
+./run_hwrf.py 2014091000-2014093018 15w HISTORY config.EXPT=py-new-gsi
+
+That would run a retrospective simulation of storm 15W.  Note that the
+config.EXPT value is the name of the $HOMEhwrf directory (parent of
+rocoto/) The cycles that will be run are the ones in tcvitals,
+restricted to September 10-30, 2014.  There actually is no 2014091000
+(or 06, or 12) cycle, so those won't be run even though they're
+specified.  The remaining arguments are the same as with the
+hwrf_driver.sh and exhwrf_launch.py, and can be found in the HWRF
+User's Guide.
+
+After the first time you run that command, you will have new .xml and
+.db files in the rocoto directory.  Then you need to keep running the
+run_hwrf.py every few minutes so that it will submit new jobs:
+
+./run_hwrf.py -f 2014091000-2014093018 15w HISTORY config.expt=py-new-gsi
+
+Note the new "-f" as the first argument.  That tells it that it is
+continuing with a pre-existing .xml and .db file.  Without the -f, it
+will ask you if you're sure you want to use those files.
+
+The rocoto/hwrf_workflow.xml.in is used to generate the rocoto xml
+files.  It is where we specify the workflow for the whole system.  The
+individual tasks (GSI, WRF, etc.) are defined in files in the
+rocoto/tasks/ subdirectory.  You add a new task like so:
+
+1. Give it a new *.ent file in rocoto/tasks/.  Make sure the dependencies are right.
+2. Edit rocoto/tasks/all.ent to add a definition for the new task.
+3. Add the task to the rocoto/hwrf_workflow.xml.in.
+4. Edit any other tasks' dependencies to accommodate the new task.
+
+For your new pre-GSI obs task, it would be easiest to move the
+dependencies from gsi_d{02,03}.ent to your new task, and then make
+both of the GSI jobs dependent on the new task.
+
+########################################################################
+## HOW TO RUN HWRF WITH ROCOTO: REAL-TIME (FORECAST) MODE ##############
+########################################################################
+
+Running in real-time mode is similar to retrospective mode, but there
+are a few other key arguments.  The run_hwrf.py automatically
+generates the names of the *.xml and *.db files from the storm number,
+experiment name and first cycle.  In real-time, JTWC and NHC will
+sometimes add cycles before the current time, which can cause the *.db
+and *.xml file's name to change, which breaks Rocoto because the new
+*.db file is empty.  To avoid this problem, you must specify the name
+of the *.xml and *.db files.
+
+./run_hwrf.py -w 15w2014.xml -d 15w2014.db 2014091000-2014093018 15w FORECAST config.EXPT=py-new-gsi
+
+Note that HISTORY has changed to FORECAST as well.  After the first
+execution of run_hwrf.py, you must specify -f to indicate the files
+are already present (just as with a HISTORY run):
+
+./run_hwrf.py -f -w 15w2014.xml -d 15w2014.db 2014091000-2014093018 15w FORECAST config.EXPT=py-new-gsi

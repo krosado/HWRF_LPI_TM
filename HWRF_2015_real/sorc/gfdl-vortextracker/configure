@@ -1,0 +1,64 @@
+#!/bin/sh
+
+arg1=$1
+
+CORE_DIR=`pwd`
+echo "$CORE_DIR"
+export CORE_DIR
+
+set -- perl arch/Config.pl  -corepath=$CORE_DIR
+
+#=================================================================
+# Look for support libraries:
+for lib in w3 bacio z png jasper g2 ; do
+    cap=$( echo "$lib" | tr a-z A-Z )
+    var=LIB_${cap}_PATH
+    val=$( eval "echo \"\$$var\"" )
+    if [[ -z "$val" ]] ; then
+        echo "** WARNING: path to $cap library $var not set."
+        echo "** would you like to try to fix? [y]"
+        for ask in 1 2 ; do
+            read resp
+            if [[ "$resp" == y || -z "$resp" ]] ; then
+                echo "Enter full path to $cap library on your system."
+                read resp
+                if [[ ! -d "$resp" ]] ; then
+                    echo "invalid path: $resp.  Try again? [y]"
+                    continue
+                else
+                    val="$resp"
+                    eval "$var=\"$resp\""
+                    break # found the library
+                fi
+            elif [[ "$resp" == n ]] ; then
+                break # skip this library by user request
+            fi
+        done
+    fi
+    if [[ ! -z "$val" ]] ; then
+        set -- "$@" "-lib$lib=$val"
+    fi
+done
+
+# if the uname command exists, give it a shot and see if
+# we can narrow the choices; otherwise, spam 'em
+os="ARCH"
+mach="ARCH"
+type uname > /dev/null
+if [ $? -eq 0 ] ; then
+    os=`uname`
+    if [ "$os" = "AIX" -o "$os" = "IRIX" -o "$os" = "IRIX64" -o "$os" = "SunOS" -o "$os" = "HP-UX"  -o "$os" = "Darwin" ] ; then
+      mach="ARCH"
+    else
+      if [ "$os" = "OSF1" -o "$os" = "Linux" -o "$os" = "UNICOS/mp" -o "$os" = "UNIX_System_V" ] ; then
+        mach=`uname -m`
+      else
+        os="ARCH"
+        mach="ARCH"
+      fi
+    fi
+fi
+
+# so proceed with configuration
+set -- "$@" -os=$os -mach=$mach 
+"$@"

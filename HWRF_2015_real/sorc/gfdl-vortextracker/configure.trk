@@ -1,0 +1,87 @@
+
+SHELL           	=       /bin/sh
+
+# Listing of options that are usually independent of machine type.
+# When necessary, these are over-ridden by each architecture.
+
+ARFLAGS			=	-X64
+
+# Variables set by arch/Config.pl:
+
+LIB_W3_PATH     =   /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs
+LIB_BACIO_PATH  =   /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs
+LIB_G2_PATH     =   /mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs
+LIB_Z_PATH      =   /usr/lib64
+LIB_PNG_PATH    =   /usr/lib64
+LIB_JASPER_PATH =   /usr/lib64
+
+# Extra flags needed for including or linking to GRIB2 library:
+GRIB2_FFLAGS    =   -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/hwrfutil -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sigio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/bacio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/sfcio -I/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs/mods/g2 -I$(LIB_G2_PATH)/mods/g2
+GRIB2_LIBS      =   -L/usr/lib64 -L/mnt/lfs3/projects/hwrfv3/Keren.Rosado/H215_LPI/sorc/hwrf-utilities/libs -lg2 -lz -lpng -lbacio -lw3_i4r8 -ljasper
+
+#### Architecture specific settings ####
+
+# Settings for Linux x86_64, Intel compiler	 (serial)#
+LDFLAGS        =   -Wl,-noinhibit-exec -i_dynamic
+
+BYTE_ORDER     =   LITTLE_ENDIAN
+SFC            =   ifort
+SF90           =   ifort -free
+SCC            =   icc
+DEBUG_FLAGS    =   -g -traceback
+FFLAGS_SINGLE  =   -i4 -r4
+FFLAGS_DOUBLE  =   -i4 -r8
+CPP            =   /lib/cpp 
+CPPFLAGS       =   -C -P -D$(BYTE_ORDER) -DWRF
+FFLAGS         =   -O1 -xW -fp-model precise   $(FFLAGS_DOUBLE)
+
+DM_FC          =   mpif90 -fc=$(SFC)
+DM_F90         =   mpif90 -fc=$(SFC) -free
+DM_CC          =   mpicc
+
+FC             =   $(SFC)
+F90            =   $(SF90)
+CC             =   $(SCC)
+
+CFLAGS         =   -O
+
+###########################################################
+#
+#	Macros, these should be generic for all machines
+
+LN		=	ln -sf
+MAKE		=	make -i -r
+RM		= 	/bin/rm -f
+CP		= 	/bin/cp
+AR		=	ar 
+MKDIR           =       /bin/mkdir -p
+
+
+.IGNORE:
+.SUFFIXES: .c .f .F .F90 .f90 .o
+
+#	There is probably no reason to modify these rules
+
+.c.o:
+	$(RM) $@
+	$(CC) $(CFLAGS) -c $<	
+
+.f.o:
+	$(RM) $@ $*.mod
+	$(FC) $(FFLAGS) -c $< 
+
+.F.o:
+	$(RM) $@ $*.mod
+	$(CPP) $(CPPFLAGS) $(FDEFS)  $< > $*.f90
+	$(F90) $(FFLAGS) -c $*.f90 
+	$(RM) $*.f90
+
+.F90.o:
+	$(RM) $@ $*.mod
+	$(CPP) $(CPPFLAGS) $(FDEFS)  $< > $*.f90
+	$(F90) $(FFLAGS) -c $*.f90 
+	$(RM) $*.f90
+
+.f90.o:
+	$(RM) $@ $*.mod
+	$(F90) $(FFLAGS) -c $< 

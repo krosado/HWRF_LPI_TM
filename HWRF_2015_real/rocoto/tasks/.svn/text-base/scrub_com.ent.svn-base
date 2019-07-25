@@ -1,0 +1,53 @@
+<task name="scrub_com_E#ENS#" maxtries="&MAX_TRIES;">
+  <command>&PRE; &USHhwrf;/hwrf_scrub.py <cyclestr>&COMhwrf;</cyclestr></command>
+  <jobname>hwrf_scrub_com_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&SERIAL;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>00:15:00</walltime>
+  <memory>1G</memory>
+  <stdout><cyclestr>&LOGhwrf;/hwrf_scrub_com_&SID;_@Y@m@d@H_E#ENS#.out</cyclestr></stdout>
+  <stderr><cyclestr>&LOGhwrf;/hwrf_scrub_com_&SID;_@Y@m@d@H_E#ENS#.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+  &SERIAL_EXTRA;
+
+  <dependency>
+    <!-- Next cycle has finished its initialization OR this cycle is
+         the last cycle,
+
+                                 - AND -
+         
+         this cycle's archive and output jobs are complete. -->
+    <and>
+      <or>
+        <not><cycleexistdep cycle_offset="6:00:00"/></not>
+        <and>  
+          <taskdep task="tape_archive_E#ENS#" cycle_offset="6:00:00"/>
+          <taskdep task="disk_archive_E#ENS#" cycle_offset="6:00:00"/>
+          <taskdep task="output_E#ENS#" cycle_offset="6:00:00"/>
+          <datadep age="&COM_SCRUB_TIME;"><cyclestr offset="6:00:00">&COMhwrf;/&STORMLABEL;.done</cyclestr></datadep>
+        </and>
+        <taskdep task="scrub_com_E#ENS#" cycle_offset="6:00:00"/>
+      </or>
+
+      <taskdep task="output_E#ENS#"/>
+      <taskdep task="tape_archive_E#ENS#"/>
+      <taskdep task="disk_archive_E#ENS#"/>
+      <or>
+        <strneq><left>&ARCHIVE_WRFOUT;</left><right>YES</right></strneq>
+        <taskdep task="wrfout_archive_E#ENS#"/>
+        <taskdep task="scrub_work_E#ENS#"/>
+      </or>
+
+      <datadep age="&COM_SCRUB_TIME;"><cyclestr>&COMhwrf;/&STORMLABEL;.done</cyclestr></datadep>
+    </and>
+  </dependency>
+
+</task>

@@ -1,0 +1,35 @@
+K 13
+svn:mergeinfo
+V 1563
+/branches/2011_oper/sorc/build/bin:27-76
+/branches/3km/sorc/build/bin:3501-3543
+/branches/H15W/sorc/build/bin:3120-3180,3251-3255
+/branches/H15X/sorc/build/bin:2933-3168
+/branches/H15X-conditional-tdr/sorc/build/bin:3055-3256
+/branches/H215/sorc/build/bin:3247-3405,3407-3414
+/branches/HWRF-new-gfs/sorc/build/bin:2904,2924
+/branches/HWRF_v3.6a/sorc/build/bin:2537,2546-2548,2553-2554,2571,2586
+/branches/MPI_POMTC/sorc/build/bin:1170
+/branches/MPI_POMTC_20140930/sorc/build/bin:2715-3044
+/branches/bg-archive/sorc/build/bin:2844-2854
+/branches/for-2013-oper-tag/sorc/build/bin:1346
+/branches/hwrf-2012-mtong/sorc/build/bin:716-1099
+/branches/hwrf-2013-pre-implementation/sorc/build/bin:1115,1122-1125,1134-1153,1206-1223
+/branches/hwrf-2013-rrtmg/sorc/build/bin:1262-1263
+/branches/hwrf-add-some-things/sorc/build/bin:1323-1331
+/branches/hwrf-baseline/sorc/build/bin:224-402
+/branches/hwrf-baseline-tag/sorc/build/bin:403-404
+/branches/hwrf-for-taiwan/sorc/build/bin:1449-1461
+/branches/iplib-bugfix/sorc/build/bin:1309-1319
+/branches/jet-2013-final/sorc/build/bin:1507-1508
+/branches/merge-H215/sorc/build/bin:3404-3493
+/branches/port-wcoss-newjet/sorc/build/bin:944-965,967-968
+/branches/port_zeus/sorc/build/bin:523-557
+/branches/py-new-gsi/sorc/build/bin:2644
+/branches/pyHWRF/sorc/build/bin:2578-2585,2620,2622
+/branches/stream1.5/sorc/build/bin:24-130
+/branches/stream1.5init3km/sorc/build/bin:131-223
+/branches/the-great-merge/sorc/build/bin:649-687
+/branches/wcoss-rocoto/sorc/build/bin:2796-2803,2805
+/tags/hwrf-baseline-20120216-2300/sorc/build/bin:405
+END

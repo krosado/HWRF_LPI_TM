@@ -1,0 +1,37 @@
+<task name="bufrprep_E#ENS#" maxtries="&MAX_TRIES;">
+  
+  <command>&PRE; &EXhwrf;/exhwrf_bufrprep.py</command>
+  <jobname>hwrf_bufrprep_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&PE;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>00:19:00</walltime>
+  <memory></memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_bufrprep.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_bufrprep.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &NODES_EXTRA;
+
+  <dependency>
+    <and>
+      <streq><left>YES</left><right>&RUN_GSI;</right></streq>
+      <or>
+        <taskdep task="input_E#ENS#"/>
+        <strneq><left>&FETCH_INPUT;</left><right>YES</right></strneq>
+      </or>
+      <taskdep task="launch_E#ENS#"/>
+      <timedep><cyclestr offset="3:20:00">@Y@m@d@H@M@S</cyclestr></timedep>
+    </and>
+  </dependency>
+
+  <rewind>
+    <sh>rm -f '<cyclestr>&COMhwrf;/&STORMLABEL;.tdr</cyclestr>'</sh>
+  </rewind>
+
+</task>

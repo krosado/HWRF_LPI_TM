@@ -1,0 +1,52 @@
+#BSUB -J %E%hwrf%NUM%_bufrprep_%CYC%
+#BSUB -o /com2/output/%ENVIR%/today/hwrf%NUM%_bufrprep_%CYC%.o%J
+#BSUB -e /com2/output/%ENVIR%/today/hwrf%NUM%_bufrprep_%CYC%.o%J
+#BSUB -cwd /tmpnwprd
+#BSUB -q %QUEUE%
+#BSUB -R span[ptile=1]
+#BSUB -n 1
+#BSUB -W 00:30
+#BSUB -R affinity[core]
+#BSUB -L /bin/sh
+#BSUB -P %PROJ%
+
+%include <head.h>
+%include <envir-p2.h>
+
+# EXPORT list here
+set -x
+
+export storm_num=%NUM%
+export stormlabel=storm%NUM%
+export cyc=%CYC%
+export job=hwrf%NUM%_bufrprep_%CYC%
+export PDY=${PDY:-%PDY:%}
+
+# CALL executable job script here
+
+# versions file for hwrf sets $hwrf_ver and $code_ver
+VERSION_FILE=${NWROOT}/versions/hwrf.ver
+if [ -f $VERSION_FILE ]; then
+  . $VERSION_FILE
+else
+  ecflow_client --msg="***JOB ${ECF_NAME} ERROR: Version File $VERSION_FILE does not exist ***"
+  ecflow_client --abort
+  exit
+fi
+
+${NWROOT}/hwrf.${hwrf_ver}/jobs/JHWRF_BUFRPREP
+
+if [ $? -ne 0 ]; then
+  ecflow_client --msg="***JOB ${ECF_NAME} ERROR RUNNING J-SCRIPT ***"
+  ecflow_client --abort
+  exit
+fi
+
+%include <tail.h>
+%manual
+# Purpose: To execute the hurricane model control script.
+# Job specific troubleshooting instructions:
+#  see generic troubleshoot manual page
+#
+# include manual page below
+%end

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt
+END
+skewt_mappings.F
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt_mappings.F
+END
+skewt_background.F
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt_background.F
+END
+skewt_wndbarb.F
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt_wndbarb.F
+END
+skewt.F
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt.F
+END
+skewt_opngks.F
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt_opngks.F
+END
+skewt_os.F
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt_os.F
+END
+skewt_tmr.F
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt_tmr.F
+END
+skewt_clsgks.F
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt_clsgks.F
+END
+skewt_w.F
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt_w.F
+END
+skewt_tsa.F
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt_tsa.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/Makefile
+END
+skewt_esat.F
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/4946/branches/HWRF/var/obsproc/MAP_plot/Dir_map/Skewt/skewt_esat.F
+END

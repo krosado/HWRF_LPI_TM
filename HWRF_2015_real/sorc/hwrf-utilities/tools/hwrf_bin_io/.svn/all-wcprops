@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/1163/branches/HWRF/tools/hwrf_bin_io
+END
+parm.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/parm.tbl
+END
+MPI_FIRST.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/MPI_FIRST.f
+END
+MICROINIT.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/MICROINIT.f
+END
+mpiio_rw.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/730/branches/HWRF/tools/hwrf_bin_io/mpiio_rw.f90
+END
+params
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/params
+END
+module_internal_header_util.f90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/module_internal_header_util.f90
+END
+PARA_RANGE.f
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/PARA_RANGE.f
+END
+intio_tags.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/intio_tags.h
+END
+hwrf_bin_main.f
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/730/branches/HWRF/tools/hwrf_bin_io/hwrf_bin_main.f
+END
+wrf_io_flags.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/wrf_io_flags.h
+END
+SOIL_mod.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/SOIL_mod.f
+END
+GRIDSPEC.comm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/GRIDSPEC.comm
+END
+SERVER.f
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/SERVER.f
+END
+SETUP_SERVERS.f
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/SETUP_SERVERS.f
+END
+RHGRD.comm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/RHGRD.comm
+END
+MASKS_mod.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/MASKS_mod.f
+END
+VRBLS2D_mod.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/VRBLS2D_mod.f
+END
+VRBLS3D_mod.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/VRBLS3D_mod.f
+END
+hwrf_binary_read_write.f
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/737/branches/HWRF/tools/hwrf_bin_io/hwrf_binary_read_write.f
+END
+GPVS.f
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/GPVS.f
+END
+LOOKUP.comm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/LOOKUP.comm
+END
+kinds_mod.f90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/kinds_mod.f90
+END
+create_nest_1x_10m.f
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/create_nest_1x_10m.f
+END
+CTLBLK.comm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/CTLBLK.comm
+END
+COLLECT_LOC.f
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/COLLECT_LOC.f
+END
+CMASSI.comm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/CMASSI.comm
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/289/branches/HWRF/tools/hwrf_bin_io/readme.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/730/branches/HWRF/tools/hwrf_bin_io/Makefile
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3768/trunk/modulefiles/wcoss/HWRF
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/3494/trunk/modulefiles/wcoss/HWRF/build
+END
+.version
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/3494/trunk/modulefiles/wcoss/HWRF/.version
+END
+run
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3494/trunk/modulefiles/wcoss/HWRF/run
+END
+rungsi
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/3768/trunk/modulefiles/wcoss/HWRF/rungsi
+END

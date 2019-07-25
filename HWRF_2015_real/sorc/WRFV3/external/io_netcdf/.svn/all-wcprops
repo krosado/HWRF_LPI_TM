@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/8205/branches/HWRF/external/io_netcdf
+END
+ext_ncd_put_dom_ti.code
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/7191/branches/HWRF/external/io_netcdf/ext_ncd_put_dom_ti.code
+END
+wrf_io.F90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/8205/branches/HWRF/external/io_netcdf/wrf_io.F90
+END
+ext_ncd_put_var_td.code
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/ext_ncd_put_var_td.code
+END
+diffwrf.F90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/6694/branches/HWRF/external/io_netcdf/diffwrf.F90
+END
+vort.F90
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/6325/branches/HWRF/external/io_netcdf/vort.F90
+END
+transpose.code
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/6694/branches/HWRF/external/io_netcdf/transpose.code
+END
+testWRFRead.F90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/testWRFRead.F90
+END
+ext_ncd_get_dom_ti.code
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/ext_ncd_get_dom_ti.code
+END
+ext_ncd_put_var_ti.code
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/ext_ncd_put_var_ti.code
+END
+WRFIO.doc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/WRFIO.doc
+END
+ext_ncd_get_var_td.code
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/ext_ncd_get_var_td.code
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/README
+END
+ext_ncd_get_var_ti.code
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/ext_ncd_get_var_ti.code
+END
+module_wrfsi_static.F90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/module_wrfsi_static.F90
+END
+testWRFWrite.F90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/testWRFWrite.F90
+END
+field_routines.F90
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/4946/branches/HWRF/external/io_netcdf/field_routines.F90
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/7673/branches/HWRF/external/io_netcdf/makefile
+END

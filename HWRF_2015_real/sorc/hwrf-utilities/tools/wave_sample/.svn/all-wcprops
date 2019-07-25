@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/1043/branches/HWRF/tools/wave_sample
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/1043/branches/HWRF/tools/wave_sample/Makefile
+END
+sample.f90
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/1036/branches/HWRF/tools/wave_sample/sample.f90
+END

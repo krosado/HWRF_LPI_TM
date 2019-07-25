@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/1075/branches/HWRF/libs/src/bacio
+END
+clib4.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/bacio/clib4.h
+END
+makebacio.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/274/branches/HWRF/libs/src/bacio/makebacio.sh
+END
+bacio_v1_3.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/443/branches/HWRF/libs/src/bacio/bacio_v1_3.c
+END
+baciof.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/274/branches/HWRF/libs/src/bacio/baciof.f
+END
+clib8.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/bacio/clib8.h
+END
+baciof.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/274/branches/HWRF/libs/src/bacio/baciof.h
+END
+makebacio.sh_IBM
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/274/branches/HWRF/libs/src/bacio/makebacio.sh_IBM
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1075/branches/HWRF/libs/src/bacio/Makefile
+END

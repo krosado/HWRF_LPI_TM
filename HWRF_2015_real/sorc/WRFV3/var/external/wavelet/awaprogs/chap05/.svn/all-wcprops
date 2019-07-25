@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/awaprogs/chap05
+END
+asbqfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/awaprogs/chap05/asbqfs.h
+END
+cd.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/awaprogs/chap05/cd.c
+END
+qf.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/awaprogs/chap05/qf.c
+END
+cd.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/awaprogs/chap05/cd.h
+END
+qf.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/awaprogs/chap05/qf.h
+END
+oqfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/var/external/wavelet/awaprogs/chap05/oqfs.h
+END

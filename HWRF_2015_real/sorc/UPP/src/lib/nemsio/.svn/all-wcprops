@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/563/branches/HWRF/src/lib/nemsio
+END
+nemsio_module_mpi.f90
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/563/branches/HWRF/src/lib/nemsio/nemsio_module_mpi.f90
+END
+nemsio_write.f90
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/563/branches/HWRF/src/lib/nemsio/nemsio_write.f90
+END
+nemsio_read.f90
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/563/branches/HWRF/src/lib/nemsio/nemsio_read.f90
+END
+bafrio.f
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/nemsio/bafrio.f
+END
+nemsio_module.f90
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/563/branches/HWRF/src/lib/nemsio/nemsio_module.f90
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/563/branches/HWRF/src/lib/nemsio/makefile
+END
+nemsio_openclose.f90
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/563/branches/HWRF/src/lib/nemsio/nemsio_openclose.f90
+END

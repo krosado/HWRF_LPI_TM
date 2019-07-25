@@ -1,0 +1,20 @@
+K 13
+svn:mergeinfo
+V 597
+/branches/H15T/makefile:1124-1146
+/branches/H15X/makefile:1106-1145
+/branches/H211-final/makefile:193-205
+/branches/H215/makefile:1146-1155
+/branches/HWRF-new-gfs/makefile:1101-1103
+/branches/HWRF_v3.5a/makefile:887-888,890,892,898-911,917-919
+/branches/HWRF_v3.6a/makefile:1070-1071,1073
+/branches/hwrf-baseline/makefile:407-413
+/branches/merge-H215/makefile:1156-1162
+/branches/the-great-merge/makefile:451-467,469
+/tags/hwrf-20120302/makefile:414
+/tags/v3.3_rc1/makefile:260
+/tags/v3.3_rc2/makefile:261-262
+/tags/v3.3_rc3/makefile:263
+/tags/v3.3_rc4/makefile:266
+/trunk/makefile:274-313,315-397
+END

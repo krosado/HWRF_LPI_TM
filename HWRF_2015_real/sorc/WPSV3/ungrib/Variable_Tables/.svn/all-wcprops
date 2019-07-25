@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/895/branches/HWRF/ungrib/Variable_Tables
+END
+Vtable.SST
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.SST
+END
+Vtable.GFS
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/895/branches/HWRF/ungrib/Variable_Tables/Vtable.GFS
+END
+Vtable.CFSR_press_pgbh06
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/622/branches/HWRF/ungrib/Variable_Tables/Vtable.CFSR_press_pgbh06
+END
+Vtable.UKMO_no_heights
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.UKMO_no_heights
+END
+Vtable.ERA-interim.ml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.ERA-interim.ml
+END
+Vtable.NOGAPS
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.NOGAPS
+END
+Vtable.AVN0P5WRF
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.AVN0P5WRF
+END
+Vtable.AGRWRF
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.AGRWRF
+END
+Vtable.NOGAPS_needs_GFS_soil
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.NOGAPS_needs_GFS_soil
+END
+Vtable.RUCb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.RUCb
+END
+Vtable.CFSR_mean
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.CFSR_mean
+END
+Vtable.GODAS
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.GODAS
+END
+Vtable.AFWAICE
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.AFWAICE
+END
+Vtable.AWIP
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.AWIP
+END
+Vtable.ECMWF
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.ECMWF
+END
+Vtable.NARR
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.NARR
+END
+Vtable.UKMO_LANDSEA
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.UKMO_LANDSEA
+END
+Vtable.AGRMETSOIL
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.AGRMETSOIL
+END
+Vtable.NCEP2
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.NCEP2
+END
+Vtable.NavySST
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.NavySST
+END
+Vtable.TCRP
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/832/branches/HWRF/ungrib/Variable_Tables/Vtable.TCRP
+END
+Vtable.RUCp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.RUCp
+END
+Vtable.NAM
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/738/branches/HWRF/ungrib/Variable_Tables/Vtable.NAM
+END
+Vtable.ARWp.UPP
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/881/branches/HWRF/ungrib/Variable_Tables/Vtable.ARWp.UPP
+END
+Vtable.GFDL
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.GFDL
+END
+Vtable.CFSR2_web
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/700/branches/HWRF/ungrib/Variable_Tables/Vtable.CFSR2_web
+END
+Vtable.CFSR_sfc_flxf06
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/702/branches/HWRF/ungrib/Variable_Tables/Vtable.CFSR_sfc_flxf06
+END
+Vtable.RAP.pressure.ncep
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/738/branches/HWRF/ungrib/Variable_Tables/Vtable.RAP.pressure.ncep
+END
+Vtable.NNRP
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/700/branches/HWRF/ungrib/Variable_Tables/Vtable.NNRP
+END
+Vtable.JMAGSM
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.JMAGSM
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/README
+END
+Vtable.ECMWF_sigma
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.ECMWF_sigma
+END
+Vtable.GFSENS
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.GFSENS
+END
+Vtable.GSM
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.GSM
+END
+Vtable.RAP.hybrid.ncep
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/738/branches/HWRF/ungrib/Variable_Tables/Vtable.RAP.hybrid.ncep
+END
+Vtable.ERA-interim.pl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/602/branches/HWRF/ungrib/Variable_Tables/Vtable.ERA-interim.pl
+END
+Vtable.AGRMETSNOW
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.AGRMETSNOW
+END
+Vtable.AGRMETSOIL2
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.AGRMETSOIL2
+END
+Vtable.UKMO_ENDGame
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/861/branches/HWRF/ungrib/Variable_Tables/Vtable.UKMO_ENDGame
+END
+Vtable.ARW.UPP
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/881/branches/HWRF/ungrib/Variable_Tables/Vtable.ARW.UPP
+END
+Vtable.RAP.sigma.gsd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/738/branches/HWRF/ungrib/Variable_Tables/Vtable.RAP.sigma.gsd
+END

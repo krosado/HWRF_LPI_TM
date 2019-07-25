@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/5750/branches/HWRF/var/test/4dvar
+END
+gmao_airs_bufr.tbl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/var/test/4dvar/gmao_airs_bufr.tbl
+END
+VEGPARM.TBL
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/test/4dvar/VEGPARM.TBL
+END
+radiance_info
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/4946/branches/HWRF/var/test/4dvar/radiance_info
+END
+SOILPARM.TBL
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/4946/branches/HWRF/var/test/4dvar/SOILPARM.TBL
+END
+GENPARM.TBL
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/test/4dvar/GENPARM.TBL
+END
+namelist.input
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/5750/branches/HWRF/var/test/4dvar/namelist.input
+END
+LANDUSE.TBL
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/4946/branches/HWRF/var/test/4dvar/LANDUSE.TBL
+END
+RRTM_DATA
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/4946/branches/HWRF/var/test/4dvar/RRTM_DATA
+END

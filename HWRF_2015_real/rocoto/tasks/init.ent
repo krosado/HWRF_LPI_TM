@@ -1,0 +1,51 @@
+<task name="init_#INIT_MODEL#_#INIT_FHR#_E#ENS#" maxtries="&MAX_TRIES;">
+
+  <command>&PRE; &EXhwrf;/exhwrf_init.py</command>
+  <jobname>hwrf_init_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_#INIT_MODEL#_#INIT_FHR#_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&PE;</queue>
+  <cores>&INIT_CORES;</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>&INIT_CORES;</value>
+  </envar>
+  <walltime>01:29:00</walltime>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_init_#INIT_MODEL#_#INIT_FHR#.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_init_#INIT_MODEL#_#INIT_FHR#.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &CORES_EXTRA;
+  &MPI_EXTRA;
+
+  <envar>
+    <name>INIT_MODEL</name>
+    <value>#INIT_MODEL#</value>
+  </envar>
+  <envar>
+    <name>INIT_FHR</name>
+    <value>#INIT_FHR#</value>
+  </envar>
+  <envar>
+    <name>INIT_PARTS</name>
+    <value>#INIT_PARTS#</value>
+  </envar>
+
+  <dependency>
+    <and>
+      <taskdep task="launch_E#ENS#"/>
+      <or>
+        <taskdep task="input_E#ENS#"/>
+        <strneq><left>&FETCH_INPUT;</left><right>YES</right></strneq>
+      </or>
+      <or>
+        <and>
+          <streq><left>&RUN_GSI;</left><right>YES</right></streq>
+          <streq><left>#INIT_MODEL#</left><right>GDAS1</right></streq>
+        </and>
+        <streq><left>#INIT_MODEL#</left><right>GFS</right></streq>
+      </or>
+    </and>
+  </dependency>
+
+</task>

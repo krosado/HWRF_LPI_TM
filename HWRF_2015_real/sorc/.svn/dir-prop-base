@@ -1,0 +1,12 @@
+K 13
+svn:externals
+V 534
+hwrf-utilities       https://svn-dtc-hwrf-utilities.cgd.ucar.edu/branches/HWRF/
+ncep-coupler         https://svn-dtc-ncep-coupler.cgd.ucar.edu/branches/HWRF/
+pomtc                https://svn-dtc-pomtc.cgd.ucar.edu/branches/HWRF/
+UPP                  https://svn-dtc-unifiedpostproc.cgd.ucar.edu/branches/HWRF/
+WPSV3                https://svn-wrf-wps.cgd.ucar.edu/branches/HWRF/
+WRFV3                https://svn-wrf-model.cgd.ucar.edu/branches/HWRF/
+gfdl-vortextracker   https://svn-dtc-gfdl-vortextracker.cgd.ucar.edu/branches/HWRF/
+
+END

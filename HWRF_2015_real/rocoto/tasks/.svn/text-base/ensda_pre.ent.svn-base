@@ -1,0 +1,38 @@
+<task name="ensda_pre" maxtries="&MAX_TRIES;">
+
+  <command>&PRE; &EXhwrf;/exhwrf_ensda_pre.py</command>
+  <jobname>hwrf_ensda_pre_&SID;_<cyclestr>@Y@m@d@H</cyclestr></jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&SERIAL;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>00:05:00</walltime>
+  <memory>1G</memory>
+  <stdout><cyclestr>&WORKhwrf;/hwrf_ensda_pre.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_ensda_pre.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &SERIAL_EXTRA;
+  &CORES_EXTRA;
+
+  <dependency>
+    <or>
+      <and>
+        <streq><left>&CASE_ROOT;</left><right>FORECAST</right></streq>
+        <metataskdep metatask="meta_fcst"/>
+      </and>
+      <and>
+        <streq><left>&CASE_ROOT;</left><right>HISTORY</right></streq>
+        <taskdep task="input_E99"/>
+      </and>
+    </or>
+  </dependency>
+
+  <rewind>
+    <sh>rm -f '<cyclestr>&COMhwrf;/&STORMLABEL;.done</cyclestr>'</sh>
+  </rewind>
+</task>

@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/!svn/ver/3802/trunk/rocoto/tasks
+END
+tape_archive.ent
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/3519/trunk/rocoto/tasks/tape_archive.ent
+END
+input.ent
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3494/trunk/rocoto/tasks/input.ent
+END
+merge.ent
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3518/trunk/rocoto/tasks/merge.ent
+END
+ensda_pre.ent
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3494/trunk/rocoto/tasks/ensda_pre.ent
+END
+meta_ensda.ent
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3494/trunk/rocoto/tasks/meta_ensda.ent
+END
+forecast.ent
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3637/trunk/rocoto/tasks/forecast.ent
+END
+ocean_init.ent
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/2920/trunk/rocoto/tasks/ocean_init.ent
+END
+meta_relocate_gdas1.ent
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/3494/trunk/rocoto/tasks/meta_relocate_gdas1.ent
+END
+post_helper.ent
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/3494/trunk/rocoto/tasks/post_helper.ent
+END
+post.ent
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3494/trunk/rocoto/tasks/post.ent
+END
+gsi_d02.ent
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3518/trunk/rocoto/tasks/gsi_d02.ent
+END
+meta_extra_trackers.ent
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/2708/trunk/rocoto/tasks/meta_extra_trackers.ent
+END
+unpost.ent
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3494/trunk/rocoto/tasks/unpost.ent
+END
+gsi_d03.ent
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3518/trunk/rocoto/tasks/gsi_d03.ent
+END
+meta_init_gdas1.ent
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3494/trunk/rocoto/tasks/meta_init_gdas1.ent
+END
+meta_gsi.ent
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/2615/trunk/rocoto/tasks/meta_gsi.ent
+END
+disk_archive.ent
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/3519/trunk/rocoto/tasks/disk_archive.ent
+END
+ensdamemb.ent
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3802/trunk/rocoto/tasks/ensdamemb.ent
+END
+relocate.ent
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3511/trunk/rocoto/tasks/relocate.ent
+END
+graphics.ent
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3494/trunk/rocoto/tasks/graphics.ent
+END
+check_init.ent
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3518/trunk/rocoto/tasks/check_init.ent
+END
+output.ent
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3647/trunk/rocoto/tasks/output.ent
+END
+init.ent
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3706/trunk/rocoto/tasks/init.ent
+END
+products.ent
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3494/trunk/rocoto/tasks/products.ent
+END
+meta_relocate_gfs.ent
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/2615/trunk/rocoto/tasks/meta_relocate_gfs.ent
+END
+meta_init_gfs.ent
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/2615/trunk/rocoto/tasks/meta_init_gfs.ent
+END
+all.ent
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3494/trunk/rocoto/tasks/all.ent
+END
+ensda_output.ent
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/3714/trunk/rocoto/tasks/ensda_output.ent
+END
+launch.ent
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3494/trunk/rocoto/tasks/launch.ent
+END
+scrub_com.ent
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3494/trunk/rocoto/tasks/scrub_com.ent
+END
+bdy.ent
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3494/trunk/rocoto/tasks/bdy.ent
+END
+scrub_work.ent
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3494/trunk/rocoto/tasks/scrub_work.ent
+END
+bufrprep.ent
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3213/trunk/rocoto/tasks/bufrprep.ent
+END
+gsi_post.ent
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3518/trunk/rocoto/tasks/gsi_post.ent
+END
+wrfout_archive.ent
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/3494/trunk/rocoto/tasks/wrfout_archive.ent
+END

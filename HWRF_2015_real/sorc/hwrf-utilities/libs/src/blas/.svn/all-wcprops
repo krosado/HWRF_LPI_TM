@@ -1,0 +1,917 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/274/branches/HWRF/libs/src/blas
+END
+scasum.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/scasum.f
+END
+chbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/chbmv.f
+END
+sdsdot.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/sdsdot.f
+END
+zrotg.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zrotg.f
+END
+zhpr2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zhpr2.f
+END
+zher2k.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/zher2k.f
+END
+sspmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/sspmv.f
+END
+srotmg.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/srotmg.f
+END
+chpmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/chpmv.f
+END
+dcopy.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dcopy.f
+END
+dtrmm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dtrmm.f
+END
+dscal.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dscal.f
+END
+ddot.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/ddot.f
+END
+dgbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dgbmv.f
+END
+zdrot.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zdrot.f
+END
+idamax.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/idamax.f
+END
+dzasum.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/dzasum.f
+END
+cher2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cher2.f
+END
+drot.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/drot.f
+END
+ztbsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ztbsv.f
+END
+dswap.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dswap.f
+END
+cher.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/cher.f
+END
+ssyr2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ssyr2.f
+END
+zdotc.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zdotc.f
+END
+ztpsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ztpsv.f
+END
+zgemv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zgemv.f
+END
+csymm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/csymm.f
+END
+ztrsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ztrsv.f
+END
+chemm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/chemm.f
+END
+csrot.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/csrot.f
+END
+dcabs1.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/dcabs1.f
+END
+dsymv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dsymv.f
+END
+srotm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/srotm.f
+END
+ssymm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ssymm.f
+END
+zgerc.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zgerc.f
+END
+dtbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dtbmv.f
+END
+ccopy.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ccopy.f
+END
+zdscal.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/zdscal.f
+END
+dger.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/dger.f
+END
+ctrmm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ctrmm.f
+END
+dnrm2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dnrm2.f
+END
+cscal.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cscal.f
+END
+daxpy.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/daxpy.f
+END
+zhbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zhbmv.f
+END
+dtrsm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dtrsm.f
+END
+dgemm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dgemm.f
+END
+dtpmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dtpmv.f
+END
+dspr2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dspr2.f
+END
+dsyrk.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dsyrk.f
+END
+dtrmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dtrmv.f
+END
+chpr.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/chpr.f
+END
+scopy.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/scopy.f
+END
+cgbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cgbmv.f
+END
+ssyr.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/ssyr.f
+END
+icamax.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/icamax.f
+END
+strmm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/strmm.f
+END
+zhpmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zhpmv.f
+END
+sscal.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/sscal.f
+END
+csscal.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/csscal.f
+END
+scabs1.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/scabs1.f
+END
+cswap.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cswap.f
+END
+cdotu.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cdotu.f
+END
+sgbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/sgbmv.f
+END
+drotg.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/drotg.f
+END
+isamax.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/isamax.f
+END
+zher2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zher2.f
+END
+sswap.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/sswap.f
+END
+chemv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/chemv.f
+END
+cgeru.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cgeru.f
+END
+dspr.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/dspr.f
+END
+sdot.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/sdot.f
+END
+ctbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ctbmv.f
+END
+xerbla.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/xerbla.f
+END
+dsyr2k.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/dsyr2k.f
+END
+zsymm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zsymm.f
+END
+zhemm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zhemm.f
+END
+ssymv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ssymv.f
+END
+dtbsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dtbsv.f
+END
+caxpy.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/caxpy.f
+END
+srot.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/srot.f
+END
+ctrsm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ctrsm.f
+END
+cgemm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cgemm.f
+END
+ctpmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ctpmv.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/Makefile
+END
+ctrmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ctrmv.f
+END
+csyrk.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/csyrk.f
+END
+stbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/stbmv.f
+END
+cherk.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cherk.f
+END
+dtpsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dtpsv.f
+END
+snrm2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/snrm2.f
+END
+dgemv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dgemv.f
+END
+dtrsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dtrsv.f
+END
+scnrm2.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/scnrm2.f
+END
+saxpy.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/saxpy.f
+END
+zcopy.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zcopy.f
+END
+zher.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/zher.f
+END
+sgemm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/sgemm.f
+END
+strsm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/strsm.f
+END
+ztrmm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ztrmm.f
+END
+dasum.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dasum.f
+END
+sspr2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/sspr2.f
+END
+stpmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/stpmv.f
+END
+dsbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dsbmv.f
+END
+ssyrk.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ssyrk.f
+END
+strmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/strmv.f
+END
+zscal.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zscal.f
+END
+csyr2k.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/csyr2k.f
+END
+crotg.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/crotg.f
+END
+chpr2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/chpr2.f
+END
+zgbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zgbmv.f
+END
+izamax.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/izamax.f
+END
+dspmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dspmv.f
+END
+ssyr2k.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/ssyr2k.f
+END
+srotg.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/srotg.f
+END
+sger.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/sger.f
+END
+make.inc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/make.inc
+END
+zswap.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zswap.f
+END
+zdotu.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zdotu.f
+END
+dznrm2.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/dznrm2.f
+END
+cher2k.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/cher2k.f
+END
+ctbsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ctbsv.f
+END
+zhpr.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/zhpr.f
+END
+zhemv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zhemv.f
+END
+zgeru.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zgeru.f
+END
+cdotc.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cdotc.f
+END
+drotmg.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/drotmg.f
+END
+ctpsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ctpsv.f
+END
+ctrsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ctrsv.f
+END
+cgemv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cgemv.f
+END
+stbsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/stbsv.f
+END
+lsame.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/lsame.f
+END
+ztbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ztbmv.f
+END
+dsyr2.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dsyr2.f
+END
+zsyr2k.f
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/274/branches/HWRF/libs/src/blas/zsyr2k.f
+END
+zaxpy.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zaxpy.f
+END
+dsdot.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dsdot.f
+END
+ztrsm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ztrsm.f
+END
+stpsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/stpsv.f
+END
+zgemm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zgemm.f
+END
+ztpmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ztpmv.f
+END
+strsv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/strsv.f
+END
+sgemv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/sgemv.f
+END
+dsyr.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/dsyr.f
+END
+zsyrk.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zsyrk.f
+END
+ztrmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ztrmv.f
+END
+zherk.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/zherk.f
+END
+cgerc.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/cgerc.f
+END
+drotm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/drotm.f
+END
+sspr.f
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/274/branches/HWRF/libs/src/blas/sspr.f
+END
+sasum.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/sasum.f
+END
+dsymm.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/dsymm.f
+END
+ssbmv.f
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/274/branches/HWRF/libs/src/blas/ssbmv.f
+END

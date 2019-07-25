@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/102/branches/HWRF/ocean_init/day2date
+END
+day2date.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/94/branches/HWRF/ocean_init/day2date/day2date.f
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/102/branches/HWRF/ocean_init/day2date/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/94/branches/HWRF/ocean_init/day2date/README
+END

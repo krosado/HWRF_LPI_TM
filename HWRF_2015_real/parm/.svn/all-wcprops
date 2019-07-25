@@ -1,0 +1,407 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/!svn/ver/3802/trunk/parm
+END
+hwrf_global_1x1_paramlist.f00
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/3072/trunk/parm/hwrf_global_1x1_paramlist.f00
+END
+hwrf_gfdl_loop_current_rmy5.dat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/3544/trunk/parm/hwrf_gfdl_loop_current_rmy5.dat
+END
+hwrf.conf
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/!svn/ver/3757/trunk/parm/hwrf.conf
+END
+system.conf.yellowstone
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/3494/trunk/parm/system.conf.yellowstone
+END
+system.conf.zeus
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3802/trunk/parm/system.conf.zeus
+END
+hwrf_cntrl.satA
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/parm/hwrf_cntrl.satA
+END
+hwrf_cntrl.satB
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/parm/hwrf_cntrl.satB
+END
+hwrf_cntrl.satC
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/parm/hwrf_cntrl.satC
+END
+hwrf_imjmuv10hlatlon_names
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/2618/trunk/parm/hwrf_imjmuv10hlatlon_names
+END
+hwrf_cntrl.satE
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/parm/hwrf_cntrl.satE
+END
+hwrf_43lev.conf
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3544/trunk/parm/hwrf_43lev.conf
+END
+hwrf_cntrl.satL
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/parm/hwrf_cntrl.satL
+END
+hwrf_cntrl.satP
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/parm/hwrf_cntrl.satP
+END
+hwrf_cntrl.satQ
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/parm/hwrf_cntrl.satQ
+END
+hwrf_3km_AL.conf
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3544/trunk/parm/hwrf_3km_AL.conf
+END
+hwrf_cntrl.satS
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/parm/hwrf_cntrl.satS
+END
+hwrf_gfs_pgrb2.conf
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3544/trunk/parm/hwrf_gfs_pgrb2.conf
+END
+hwrf_cntrl.satW
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3336/trunk/parm/hwrf_cntrl.satW
+END
+hwrf_3km_CP.conf
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3544/trunk/parm/hwrf_3km_CP.conf
+END
+hwrf_holdvars.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3546/trunk/parm/hwrf_holdvars.txt
+END
+hwrf_regional_satinfo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/2618/trunk/parm/hwrf_regional_satinfo.txt
+END
+hwrf_3km_EP.conf
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3544/trunk/parm/hwrf_3km_EP.conf
+END
+system.conf.jet
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3544/trunk/parm/system.conf.jet
+END
+hwrf_cntrl.sat_other
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/2618/trunk/parm/hwrf_cntrl.sat_other
+END
+system.conf.wcoss_phase1_dont_use
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/3494/trunk/parm/system.conf.wcoss_phase1_dont_use
+END
+hwrf_pom_nml_fcst
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/2618/trunk/parm/hwrf_pom_nml_fcst
+END
+anavinfo_hwrf_L60
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3494/trunk/parm/anavinfo_hwrf_L60
+END
+hwrf_wpac_2013.conf
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3140/trunk/parm/hwrf_wpac_2013.conf
+END
+hwrf_Vtable_gefs2012
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/2618/trunk/parm/hwrf_Vtable_gefs2012
+END
+hwrf_gfdl_eastatl.parm.coup
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/2618/trunk/parm/hwrf_gfdl_eastatl.parm.coup
+END
+setup_hurricane.conf
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3494/trunk/parm/setup_hurricane.conf
+END
+hwrf_gfdl_loop_current_wc_ring_rmy5.dat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/3544/trunk/parm/hwrf_gfdl_loop_current_wc_ring_rmy5.dat
+END
+hwrf_other_basins.conf
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3544/trunk/parm/hwrf_other_basins.conf
+END
+hwrf_global_1x1_paramlist
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/2618/trunk/parm/hwrf_global_1x1_paramlist
+END
+hwrf_gfdl_eastpac.parm_anal.coup
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/2618/trunk/parm/hwrf_gfdl_eastpac.parm_anal.coup
+END
+hwrf_gfdl_eastpac.parm.coup
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/2618/trunk/parm/hwrf_gfdl_eastpac.parm.coup
+END
+hwrf_Vtable_gfs2012
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/2618/trunk/parm/hwrf_Vtable_gfs2012
+END
+hwrf_gfdl_united.parm_anal.coup
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/2618/trunk/parm/hwrf_gfdl_united.parm_anal.coup
+END
+hwrf_cntrl.nonsat
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/2618/trunk/parm/hwrf_cntrl.nonsat
+END
+hwrf_Vtable_gfs2014
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3072/trunk/parm/hwrf_Vtable_gfs2014
+END
+hwrf_gfdl_eastatl.parm_anal.coup
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/2618/trunk/parm/hwrf_gfdl_eastatl.parm_anal.coup
+END
+hwrf_gfdl_united.parm.coup
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/2618/trunk/parm/hwrf_gfdl_united.parm.coup
+END
+anavinfo_hwrf_L60_nooz
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3494/trunk/parm/anavinfo_hwrf_L60_nooz
+END
+anavinfo_hwrf_L75
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3494/trunk/parm/anavinfo_hwrf_L75
+END
+hwrf_hgt_levs.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/2618/trunk/parm/hwrf_hgt_levs.txt
+END
+hwrf_convinfo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3494/trunk/parm/hwrf_convinfo.txt
+END
+system.conf.nco
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3582/trunk/parm/system.conf.nco
+END
+hwrf_GEOGRID.TBL
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/2618/trunk/parm/hwrf_GEOGRID.TBL
+END
+system.conf.wcoss2
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3494/trunk/parm/system.conf.wcoss2
+END
+hwrf_pom_nml_phase1
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/2618/trunk/parm/hwrf_pom_nml_phase1
+END
+hwrf_pom_nml_phase2
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/2618/trunk/parm/hwrf_pom_nml_phase2
+END
+hwrf_basic.conf
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3572/trunk/parm/hwrf_basic.conf
+END
+hwrf_holdvars.conf
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3494/trunk/parm/hwrf_holdvars.conf
+END
+hwrf_gsi.nml
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/3494/trunk/parm/hwrf_gsi.nml
+END
+hwrf_tmp_levs.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/2618/trunk/parm/hwrf_tmp_levs.txt
+END
+hwrf_METGRID.TBL
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/2618/trunk/parm/hwrf_METGRID.TBL
+END
+system.conf.theia
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3698/trunk/parm/system.conf.theia
+END
+hwrf_cntrl.tracker
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/2618/trunk/parm/hwrf_cntrl.tracker
+END
+hwrf_ensemble.conf
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3572/trunk/parm/hwrf_ensemble.conf
+END
+hwrf_3km_other_basins.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/3544/trunk/parm/hwrf_3km_other_basins.conf
+END
+hwrf_3km.conf
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/3544/trunk/parm/hwrf_3km.conf
+END
+hwrf_AL.conf
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/3494/trunk/parm/hwrf_AL.conf
+END
+hwrf_satinfo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3494/trunk/parm/hwrf_satinfo.txt
+END
+hwrf_input.conf
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/3586/trunk/parm/hwrf_input.conf
+END
+hwrf_CP.conf
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/3544/trunk/parm/hwrf_CP.conf
+END
+hwrf_hybens_d01_locinfo_l61
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/2618/trunk/parm/hwrf_hybens_d01_locinfo_l61
+END
+hwrf_EP.conf
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/3494/trunk/parm/hwrf_EP.conf
+END

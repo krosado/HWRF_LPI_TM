@@ -1,0 +1,26 @@
+<task name="input_E#ENS#" maxtries="&MAX_TRIES_TRANSFER;" throttle="1">
+  <command>&PRE; &EXhwrf;/exhwrf_input.py</command>
+  <jobname>hwrf_input_&SID;_<cyclestr>@Y@m@d@H</cyclestr>_E#ENS#</jobname>
+  <account>&ACCOUNT;</account>
+  <queue>&SERVICE_QUEUE;</queue>
+  <cores>1</cores>
+  <envar>
+    <name>TOTAL_TASKS</name>
+    <value>1</value>
+  </envar>
+  <walltime>&INPUT_WALLTIME;</walltime>
+  <memory>&INPUT_MEMORY;</memory> 
+  <stdout><cyclestr>&WORKhwrf;/hwrf_input.out</cyclestr></stdout>
+  <stderr><cyclestr>&WORKhwrf;/hwrf_input.err</cyclestr></stderr>
+
+  &ENV_VARS;
+  &RESERVATION;
+  &SERVICE_EXTRA;
+
+  <dependency>
+    <and>
+      <taskdep task="launch_E#ENS#"/>
+      <streq><left>&FETCH_INPUT;</left><right>YES</right></streq>
+    </and>
+  </dependency>
+</task>

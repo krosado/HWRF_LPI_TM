@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example4_ODPS
+END
+Example4_ODPS.f90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example4_ODPS/Example4_ODPS.f90
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/152/src/crtm/branches/sso_additions/src/test/k_matrix/Example4_ODPS/makefile
+END

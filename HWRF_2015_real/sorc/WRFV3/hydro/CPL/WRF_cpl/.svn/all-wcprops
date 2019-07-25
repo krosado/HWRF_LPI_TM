@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8205/branches/HWRF/hydro/CPL/WRF_cpl
+END
+wrf_drv_HYDRO.F
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/7191/branches/HWRF/hydro/CPL/WRF_cpl/wrf_drv_HYDRO.F
+END
+Makefile.cpl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/7191/branches/HWRF/hydro/CPL/WRF_cpl/Makefile.cpl
+END
+module_wrf_HYDRO.F
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/8205/branches/HWRF/hydro/CPL/WRF_cpl/module_wrf_HYDRO.F
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/7191/branches/HWRF/hydro/CPL/WRF_cpl/Makefile
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/8366/branches/HWRF/chem/KPP
+END
+module_wkppc_constants.F
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/4946/branches/HWRF/chem/KPP/module_wkppc_constants.F
+END
+configure_kpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/4946/branches/HWRF/chem/KPP/configure_kpp
+END
+clean_kpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4946/branches/HWRF/chem/KPP/clean_kpp
+END
+compile_wkc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/4946/branches/HWRF/chem/KPP/compile_wkc
+END

@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies
+END
+rodas3.f
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/rodas3.f
+END
+ros2.f90
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros2.f90
+END
+kpp_ros4.f
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/kpp_ros4.f
+END
+exqssa.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/exqssa.c
+END
+exqssa.f
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/exqssa.f
+END
+qssa.f
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/qssa.f
+END
+ros1_ddm.def
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros1_ddm.def
+END
+ros2_ddm.def
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros2_ddm.def
+END
+ros3_ddm.def
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros3_ddm.def
+END
+ros4_ddm.def
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros4_ddm.def
+END
+qssafix.def
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/qssafix.def
+END
+rodas3_ddm.def
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/rodas3_ddm.def
+END
+twostepj.def
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/twostepj.def
+END
+kpp_rodas.def
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/kpp_rodas.def
+END
+ros1.def
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros1.def
+END
+ros2.def
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros2.def
+END
+ros3.def
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros3.def
+END
+ros4.def
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros4.def
+END
+rodas3.def
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/rodas3.def
+END
+ros1_ddm.f
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros1_ddm.f
+END
+ros2_ddm.f
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros2_ddm.f
+END
+ros3_ddm.f
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros3_ddm.f
+END
+kpp_ros4.def
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/kpp_ros4.def
+END
+ros4_ddm.f
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros4_ddm.f
+END
+ros2_cts_adj.f
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros2_cts_adj.f
+END
+exqssa.def
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/exqssa.def
+END
+qssafix.f
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/qssafix.f
+END
+twostepj.f
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/twostepj.f
+END
+rodas3_ddm.f
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/rodas3_ddm.f
+END
+qssa.def
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/qssa.def
+END
+kpp_rodas.f
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/kpp_rodas.f
+END
+ros2.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros2.c
+END
+ros3.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros3.c
+END
+ros1.f
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros1.f
+END
+ros2.f
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros2.f
+END
+ros3.f
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros3.f
+END
+ros4.f
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/ros4.f
+END
+rodas3.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/rodas3.c
+END
+qssa1.f
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/4946/branches/HWRF/chem/KPP/kpp/kpp-2.1/int/oldies/qssa1.f
+END

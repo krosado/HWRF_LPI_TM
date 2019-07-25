@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/8366/branches/HWRF/var/da/da_transfer_model
+END
+da_transfer_wrftl_lbc_t0_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/5942/branches/HWRF/var/da/da_transfer_model/da_transfer_wrftl_lbc_t0_adj.inc
+END
+da_transfer_xatokma.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/da/da_transfer_model/da_transfer_xatokma.inc
+END
+da_transfer_kmatoxb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/4946/branches/HWRF/var/da/da_transfer_model/da_transfer_kmatoxb.inc
+END
+da_transfer_xatowrftl_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/5750/branches/HWRF/var/da/da_transfer_model/da_transfer_xatowrftl_adj.inc
+END
+da_transfer_wrftoxb_lite.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/5750/branches/HWRF/var/da/da_transfer_model/da_transfer_wrftoxb_lite.inc
+END
+da_transfer_wrftltoxa_adj.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/5942/branches/HWRF/var/da/da_transfer_model/da_transfer_wrftltoxa_adj.inc
+END
+da_transfer_xatowrftl_lbc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/5942/branches/HWRF/var/da/da_transfer_model/da_transfer_xatowrftl_lbc.inc
+END
+da_transfer_xatoanalysis.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/4946/branches/HWRF/var/da/da_transfer_model/da_transfer_xatoanalysis.inc
+END
+da_transfer_wrf_nmm_regional_toxb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/4946/branches/HWRF/var/da/da_transfer_model/da_transfer_wrf_nmm_regional_toxb.inc
+END
+da_transfer_wrftl_lbc_t0.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/5750/branches/HWRF/var/da/da_transfer_model/da_transfer_wrftl_lbc_t0.inc
+END
+da_transfer_xatowrf_nmm_regional.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/4946/branches/HWRF/var/da/da_transfer_model/da_transfer_xatowrf_nmm_regional.inc
+END
+da_transfer_model.f90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/8205/branches/HWRF/var/da/da_transfer_model/da_transfer_model.f90
+END
+da_transfer_xatowrftl_adj_lbc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/5750/branches/HWRF/var/da/da_transfer_model/da_transfer_xatowrftl_adj_lbc.inc
+END
+da_transfer_xatowrftl.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/7425/branches/HWRF/var/da/da_transfer_model/da_transfer_xatowrftl.inc
+END
+da_transfer_xatowrf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/5750/branches/HWRF/var/da/da_transfer_model/da_transfer_xatowrf.inc
+END
+da_transfer_wrftltoxa.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/5942/branches/HWRF/var/da/da_transfer_model/da_transfer_wrftltoxa.inc
+END
+da_transfer_wrftoxb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/8366/branches/HWRF/var/da/da_transfer_model/da_transfer_wrftoxb.inc
+END
+da_get_2nd_firstguess.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/5750/branches/HWRF/var/da/da_transfer_model/da_get_2nd_firstguess.inc
+END
