@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info
+END
+msg-3-seviri.info
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/msg-3-seviri.info
+END
+metop-1-amsua.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/metop-1-amsua.info
+END
+fy3-1-mwts.info
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/fy3-1-mwts.info
+END
+metop-2-amsua.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/metop-2-amsua.info
+END
+fy3-2-mwts.info
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/fy3-2-mwts.info
+END
+noaa-18-mhs.info
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-18-mhs.info
+END
+eos-2-amsua.info
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/eos-2-amsua.info
+END
+noaa-19-mhs.info
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-19-mhs.info
+END
+noaa-15-hirs.info
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-15-hirs.info
+END
+metop-1-iasi.info
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/metop-1-iasi.info
+END
+noaa-15-amsua.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-15-amsua.info
+END
+noaa-16-hirs.info
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-16-hirs.info
+END
+noaa-17-hirs.info
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-17-hirs.info
+END
+noaa-16-amsua.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-16-amsua.info
+END
+noaa-15-amsub.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-15-amsub.info
+END
+metop-2-iasi.info
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/metop-2-iasi.info
+END
+noaa-18-hirs.info
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-18-hirs.info
+END
+noaa-16-amsub.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-16-amsub.info
+END
+metop-1-mhs.info
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/metop-1-mhs.info
+END
+noaa-18-amsua.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-18-amsua.info
+END
+noaa-17-amsub.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-17-amsub.info
+END
+metop-2-mhs.info
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/metop-2-mhs.info
+END
+noaa-19-amsua.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/noaa-19-amsua.info
+END
+fy3-1-mwhs.info
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/fy3-1-mwhs.info
+END
+fy3-2-mwhs.info
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/fy3-2-mwhs.info
+END
+atms_beamwidth.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/atms_beamwidth.txt
+END
+jpss-0-atms.info
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/jpss-0-atms.info
+END
+eos-2-airs.info
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/eos-2-airs.info
+END
+dmsp-16-ssmis.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/dmsp-16-ssmis.info
+END
+msg-2-seviri.info
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/8548/branches/h216prep/var/run/radiance_info/msg-2-seviri.info
+END
