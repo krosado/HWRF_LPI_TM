@@ -15,12 +15,17 @@ Replace:
 To configure and compile the code please follow the user guide: 
 https://dtcenter.org/HurrWRF/users/docs/users_guide/noaa_11345_DS1.pdf
 
-Input data for the idealized case is 0825012000000 and 0825512000000. 
-Input data for Earl is fnl_20100828_00_00.grib2.nc. 
-Input data for Igor is fnl_20100910_06_00.grib2.nc.
+Input data for the idealized case is 0825012000000 and 0825512000000 
+Input data for Earl is fnl_20100828_00_00.grib2.nc 
+Input data for Igor is fnl_20100910_06_00.grib2.nc
 
 Namelist input files: 
 Ideal case namelist.input.1
 Ideal NewPBL namelist.input.2
 Earl namelist.input.3
 Igor namelist.input.4
+
+The HWRF code for the ideal experiemnts is also provided: 
+HWRF-2015 and HWRF_NewPBL
+
+HWRF code for real experiments: HWRF_2015_real
